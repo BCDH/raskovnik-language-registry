@@ -3610,7 +3610,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The registered Arabic macrolanguage code is represented by the exact Glottolog Arabic family node, retaining direct ar evidence and allowing inclusive descendant resolution."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": null,
       "iana": {
         "descriptions": [
@@ -3628,11 +3635,11 @@
         "scope": "M",
         "type": "L"
       },
-      "kindCandidate": "language",
+      "kindCandidate": "family",
       "labelProvenance": {
-        "de": "cldr-exact",
-        "en": "iana-2026-08-08",
-        "sr": "persj-conversion-catalog"
+        "de": "cldr-48.2",
+        "en": "raskovnik-review",
+        "sr": "raskovnik-review"
       },
       "lineage": [],
       "preferredLabels": {
@@ -22751,7 +22758,7 @@
     "ambiguousCollectionMappings": 0,
     "ancestorExceptions": 155,
     "ancestorNodes": 294,
-    "profileExceptions": 128,
+    "profileExceptions": 127,
     "sourceRecords": 310,
     "tagProfiles": 212
   }

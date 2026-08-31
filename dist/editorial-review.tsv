@@ -1,5 +1,4 @@
 recordType	id	kind	parentOrLineage	labelSr	labelEn	labelDe	externalAlignment	reviewReasons	approval
-tag-profile	ae-x-young	historical-stage	Indo-European > Classical Indo-European > Indo-Iranian > Iranian-Nuristani > Iranian > Avestan	младоавестијски	Young Avestan		broader:aves1237	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
 tag-profile	als	language	Indo-European > Classical Indo-European > Albanian > Albanian-Tosk > Northern Tosk Albanian	тоскијски	Northern Tosk Albanian		exact:tosk1239	non-cldr-german-label	PENDING
 tag-profile	ang	language	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > West Germanic > North Sea Germanic > Anglo-Frisian > Anglic > Old English (ca. 450-1100)	староенглески	Old English (ca. 450-1100)	Altenglisch	exact:olde1238	multiple-serbian-source-meanings	PENDING
 tag-profile	ar	language		арапски	Arabic	Arabisch		no-exact-glottolog-alignment	PENDING

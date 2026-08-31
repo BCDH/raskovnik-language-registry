@@ -23,8 +23,8 @@ SPEC.loader.exec_module(MODULE)
 class EditorialGateTest(unittest.TestCase):
     def test_current_queue_is_explicitly_blocking(self) -> None:
         pending = MODULE.pending_records(ROOT / "dist/editorial-review.tsv")
-        self.assertEqual(286, len(pending))
-        with self.assertRaisesRegex(MODULE.EditorialGateError, "total=286"):
+        self.assertEqual(285, len(pending))
+        with self.assertRaisesRegex(MODULE.EditorialGateError, "total=285"):
             MODULE.assert_release_ready(ROOT / "dist/editorial-review.tsv")
 
     def test_header_only_report_passes(self) -> None:

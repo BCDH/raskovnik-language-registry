@@ -3155,7 +3155,14 @@
       "status": "private"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The corpus stage is broader-aligned to the Glottolog Avestan language and retains the established registered-base private-use code."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "aves1237",
         "latitude": 34.217,
@@ -3182,9 +3189,9 @@
       },
       "kindCandidate": "historical-stage",
       "labelProvenance": {
-        "de": null,
-        "en": "iana-2026-08-08",
-        "sr": "persj-conversion-catalog"
+        "de": "raskovnik-review",
+        "en": "raskovnik-review",
+        "sr": "raskovnik-review"
       },
       "lineage": [
         {
@@ -3225,8 +3232,8 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
-        "en": "Young Avestan",
+        "de": "Jungavestisch",
+        "en": "Younger Avestan",
         "sr": "младоавестијски"
       },
       "reviewReasons": [
@@ -22716,7 +22723,7 @@
     "ambiguousCollectionMappings": 0,
     "ancestorExceptions": 155,
     "ancestorNodes": 294,
-    "profileExceptions": 131,
+    "profileExceptions": 130,
     "sourceRecords": 310,
     "tagProfiles": 212
   }

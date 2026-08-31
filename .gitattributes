@@ -1,2 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Pinned upstream and schema snapshots are byte-for-byte inputs. Treat them as
+# binary so Git neither normalizes nor line-diffs their source bytes.
+upstream/** binary
+registry/schema/lex-0-f6d51f29.rng binary

@@ -4101,7 +4101,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The corpus historical stage is broader-aligned to the Glottolog Bulgarian language and retains the established registered-base private-use code."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "bulg1262",
         "latitude": 43.3646,
@@ -4128,9 +4135,9 @@
       },
       "kindCandidate": "historical-stage",
       "labelProvenance": {
-        "de": null,
-        "en": "iana-2026-08-08",
-        "sr": "persj-conversion-catalog"
+        "de": "raskovnik-review",
+        "en": "raskovnik-review",
+        "sr": "raskovnik-review"
       },
       "lineage": [
         {
@@ -4183,7 +4190,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Mittelbulgarisch",
         "en": "Middle Bulgarian",
         "sr": "средњобугарски"
       },
@@ -22772,7 +22779,7 @@
     "ambiguousCollectionMappings": 0,
     "ancestorExceptions": 155,
     "ancestorNodes": 294,
-    "profileExceptions": 125,
+    "profileExceptions": 124,
     "sourceRecords": 310,
     "tagProfiles": 212
   }

@@ -2683,7 +2683,14 @@
       ]
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The concise reviewed display names retain the exact Glottolog alignment for the registered Tosk language code."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "als",
       "glottocode": "tosk1239",
       "level": "language",
@@ -3395,7 +3402,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The concise reviewed display names retain the exact Glottolog alignment for the registered Tosk language code."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "tosk1239",
         "latitude": 41.0,
@@ -3422,9 +3436,9 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
-        "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "de": "raskovnik-review",
+        "en": "raskovnik-review",
+        "sr": "raskovnik-review"
       },
       "lineage": [
         {
@@ -3459,8 +3473,8 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
-        "en": "Northern Tosk Albanian",
+        "de": "Toskisch",
+        "en": "Tosk",
         "sr": "тоскијски"
       },
       "reviewReasons": [
@@ -22723,7 +22737,7 @@
     "ambiguousCollectionMappings": 0,
     "ancestorExceptions": 155,
     "ancestorNodes": 294,
-    "profileExceptions": 130,
+    "profileExceptions": 129,
     "sourceRecords": 310,
     "tagProfiles": 212
   }

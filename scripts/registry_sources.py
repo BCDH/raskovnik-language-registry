@@ -148,7 +148,7 @@ def is_private_tag(tag: str) -> bool:
 
 def technical_id(code: str) -> str:
     """Derive the one technical XML identifier from a canonical code."""
-    return "lang-" + code.lower().replace("-", "-")
+    return "lang-" + canonical_language_tag(code)
 
 
 def stable_source_id(kind: str, label: str) -> str:

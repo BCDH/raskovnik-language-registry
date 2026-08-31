@@ -2,7 +2,7 @@ PYTHON ?= python3
 JING ?= jing
 MVN ?= mvn
 
-.PHONY: candidates check check-inputs editorial-gate package test validate-overrides
+.PHONY: candidates check check-inputs editorial-gate package registry test validate-overrides
 
 candidates:
 	$(PYTHON) scripts/generate-candidates.py
@@ -23,5 +23,8 @@ check: check-inputs validate-overrides test
 editorial-gate: check
 	$(PYTHON) scripts/check-editorial-gate.py
 
-package: editorial-gate
+registry: editorial-gate
+	$(PYTHON) scripts/build-registry.py
+
+package: registry
 	$(MVN) -o package

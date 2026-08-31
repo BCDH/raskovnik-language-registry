@@ -37,6 +37,39 @@
   <build>
     <plugins>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>3.1.0</version>
+        <dependencies>
+          <dependency>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-utils</artifactId>
+            <version>3.4.2</version>
+          </dependency>
+        </dependencies>
+        <executions>
+          <execution>
+            <id>build-validated-registry</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <skip>false</skip>
+              <target>
+                <exec executable="python3" failonerror="true">
+                  <arg value="${project.basedir}/scripts/build-registry.py"/>
+                </exec>
+                <available file="${project.basedir}/dist/registry.xml" property="registry.xml.present"/>
+                <available file="${project.basedir}/dist/manifest.xml" property="registry.manifest.present"/>
+                <fail unless="registry.xml.present" message="validated dist/registry.xml is required before XAR assembly"/>
+                <fail unless="registry.manifest.present" message="validated dist/manifest.xml is required before XAR assembly"/>
+              </target>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
         <groupId>ro.kuberam.maven.plugins</groupId>
         <artifactId>kuberam-expath-plugin</artifactId>
         <version>0.6.3</version>

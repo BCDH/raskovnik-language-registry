@@ -20,6 +20,7 @@ from registry_sources import (  # noqa: E402
     parse_iana_registry,
     parse_iso639_3,
     stable_source_id,
+    technical_id,
     validate_registered_tag,
 )
 
@@ -82,6 +83,8 @@ class RegistrySourcesTest(unittest.TestCase):
     def test_canonical_tags(self) -> None:
         self.assertEqual("cu-Glag-x-hr", canonical_language_tag("cu-Glag-x-hr"))
         self.assertEqual("sr-x-zeta-sjen", canonical_language_tag("sr-x-zeta-sjen"))
+        self.assertEqual("lang-de-AT", technical_id("de-AT"))
+        self.assertEqual("lang-cu-Glag-x-hr", technical_id("cu-Glag-x-hr"))
 
 
 if __name__ == "__main__":

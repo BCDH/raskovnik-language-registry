@@ -1,0 +1,569 @@
+{
+  "approval": {
+    "candidatesSha256": null,
+    "editorialReportSha256": null,
+    "mode": "fixture",
+    "overridesSha256": null,
+    "planPayloadSha256": null,
+    "reviewedBy": "registry-build-test-suite",
+    "reviewedOn": "2026-08-31"
+  },
+  "classifications": [
+    {
+      "id": "classification-glottolog-5-3",
+      "labels": {
+        "de": "Glottolog-Klassifikation",
+        "en": "Glottolog classification",
+        "sr": "Глотологова класификација"
+      },
+      "sourceIds": [
+        "src-glottolog-5-3",
+        "src-raskovnik-review"
+      ],
+      "version": "5.3"
+    },
+    {
+      "id": "classification-fixture-alternate",
+      "labels": {
+        "de": "Alternative Testklassifikation",
+        "en": "Alternate fixture classification",
+        "sr": "Алтернативна тест-класификација"
+      },
+      "sourceIds": [
+        "src-raskovnik-review"
+      ],
+      "version": null
+    }
+  ],
+  "catalogs": [
+    {
+      "dictionaryId": "ISJ.PERSJ",
+      "id": "catalog-isj-persj",
+      "sourceId": "src-persj-catalog-670dac4"
+    }
+  ],
+  "compatibleDictionaries": [
+    {
+      "id": "FIXTURE.DICT",
+      "resourceHash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "id": "ISJ.PERSJ",
+      "resourceHash": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    }
+  ],
+  "displayClassificationId": "classification-glottolog-5-3",
+  "nodes": [
+    {
+      "aliases": {
+        "de": [],
+        "en": [],
+        "sr": []
+      },
+      "alternateLineages": [],
+      "classificationNote": null,
+      "classificationStatus": "reviewed",
+      "directTagProfileIds": [],
+      "id": "ine",
+      "identifiers": [
+        {
+          "type": "Glottolog",
+          "value": "indo1319"
+        },
+        {
+          "type": "ISO639-5",
+          "value": "ine"
+        }
+      ],
+      "kind": "family",
+      "labels": {
+        "de": "Indogermanische Sprachen",
+        "en": "Indo-European",
+        "sr": "индоевропски језици"
+      },
+      "labelSources": {
+        "de": "src-raskovnik-review",
+        "en": "src-glottolog-5-3",
+        "sr": "src-raskovnik-review"
+      },
+      "locations": [],
+      "parentId": null,
+      "selectable": true
+    },
+    {
+      "aliases": {
+        "de": [],
+        "en": [],
+        "sr": [
+          {
+            "sourceId": "src-raskovnik-review",
+            "value": "словенски"
+          }
+        ]
+      },
+      "alternateLineages": [],
+      "classificationNote": null,
+      "classificationStatus": "reviewed",
+      "directTagProfileIds": [
+        "sla"
+      ],
+      "id": "sla",
+      "identifiers": [
+        {
+          "type": "Glottolog",
+          "value": "slav1255"
+        },
+        {
+          "type": "ISO639-5",
+          "value": "sla"
+        }
+      ],
+      "kind": "family",
+      "labels": {
+        "de": "slawische Sprachen",
+        "en": "Slavic",
+        "sr": "словенски језици"
+      },
+      "labelSources": {
+        "de": "src-raskovnik-review",
+        "en": "src-glottolog-5-3",
+        "sr": "src-raskovnik-review"
+      },
+      "locations": [],
+      "parentId": "ine",
+      "selectable": true
+    },
+    {
+      "aliases": {
+        "de": [],
+        "en": [],
+        "sr": []
+      },
+      "alternateLineages": [],
+      "classificationNote": null,
+      "classificationStatus": "reviewed",
+      "directTagProfileIds": [],
+      "id": "zls",
+      "identifiers": [
+        {
+          "type": "Glottolog",
+          "value": "sout3147"
+        },
+        {
+          "type": "ISO639-5",
+          "value": "zls"
+        }
+      ],
+      "kind": "family",
+      "labels": {
+        "de": "südslawische Sprachen",
+        "en": "South Slavic",
+        "sr": "јужнословенски језици"
+      },
+      "labelSources": {
+        "de": "src-raskovnik-review",
+        "en": "src-glottolog-5-3",
+        "sr": "src-raskovnik-review"
+      },
+      "locations": [],
+      "parentId": "sla",
+      "selectable": true
+    },
+    {
+      "aliases": {
+        "de": [],
+        "en": [],
+        "sr": []
+      },
+      "alternateLineages": [],
+      "classificationNote": null,
+      "classificationStatus": "reviewed",
+      "directTagProfileIds": [],
+      "id": "zls-x-east",
+      "identifiers": [
+        {
+          "type": "Glottolog",
+          "value": "east2269"
+        }
+      ],
+      "kind": "family",
+      "labels": {
+        "de": "ostsüdslawische Sprachen",
+        "en": "Eastern South Slavic",
+        "sr": "источнојужнословенски језици"
+      },
+      "labelSources": {
+        "de": "src-raskovnik-review",
+        "en": "src-glottolog-5-3",
+        "sr": "src-raskovnik-review"
+      },
+      "locations": [],
+      "parentId": "zls",
+      "selectable": true
+    },
+    {
+      "aliases": {
+        "de": [],
+        "en": [],
+        "sr": [
+          {
+            "sourceId": "src-raskovnik-review",
+            "value": "македонски језик"
+          }
+        ]
+      },
+      "alternateLineages": [
+        {
+          "classificationId": "classification-fixture-alternate",
+          "pathNodeIds": [
+            "ine",
+            "mk"
+          ],
+          "sourceId": "src-raskovnik-review",
+          "status": "tentative"
+        }
+      ],
+      "classificationNote": {
+        "de": null,
+        "en": "Synthetic fixture for tentative classification metadata.",
+        "sr": null
+      },
+      "classificationStatus": "tentative",
+      "directTagProfileIds": [
+        "mk"
+      ],
+      "id": "mk",
+      "identifiers": [
+        {
+          "type": "Glottolog",
+          "value": "mace1250"
+        },
+        {
+          "type": "ISO639-1",
+          "value": "mk"
+        },
+        {
+          "type": "ISO639-2B",
+          "value": "mac"
+        },
+        {
+          "type": "ISO639-2T",
+          "value": "mkd"
+        },
+        {
+          "type": "ISO639-3",
+          "value": "mkd"
+        }
+      ],
+      "kind": "language",
+      "labels": {
+        "de": "Mazedonisch",
+        "en": "Macedonian",
+        "sr": "македонски"
+      },
+      "labelSources": {
+        "de": "src-cldr-48-2",
+        "en": "src-glottolog-5-3",
+        "sr": "src-raskovnik-review"
+      },
+      "locations": [
+        {
+          "latitude": 41.5957,
+          "longitude": 21.7932,
+          "sourceId": "src-glottolog-5-3",
+          "sourceNodeId": "mace1250",
+          "type": "representative"
+        }
+      ],
+      "parentId": "zls-x-east",
+      "selectable": true
+    },
+    {
+      "aliases": {
+        "de": [],
+        "en": [],
+        "sr": []
+      },
+      "alternateLineages": [],
+      "classificationNote": {
+        "de": null,
+        "en": "Synthetic fixture for disputed classification metadata.",
+        "sr": null
+      },
+      "classificationStatus": "disputed",
+      "directTagProfileIds": [
+        "ae"
+      ],
+      "id": "ae",
+      "identifiers": [
+        {
+          "type": "Glottolog",
+          "value": "aves1237"
+        },
+        {
+          "type": "ISO639-1",
+          "value": "ae"
+        },
+        {
+          "type": "ISO639-2B",
+          "value": "ave"
+        },
+        {
+          "type": "ISO639-2T",
+          "value": "ave"
+        },
+        {
+          "type": "ISO639-3",
+          "value": "ave"
+        }
+      ],
+      "kind": "language",
+      "labels": {
+        "de": "Avestisch",
+        "en": "Avestan",
+        "sr": "авестијски"
+      },
+      "labelSources": {
+        "de": "src-cldr-48-2",
+        "en": "src-glottolog-5-3",
+        "sr": "src-raskovnik-review"
+      },
+      "locations": [
+        {
+          "latitude": 34.217,
+          "longitude": 62.112,
+          "sourceId": "src-glottolog-5-3",
+          "sourceNodeId": "aves1237",
+          "type": "representative"
+        }
+      ],
+      "parentId": "ine",
+      "selectable": true
+    },
+    {
+      "aliases": {
+        "de": [],
+        "en": [],
+        "sr": []
+      },
+      "alternateLineages": [],
+      "classificationNote": null,
+      "classificationStatus": "reviewed",
+      "directTagProfileIds": [
+        "ae-x-old"
+      ],
+      "id": "ae-x-old",
+      "identifiers": [],
+      "kind": "historical-stage",
+      "labels": {
+        "de": "Altavestisch",
+        "en": "Old Avestan",
+        "sr": "староавестијски"
+      },
+      "labelSources": {
+        "de": "src-raskovnik-review",
+        "en": "src-raskovnik-review",
+        "sr": "src-raskovnik-review"
+      },
+      "locations": [],
+      "parentId": "ae",
+      "selectable": true
+    },
+    {
+      "aliases": {
+        "de": [],
+        "en": [],
+        "sr": []
+      },
+      "alternateLineages": [],
+      "classificationNote": null,
+      "classificationStatus": "reviewed",
+      "directTagProfileIds": [
+        "de-AT"
+      ],
+      "id": "de-AT",
+      "identifiers": [],
+      "kind": "variety",
+      "labels": {
+        "de": "Österreichisches Deutsch",
+        "en": "German (Austria)",
+        "sr": "аустријски"
+      },
+      "labelSources": {
+        "de": "src-cldr-48-2",
+        "en": "src-iana-2026-08-08",
+        "sr": "src-raskovnik-review"
+      },
+      "locations": [],
+      "parentId": "ine",
+      "selectable": true
+    }
+  ],
+  "registryVersion": "fixture-2026.8.31-1",
+  "releasedAt": "2026-08-31T00:00:00Z",
+  "schemaVersion": "raskovnik-effective-registry-plan-v1",
+  "sourceRecords": [
+    {
+      "abbreviation": "авест.",
+      "catalogId": "catalog-isj-persj",
+      "id": "src-base-285aaab27085ef04",
+      "kind": "language-label",
+      "labels": {
+        "de": "Avestisch",
+        "en": "Avestan",
+        "sr": "авестијски"
+      },
+      "mappedTagProfileId": "ae",
+      "note": null,
+      "sourceLabel": "авест.",
+      "sourceId": "src-persj-catalog-670dac4"
+    },
+    {
+      "abbreviation": "ставест.",
+      "catalogId": "catalog-isj-persj",
+      "id": "src-compound-56dabae0eca85143",
+      "kind": "compound-language-label",
+      "labels": {
+        "de": "Altavestisch",
+        "en": "Old Avestan",
+        "sr": "староавестијски"
+      },
+      "mappedTagProfileId": "ae-x-old",
+      "note": {
+        "de": null,
+        "en": "Reviewed productive historical-stage compound.",
+        "sr": null
+      },
+      "sourceLabel": "ставест.",
+      "sourceId": "src-persj-catalog-670dac4"
+    },
+    {
+      "abbreviation": "мак.",
+      "catalogId": "catalog-isj-persj",
+      "id": "src-base-7436a2689a1ccc63",
+      "kind": "language-label",
+      "labels": {
+        "de": "Mazedonisch",
+        "en": "Macedonian",
+        "sr": "македонски"
+      },
+      "mappedTagProfileId": "mk",
+      "note": null,
+      "sourceLabel": "мак.",
+      "sourceId": "src-persj-catalog-670dac4"
+    },
+    {
+      "abbreviation": "аустр.",
+      "catalogId": "catalog-isj-persj",
+      "id": "src-base-90b0cc6068d67994",
+      "kind": "language-label",
+      "labels": {
+        "de": "Österreichisches Deutsch",
+        "en": "German (Austria)",
+        "sr": "аустријски"
+      },
+      "mappedTagProfileId": "de-AT",
+      "note": null,
+      "sourceLabel": "аустр.",
+      "sourceId": "src-persj-catalog-670dac4"
+    },
+    {
+      "abbreviation": null,
+      "catalogId": "catalog-isj-persj",
+      "id": "src-full-name-86c6cd356bba414d",
+      "kind": "language-label",
+      "labels": {
+        "de": "Mazedonisch",
+        "en": "Macedonian",
+        "sr": "македонски"
+      },
+      "mappedTagProfileId": "mk",
+      "note": null,
+      "sourceLabel": "македонском",
+      "sourceId": "src-persj-catalog-670dac4"
+    },
+    {
+      "abbreviation": "слов.",
+      "catalogId": "catalog-isj-persj",
+      "id": "src-base-bd0c0496005261c3",
+      "kind": "language-label",
+      "labels": {
+        "de": "slawische Sprachen",
+        "en": "Slavic",
+        "sr": "словенски језици"
+      },
+      "mappedTagProfileId": "sla",
+      "note": null,
+      "sourceLabel": "слов.",
+      "sourceId": "src-persj-catalog-670dac4"
+    }
+  ],
+  "tagProfiles": [
+    {
+      "displayNodeId": "ae",
+      "id": "ae",
+      "labels": {
+        "de": "Avestisch",
+        "en": "Avestan",
+        "sr": "авестијски"
+      },
+      "sourceRecordIds": [
+        "src-base-285aaab27085ef04"
+      ],
+      "tag": "ae"
+    },
+    {
+      "displayNodeId": "ae-x-old",
+      "id": "ae-x-old",
+      "labels": {
+        "de": "Altavestisch",
+        "en": "Old Avestan",
+        "sr": "староавестијски"
+      },
+      "sourceRecordIds": [
+        "src-compound-56dabae0eca85143"
+      ],
+      "tag": "ae-x-old"
+    },
+    {
+      "displayNodeId": "de-AT",
+      "id": "de-AT",
+      "labels": {
+        "de": "Österreichisches Deutsch",
+        "en": "German (Austria)",
+        "sr": "аустријски"
+      },
+      "sourceRecordIds": [
+        "src-base-90b0cc6068d67994"
+      ],
+      "tag": "de-AT"
+    },
+    {
+      "displayNodeId": "mk",
+      "id": "mk",
+      "labels": {
+        "de": "Mazedonisch",
+        "en": "Macedonian",
+        "sr": "македонски"
+      },
+      "sourceRecordIds": [
+        "src-base-7436a2689a1ccc63",
+        "src-full-name-86c6cd356bba414d"
+      ],
+      "tag": "mk"
+    },
+    {
+      "displayNodeId": "sla",
+      "id": "sla",
+      "labels": {
+        "de": "slawische Sprachen",
+        "en": "Slavic",
+        "sr": "словенски језици"
+      },
+      "sourceRecordIds": [
+        "src-base-bd0c0496005261c3"
+      ],
+      "tag": "sla"
+    }
+  ]
+}

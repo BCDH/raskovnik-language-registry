@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "raskovnik-registry-source-publication-metadata-v1",
+  "projectSources": [
+    {
+      "attribution": "Reviewed Raskovnik language-registry editorial decisions.",
+      "id": "raskovnik-review",
+      "licenceName": null,
+      "licenceUrl": null,
+      "manifestId": "src-raskovnik-review",
+      "title": "Raskovnik classification review",
+      "url": "https://github.com/BCDH/raskovnik-language-registry"
+    }
+  ],
+  "upstreamSources": [
+    {
+      "attribution": "Unicode Common Locale Data Repository 48.2.",
+      "id": "cldr",
+      "licenceName": "Unicode-3.0",
+      "licenceUrl": "https://www.unicode.org/license.txt",
+      "manifestId": "src-cldr-48-2"
+    },
+    {
+      "attribution": "Hammarström, Harald; Forkel, Robert; Haspelmath, Martin; and Bank, Sebastian. 2026. Glottolog 5.3. Leipzig: Max Planck Institute for Evolutionary Anthropology.",
+      "id": "glottolog",
+      "licenceName": "CC-BY-4.0",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "manifestId": "src-glottolog-5-3"
+    },
+    {
+      "attribution": "Internet Assigned Numbers Authority Language Subtag Registry, pinned file date 2026-08-08.",
+      "id": "iana-language-subtag-registry",
+      "licenceName": null,
+      "licenceUrl": null,
+      "manifestId": "src-iana-2026-08-08"
+    },
+    {
+      "attribution": "ISO 639-3 code table snapshot dated 2026-07-22.",
+      "id": "iso-639-3",
+      "licenceName": null,
+      "licenceUrl": null,
+      "manifestId": "src-iso-639-3-2026-07-22"
+    },
+    {
+      "attribution": "TEI Lex-0 development schema 0.9.6-dev at the pinned reviewed revision.",
+      "id": "lex-0",
+      "licenceName": null,
+      "licenceUrl": null,
+      "manifestId": "src-lex-0-f6d51f29"
+    },
+    {
+      "attribution": "Count-free effective language-catalog export from the ISJ.PERSJ conversion.",
+      "id": "persj-language-catalog",
+      "licenceName": null,
+      "licenceUrl": null,
+      "manifestId": "src-persj-catalog-670dac4"
+    }
+  ]
+}

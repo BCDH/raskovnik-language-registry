@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="https://raskovnik.org/ns/language-registry/overrides">
+  <start>
+    <element name="registryOverrides">
+      <attribute name="formatVersion"><value>1</value></attribute>
+      <attribute name="registryVersion"><data type="string"><param name="pattern">[0-9]+\.[0-9]+\.[0-9]+-[0-9]+</param></data></attribute>
+      <oneOrMore>
+        <ref name="node"/>
+      </oneOrMore>
+    </element>
+  </start>
+
+  <define name="node">
+    <element name="node">
+      <attribute name="ident"><data type="language"/></attribute>
+      <attribute name="kind">
+        <choice>
+          <value>family</value>
+          <value>language</value>
+          <value>variety</value>
+          <value>historical-stage</value>
+          <value>reconstructed-language</value>
+          <value>collective</value>
+        </choice>
+      </attribute>
+      <optional><attribute name="parent"><data type="language"/></attribute></optional>
+      <attribute name="selectable"><choice><value>true</value><value>false</value></choice></attribute>
+      <attribute name="alignment"><choice><value>exact</value><value>broader</value><value>none</value></choice></attribute>
+      <optional><attribute name="glottocode"><data type="string"><param name="pattern">[a-z0-9]{8}</param></data></attribute></optional>
+      <attribute name="reviewStatus"><choice><value>approved</value><value>pending</value></choice></attribute>
+      <attribute name="reviewedBy"><data type="token"/></attribute>
+      <attribute name="reviewedOn"><data type="date"/></attribute>
+      <ref name="name-sr"/>
+      <ref name="name-en"/>
+      <ref name="name-de"/>
+      <oneOrMore>
+        <element name="note">
+          <attribute name="type"><value>reviewReason</value></attribute>
+          <text/>
+        </element>
+      </oneOrMore>
+    </element>
+  </define>
+
+  <define name="name-sr"><element name="name"><attribute name="xml:lang"><value>sr</value></attribute><ref name="name-source"/><text/></element></define>
+  <define name="name-en"><element name="name"><attribute name="xml:lang"><value>en</value></attribute><ref name="name-source"/><text/></element></define>
+  <define name="name-de"><element name="name"><attribute name="xml:lang"><value>de</value></attribute><ref name="name-source"/><text/></element></define>
+  <define name="name-source">
+    <attribute name="source">
+      <choice>
+        <value>glottolog-5.3</value>
+        <value>cldr-48.2</value>
+        <value>iana-2026-08-08</value>
+        <value>persj-conversion-catalog</value>
+        <value>raskovnik-review</value>
+      </choice>
+    </attribute>
+  </define>
+</grammar>

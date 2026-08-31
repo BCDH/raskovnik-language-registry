@@ -1,0 +1,287 @@
+recordType	id	kind	parentOrLineage	labelSr	labelEn	labelDe	externalAlignment	reviewReasons	approval
+tag-profile	ae-x-young	historical-stage	Indo-European > Classical Indo-European > Indo-Iranian > Iranian-Nuristani > Iranian > Avestan	младоавестијски	Young Avestan		broader:aves1237	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	als	language	Indo-European > Classical Indo-European > Albanian > Albanian-Tosk > Northern Tosk Albanian	тоскијски	Northern Tosk Albanian		exact:tosk1239	non-cldr-german-label	PENDING
+tag-profile	ang	language	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > West Germanic > North Sea Germanic > Anglo-Frisian > Anglic > Old English (ca. 450-1100)	староенглески	Old English (ca. 450-1100)	Altenglisch	exact:olde1238	multiple-serbian-source-meanings	PENDING
+tag-profile	ar	language		арапски	Arabic	Arabisch		no-exact-glottolog-alignment	PENDING
+tag-profile	bat	family		балтски	Baltic languages			collection-classification,no-exact-glottolog-alignment,non-cldr-german-label	PENDING
+tag-profile	be-x-old	historical-stage	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > East Slavic > Belarusian	старобелоруски	Old Belarusian		broader:bela1254	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	bg-x-middle	historical-stage	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Eastern South Slavic > Macedo-Bulgarian > Bulgarian	средњобугарски	Middle Bulgarian		broader:bulg1262	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	cel	family	Indo-European > Classical Indo-European > Celtic	келтски	Celtic		exact:celt1248	collection-classification,non-cldr-german-label	PENDING
+tag-profile	cel-x-gaulish	variety	Indo-European > Classical Indo-European > Celtic	галски			broader:celt1248	collection-classification,english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	ckm	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Western South Slavic > Serbian-Croatian-Bosnian > Chakavski	чакавски	Chakavski		exact:chak1265	non-cldr-german-label	PENDING
+tag-profile	cs-x-moravian	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > West Slavic > Czech-Slovak > Czech	моравски			broader:czec1258	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	cs-x-old	historical-stage	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > West Slavic > Czech-Slovak > Czech	старочешки	Old Czech		broader:czec1258	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	cu	language	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Eastern South Slavic > Church Slavic	старословенски	Church Slavic	Kirchenslawisch	exact:chur1257	multiple-serbian-source-meanings	PENDING
+tag-profile	cu-Glag-x-hr	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Eastern South Slavic > Church Slavic	хрватски глагољски			broader:chur1257	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,nonexact-standard-tag-alignment,private-use-code	PENDING
+tag-profile	cu-x-russian	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Eastern South Slavic > Church Slavic	руско-црквенословенски			broader:chur1257	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	da-x-old	historical-stage	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > North Germanic > South Scandinavian > Danish	стародански	Old Danish		broader:dani1285	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	de-AT	language	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > West Germanic > High German > Upper German > Middle-Modern High German > Modern High German > Upper Franconian > Global German > German	аустријски	German (Austria)	Österreichisches Deutsch	broader:stan1295	no-exact-glottolog-alignment,nonexact-standard-tag-alignment	PENDING
+tag-profile	de-x-high	variety	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > West Germanic > High German > Upper German > Middle-Modern High German > Modern High German > Upper Franconian > Global German > German	високонемачки			broader:stan1295	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	de-x-high-new	historical-stage	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > West Germanic > High German > Upper German > Middle-Modern High German > Modern High German > Upper Franconian > Global German > German	нововисоконемачки			broader:stan1295	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	de-x-middle	historical-stage	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > West Germanic > High German > Upper German > Middle-Modern High German > Modern High German > Upper Franconian > Global German > German	средњонемачки	Middle German		broader:stan1295	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	dlm	language	Indo-European > Classical Indo-European > Italic > Latino-Faliscan > Latinic > Imperial Latin > Romance > Italo-Western Romance > Italo-Dalmatian > Dalmatian Romance > Dalmatian	далматоромански	Dalmatian		exact:dalm1243	non-cldr-german-label	PENDING
+tag-profile	dsb-x-old	historical-stage	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > West Slavic > Sorbian > Lower Sorbian	стародоњолужички	Old Lower Sorbian		broader:lowe1385	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	en-US	language	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > West Germanic > North Sea Germanic > Anglo-Frisian > Anglic > Later Anglic > Middle-Modern English > Macro-English > English	амерички	English (United States)	Englisch (Vereinigte Staaten)	broader:stan1293	no-exact-glottolog-alignment,nonexact-standard-tag-alignment	PENDING
+tag-profile	et	language		естонски	Estonian	Estnisch		no-exact-glottolog-alignment	PENDING
+tag-profile	fa	language		персијски	Persian	Persisch		multiple-serbian-source-meanings,no-exact-glottolog-alignment	PENDING
+tag-profile	frk	variety	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > West Germanic > Macro-Dutch > Old Dutch-Old Frankish > Old Frankish	франачки	Old Frankish		exact:fran1264	non-cldr-german-label	PENDING
+tag-profile	ga-x-old	historical-stage	Indo-European > Classical Indo-European > Celtic > Nuclear Celtic > Core Celtic > Insular Celtic > Goidelic > Modern Goidelic > Irish	староирски	Old Irish		broader:iris1253	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	gem	family	Indo-European > Classical Indo-European > Germanic	германски	Germanic		exact:germ1287	collection-classification,non-cldr-german-label	PENDING
+tag-profile	gem-x-proto	reconstructed-language	Indo-European > Classical Indo-European > Germanic	прагермански	Proto Germanic languages		broader:germ1287	collection-classification,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	gml	language	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > West Germanic > North Sea Germanic > Altsächsisch > Middle-Modern Low German > Middle Low German	средњодоњонемачки	Middle Low German		exact:midd1318	non-cldr-german-label	PENDING
+tag-profile	gmq	family	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > North Germanic	скандинавски	North Germanic		exact:nort3160	collection-classification,non-cldr-german-label	PENDING
+tag-profile	gmw-x-frisian	variety	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > West Germanic	фризијски			broader:west2793	collection-classification,english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	gmy	language	Indo-European > Classical Indo-European > Graeco-Phrygian > Greek > South Greek > Achaean Greek	микенски	Achaean Greek		exact:myce1241	non-cldr-german-label	PENDING
+tag-profile	grc	language	Indo-European > Classical Indo-European > Graeco-Phrygian > Greek > South Greek > Central Greek > Ionic-Attic Ancient Greek	грчки	Ionic-Attic Ancient Greek	Altgriechisch	exact:anci1242	multiple-serbian-source-meanings	PENDING
+tag-profile	grc-x-aeolic	variety	Indo-European > Classical Indo-European > Graeco-Phrygian > Greek > South Greek > Central Greek > Ionic-Attic Ancient Greek	еолски			broader:anci1242	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	grc-x-attic	variety	Indo-European > Classical Indo-European > Graeco-Phrygian > Greek > South Greek > Central Greek > Ionic-Attic Ancient Greek	атички			broader:anci1242	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	grc-x-doric	variety	Indo-European > Classical Indo-European > Graeco-Phrygian > Greek > South Greek > Central Greek > Ionic-Attic Ancient Greek	дорски			broader:anci1242	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	grc-x-homeric	variety	Indo-European > Classical Indo-European > Graeco-Phrygian > Greek > South Greek > Central Greek > Ionic-Attic Ancient Greek	хомерски (о грчком)			broader:anci1242	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	grc-x-ionic	variety	Indo-European > Classical Indo-European > Graeco-Phrygian > Greek > South Greek > Central Greek > Ionic-Attic Ancient Greek	јонски			broader:anci1242	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	grc-x-middle	historical-stage	Indo-European > Classical Indo-European > Graeco-Phrygian > Greek > South Greek > Central Greek > Ionic-Attic Ancient Greek	средњогрчки	Middle Ancient Greek (to 1453)		broader:anci1242	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	hbo	language	Afro-Asiatic > Semitic > West Semitic > Central Semitic > Northwest Semitic > Canaanite > Hebrewic > Ancient Hebrew	старохебрејски	Ancient Hebrew		exact:anci1244	non-cldr-german-label	PENDING
+tag-profile	hr-x-kajkav	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Western South Slavic > Serbian-Croatian-Bosnian > Shtokavski > New Shtokavian > Eastern Herzegovinian Shtokavian > Croatian Standard	кајкавски			broader:croa1245	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	hr-x-old	historical-stage	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Western South Slavic > Serbian-Croatian-Bosnian > Shtokavski > New Shtokavian > Eastern Herzegovinian Shtokavian > Croatian Standard	старохрватски	Old Croatian		broader:croa1245	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	iir	family	Indo-European > Classical Indo-European > Indo-Iranian	индоирански	Indo-Iranian		exact:indo1320	collection-classification,non-cldr-german-label	PENDING
+tag-profile	inc	family		индијски	Indic languages			collection-classification,no-exact-glottolog-alignment,non-cldr-german-label	PENDING
+tag-profile	inc-x-old	historical-stage		староиндијски	Old Indic languages			collection-classification,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	ine	family	Indo-European	индоевропски	Indo-European		exact:indo1319	collection-classification,non-cldr-german-label	PENDING
+tag-profile	ine-x-balto-slavic	variety	Indo-European	балтословенски			broader:indo1319	collection-classification,english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	ine-x-luwian	variety	Indo-European	лувијски			broader:indo1319	collection-classification,english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	ine-x-proto	reconstructed-language	Indo-European	праиндоевропски	Proto Indo-European languages		broader:indo1319	collection-classification,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	ine-x-tochar	variety	Indo-European	тохарски			broader:indo1319	collection-classification,english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	ira	family	Indo-European > Classical Indo-European > Indo-Iranian > Iranian-Nuristani > Iranian	ирански	Iranian		exact:iran1269	collection-classification,non-cldr-german-label	PENDING
+tag-profile	ira-x-middle	historical-stage	Indo-European > Classical Indo-European > Indo-Iranian > Iranian-Nuristani > Iranian	средњоирански	Middle Iranian languages		broader:iran1269	collection-classification,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	ira-x-old	historical-stage	Indo-European > Classical Indo-European > Indo-Iranian > Iranian-Nuristani > Iranian	староирански	Old Iranian languages		broader:iran1269	collection-classification,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	ira-x-sarmat	variety	Indo-European > Classical Indo-European > Indo-Iranian > Iranian-Nuristani > Iranian	сарматски			broader:iran1269	collection-classification,english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	is-x-middle	historical-stage	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > North Germanic > West Scandinavian > Icelandic-Faroese > Icelandic	средњоисландски	Middle Icelandic		broader:icel1247	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	is-x-old	historical-stage	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > North Germanic > West Scandinavian > Icelandic-Faroese > Icelandic	староисландски	Old Icelandic		broader:icel1247	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	it-x-old	historical-stage	Indo-European > Classical Indo-European > Italic > Latino-Faliscan > Latinic > Imperial Latin > Romance > Italo-Western Romance > Italo-Dalmatian > Italian Romance > Central Italian Romance > Italian	староиталијански	Old Italian		broader:ital1282	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	it-x-tuscan	variety	Indo-European > Classical Indo-European > Italic > Latino-Faliscan > Latinic > Imperial Latin > Romance > Italo-Western Romance > Italo-Dalmatian > Italian Romance > Central Italian Romance > Italian	тоскански			broader:ital1282	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	itc	family	Indo-European > Classical Indo-European > Italic	италски	Italic		exact:ital1284	collection-classification,non-cldr-german-label	PENDING
+tag-profile	la-x-late	historical-stage	Indo-European > Classical Indo-European > Italic > Latino-Faliscan > Latinic > Imperial Latin > Latin	каснослатински	Late Latin		broader:lati1261	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	la-x-middle	historical-stage	Indo-European > Classical Indo-European > Italic > Latino-Faliscan > Latinic > Imperial Latin > Latin	средњолатински	Middle Latin		broader:lati1261	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	la-x-new	historical-stage	Indo-European > Classical Indo-European > Italic > Latino-Faliscan > Latinic > Imperial Latin > Latin	новолатински	New Latin		broader:lati1261	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	la-x-old	historical-stage	Indo-European > Classical Indo-European > Italic > Latino-Faliscan > Latinic > Imperial Latin > Latin	старолатински	Old Latin		broader:lati1261	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	la-x-vulgar	historical-stage	Indo-European > Classical Indo-European > Italic > Latino-Faliscan > Latinic > Imperial Latin > Latin	вулгарнолатински	Vulgar Latin		broader:lati1261	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	lt-x-old	historical-stage	Indo-European > Classical Indo-European > Balto-Slavic > Eastern Baltic > Lithuanian	старолитвански	Old Lithuanian		broader:lith1251	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	obt	variety	Indo-European > Classical Indo-European > Celtic > Nuclear Celtic > Core Celtic > Insular Celtic > Brythonic > Southwestern Brythonic > Old South-West British > Old Breton	старобретонски	Old Breton		exact:oldb1248	non-cldr-german-label	PENDING
+tag-profile	oc-provenc	language	Indo-European > Classical Indo-European > Italic > Latino-Faliscan > Latinic > Imperial Latin > Romance > Italo-Western Romance > Western Romance > Shifted Western Romance > Southwestern Shifted Romance > Occitanic > Occitan	провансалски	Occitan (post 1500) (Provençal)		broader:occi1239	no-exact-glottolog-alignment,non-cldr-german-label,nonexact-standard-tag-alignment	PENDING
+tag-profile	oco	language	Indo-European > Classical Indo-European > Celtic > Nuclear Celtic > Core Celtic > Insular Celtic > Brythonic > Southwestern Brythonic > Old South-West British	старокорнволски	Old South-West British		exact:oldc1252	non-cldr-german-label	PENDING
+tag-profile	ofs	language	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > West Germanic > North Sea Germanic > Anglo-Frisian > Frisian > Old Frisian	старофризијски	Old Frisian		exact:oldf1241	non-cldr-german-label	PENDING
+tag-profile	orv	language	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > East Slavic > Old Russian	староруски	Old Russian		exact:oldr1238	non-cldr-german-label	PENDING
+tag-profile	os	language	Indo-European > Classical Indo-European > Indo-Iranian > Iranian-Nuristani > Iranian > Central Iranian PBS > Sogdic-Ossetic > Ossetic > Modern Ossetic > Iron Ossetian	иронски	Iron Ossetian	Ossetisch	exact:iron1242	multiple-serbian-source-meanings	PENDING
+tag-profile	osc	language	Indo-European > Classical Indo-European > Italic > Sabellic > Oscan	осачки	Oscan		exact:osca1245	non-cldr-german-label	PENDING
+tag-profile	osd	language		дигорски	Digor Ossetic			no-exact-glottolog-alignment,non-cldr-german-label	PENDING
+tag-profile	osx	language	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > West Germanic > North Sea Germanic > Altsächsisch > Old Saxon	старосаксонски	Old Saxon		exact:olds1250	multiple-serbian-source-meanings,non-cldr-german-label	PENDING
+tag-profile	otk	language	Bookkeeping > Old Turkish	старотурски	Old Turkish		exact:oldt1247	non-cldr-german-label	PENDING
+tag-profile	owl	language	Indo-European > Classical Indo-European > Celtic > Nuclear Celtic > Core Celtic > Insular Celtic > Brythonic > Old-Modern Welsh > Old-Middle Welsh	старокимријски	Old-Middle Welsh		exact:oldw1239	non-cldr-german-label	PENDING
+tag-profile	pal	language	Indo-European > Classical Indo-European > Indo-Iranian > Iranian-Nuristani > Iranian > Southwestern Iranian > Middle-Modern Persian > Pahlavi	пехлеви	Pahlavi	Mittelpersisch	exact:pahl1241	multiple-serbian-source-meanings	PENDING
+tag-profile	pl-x-karpat	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > West Slavic > Lechitic > Polish-Silesian > Polish	карпатски			broader:poli1260	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	pl-x-old	historical-stage	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > West Slavic > Lechitic > Polish-Silesian > Polish	старопољски	Old Polish		broader:poli1260	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	pox	language	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > West Slavic > Lechitic > Polabian	полапски	Polabian		exact:pola1255	non-cldr-german-label	PENDING
+tag-profile	ro	language	Indo-European > Classical Indo-European > Italic > Latino-Faliscan > Latinic > Imperial Latin > Romance > Eastern Romance > Northern Romanian > Eastern Romanian > Romanian	румунски	Romanian	Rumänisch	exact:roma1327	multiple-serbian-source-meanings	PENDING
+tag-profile	ro-x-old	historical-stage	Indo-European > Classical Indo-European > Italic > Latino-Faliscan > Latinic > Imperial Latin > Romance > Eastern Romance > Northern Romanian > Eastern Romanian > Romanian	старорумунски	Old Romanian		broader:roma1327	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	roa	family	Indo-European > Classical Indo-European > Italic > Latino-Faliscan > Latinic > Imperial Latin > Romance	романски	Romance		exact:roma1334	collection-classification,non-cldr-german-label	PENDING
+tag-profile	roa-x-gallo	variety	Indo-European > Classical Indo-European > Italic > Latino-Faliscan > Latinic > Imperial Latin > Romance	галоромански			broader:roma1334	collection-classification,english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	ruo	language	Indo-European > Classical Indo-European > Italic > Latino-Faliscan > Latinic > Imperial Latin > Romance > Eastern Romance > Northern Romanian > Istro-Romanian	истроромански	Istro-Romanian		exact:istr1245	non-cldr-german-label	PENDING
+tag-profile	ruq	language	Indo-European > Classical Indo-European > Italic > Latino-Faliscan > Latinic > Imperial Latin > Romance > Eastern Romance > Northern Romanian > Eastern Romanian > Megleno-Romanian	мегленорумунски	Megleno-Romanian		exact:megl1237	non-cldr-german-label	PENDING
+tag-profile	sgh	language	Indo-European > Classical Indo-European > Indo-Iranian > Iranian-Nuristani > Iranian > Central Eastern Iranian > Shughni-Yazgulami > Shughnic > Shughni	шугнански	Shughni		exact:shug1248	non-cldr-german-label	PENDING
+tag-profile	sh-x-shtakav	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Western South Slavic > Serbian-Croatian-Bosnian	шћакавски			broader:sout1528	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	sh-x-shtokav	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Western South Slavic > Serbian-Croatian-Bosnian	штокавски			broader:sout1528	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	sl-x-old	historical-stage	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Western South Slavic > Slovenian	старословеначки	Old Slovenian		broader:slov1268	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	sla-x-proto	reconstructed-language	Indo-European > Classical Indo-European > Balto-Slavic > Slavic	прасловенски	Proto Slavic languages		broader:slav1255	collection-classification,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	sr	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Western South Slavic > Serbian-Croatian-Bosnian > Shtokavski > New Shtokavian > Eastern Herzegovinian Shtokavian > Serbian Standard	српски	Serbian Standard	Serbisch	exact:serb1264	multiple-serbian-source-meanings	PENDING
+tag-profile	sr-ekavsk	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Western South Slavic > Serbian-Croatian-Bosnian > Shtokavski > New Shtokavian > Eastern Herzegovinian Shtokavian > Serbian Standard	екавски	Serbian (Serbian with Ekavian pronunciation)		broader:serb1264	no-exact-glottolog-alignment,non-cldr-german-label,nonexact-standard-tag-alignment	PENDING
+tag-profile	sr-ijekavsk	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Western South Slavic > Serbian-Croatian-Bosnian > Shtokavski > New Shtokavian > Eastern Herzegovinian Shtokavian > Serbian Standard	јекавски	Serbian (Serbian with Ijekavian pronunciation)		broader:serb1264	multiple-serbian-source-meanings,no-exact-glottolog-alignment,non-cldr-german-label,nonexact-standard-tag-alignment	PENDING
+tag-profile	sr-x-ikavsk	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Western South Slavic > Serbian-Croatian-Bosnian > Shtokavski > New Shtokavian > Eastern Herzegovinian Shtokavian > Serbian Standard	икавски			broader:serb1264	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	sr-x-kos-res	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Western South Slavic > Serbian-Croatian-Bosnian > Shtokavski > New Shtokavian > Eastern Herzegovinian Shtokavian > Serbian Standard	косовско-ресавски			broader:serb1264	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	sr-x-old	historical-stage	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Western South Slavic > Serbian-Croatian-Bosnian > Shtokavski > New Shtokavian > Eastern Herzegovinian Shtokavian > Serbian Standard	старосрпски	Old Serbian		broader:serb1264	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	sr-x-priz-tim	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Western South Slavic > Serbian-Croatian-Bosnian > Shtokavski > New Shtokavian > Eastern Herzegovinian Shtokavian > Serbian Standard	призренско-тимочки			broader:serb1264	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	sr-x-slavonic	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Western South Slavic > Serbian-Croatian-Bosnian > Shtokavski > New Shtokavian > Eastern Herzegovinian Shtokavian > Serbian Standard	српскословенски			broader:serb1264	english-label-required,multiple-serbian-source-meanings,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	sr-x-slavserb	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Western South Slavic > Serbian-Croatian-Bosnian > Shtokavski > New Shtokavian > Eastern Herzegovinian Shtokavian > Serbian Standard	славеносрпски			broader:serb1264	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	sr-x-smed-vrs	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Western South Slavic > Serbian-Croatian-Bosnian > Shtokavski > New Shtokavian > Eastern Herzegovinian Shtokavian > Serbian Standard	смедеревско-вршачки			broader:serb1264	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	sr-x-sum-voj	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Western South Slavic > Serbian-Croatian-Bosnian > Shtokavski > New Shtokavian > Eastern Herzegovinian Shtokavian > Serbian Standard	шумадијско-војвођански			broader:serb1264	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	sr-x-zeta-sjen	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Western South Slavic > Serbian-Croatian-Bosnian > Shtokavski > New Shtokavian > Eastern Herzegovinian Shtokavian > Serbian Standard	зетско-сјенички			broader:serb1264	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	sv-x-old	historical-stage	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > North Germanic > North Scandinavian > East-Central Swedic > East Swedic > Swedish	старошведски	Old Swedish		broader:swed1254	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	swg	language	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > West Germanic > High German > Upper German > Middle-Modern High German > Modern High German > Alemannic > North Alemannic > Swabian	швапски	Swabian		exact:swab1242	non-cldr-german-label	PENDING
+tag-profile	trk	family	Turkic	општетурски	Turkic		exact:turk1311	collection-classification,non-cldr-german-label	PENDING
+tag-profile	trk-x-kipchak	variety	Turkic	кипчачки			broader:turk1311	collection-classification,english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	uk-x-old	historical-stage	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > East Slavic > Ukrainian-Rusyn > Ukrainian	староукрајински	Old Ukrainian		broader:ukra1253	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	vec-x-old	historical-stage	Indo-European > Classical Indo-European > Italic > Latino-Faliscan > Latinic > Imperial Latin > Romance > Italo-Western Romance > Italo-Dalmatian > Dalmatian Romance > Venetian	старовенецијански	Old Venetian		broader:vene1258	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	vec-x-trieste	variety	Indo-European > Classical Indo-European > Italic > Latino-Faliscan > Latinic > Imperial Latin > Romance > Italo-Western Romance > Italo-Dalmatian > Dalmatian Romance > Venetian	тршћански			broader:vene1258	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	vel	variety	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > West Germanic > North Sea Germanic > Altsächsisch > Middle-Modern Low German > Low German > West Low German > Westphalic > Veluws	вељотски	Veluws		exact:velu1238	non-cldr-german-label	PENDING
+tag-profile	vsn	variety	Indo-European > Classical Indo-European > Indo-Iranian > Indo-Aryan > Sanskrit > Vedic Sanskrit	ведски	Vedic Sanskrit		exact:vedi1234	non-cldr-german-label	PENDING
+tag-profile	wbl	language	Indo-European > Classical Indo-European > Indo-Iranian > Iranian-Nuristani > Iranian > Saka-Wakhi > Wakhi	вахански	Wakhi		exact:wakh1245	non-cldr-german-label	PENDING
+tag-profile	wen	family	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > West Slavic > Sorbian	лужички	Sorbian		exact:sorb1249	collection-classification,non-cldr-german-label	PENDING
+tag-profile	wen-x-old	historical-stage	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > West Slavic > Sorbian	старолужички	Old Sorbian languages		broader:sorb1249	collection-classification,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	wlm	variety	Indo-European > Classical Indo-European > Celtic > Nuclear Celtic > Core Celtic > Insular Celtic > Brythonic > Old-Modern Welsh > Old-Middle Welsh > Middle Welsh	средњокимријски	Middle Welsh		exact:midd1363	non-cldr-german-label	PENDING
+tag-profile	xbm	variety	Indo-European > Classical Indo-European > Celtic > Nuclear Celtic > Core Celtic > Insular Celtic > Brythonic > Southwestern Brythonic > Middle-Modern Southwestern Brythonic > Bretonic > Breton > Middle Breton	средњобретонски	Middle Breton		exact:midd1359	non-cldr-german-label	PENDING
+tag-profile	xbo	language	Turkic > Bolgar > Bolgarian	протобугарски	Bolgarian		exact:bolg1250	non-cldr-german-label	PENDING
+tag-profile	xco	language	Indo-European > Classical Indo-European > Indo-Iranian > Iranian-Nuristani > Iranian > Central Iranian PBS > Sogdic-Ossetic > Sogdic > Khwarezmian	хорезмијски	Khwarezmian		exact:khwa1238	non-cldr-german-label	PENDING
+tag-profile	xpg	language	Indo-European > Classical Indo-European > Graeco-Phrygian > Phrygian	фригијски	Phrygian		exact:phry1239	non-cldr-german-label	PENDING
+tag-profile	xpr	language	Indo-European > Classical Indo-European > Indo-Iranian > Iranian-Nuristani > Iranian > Central Iranian PBS > Central Iranian PB > Northwestern Iranian > Parthian	парћански	Parthian		exact:part1239	non-cldr-german-label	PENDING
+tag-profile	xsc	language		скитски	Scythian			no-exact-glottolog-alignment,non-cldr-german-label	PENDING
+tag-profile	xum	language	Indo-European > Classical Indo-European > Italic > Sabellic > Umbrian	умбријски	Umbrian		exact:umbr1253	non-cldr-german-label	PENDING
+tag-profile	xve	language	Indo-European > Classical Indo-European > Italic > Venetic	венетски	Venetic		exact:vene1257	non-cldr-german-label	PENDING
+tag-profile	zle	family	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > East Slavic	источнословенски	East Slavic		exact:east1426	collection-classification,non-cldr-german-label	PENDING
+tag-profile	zle-x-polesian	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > East Slavic	полески			broader:east1426	collection-classification,english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	zls	family	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic	јужнословенски	South Slavic		exact:sout3147	collection-classification,non-cldr-german-label	PENDING
+tag-profile	zlw	family	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > West Slavic	западнословенски	West Slavic		exact:west2792	collection-classification,non-cldr-german-label	PENDING
+tag-profile	zlw-x-pomeran	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > West Slavic	поморски (померански)			broader:west2792	collection-classification,english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+tag-profile	zlw-x-slovinc	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > West Slavic	словињски			broader:west2792	collection-classification,english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
+ancestor	alba1268	family	alba1267		Albanian-Tosk		exact:alba1268	canonical-ancestor-code-required	PENDING
+ancestor	alem1243	family	mode1258		Alemannic		exact:alem1243	canonical-ancestor-code-required	PENDING
+ancestor	alts1234	family	nort3175		Altsächsisch		exact:alts1234	canonical-ancestor-code-required	PENDING
+ancestor	anat1257	family	indo1319		Anatolian		exact:anat1257	canonical-ancestor-code-required	PENDING
+ancestor	angl1264	family	nort3175		Anglo-Frisian		exact:angl1264	canonical-ancestor-code-required	PENDING
+ancestor	angl1265	family	angl1264		Anglic		exact:angl1265	canonical-ancestor-code-required	PENDING
+ancestor	arme1241	family	clas1257		Armenic		exact:arme1241	canonical-ancestor-code-required	PENDING
+ancestor	balt1263	family	clas1257		Balto-Slavic		exact:balt1263	canonical-ancestor-code-required	PENDING
+ancestor	bash1267	family	nort2696		Bashkiric		exact:bash1267	canonical-ancestor-code-required	PENDING
+ancestor	baye1239	family	mode1258		Bairisch		exact:baye1239	canonical-ancestor-code-required	PENDING
+ancestor	bolg1249	family	turk1311		Bolgar		exact:bolg1249	canonical-ancestor-code-required	PENDING
+ancestor	book1242	family			Bookkeeping		exact:book1242	canonical-ancestor-code-required	PENDING
+ancestor	braz1247	family	macr1272		Brazil-Portugal Portuguese		exact:braz1247	canonical-ancestor-code-required	PENDING
+ancestor	bret1245	family	midd1379		Bretonic		exact:bret1245	canonical-ancestor-code-required	PENDING
+ancestor	bryt1239	family	insu1254		Brythonic		exact:bryt1239	canonical-ancestor-code-required	PENDING
+ancestor	cana1267	family	nort3165		Canaanite		exact:cana1267	canonical-ancestor-code-required	PENDING
+ancestor	cast1243	family	west2838		Castilic		exact:cast1243	canonical-ancestor-code-required	PENDING
+ancestor	cent2236	family	west2786		Central Semitic		exact:cent2236	canonical-ancestor-code-required	PENDING
+ancestor	cent2283	family	oila1234		Central Oil		exact:cent2283	canonical-ancestor-code-required	PENDING
+ancestor	cent2317	family	iran1269		Central Iranian PBS		exact:cent2317	canonical-ancestor-code-required	PENDING
+ancestor	cent2318	family	cent2317		Central Iranian PB		exact:cent2318	canonical-ancestor-code-required	PENDING
+ancestor	cent2399	family	iran1269		Central Eastern Iranian		exact:cent2399	canonical-ancestor-code-required	PENDING
+ancestor	cent2404	family	east2798		Central Greek		exact:cent2404	canonical-ancestor-code-required	PENDING
+ancestor	cent2427	family	ital1287		Central Italian Romance		exact:cent2427	canonical-ancestor-code-required	PENDING
+ancestor	clas1257	family	indo1319		Classical Indo-European		exact:clas1257	canonical-ancestor-code-required	PENDING
+ancestor	coas1319	family	finn1317		Coastal Finnic		exact:coas1319	canonical-ancestor-code-required	PENDING
+ancestor	comm1245	family	turk1311		Common Turkic		exact:comm1245	canonical-ancestor-code-required	PENDING
+ancestor	crim1256	family	west1472		Crimean Tatar-Urum		exact:crim1256	canonical-ancestor-code-required	PENDING
+ancestor	crim1259	family	crim1256		Crimeaic		exact:crim1259	canonical-ancestor-code-required	PENDING
+ancestor	czec1260	family	west2792		Czech-Slovak		exact:czec1260	canonical-ancestor-code-required	PENDING
+ancestor	dalm1244	family	ital1286		Dalmatian Romance		exact:dalm1244	canonical-ancestor-code-required	PENDING
+ancestor	east2280	family	balt1263		Eastern Baltic		exact:east2280	canonical-ancestor-code-required	PENDING
+ancestor	east2291	family	lowg1239		Greater East Low German		exact:east2291	canonical-ancestor-code-required	PENDING
+ancestor	east2678	family	semi1276		East Semitic		exact:east2678	canonical-ancestor-code-required	PENDING
+ancestor	east2714	family	roma1334		Eastern Romance		exact:east2714	canonical-ancestor-code-required	PENDING
+ancestor	east2768	family	arme1241		Eastern-Western Armenian		exact:east2768	canonical-ancestor-code-required	PENDING
+ancestor	east2780	family	nort3266		East-Central Swedic		exact:east2780	canonical-ancestor-code-required	PENDING
+ancestor	east2781	family	east2780		East Swedic		exact:east2781	canonical-ancestor-code-required	PENDING
+ancestor	east2798	family	gree1276		South Greek		exact:east2798	canonical-ancestor-code-required	PENDING
+ancestor	east2821	dialect	news1236		Eastern Herzegovinian Shtokavian		exact:east2821	canonical-ancestor-code-required	PENDING
+ancestor	east2865	family	nort3361		Eastern Romanian		exact:east2865	canonical-ancestor-code-required	PENDING
+ancestor	finn1317	family	ural1272		Finnic		exact:finn1317	canonical-ancestor-code-required	PENDING
+ancestor	fris1239	family	angl1264		Frisian		exact:fris1239	canonical-ancestor-code-required	PENDING
+ancestor	gali1263	family	west2838		Galician Romance		exact:gali1263	canonical-ancestor-code-required	PENDING
+ancestor	gall1279	family	nort3208		Gallo-Italian		exact:gall1279	canonical-ancestor-code-required	PENDING
+ancestor	gall1280	family	nort3208		Gallo-Rhaetian		exact:gall1280	canonical-ancestor-code-required	PENDING
+ancestor	geor1252	family	kart1248		Georgian-Zan		exact:geor1252	canonical-ancestor-code-required	PENDING
+ancestor	geor1253	family	geor1252		Georgic		exact:geor1253	canonical-ancestor-code-required	PENDING
+ancestor	glob1239	family	macr1273		Global French		exact:glob1239	canonical-ancestor-code-required	PENDING
+ancestor	glob1241	family	mode1257		Global Dutch		exact:glob1241	canonical-ancestor-code-required	PENDING
+ancestor	glob1243	family	uppe1464		Global German		exact:glob1243	canonical-ancestor-code-required	PENDING
+ancestor	goid1240	family	insu1254		Goidelic		exact:goid1240	canonical-ancestor-code-required	PENDING
+ancestor	grae1234	family	clas1257		Graeco-Phrygian		exact:grae1234	canonical-ancestor-code-required	PENDING
+ancestor	hebr1246	family	cana1267		Hebrewic		exact:hebr1246	canonical-ancestor-code-required	PENDING
+ancestor	high1286	family	high1289		Upper German		exact:high1286	canonical-ancestor-code-required	PENDING
+ancestor	high1289	family	west2793		High German		exact:high1289	canonical-ancestor-code-required	PENDING
+ancestor	hung1287	family	ural1272		Hungaric		exact:hung1287	canonical-ancestor-code-required	PENDING
+ancestor	icel1246	family	west2805		Icelandic-Faroese		exact:icel1246	canonical-ancestor-code-required	PENDING
+ancestor	impe1234	family	lati1263		Imperial Latin		exact:impe1234	canonical-ancestor-code-required	PENDING
+ancestor	indo1321	family	indo1320		Indo-Aryan		exact:indo1321	canonical-ancestor-code-required	PENDING
+ancestor	insu1254	family	tgbc1234		Insular Celtic		exact:insu1254	canonical-ancestor-code-required	PENDING
+ancestor	iran1271	family	indo1320		Iranian-Nuristani		exact:iran1271	canonical-ancestor-code-required	PENDING
+ancestor	ital1285	family	roma1334		Italo-Western Romance		exact:ital1285	canonical-ancestor-code-required	PENDING
+ancestor	ital1286	family	ital1285		Italo-Dalmatian		exact:ital1286	canonical-ancestor-code-required	PENDING
+ancestor	ital1287	family	ital1286		Italian Romance		exact:ital1287	canonical-ancestor-code-required	PENDING
+ancestor	kart1248	family			Kartvelian		exact:kart1248	canonical-ancestor-code-required	PENDING
+ancestor	khal1273	family	oira1260		Khalkha-Buriat		exact:khal1273	canonical-ancestor-code-required	PENDING
+ancestor	kipc1239	family	kipc1240		Kipchak		exact:kipc1239	canonical-ancestor-code-required	PENDING
+ancestor	kipc1240	family	comm1245		Kipchak-Turkestan		exact:kipc1240	canonical-ancestor-code-required	PENDING
+ancestor	koin1234	family	cent2404		Koineic Greek		exact:koin1234	canonical-ancestor-code-required	PENDING
+ancestor	laki1246	family	nort3177		Laki-Kurdish		exact:laki1246	canonical-ancestor-code-required	PENDING
+ancestor	late1254	family	angl1265		Later Anglic		exact:late1254	canonical-ancestor-code-required	PENDING
+ancestor	lati1262	family	ital1284		Latino-Faliscan		exact:lati1262	canonical-ancestor-code-required	PENDING
+ancestor	lati1263	family	lati1262		Latinic		exact:lati1263	canonical-ancestor-code-required	PENDING
+ancestor	lech1241	family	west2792		Lechitic		exact:lech1241	canonical-ancestor-code-required	PENDING
+ancestor	lowg1239	family	midd1345		Low German		exact:lowg1239	canonical-ancestor-code-required	PENDING
+ancestor	mace1252	family	east2269		Macedo-Bulgarian		exact:mace1252	canonical-ancestor-code-required	PENDING
+ancestor	macr1270	family	west2793		Macro-Dutch		exact:macr1270	canonical-ancestor-code-required	PENDING
+ancestor	macr1271	family	merc1242		Macro-English		exact:macr1271	canonical-ancestor-code-required	PENDING
+ancestor	macr1272	family	gali1263		Macro-Portuguese		exact:macr1272	canonical-ancestor-code-required	PENDING
+ancestor	macr1273	family	cent2283		Macro-French		exact:macr1273	canonical-ancestor-code-required	PENDING
+ancestor	merc1242	family	late1254		Middle-Modern English		exact:merc1242	canonical-ancestor-code-required	PENDING
+ancestor	midd1345	family	alts1234		Middle-Modern Low German		exact:midd1345	canonical-ancestor-code-required	PENDING
+ancestor	midd1347	family	macr1270		Middle-Modern Dutch		exact:midd1347	canonical-ancestor-code-required	PENDING
+ancestor	midd1349	family	high1286		Middle-Modern High German		exact:midd1349	canonical-ancestor-code-required	PENDING
+ancestor	midd1352	family	sout3157		Middle-Modern Persian		exact:midd1352	canonical-ancestor-code-required	PENDING
+ancestor	midd1379	family	sout3176		Middle-Modern Southwestern Brythonic		exact:midd1379	canonical-ancestor-code-required	PENDING
+ancestor	mode1257	family	midd1347		Modern Dutch		exact:mode1257	canonical-ancestor-code-required	PENDING
+ancestor	mode1258	family	midd1349		Modern High German		exact:mode1258	canonical-ancestor-code-required	PENDING
+ancestor	mode1265	family	goid1240		Modern Goidelic		exact:mode1265	canonical-ancestor-code-required	PENDING
+ancestor	mode1266	family	koin1234		Modern Koineic Greek		exact:mode1266	canonical-ancestor-code-required	PENDING
+ancestor	mong1329	family	mong1349		Mongolic		exact:mong1329	canonical-ancestor-code-required	PENDING
+ancestor	mong1349	family			Mongolic-Khitan		exact:mong1349	canonical-ancestor-code-required	PENDING
+ancestor	neva1234	family	coas1319		Neva		exact:neva1234	canonical-ancestor-code-required	PENDING
+ancestor	news1236	dialect	shto1241		New Shtokavian		exact:news1236	canonical-ancestor-code-required	PENDING
+ancestor	nort2696	family	nort3424		North Kipchak		exact:nort2696	canonical-ancestor-code-required	PENDING
+ancestor	nort3152	family	germ1287		Northwest Germanic		exact:nort3152	canonical-ancestor-code-required	PENDING
+ancestor	nort3165	family	cent2236		Northwest Semitic		exact:nort3165	canonical-ancestor-code-required	PENDING
+ancestor	nort3175	family	west2793		North Sea Germanic		exact:nort3175	canonical-ancestor-code-required	PENDING
+ancestor	nort3177	family	cent2318		Northwestern Iranian		exact:nort3177	canonical-ancestor-code-required	PENDING
+ancestor	nort3208	family	shif1234		Northwestern Shifted Romance		exact:nort3208	canonical-ancestor-code-required	PENDING
+ancestor	nort3266	family	nort3160		North Scandinavian		exact:nort3266	canonical-ancestor-code-required	PENDING
+ancestor	nort3282	family	neva1234		North Finnic		exact:nort3282	canonical-ancestor-code-required	PENDING
+ancestor	nort3310	family	alem1243		North Alemannic		exact:nort3310	canonical-ancestor-code-required	PENDING
+ancestor	nort3361	family	east2714		Northern Romanian		exact:nort3361	canonical-ancestor-code-required	PENDING
+ancestor	nort3424	family	kipc1239		Northwest Kipchak		exact:nort3424	canonical-ancestor-code-required	PENDING
+ancestor	nucl1715	family	celt1248		Nuclear Celtic		exact:nucl1715	canonical-ancestor-code-required	PENDING
+ancestor	nucl1717	family	nort3282		Nuclear Finnish		exact:nucl1717	canonical-ancestor-code-required	PENDING
+ancestor	nucl1769	family	oghu1243		Nuclear Oghuz		exact:nucl1769	canonical-ancestor-code-required	PENDING
+ancestor	nucl1783	family	mode1266		Nuclear Modern Greek		exact:nucl1783	canonical-ancestor-code-required	PENDING
+ancestor	occi1239	language	occi1240		Occitan		exact:occi1239	canonical-ancestor-code-required	PENDING
+ancestor	occi1240	family	sout3183		Occitanic		exact:occi1240	canonical-ancestor-code-required	PENDING
+ancestor	oghu1243	family	comm1245		Oghuz		exact:oghu1243	canonical-ancestor-code-required	PENDING
+ancestor	oila1234	family	gall1280		Oil		exact:oila1234	canonical-ancestor-code-required	PENDING
+ancestor	oira1260	family	mong1329		Eastern Mongolic		exact:oira1260	canonical-ancestor-code-required	PENDING
+ancestor	oldd1237	language	macr1270		Old Dutch-Old Frankish		exact:oldd1237	canonical-ancestor-code-required	PENDING
+ancestor	oldi1245	language	goid1240		Early Irish		exact:oldi1245	canonical-ancestor-code-required	PENDING
+ancestor	oldm1247	family	bryt1239		Old-Modern Welsh		exact:oldm1247	canonical-ancestor-code-required	PENDING
+ancestor	osse1243	family	osse1245		Modern Ossetic		exact:osse1243	canonical-ancestor-code-required	PENDING
+ancestor	osse1245	family	sogd1247		Ossetic		exact:osse1245	canonical-ancestor-code-required	PENDING
+ancestor	pash1269	family	iran1269		Pashto		exact:pash1269	canonical-ancestor-code-required	PENDING
+ancestor	piem1239	family	gall1279		Piemontese-Lombard		exact:piem1239	canonical-ancestor-code-required	PENDING
+ancestor	poli1262	family	lech1241		Polish-Silesian		exact:poli1262	canonical-ancestor-code-required	PENDING
+ancestor	sabe1249	family	ital1284		Sabellic		exact:sabe1249	canonical-ancestor-code-required	PENDING
+ancestor	saka1298	family	saka1303		Saka		exact:saka1298	canonical-ancestor-code-required	PENDING
+ancestor	saka1303	family	iran1269		Saka-Wakhi		exact:saka1303	canonical-ancestor-code-required	PENDING
+ancestor	shif1234	family	west2813		Shifted Western Romance		exact:shif1234	canonical-ancestor-code-required	PENDING
+ancestor	shto1241	dialect	sout1528		Shtokavski		exact:shto1241	canonical-ancestor-code-required	PENDING
+ancestor	shug1237	family	cent2399		Shughni-Yazgulami		exact:shug1237	canonical-ancestor-code-required	PENDING
+ancestor	shug1253	family	shug1237		Shughnic		exact:shug1253	canonical-ancestor-code-required	PENDING
+ancestor	sogd1246	family	sogd1248		Sogdian-Yagnobi		exact:sogd1246	canonical-ancestor-code-required	PENDING
+ancestor	sogd1247	family	cent2317		Sogdic-Ossetic		exact:sogd1247	canonical-ancestor-code-required	PENDING
+ancestor	sogd1248	family	sogd1247		Sogdic		exact:sogd1248	canonical-ancestor-code-required	PENDING
+ancestor	sout1528	language	west2804		Serbian-Croatian-Bosnian		exact:sout1528	canonical-ancestor-code-required	PENDING
+ancestor	sout2701	family	sout3396		South Kipchak		exact:sout2701	canonical-ancestor-code-required	PENDING
+ancestor	sout3157	family	iran1269		Southwestern Iranian		exact:sout3157	canonical-ancestor-code-required	PENDING
+ancestor	sout3176	family	bryt1239		Southwestern Brythonic		exact:sout3176	canonical-ancestor-code-required	PENDING
+ancestor	sout3183	family	shif1234		Southwestern Shifted Romance		exact:sout3183	canonical-ancestor-code-required	PENDING
+ancestor	sout3248	family	nort3160		South Scandinavian		exact:sout3248	canonical-ancestor-code-required	PENDING
+ancestor	sout3396	family	kipc1239		Southeast Kipchak		exact:sout3396	canonical-ancestor-code-required	PENDING
+ancestor	tgbc1234	family	nucl1715		Core Celtic		exact:tgbc1234	canonical-ancestor-code-required	PENDING
+ancestor	uigh1243	family	uygh1240		Uyghuric		exact:uigh1243	canonical-ancestor-code-required	PENDING
+ancestor	ukra1257	family	east1426		Ukrainian-Rusyn		exact:ukra1257	canonical-ancestor-code-required	PENDING
+ancestor	uppe1464	family	mode1258		Upper Franconian		exact:uppe1464	canonical-ancestor-code-required	PENDING
+ancestor	uygh1240	family	uygh1241		Modern Turkestan		exact:uygh1240	canonical-ancestor-code-required	PENDING
+ancestor	uygh1241	family	kipc1240		Turkestan		exact:uygh1241	canonical-ancestor-code-required	PENDING
+ancestor	west1472	family	nort3424		West Kipchak		exact:west1472	canonical-ancestor-code-required	PENDING
+ancestor	west2356	language	west2357		Westphalic		exact:west2356	canonical-ancestor-code-required	PENDING
+ancestor	west2357	family	lowg1239		West Low German		exact:west2357	canonical-ancestor-code-required	PENDING
+ancestor	west2406	family	nucl1769		West Oghuz		exact:west2406	canonical-ancestor-code-required	PENDING
+ancestor	west2786	family	semi1276		West Semitic		exact:west2786	canonical-ancestor-code-required	PENDING
+ancestor	west2804	family	sout3147		Western South Slavic		exact:west2804	canonical-ancestor-code-required	PENDING
+ancestor	west2805	family	nort3160		West Scandinavian		exact:west2805	canonical-ancestor-code-required	PENDING
+ancestor	west2813	family	ital1285		Western Romance		exact:west2813	canonical-ancestor-code-required	PENDING
+ancestor	west2838	family	sout3183		West Ibero-Romance		exact:west2838	canonical-ancestor-code-required	PENDING

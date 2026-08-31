@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://expath.org/ns/pkg" name="${package-name}" abbrev="${package-abbrev}" version="${project.version}" spec="1.0">
+  <title>${package-title}</title>
+  <author id="bcdh">Belgrade Center for Digital Humanities</author>
+  <website>${project.url}</website>
+  <license>Copyright 2026 Belgrade Center for Digital Humanities</license>
+  <copyright>true</copyright>
+
+  <type>application</type>
+  <status>stable</status>
+  <tag>${project.artifactId}</tag>
+  <tag>data</tag>
+  <category id="apps">Applications</category>
+
+  <dependency processor="http://elemental.xyz" semver-min="${elemental.version}"/>
+  <dependency processor="http://exist-db.org" semver-min="${exist.version}"/>
+  <dependency package="http://raskovnik.org/raskovnik-data-core" semver-min="${requires.core.version}"/>
+
+  <target>${package-target}</target>
+  <finish>post-install.xq</finish>
+
+  <fileSets>
+    <fileSet>
+      <directory>${basedir}/dist</directory>
+      <includes>
+        <include>manifest.xml</include>
+        <include>registry.xml</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory>${basedir}/src/main/xar-resources</directory>
+      <includes>
+        <include>post-install.xq</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</package>

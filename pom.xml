@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.raskovnik</groupId>
+  <artifactId>raskovnik-language-registry</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+
+  <name>Raskovnik Language Registry</name>
+  <description>Versioned language classification and metadata package for Raskovnik</description>
+  <url>https://github.com/BCDH/raskovnik-language-registry</url>
+
+  <organization>
+    <name>Belgrade Center for Digital Humanities</name>
+    <url>https://humanistika.org</url>
+  </organization>
+
+  <scm>
+    <connection>scm:git:https://github.com/BCDH/raskovnik-language-registry.git</connection>
+    <developerConnection>scm:git:https://github.com/BCDH/raskovnik-language-registry.git</developerConnection>
+    <url>https://github.com/BCDH/raskovnik-language-registry</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <elemental.version>6.4.0</elemental.version>
+    <exist.version>6.3.0</exist.version>
+    <requires.core.version>2026.6.6-1</requires.core.version>
+    <package-title>Raskovnik Language Registry</package-title>
+    <package-name>http://raskovnik.org/raskovnik-language-registry</package-name>
+    <package-abbrev>raskovnik-language-registry</package-abbrev>
+    <package-target>raskovnik-data/metadata/languages</package-target>
+    <package-final-name>raskovnik-language-registry-${project.version}</package-final-name>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>ro.kuberam.maven.plugins</groupId>
+        <artifactId>kuberam-expath-plugin</artifactId>
+        <version>0.6.3</version>
+        <executions>
+          <execution>
+            <id>create-xar</id>
+            <phase>package</phase>
+            <goals>
+              <goal>make-xar</goal>
+            </goals>
+            <configuration>
+              <descriptor>xar-assembly.xml</descriptor>
+              <finalName>${package-final-name}</finalName>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

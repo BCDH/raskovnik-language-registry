@@ -3908,7 +3908,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The corpus historical stage is broader-aligned to the Glottolog Belarusian language and retains the established registered-base private-use code."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "bela1254",
         "latitude": 53.2307,
@@ -3935,9 +3942,9 @@
       },
       "kindCandidate": "historical-stage",
       "labelProvenance": {
-        "de": null,
-        "en": "iana-2026-08-08",
-        "sr": "persj-conversion-catalog"
+        "de": "raskovnik-review",
+        "en": "raskovnik-review",
+        "sr": "raskovnik-review"
       },
       "lineage": [
         {
@@ -3978,7 +3985,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Altbelarussisch",
         "en": "Old Belarusian",
         "sr": "старобелоруски"
       },
@@ -22765,7 +22772,7 @@
     "ambiguousCollectionMappings": 0,
     "ancestorExceptions": 155,
     "ancestorNodes": 294,
-    "profileExceptions": 126,
+    "profileExceptions": 125,
     "sourceRecords": 310,
     "tagProfiles": 212
   }

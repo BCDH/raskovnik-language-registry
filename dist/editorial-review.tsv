@@ -1,5 +1,4 @@
 recordType	id	kind	parentOrLineage	labelSr	labelEn	labelDe	externalAlignment	reviewReasons	approval
-tag-profile	be-x-old	historical-stage	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > East Slavic > Belarusian	старобелоруски	Old Belarusian		broader:bela1254	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
 tag-profile	bg-x-middle	historical-stage	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Eastern South Slavic > Macedo-Bulgarian > Bulgarian	средњобугарски	Middle Bulgarian		broader:bulg1262	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
 tag-profile	cel	family	Indo-European > Classical Indo-European > Celtic	келтски	Celtic		exact:celt1248	collection-classification,non-cldr-german-label	PENDING
 tag-profile	cel-x-gaulish	variety	Indo-European > Classical Indo-European > Celtic	галски			broader:celt1248	collection-classification,english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING

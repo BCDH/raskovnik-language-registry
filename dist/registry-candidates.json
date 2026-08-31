@@ -3776,7 +3776,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The project Baltic family covers Eastern Baltic and Old Prussian and is therefore broader-aligned to, but not equated with, Glottolog's Balto-Slavic node; source records preserve балтски for search."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": null,
       "iana": {
         "descriptions": [
@@ -3789,15 +3796,15 @@
       "iso639": null,
       "kindCandidate": "family",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "iana-2026-08-08",
-        "sr": "persj-conversion-catalog"
+        "sr": "raskovnik-review"
       },
       "lineage": [],
       "preferredLabels": {
-        "de": null,
+        "de": "baltische Sprachen",
         "en": "Baltic languages",
-        "sr": "балтски"
+        "sr": "балтски језици"
       },
       "reviewReasons": [
         "collection-classification",
@@ -22758,7 +22765,7 @@
     "ambiguousCollectionMappings": 0,
     "ancestorExceptions": 155,
     "ancestorNodes": 294,
-    "profileExceptions": 127,
+    "profileExceptions": 126,
     "sourceRecords": 310,
     "tagProfiles": 212
   }

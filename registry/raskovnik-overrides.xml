@@ -30,6 +30,12 @@
     <name xml:lang="de" source="cldr-48.2">Arabisch</name>
     <note type="reviewReason">The registered Arabic macrolanguage code is represented by the exact Glottolog Arabic family node, retaining direct ar evidence and allowing inclusive descendant resolution.</note>
   </node>
+  <node ident="bat" kind="family" selectable="true" alignment="broader" glottocode="balt1263" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="raskovnik-review">балтски језици</name>
+    <name xml:lang="en" source="iana-2026-08-08">Baltic languages</name>
+    <name xml:lang="de" source="raskovnik-review">baltische Sprachen</name>
+    <note type="reviewReason">The project Baltic family covers Eastern Baltic and Old Prussian and is therefore broader-aligned to, but not equated with, Glottolog's Balto-Slavic node; source records preserve балтски for search.</note>
+  </node>
   <node ident="sla" kind="family" selectable="true" alignment="exact" glottocode="slav1255" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
     <name xml:lang="sr" source="raskovnik-review">словенски језици</name>
     <name xml:lang="en" source="glottolog-5.3">Slavic</name>

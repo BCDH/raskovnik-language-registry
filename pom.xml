@@ -25,7 +25,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <elemental.version>6.4.0</elemental.version>
-    <exist.version>6.3.0</exist.version>
+    <exist.version>6.4.1</exist.version>
     <requires.core.version>2026.6.6-1</requires.core.version>
     <package-title>Raskovnik Language Registry</package-title>
     <package-name>http://raskovnik.org/raskovnik-language-registry</package-name>

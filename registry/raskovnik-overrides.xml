@@ -48,6 +48,144 @@
     <name xml:lang="de" source="raskovnik-review">Mittelbulgarisch</name>
     <note type="reviewReason">The corpus historical stage is broader-aligned to the Glottolog Bulgarian language and retains the established registered-base private-use code.</note>
   </node>
+  <node ident="ckm" kind="variety" selectable="true" alignment="exact" glottocode="chak1265" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">чакавски</name>
+    <name xml:lang="en" source="glottolog-5.3">Chakavski</name>
+    <name xml:lang="de" source="raskovnik-review">Čakavisch</name>
+    <note type="reviewReason">The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="dlm" kind="language" selectable="true" alignment="exact" glottocode="dalm1243" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">далматоромански</name>
+    <name xml:lang="en" source="glottolog-5.3">Dalmatian</name>
+    <name xml:lang="de" source="raskovnik-review">Dalmatisch</name>
+    <note type="reviewReason">The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="frk" kind="variety" selectable="true" alignment="exact" glottocode="fran1264" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">франачки</name>
+    <name xml:lang="en" source="glottolog-5.3">Old Frankish</name>
+    <name xml:lang="de" source="raskovnik-review">Altfränkisch</name>
+    <note type="reviewReason">The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="gml" kind="language" selectable="true" alignment="exact" glottocode="midd1318" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">средњодоњонемачки</name>
+    <name xml:lang="en" source="glottolog-5.3">Middle Low German</name>
+    <name xml:lang="de" source="raskovnik-review">Mittelniederdeutsch</name>
+    <note type="reviewReason">The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="gmy" kind="language" selectable="true" alignment="exact" glottocode="myce1241" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">микенски</name>
+    <name xml:lang="en" source="glottolog-5.3">Achaean Greek</name>
+    <name xml:lang="de" source="raskovnik-review">Mykenisches Griechisch</name>
+    <note type="reviewReason">The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="hbo" kind="language" selectable="true" alignment="exact" glottocode="anci1244" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">старохебрејски</name>
+    <name xml:lang="en" source="glottolog-5.3">Ancient Hebrew</name>
+    <name xml:lang="de" source="raskovnik-review">Bibelhebräisch</name>
+    <note type="reviewReason">The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="ofs" kind="language" selectable="true" alignment="exact" glottocode="oldf1241" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">старофризијски</name>
+    <name xml:lang="en" source="glottolog-5.3">Old Frisian</name>
+    <name xml:lang="de" source="raskovnik-review">Altfriesisch</name>
+    <note type="reviewReason">The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="osc" kind="language" selectable="true" alignment="exact" glottocode="osca1245" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">осачки</name>
+    <name xml:lang="en" source="glottolog-5.3">Oscan</name>
+    <name xml:lang="de" source="raskovnik-review">Oskisch</name>
+    <note type="reviewReason">The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="otk" kind="language" selectable="true" alignment="exact" glottocode="oldt1247" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">старотурски</name>
+    <name xml:lang="en" source="glottolog-5.3">Old Turkish</name>
+    <name xml:lang="de" source="raskovnik-review">Alttürkisch</name>
+    <note type="reviewReason">The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="pox" kind="language" selectable="true" alignment="exact" glottocode="pola1255" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">полапски</name>
+    <name xml:lang="en" source="glottolog-5.3">Polabian</name>
+    <name xml:lang="de" source="raskovnik-review">Polabisch</name>
+    <note type="reviewReason">The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="ruo" kind="language" selectable="true" alignment="exact" glottocode="istr1245" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">истроромански</name>
+    <name xml:lang="en" source="glottolog-5.3">Istro-Romanian</name>
+    <name xml:lang="de" source="raskovnik-review">Istrorumänisch</name>
+    <note type="reviewReason">The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="ruq" kind="language" selectable="true" alignment="exact" glottocode="megl1237" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">мегленорумунски</name>
+    <name xml:lang="en" source="glottolog-5.3">Megleno-Romanian</name>
+    <name xml:lang="de" source="raskovnik-review">Meglenorumänisch</name>
+    <note type="reviewReason">The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="sgh" kind="language" selectable="true" alignment="exact" glottocode="shug1248" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">шугнански</name>
+    <name xml:lang="en" source="glottolog-5.3">Shughni</name>
+    <name xml:lang="de" source="raskovnik-review">Shughni</name>
+    <note type="reviewReason">The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="swg" kind="language" selectable="true" alignment="exact" glottocode="swab1242" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">швапски</name>
+    <name xml:lang="en" source="glottolog-5.3">Swabian</name>
+    <name xml:lang="de" source="raskovnik-review">Schwäbisch</name>
+    <note type="reviewReason">The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="vsn" kind="variety" selectable="true" alignment="exact" glottocode="vedi1234" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">ведски</name>
+    <name xml:lang="en" source="glottolog-5.3">Vedic Sanskrit</name>
+    <name xml:lang="de" source="raskovnik-review">Vedisch</name>
+    <note type="reviewReason">The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="wbl" kind="language" selectable="true" alignment="exact" glottocode="wakh1245" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">вахански</name>
+    <name xml:lang="en" source="glottolog-5.3">Wakhi</name>
+    <name xml:lang="de" source="raskovnik-review">Wakhi</name>
+    <note type="reviewReason">The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="wlm" kind="variety" selectable="true" alignment="exact" glottocode="midd1363" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">средњокимријски</name>
+    <name xml:lang="en" source="glottolog-5.3">Middle Welsh</name>
+    <name xml:lang="de" source="raskovnik-review">Mittelwalisisch</name>
+    <note type="reviewReason">The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="xbo" kind="language" selectable="true" alignment="exact" glottocode="bolg1250" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">протобугарски</name>
+    <name xml:lang="en" source="glottolog-5.3">Bolgarian</name>
+    <name xml:lang="de" source="raskovnik-review">Bolgarisch</name>
+    <note type="reviewReason">The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="xco" kind="language" selectable="true" alignment="exact" glottocode="khwa1238" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">хорезмијски</name>
+    <name xml:lang="en" source="glottolog-5.3">Khwarezmian</name>
+    <name xml:lang="de" source="raskovnik-review">Choresmisch</name>
+    <note type="reviewReason">The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="xpg" kind="language" selectable="true" alignment="exact" glottocode="phry1239" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">фригијски</name>
+    <name xml:lang="en" source="glottolog-5.3">Phrygian</name>
+    <name xml:lang="de" source="raskovnik-review">Phrygisch</name>
+    <note type="reviewReason">The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="xpr" kind="language" selectable="true" alignment="exact" glottocode="part1239" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">парћански</name>
+    <name xml:lang="en" source="glottolog-5.3">Parthian</name>
+    <name xml:lang="de" source="raskovnik-review">Parthisch</name>
+    <note type="reviewReason">The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="xum" kind="language" selectable="true" alignment="exact" glottocode="umbr1253" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">умбријски</name>
+    <name xml:lang="en" source="glottolog-5.3">Umbrian</name>
+    <name xml:lang="de" source="raskovnik-review">Umbrisch</name>
+    <note type="reviewReason">The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
+  <node ident="xve" kind="language" selectable="true" alignment="exact" glottocode="vene1257" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="persj-conversion-catalog">венетски</name>
+    <name xml:lang="en" source="glottolog-5.3">Venetic</name>
+    <name xml:lang="de" source="raskovnik-review">Venetisch</name>
+    <note type="reviewReason">The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+  </node>
   <node ident="sla" kind="family" selectable="true" alignment="exact" glottocode="slav1255" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
     <name xml:lang="sr" source="raskovnik-review">словенски језици</name>
     <name xml:lang="en" source="glottolog-5.3">Slavic</name>

@@ -82,7 +82,14 @@
       "reviewReasons": []
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "hbo",
       "glottocode": "anci1244",
       "level": "language",
@@ -213,7 +220,14 @@
       ]
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "xbo",
       "glottocode": "bolg1250",
       "level": "language",
@@ -401,7 +415,14 @@
       "reviewReasons": []
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "ckm",
       "glottocode": "chak1265",
       "level": "dialect",
@@ -539,7 +560,14 @@
       ]
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "dlm",
       "glottocode": "dalm1243",
       "level": "language",
@@ -768,7 +796,14 @@
       "reviewReasons": []
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "frk",
       "glottocode": "fran1264",
       "level": "dialect",
@@ -1123,7 +1158,14 @@
       "reviewReasons": []
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "ruo",
       "glottocode": "istr1245",
       "level": "language",
@@ -1241,7 +1283,14 @@
       "reviewReasons": []
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "xco",
       "glottocode": "khwa1238",
       "level": "language",
@@ -1467,7 +1516,14 @@
       ]
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "ruq",
       "glottocode": "megl1237",
       "level": "language",
@@ -1487,7 +1543,14 @@
       ]
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "gml",
       "glottocode": "midd1318",
       "level": "language",
@@ -1576,7 +1639,14 @@
       "reviewReasons": []
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "wlm",
       "glottocode": "midd1363",
       "level": "dialect",
@@ -1680,7 +1750,14 @@
       ]
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "gmy",
       "glottocode": "myce1241",
       "level": "language",
@@ -2048,7 +2125,14 @@
       "reviewReasons": []
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "ofs",
       "glottocode": "oldf1241",
       "level": "language",
@@ -2124,7 +2208,14 @@
       "reviewReasons": []
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "otk",
       "glottocode": "oldt1247",
       "level": "language",
@@ -2142,7 +2233,14 @@
       "reviewReasons": []
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "osc",
       "glottocode": "osca1245",
       "level": "language",
@@ -2191,7 +2289,14 @@
       "reviewReasons": []
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "xpr",
       "glottocode": "part1239",
       "level": "language",
@@ -2211,7 +2316,14 @@
       ]
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "xpg",
       "glottocode": "phry1239",
       "level": "language",
@@ -2231,7 +2343,14 @@
       ]
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "pox",
       "glottocode": "pola1255",
       "level": "language",
@@ -2407,7 +2526,14 @@
       ]
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "sgh",
       "glottocode": "shug1248",
       "level": "language",
@@ -2652,7 +2778,14 @@
       "reviewReasons": []
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "swg",
       "glottocode": "swab1242",
       "level": "language",
@@ -2755,7 +2888,14 @@
       ]
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "xum",
       "glottocode": "umbr1253",
       "level": "language",
@@ -2815,7 +2955,14 @@
       ]
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "vsn",
       "glottocode": "vedi1234",
       "level": "dialect",
@@ -2833,7 +2980,14 @@
       "reviewReasons": []
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "xve",
       "glottocode": "vene1257",
       "level": "language",
@@ -2851,7 +3005,14 @@
       "reviewReasons": []
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "wbl",
       "glottocode": "wakh1245",
       "level": "language",
@@ -4649,7 +4810,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "chak1265",
         "latitude": null,
@@ -4676,7 +4844,7 @@
       },
       "kindCandidate": "variety",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -4731,7 +4899,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Čakavisch",
         "en": "Chakavski",
         "sr": "чакавски"
       },
@@ -6557,7 +6725,14 @@
       "status": "private"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "dalm1243",
         "latitude": 42.7095,
@@ -6584,7 +6759,7 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -6657,7 +6832,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Dalmatisch",
         "en": "Dalmatian",
         "sr": "далматоромански"
       },
@@ -7991,7 +8166,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "fran1264",
         "latitude": 52.896,
@@ -8018,7 +8200,7 @@
       },
       "kindCandidate": "variety",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -8073,7 +8255,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Altfränkisch",
         "en": "Old Frankish",
         "sr": "франачки"
       },
@@ -8772,7 +8954,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "midd1318",
         "latitude": 53.14,
@@ -8799,7 +8988,7 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -8860,7 +9049,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Mittelniederdeutsch",
         "en": "Middle Low German",
         "sr": "средњодоњонемачки"
       },
@@ -9027,7 +9216,14 @@
       "status": "private"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "myce1241",
         "latitude": 37.73,
@@ -9054,7 +9250,7 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -9097,7 +9293,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Mykenisches Griechisch",
         "en": "Achaean Greek",
         "sr": "микенски"
       },
@@ -9952,7 +10148,14 @@
       "status": "private"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "anci1244",
         "latitude": 31.7761,
@@ -9979,7 +10182,7 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -10034,7 +10237,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Bibelhebräisch",
         "en": "Ancient Hebrew",
         "sr": "старохебрејски"
       },
@@ -14671,7 +14874,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "oldf1241",
         "latitude": 53.35,
@@ -14698,7 +14908,7 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -14759,7 +14969,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Altfriesisch",
         "en": "Old Frisian",
         "sr": "старофризијски"
       },
@@ -14978,7 +15188,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "osca1245",
         "latitude": 40.98,
@@ -15005,7 +15222,7 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -15042,7 +15259,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Oskisch",
         "en": "Oscan",
         "sr": "осачки"
       },
@@ -15295,7 +15512,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "oldt1247",
         "latitude": 37.0,
@@ -15322,7 +15546,7 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -15341,7 +15565,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Alttürkisch",
         "en": "Old Turkish",
         "sr": "старотурски"
       },
@@ -15948,7 +16172,14 @@
       "status": "private"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "pola1255",
         "latitude": 52.0,
@@ -15975,7 +16206,7 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -16024,7 +16255,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Polabisch",
         "en": "Polabian",
         "sr": "полапски"
       },
@@ -16942,7 +17173,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "istr1245",
         "latitude": 45.433,
@@ -16969,7 +17207,7 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -17036,7 +17274,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Istrorumänisch",
         "en": "Istro-Romanian",
         "sr": "истроромански"
       },
@@ -17156,7 +17394,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "megl1237",
         "latitude": 41.1174,
@@ -17183,7 +17428,7 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -17256,7 +17501,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Meglenorumänisch",
         "en": "Megleno-Romanian",
         "sr": "мегленорумунски"
       },
@@ -17351,7 +17596,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "shug1248",
         "latitude": 37.5018,
@@ -17378,7 +17630,7 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -17439,7 +17691,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Shughni",
         "en": "Shughni",
         "sr": "шугнански"
       },
@@ -19947,7 +20199,14 @@
       "status": "private"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "swab1242",
         "latitude": 48.386796,
@@ -19974,7 +20233,7 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -20053,7 +20312,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Schwäbisch",
         "en": "Swabian",
         "sr": "швапски"
       },
@@ -21105,7 +21364,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "vedi1234",
         "latitude": null,
@@ -21132,7 +21398,7 @@
       },
       "kindCandidate": "variety",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -21175,7 +21441,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Vedisch",
         "en": "Vedic Sanskrit",
         "sr": "ведски"
       },
@@ -21191,7 +21457,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "wakh1245",
         "latitude": 37.1768,
@@ -21218,7 +21491,7 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -21267,7 +21540,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Wakhi",
         "en": "Wakhi",
         "sr": "вахански"
       },
@@ -21445,7 +21718,14 @@
       "status": "private"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "midd1363",
         "latitude": null,
@@ -21472,7 +21752,7 @@
       },
       "kindCandidate": "variety",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -21539,7 +21819,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Mittelwalisisch",
         "en": "Middle Welsh",
         "sr": "средњокимријски"
       },
@@ -21762,7 +22042,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "bolg1250",
         "latitude": 48.671481,
@@ -21789,7 +22076,7 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -21814,7 +22101,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Bolgarisch",
         "en": "Bolgarian",
         "sr": "протобугарски"
       },
@@ -21832,7 +22119,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "khwa1238",
         "latitude": 41.68,
@@ -21859,7 +22153,7 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -21920,7 +22214,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Choresmisch",
         "en": "Khwarezmian",
         "sr": "хорезмијски"
       },
@@ -21936,7 +22230,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "phry1239",
         "latitude": 39.613,
@@ -21963,7 +22264,7 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -21994,7 +22295,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Phrygisch",
         "en": "Phrygian",
         "sr": "фригијски"
       },
@@ -22010,7 +22311,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "part1239",
         "latitude": 37.052,
@@ -22037,7 +22345,7 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -22098,7 +22406,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Parthisch",
         "en": "Parthian",
         "sr": "парћански"
       },
@@ -22158,7 +22466,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "umbr1253",
         "latitude": 42.75,
@@ -22185,7 +22500,7 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -22222,7 +22537,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Umbrisch",
         "en": "Umbrian",
         "sr": "умбријски"
       },
@@ -22239,7 +22554,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "vene1257",
         "latitude": 45.601,
@@ -22266,7 +22588,7 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
         "sr": "persj-conversion-catalog"
       },
@@ -22297,7 +22619,7 @@
         }
       ],
       "preferredLabels": {
-        "de": null,
+        "de": "Venetisch",
         "en": "Venetic",
         "sr": "венетски"
       },
@@ -22779,7 +23101,7 @@
     "ambiguousCollectionMappings": 0,
     "ancestorExceptions": 155,
     "ancestorNodes": 294,
-    "profileExceptions": 124,
+    "profileExceptions": 101,
     "sourceRecords": 310,
     "tagProfiles": 212
   }

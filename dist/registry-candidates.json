@@ -2023,7 +2023,14 @@
       ]
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The systematic historical name is preferred while the catalog source records preserve англосаксонски as a searchable synonym."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "ang",
       "glottocode": "olde1238",
       "level": "language",
@@ -3489,7 +3496,14 @@
       "status": "registered"
     },
     {
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "The systematic historical name is preferred while the catalog source records preserve англосаксонски as a searchable synonym."
+        ],
+        "reviewedBy": "raskovnik-design-2026-08-31",
+        "reviewedOn": "2026-08-31",
+        "status": "approved"
+      },
       "glottolog": {
         "glottocode": "olde1238",
         "latitude": 51.06,
@@ -3516,9 +3530,9 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
-        "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "de": "cldr-48.2",
+        "en": "raskovnik-review",
+        "sr": "raskovnik-review"
       },
       "lineage": [
         {
@@ -3578,7 +3592,7 @@
       ],
       "preferredLabels": {
         "de": "Altenglisch",
-        "en": "Old English (ca. 450-1100)",
+        "en": "Old English",
         "sr": "староенглески"
       },
       "reviewReasons": [
@@ -22737,7 +22751,7 @@
     "ambiguousCollectionMappings": 0,
     "ancestorExceptions": 155,
     "ancestorNodes": 294,
-    "profileExceptions": 129,
+    "profileExceptions": 128,
     "sourceRecords": 310,
     "tagProfiles": 212
   }

@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import csv
 import sys
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 
@@ -63,6 +64,11 @@ def main() -> int:
     args = parser.parse_args()
     try:
         assert_release_ready(args.report)
+        if args.report == DEFAULT_REPORT:
+            root = ET.parse(ROOT / "registry/raskovnik-overrides.xml").getroot()
+            pending = [r.get("key") for r in root.findall("{https://raskovnik.org/ns/language-registry/overrides}reviewRecord") if r.get("status") == "pending"]
+            if pending:
+                raise EditorialGateError("unresolved imported decisions: " + ", ".join(pending))
     except (OSError, EditorialGateError) as exc:
         print(f"editorial release gate failed: {exc}", file=sys.stderr)
         return 1

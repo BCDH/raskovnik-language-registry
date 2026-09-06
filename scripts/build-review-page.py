@@ -19,7 +19,13 @@ def build(candidates, previous=None):
         text = previous.read_text()
         match = re.search(r'<script id="audit-data"[^>]*>(.*?)</script>', text, re.S)
         old = {r['recordType']+':'+r['id']: r for r in json.loads(match[1])}
+        previous_meta_match = re.search(r'<script id="review-meta"[^>]*>(.*?)</script>', text, re.S)
+        previous_meta = json.loads(previous_meta_match[1]) if previous_meta_match else {}
+
         legacy_hashes = re.findall(r"const sourceHash\s*=\s*['\"]([a-f0-9]{64})", text)
+        legacy_hashes.extend(previous_meta.get('legacySourceHashes', []))
+        if previous_meta.get('sourceHash'):
+            legacy_hashes.append(previous_meta['sourceHash'])
     evidence = {}
     commit = candidates['sources']['persjCommit']
     catalog = ROOT / 'upstream/persj' / commit[:7] / 'effective-language-catalog.xml'

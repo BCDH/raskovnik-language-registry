@@ -1,6 +1,7 @@
 PYTHON ?= python3
 JING ?= jing
 MVN ?= mvn
+BACKEND ?= ../../ttasovac/raskovnik-backend
 
 .PHONY: candidates check check-inputs editorial-gate package registry test validate-overrides
 
@@ -24,6 +25,7 @@ editorial-gate: check
 	$(PYTHON) scripts/check-editorial-gate.py
 
 registry: editorial-gate
+	$(PYTHON) scripts/assemble-registry-plan.py --backend $(BACKEND)
 	$(PYTHON) scripts/build-registry.py
 
 package: registry

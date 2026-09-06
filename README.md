@@ -32,7 +32,7 @@ make package
 
 `make editorial-gate` fails while any exception remains in `dist/editorial-review.tsv`. `make package` cannot run until that gate passes, so an incomplete or unreviewed classification cannot produce a release XAR.
 
-`make registry` runs the same gate, verifies the release plan against its four approval hashes and the pinned standards inputs, compiles deterministic `dist/registry.xml` and `dist/manifest.xml`, and validates the result against the pinned Lex-0 RNG, the Raskovnik Schematron, the manifest RNG, and native referential-integrity checks. `make package` depends on that complete registry build. The Maven `package` lifecycle independently invokes that same fail-closed compiler through a fixed `python3` command before XAR assembly and refuses to assemble an archive unless both validated distribution files exist. The production compiler intentionally checks the editorial queue before looking for `dist/effective-registry-plan.json`; at the current incomplete review stage it therefore fails on the 286 pending decisions and emits neither release artifact.
+`make registry BACKEND=/path/to/raskovnik-backend` runs the same gate, assembles the deterministic effective plan against verified backend resource hashes, verifies the release plan against its four approval hashes and the pinned standards inputs, compiles deterministic `dist/registry.xml` and `dist/manifest.xml`, and validates the result against the pinned Lex-0 RNG, the Raskovnik Schematron, the manifest RNG, and native referential-integrity checks. `make package` depends on that complete registry build. The Maven `package` lifecycle independently invokes that same fail-closed compiler through a fixed `python3` command before XAR assembly and refuses to assemble an archive unless both validated distribution files exist. The production compiler intentionally checks the editorial queue before looking for `dist/effective-registry-plan.json`; after the 2026-09-06 review import it fails on six explicit source/scope exceptions and emits neither release artifact. The 25 saved human decisions have already been imported; these exceptions are not requests to repeat that review.
 
 The compiler has a synthetic, fully approved test plan at `tests/fixtures/approved-registry-plan.json`. It exercises arbitrary display depth, a semantic language represented by `languageGrp`, an ordinary leaf, a registered-base private-use group, a group with direct and descendant tag profiles, exact-case mixed BCP 47 technical IDs, all three classification statuses, alternate lineage references, representative and missing locations, explicit null abbreviations, and compatibility hashes. Its `approval.mode` is `fixture`; the production CLI accepts only `release`, so the fixture cannot be packaged.
 
@@ -69,3 +69,21 @@ The package URI is `http://raskovnik.org/raskovnik-language-registry`; it depend
 ## Ossetian identity split (2026-09-06)
 
 The user-authorized source-label split reserves `os` for explicit Iron evidence and `ira-x-ossetic` for generic Ossetian. Candidate labels are иронски / Iron Ossetian / Iron-Ossetisch and осетски / Ossetian / Ossetisch. The Iron candidate retains the standards-derived `iron1242` and `Q2585922` proposal. The generic candidate retains pinned `Q33968` as review evidence, with no Glottolog equivalence or finer lineage asserted. German labels, the private-use profile, and unresolved identity questions remain blocked by the editorial gate; neither profile aliases the other. These candidate-only proposals do not modify the approved override ledger or import HTML-review decisions.
+
+
+## Completed review handoff (2026-09-06)
+
+The durable archive is `review/sessions/2026-09-06/`: the original user export is preserved byte-for-byte alongside the label-completed export, original audit rows, baseline candidates, report, and SHA-256 manifest. `registry/raskovnik-overrides.xml` contains the applied decisions and structured review records, including original values, notes, timestamps, and related identifiers. Supporting identifiers remain supporting evidence; they are not promoted to exact Glottolog or ISO identities. `review/import-report-20260906.json` records each import outcome. See `review/handoff-20260906.md` for the remaining exceptions and validation.
+
+```sh
+python3 scripts/import-review.py --dry-run --report /tmp/registry-import.json
+python3 scripts/import-review.py --apply --report review/import-report-20260906.json
+make candidates
+python3 scripts/import-review.py --check
+make check
+make package BACKEND=/path/to/raskovnik-backend
+```
+
+The importer validates archived hashes and source identity, preserves human decisions, records agent reviews under their actual reviewer, and installs the ledger atomically. Unknown identities, changed source snapshots, or changed nonblank user values fail validation. The default mode does not modify the ledger. A report can be written in any mode. Reapplying an unchanged session must produce the same ledger bytes. Do not edit immutable archived inputs to accommodate a later source migration; create a new reconciled session when the conversion catalogue changes.
+
+The production-plan assembler preserves the closed editorial gate and verifies exact dictionary compatibility hashes. It cannot create a production plan or package while the six exceptions remain. A regression test compiles only the approved subset in memory under fixture mode; that test is not a release and does not waive full-catalogue coverage.

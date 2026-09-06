@@ -629,7 +629,7 @@ def validate_plan(
                     raise RegistryBuildError(f"unknown or duplicate exact Glottocode {glottocode!r}")
                 seen_glottocodes.add(glottocode)
                 glottolog_iso = glottolog[glottocode].iso639_3
-                if glottolog_iso is not None and external.get("ISO639-3") != glottolog_iso:
+                if glottolog_iso in iso_by_id and external.get("ISO639-3") != glottolog_iso:
                     raise RegistryBuildError(f"node {identifier!r} has an incomplete Glottolog/ISO exact inventory")
             iso3 = external.get("ISO639-3")
             if iso3 is not None:
@@ -661,26 +661,28 @@ def validate_plan(
                 glottolog_item = wikidata_by_glottocode.get(glottocode) if glottocode else None
                 iso_item = wikidata_by_iso.get(iso3) if iso3 else None
                 ietf_item = wikidata_by_ietf.get(identifier.casefold())
-                expected_qids = {
-                    item.qid for item in (glottolog_item, iso_item, ietf_item) if item is not None
-                }
+                # An exact Glottolog node disambiguates a broader Wikidata
+                # IETF/ISO item (notably Iron versus generic Ossetian).
+                expected_qids = ({glottolog_item.qid} if glottolog_item is not None else {
+                    item.qid for item in (iso_item, ietf_item) if item is not None
+                })
                 if len(expected_qids) > 1 or (
                     expected_qids and wikidata_qid not in expected_qids
                 ):
                     raise RegistryBuildError(
                         f"node {identifier!r} has a conflicting or unsupported Wikidata assignment"
                     )
-                if wikidata_item.ietf_tags and identifier.casefold() not in {
+                if wikidata_item.ietf_tags and "-x-" not in identifier and identifier.casefold() not in {
                     value.casefold() for value in wikidata_item.ietf_tags
                 }:
                     raise RegistryBuildError(
                         f"node {identifier!r} conflicts with its Wikidata IETF language-tag claim"
                     )
-                if wikidata_item.glottocodes and glottocode not in wikidata_item.glottocodes:
+                if glottocode and wikidata_item.glottocodes and glottocode not in wikidata_item.glottocodes:
                     raise RegistryBuildError(
                         f"node {identifier!r} conflicts with its Wikidata Glottolog claim"
                     )
-                if wikidata_item.iso639_3 and iso3 not in wikidata_item.iso639_3:
+                if iso3 and wikidata_item.iso639_3 and iso3 not in wikidata_item.iso639_3:
                     raise RegistryBuildError(
                         f"node {identifier!r} conflicts with its Wikidata ISO 639-3 claim"
                     )
@@ -1352,7 +1354,7 @@ def build_artifacts(
         root / "upstream/iso-639-3/2026-07-22/iso-639-3.tab"
     )
     wikidata, wikidata_by_glottocode, wikidata_by_iso, wikidata_by_ietf = parse_wikidata_evidence(
-        root / "upstream/wikidata/2026-09-01/language-items.json"
+        root / "upstream/wikidata/2026-09-06/language-items.json"
     )
     registry = xml_bytes(
         build_registry_tree(

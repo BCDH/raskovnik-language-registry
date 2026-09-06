@@ -189,6 +189,20 @@
           "sha256": "267c60bcef457c2d09593b297844009b1a6a53e54e183c97ce27a52a31a7643d"
         }
       ]
+    },
+    {
+      "id": "wikidata-review-2026-09-06",
+      "title": "Wikidata reviewed language-item evidence",
+      "version": "2026-09-06",
+      "revision": "per-item revision IDs and timestamps embedded in snapshot",
+      "url": "https://www.wikidata.org/",
+      "files": [
+        {
+          "path": "upstream/wikidata/2026-09-06/language-items.json",
+          "bytes": 112170,
+          "sha256": "56546a41ce78a7dca352f6ecac45f0cf93db1581d3c88ad38235021d2a23b85d"
+        }
+      ]
     }
   ]
 }

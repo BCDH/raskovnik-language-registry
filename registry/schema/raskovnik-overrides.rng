@@ -7,8 +7,21 @@
       <oneOrMore>
         <ref name="node"/>
       </oneOrMore>
+      <zeroOrMore><ref name="review-record"/></zeroOrMore>
     </element>
   </start>
+
+  <define name="review-record">
+    <element name="reviewRecord">
+      <attribute name="key"><text/></attribute>
+      <attribute name="status"><choice><value>applied</value><value>pending</value></choice></attribute>
+      <attribute name="source"><text/></attribute>
+      <attribute name="reviewer"><text/></attribute>
+      <attribute name="date"><data type="date"/></attribute>
+      <element name="payload"><text/></element>
+      <element name="rationale"><text/></element>
+    </element>
+  </define>
 
   <define name="node">
     <element name="node">
@@ -27,7 +40,7 @@
       <attribute name="selectable"><choice><value>true</value><value>false</value></choice></attribute>
       <attribute name="alignment"><choice><value>exact</value><value>broader</value><value>none</value></choice></attribute>
       <optional><attribute name="glottocode"><data type="string"><param name="pattern">[a-z0-9]{8}</param></data></attribute></optional>
-      <optional><attribute name="wikidata"><data type="string"><param name="pattern">Q[1-9][0-9]*</param></data></attribute></optional>
+      <optional><attribute name="wikidata"><choice><value></value><data type="string"><param name="pattern">Q[1-9][0-9]*</param></data></choice></attribute></optional>
       <attribute name="reviewStatus"><choice><value>approved</value><value>pending</value></choice></attribute>
       <attribute name="reviewedBy"><data type="token"/></attribute>
       <attribute name="reviewedOn"><data type="date"/></attribute>

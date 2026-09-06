@@ -25,7 +25,7 @@ class GenerateCandidatesTest(unittest.TestCase):
         cls.data = MODULE.build_candidates()
         cls.profiles = {row["id"]: row for row in cls.data["profiles"]}
 
-    def test_ossetian_split_stays_distinct_and_pending(self) -> None:
+    def test_ossetian_split_preserves_imported_review(self) -> None:
         iron = self.profiles["os"]
         generic = self.profiles["ira-x-ossetic"]
         self.assertEqual(["иронски"], iron["serbianCandidates"])
@@ -35,14 +35,13 @@ class GenerateCandidatesTest(unittest.TestCase):
         self.assertEqual(["осетски"], generic["serbianCandidates"])
         self.assertEqual("Ossetian", generic["preferredLabels"]["en"])
         self.assertEqual("Q33968", generic["wikidataQidCandidate"])
-        self.assertIsNone(generic["glottolog"])
-        self.assertEqual([], generic["lineage"])
+        self.assertEqual("broader", generic["glottolog"]["relationship"])
+        self.assertEqual("osse1245", generic["glottolog"]["glottocode"])
         for profile in [iron, generic]:
-            self.assertIsNone(profile["approval"])
-            self.assertIn("non-cldr-german-label", profile["reviewReasons"])
+            self.assertEqual("approved", profile["approval"]["status"])
+            self.assertEqual("ttasovac", profile["approval"]["reviewedBy"])
             self.assertEqual({"sr": [], "en": [], "de": []}, profile["aliasCandidates"])
         self.assertIn("private-use-code", generic["reviewReasons"])
-        self.assertIn("wikidata-scope-review", generic["reviewReasons"])
 
     def test_inventory_is_complete(self) -> None:
         self.assertEqual(214, self.data["summary"]["tagProfiles"])

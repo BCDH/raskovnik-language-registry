@@ -1,5 +1,4 @@
 {
-  "schemaVersion": "raskovnik-registry-source-publication-metadata-v1",
   "projectSources": [
     {
       "attribution": "Reviewed Raskovnik language-registry editorial decisions.",
@@ -11,6 +10,7 @@
       "url": "https://github.com/BCDH/raskovnik-language-registry"
     }
   ],
+  "schemaVersion": "raskovnik-registry-source-publication-metadata-v1",
   "upstreamSources": [
     {
       "attribution": "Unicode Common Locale Data Repository 48.2.",
@@ -95,6 +95,13 @@
       "licenceName": null,
       "licenceUrl": null,
       "manifestId": "src-persj-catalog-79c6c8e"
+    },
+    {
+      "attribution": "Wikidata reviewed language items, with individual revision IDs and timestamps; snapshot assembled 2026-09-06.",
+      "id": "wikidata-review-2026-09-06",
+      "licenceName": "CC0-1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "manifestId": "src-wikidata-2026-09-06"
     }
   ]
 }

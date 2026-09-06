@@ -28,7 +28,7 @@ class ReviewPageTests(unittest.TestCase):
         self.assertEqual(generic['proposedWikidataQid'], 'Q33968')
         self.assertEqual(generic['legacyReviewKeys'], ['tag-profile:os'])
         for row in (iron, generic):
-            self.assertEqual(row['approval'], 'PENDING')
+            self.assertEqual(row['approval'], 'APPROVED')
             self.assertEqual(row['legacyProposal']['proposedLabelEn'], 'Old combined identity')
 
     def test_complete_snapshot_and_missing_labels(self):
@@ -37,6 +37,15 @@ class ReviewPageTests(unittest.TestCase):
         row = next(r for r in rows if r['id']=='afro1255')
         self.assertEqual(row['proposedLabelDe'],'')
         self.assertIn('missing-label-de',row['remainingReviewReasons'])
+
+    def test_previous_embedded_source_hash_is_migratable(self):
+        rows, _ = module.build(self.candidates)
+        with tempfile.TemporaryDirectory() as d:
+            previous=Path(d)/'previous.html'
+            previous.write_text('<script id="audit-data" type="application/json">'+json.dumps(rows)+'</script><script id="review-meta" type="application/json">'+json.dumps({'sourceHash':'a'*64,'legacySourceHashes':['b'*64]})+'</script>')
+            _,meta=module.build(self.candidates,previous)
+        self.assertIn('a'*64,meta['legacySourceHashes'])
+        self.assertIn('b'*64,meta['legacySourceHashes'])
 
     def test_snapshot_change_changes_storage_identity(self):
         _, before = module.build(self.candidates)

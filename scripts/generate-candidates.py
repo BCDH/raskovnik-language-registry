@@ -182,6 +182,7 @@ def validate_reviewed_wikidata_assignment(
     items: dict[str, object],
     alignment: GlottologRecord | None,
     iso: Iso6393Record | None,
+    relationship: str = "exact",
 ) -> object:
     """Resolve a reviewed semantic QID and reject every structured-claim conflict."""
     item = items.get(qid)
@@ -189,19 +190,27 @@ def validate_reviewed_wikidata_assignment(
         raise RuntimeError(
             f"reviewed Wikidata assignment {qid!r} for {ident!r} is absent from the pinned evidence snapshot"
         )
-    if item.ietf_tags and ident.casefold() not in {
+    private = "-x-" in ident
+    exact_bridge = alignment is not None and alignment.glottocode in item.glottocodes
+    if item.ietf_tags and not private and ident.casefold() not in {
         value.casefold() for value in item.ietf_tags
     }:
         raise RuntimeError(
             f"reviewed Wikidata assignment {qid!r} conflicts with tag {ident!r}"
         )
+    alignment_codes = set(item.glottocodes)
+    if relationship == "broader":
+        records, _ = parse_glottolog(ROOT / "upstream/glottolog/5.3/languoid.csv")
+        for code in item.glottocodes:
+            if code in records:
+                alignment_codes.update(n.glottocode for n in glottolog_lineage(records[code], records))
     if item.glottocodes and (
-        alignment is None or alignment.glottocode not in item.glottocodes
+        alignment is None or alignment.glottocode not in alignment_codes
     ):
         raise RuntimeError(
             f"reviewed Wikidata assignment {qid!r} conflicts with the Glottolog alignment for {ident!r}"
         )
-    if item.iso639_3 and (
+    if item.iso639_3 and "-" not in ident and (
         iso is None or iso.identifier not in item.iso639_3
     ):
         raise RuntimeError(
@@ -223,7 +232,7 @@ def build_candidates() -> dict[str, object]:
         ROOT / "upstream/glottolog/5.3/languoid.csv"
     )
     wikidata, wikidata_by_glottocode, wikidata_by_iso, wikidata_by_ietf = parse_wikidata_evidence(
-        ROOT / "upstream/wikidata/2026-09-01/language-items.json"
+        ROOT / "upstream/wikidata/2026-09-06/language-items.json"
     )
     cldr_languages, cldr_territories, cldr_variants = parse_cldr_german(
         ROOT / "upstream/cldr/48.2/de.xml"
@@ -312,6 +321,8 @@ def build_candidates() -> dict[str, object]:
                     f"{wikidata_item.qid} and {iso_item.qid}"
                 )
             wikidata_item = wikidata_item or iso_item
+        if override is not None and override.wikidata_explicit:
+            wikidata_item = None
         if override is not None and override.wikidata is not None:
             reviewed_item = validate_reviewed_wikidata_assignment(
                 ident=tag,
@@ -319,6 +330,7 @@ def build_candidates() -> dict[str, object]:
                 items=wikidata,
                 alignment=exact_glottolog or broader_glottolog,
                 iso=iso,
+                relationship=override.alignment,
             )
             if wikidata_item is not None and wikidata_item.qid != reviewed_item.qid:
                 raise RuntimeError(
@@ -326,6 +338,9 @@ def build_candidates() -> dict[str, object]:
                     f"{override.wikidata} and {wikidata_item.qid}"
                 )
             wikidata_item = reviewed_item
+        if (override is None or not override.wikidata_explicit) and exact_glottolog is not None and wikidata_item is not None and wikidata_item.glottocodes and exact_glottolog.glottocode not in wikidata_item.glottocodes:
+            # A broader Wikidata claim is not an exact identity for the ISO-linked node.
+            wikidata_item = None
         german, german_source = german_candidate(
             tag, cldr_languages, cldr_territories, cldr_variants
         )
@@ -417,11 +432,11 @@ def build_candidates() -> dict[str, object]:
             row["parentCandidate"] = override.parent
             row["selectableCandidate"] = override.selectable
             row["preferredLabels"] = {
-                language: override.names[language].value
+                language: override.names[language].value or None
                 for language in ("sr", "en", "de")
             }
             row["labelProvenance"] = {
-                language: override.names[language].source
+                language: override.names[language].source if override.names[language].value else None
                 for language in ("sr", "en", "de")
             }
             row["aliasCandidates"] = {
@@ -456,6 +471,9 @@ def build_candidates() -> dict[str, object]:
                 row["wikidataQidCandidate"] = "Q33968"
                 row["reviewReasons"] = sorted(set(row["reviewReasons"]) | {"wikidata-scope-review", "lineage-review-required"})
                 row["reviewReasons"].remove("english-label-required")
+        if exact_glottolog is not None and exact_glottolog.iso639_3 in iso_by_id and tag == primary and iso is not None and iso.identifier != exact_glottolog.iso639_3:
+            row["reviewReasons"] = sorted(set(row["reviewReasons"]) | {"exact-iso-scope-mismatch"})
+            row["approval"] = None
         profile_rows.append(row)
 
     reverse_collection_map = {
@@ -528,12 +546,12 @@ def build_candidates() -> dict[str, object]:
                     if ancestor_iso is not None and code == ancestor_primary
                     else None
                 ),
-                "kindCandidate": override.kind if override is not None else record.level,
+                "kindCandidate": override.kind if override is not None else "variety" if record.level == "dialect" else record.level,
                 "parentCandidate": override.parent if override is not None else None,
                 "selectableCandidate": override.selectable if override is not None else False,
                 "preferredLabels": (
                     {
-                        language: override.names[language].value
+                        language: override.names[language].value or None
                         for language in ("sr", "en", "de")
                     }
                     if override is not None
@@ -541,7 +559,7 @@ def build_candidates() -> dict[str, object]:
                 ),
                 "labelProvenance": (
                     {
-                        language: override.names[language].source
+                        language: override.names[language].source if override.names[language].value else None
                         for language in ("sr", "en", "de")
                     }
                     if override is not None
@@ -590,8 +608,17 @@ def build_candidates() -> dict[str, object]:
                     f"Glottolog claim {automatic_item.qid}"
                 )
             ancestor["wikidataQidCandidate"] = reviewed_item.qid
-        elif automatic_item is not None:
+        elif automatic_item is not None and not (override and override.wikidata_explicit):
             ancestor["wikidataQidCandidate"] = automatic_item.qid
+
+    profile_qids = {p["wikidataQidCandidate"]: p["id"] for p in profile_rows if p["wikidataQidCandidate"]}
+    for ancestor in ancestor_rows:
+        qid = ancestor["wikidataQidCandidate"]
+        if qid in profile_qids and profile_qids[qid] != ancestor["canonicalCodeCandidate"]:
+            ancestor["wikidataQidCandidate"] = None
+        exact_iso = iso_by_id.get(glottolog[ancestor["glottocode"]].iso639_3)
+        if exact_iso is not None:
+            ancestor["iso639"] = {"part3":exact_iso.identifier,"part2B":exact_iso.part2b,"part2T":exact_iso.part2t,"part1":exact_iso.part1}
 
     return {
         "schema": "language-registry-candidates-v1",

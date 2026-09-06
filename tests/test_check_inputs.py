@@ -59,9 +59,9 @@ class CheckInputsTest(unittest.TestCase):
 
     def test_repository_manifest_verifies_all_pinned_inputs(self) -> None:
         result = verify_inputs(REPOSITORY_ROOT / "upstream" / "sources.json", REPOSITORY_ROOT)
-        self.assertEqual(12, result.source_count)
-        self.assertEqual(16, result.file_count)
-        self.assertEqual(6388239, result.total_bytes)
+        self.assertEqual(13, result.source_count)
+        self.assertEqual(17, result.file_count)
+        self.assertEqual(6500409, result.total_bytes)
 
     def test_valid_fixture_is_accepted(self) -> None:
         temporary, root, manifest = self._fixture()

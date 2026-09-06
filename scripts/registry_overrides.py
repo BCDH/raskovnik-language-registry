@@ -53,6 +53,7 @@ class ReviewedNode:
     alignment: str
     glottocode: str | None
     wikidata: str | None
+    wikidata_explicit: bool
     review_status: str
     reviewed_by: str
     reviewed_on: str
@@ -87,7 +88,7 @@ def parse_overrides(path: Path, *, require_approved: bool = True) -> RegistryOve
         selectable_text = node.get("selectable", "")
         alignment = node.get("alignment", "")
         glottocode = node.get("glottocode")
-        wikidata = node.get("wikidata")
+        wikidata = node.get("wikidata") or None
         review_status = node.get("reviewStatus", "")
         reviewed_by = normalized(node.get("reviewedBy", ""))
         reviewed_on = node.get("reviewedOn", "")
@@ -116,7 +117,7 @@ def parse_overrides(path: Path, *, require_approved: bool = True) -> RegistryOve
             language = name_node.get(f"{{{XML_NS}}}lang", "")
             source = name_node.get("source", "")
             value = normalized(name_node.text or "")
-            if language not in {"sr", "en", "de"} or language in names or not value:
+            if language not in {"sr", "en", "de"} or language in names or (not value and (selectable_text == "true" or language == "en")):
                 raise RegistryOverrideError(f"invalid preferred name for {ident!r}")
             if source not in LABEL_SOURCES:
                 raise RegistryOverrideError(f"invalid name provenance for {ident!r}")
@@ -154,6 +155,7 @@ def parse_overrides(path: Path, *, require_approved: bool = True) -> RegistryOve
             alignment,
             glottocode,
             wikidata,
+            "wikidata" in node.attrib,
             review_status,
             reviewed_by,
             reviewed_on,

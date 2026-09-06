@@ -21,3 +21,8 @@ Unmatched records remain in the JSON backup. Export review JSON regularly; TSV i
 Pass `--review-json /path/to/language-registry-review-current.json` to seed a page from the user's exported decisions and complete blank Serbian/German labels using `review/label-supplements-20260906.json`. The additions are review-only: descriptive ancestor translations are identified as such, and attested labels carry their source. The generator preserves nonblank user labels and every non-label decision field; no registry ledger approvals are created. The supplied JSON is read-only. An existing output's embedded decision seed is retained when the option is omitted on regeneration. Newer local edits override the embedded seed; older equal-timestamp copies cannot erase a completed blank label.
 
 The label-completion exception report covers Bookkeeping and the two Shifted Romance nodes. They remain in their existing queues. PB and PBS are retained as distinct untranslated suffixes, and Nuclear/Core use distinct descriptive labels. Each generated HTML row exposes provenance for its added labels; exported JSON includes the additions separately from human decisions.
+
+
+## Durable imported decisions
+
+The completed 2026-09-06 review is archived under `sessions/2026-09-06/` and imported into the registry ledger. Run `python3 scripts/import-review.py --check` from the repository root to verify reproducibility. The remaining release exceptions are listed in `handoff-20260906.md`; the historical page queues are retained for continuity and are not the publication gate. Page regeneration preserves both the embedded decision seed and the preceding page's browser-storage source hash so newer local edits remain discoverable.

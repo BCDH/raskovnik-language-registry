@@ -1,0 +1,19 @@
+{
+  "files": {
+    "audit-rows.json": "d1c9413a5e7b8551aed0146c074a026859cdb8ecb94d646efb04eeee2df60bf5",
+    "baseline-candidates.json": "773497e2eb1fd9bb8aeb8afd847d320c04d477aebc2d5fd7ccf5f01a502825ed",
+    "label-completion-report.md": "3d08dc4e247cf4a63719e888c7ac336050b49cee63dcec4d841dd2cef4f0fcf5",
+    "labels-completed.json": "ae08521bd993c7cb876d9209762fc0fc969b1ef77ffa08db9ce9c2a82c59634b",
+    "user-review.json": "51eca5d818269765f1c7f6578bf3dd0be9fbc59f0a120a6553eac9448fdfd9df"
+  },
+  "proposalHash": "fbf78070ff75432e3ddbf524176764bed3fb38732731321b996336cdd217a166",
+  "schema": "raskovnik-review-session-v1",
+  "sourceHash": "de5f499fcd3ce0f0e02a08241c42d9927bbe62008708c976d84991098a0e2fef",
+  "sources": {
+    "cldrVersion": "48.2",
+    "glottologVersion": "5.3",
+    "ianaFileDate": "2026-08-08",
+    "iso6393Snapshot": "2026-07-22",
+    "persjCommit": "b94d7b2c57a3133b43522efd20c99f8cb2feb8fd"
+  }
+}

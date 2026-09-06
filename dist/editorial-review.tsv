@@ -1,7 +1,21 @@
 recordType	id	kind	parentOrLineage	labelSr	labelEn	labelDe	externalAlignment	reviewReasons	approval
-tag-profile	cel-x-gaulish	variety	Indo-European > Classical Indo-European > Celtic	галски			broader:celt1248	collection-classification,english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
-tag-profile	et	language	Uralic > Finnic > Coastal Finnic > Neva > Central Finnic > Estonian	естонски	Estonian	Estnisch	exact:esto1258	exact-iso-scope-mismatch	PENDING
-tag-profile	ga-x-old	historical-stage	Indo-European > Classical Indo-European > Celtic > Nuclear Celtic > Core Celtic > Insular Celtic > Goidelic > Modern Goidelic > Irish	староирски	Old Irish		broader:iris1253	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
-tag-profile	hr-x-kajkav	variety	Indo-European > Classical Indo-European > Balto-Slavic > Slavic > South Slavic > Western South Slavic > Serbian-Croatian-Bosnian > Shtokavski > New Shtokavian > Eastern Herzegovinian Shtokavian > Croatian Standard	кајкавски			broader:croa1245	english-label-required,no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
-tag-profile	lt-x-old	historical-stage	Indo-European > Classical Indo-European > Balto-Slavic > Eastern Baltic > Lithuanian	старолитвански	Old Lithuanian		broader:lith1251	no-exact-glottolog-alignment,non-cldr-german-label,private-use-code	PENDING
-tag-profile	vel	variety	Indo-European > Classical Indo-European > Germanic > Northwest Germanic > West Germanic > North Sea Germanic > Altsächsisch > Middle-Modern Low German > Low German > West Low German > Westphalic > Veluws	вељотски	Veluws		exact:velu1238	non-cldr-german-label	PENDING
+ancestor	afro1255	family			Afro-Asiatic		exact:afro1255	ancestor-review-required	PENDING
+ancestor	anci1249	language	nort3405		Ancient North Greek		exact:anci1249	ancestor-review-required	PENDING
+ancestor	arab1394	family	cent2236		Arabian		exact:arab1394	ancestor-review-required	PENDING
+ancestor	cont1249	family	tgbc1234		Continental Transalpine Celtic		exact:cont1249	ancestor-review-required	PENDING
+ancestor	east2805	family	germ1287		East Germanic		exact:east2805	ancestor-review-required	PENDING
+ancestor	egyp1245	family	afro1255		Egyptian		exact:egyp1245	ancestor-review-required	PENDING
+ancestor	fars1254	family	mode1259		Farsic-Caucasian Tat		exact:fars1254	ancestor-review-required	PENDING
+ancestor	gree1276	family	grae1234		Greek		exact:gree1276	ancestor-review-required	PENDING
+ancestor	luvi1234	family	luvo1235		Luvic		exact:luvi1234	ancestor-review-required	PENDING
+ancestor	luvo1234	family	anat1257		Luvo-Lydian		exact:luvo1234	ancestor-review-required	PENDING
+ancestor	luvo1235	family	luvo1234		Luvo-Palaic		exact:luvo1235	ancestor-review-required	PENDING
+ancestor	mode1259	family	midd1352		Modern Southwestern Iranian		exact:mode1259	ancestor-review-required	PENDING
+ancestor	nort3405	family	gree1276		North Greek		exact:nort3405	ancestor-review-required	PENDING
+ancestor	oldc1252	language	sout3176		Old South-West British		exact:oldc1252	ancestor-review-required	PENDING
+ancestor	oldw1239	language	oldm1247		Old-Middle Welsh		exact:oldw1239	ancestor-review-required	PENDING
+ancestor	semi1276	family	afro1255		Semitic		exact:semi1276	ancestor-review-required	PENDING
+ancestor	sout2612	dialect	occi1239		Southern Occitan		exact:sout2612	ancestor-review-required	PENDING
+ancestor	ural1272	family			Uralic		exact:ural1272	ancestor-review-required	PENDING
+ancestor	west2793	family	nort3152		West Germanic		exact:west2793	ancestor-review-required	PENDING
+ancestor	west2995	dialect	anci1249		West Ancient Greek		exact:west2995	ancestor-review-required	PENDING

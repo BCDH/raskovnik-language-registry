@@ -76,13 +76,21 @@ def build(candidates, previous=None):
             rows.append(row)
     if previous:
         current = {r['recordType']+':'+r['id']:r for r in rows}
+        resolution_path = ROOT/'review/sessions/2026-09-06-packaging/resolutions.json'
+        resolutions = json.loads(resolution_path.read_text()) if resolution_path.exists() else []
+        replacements = {key:'tag-profile:'+r['tag'] for r in resolutions for key in ('tag-profile:'+r['oldTag'], 'tag-profile:'+r['tag'])}
         # The audit is the review baseline, not a disposable rendering of raw candidates.
         rows = []
         for key, prior in old.items():
             if key == 'tag-profile:pl-x-karpat':
                 continue
             row = dict(prior)
-            if key == 'tag-profile:os':
+            if key in replacements:
+                row = dict(current[replacements[key]])
+                row['legacyProposal'] = prior.get('legacyProposal') or {k:v for k,v in prior.items() if k.startswith('proposed') or k=='auditRationale'}
+                row['auditRationale'] = next(r['rationale'] for r in resolutions if key in ('tag-profile:'+r['oldTag'], 'tag-profile:'+r['tag']))
+                row['policyResolutions'] = 'production-packaging-reconciliation-20260906'
+            elif key == 'tag-profile:os':
                 row = current[key]
             elif key == 'tag-profile:de-x-middle':
                 row['id'] = 'gmh'

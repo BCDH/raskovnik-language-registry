@@ -52,7 +52,7 @@
       "id": "persj-language-catalog",
       "licenceName": null,
       "licenceUrl": null,
-      "manifestId": "src-persj-catalog-b94d7b2"
+      "manifestId": "src-persj-catalog-a258c53"
     },
     {
       "attribution": "Archived count-free effective language-catalog export from the ISJ.PERSJ conversion, retained for provenance comparison.",
@@ -76,11 +76,11 @@
       "manifestId": "src-persj-catalog-670dac4"
     },
     {
-      "attribution": "Wikidata language-item evidence retrieved 2026-09-01; individual entity revision IDs and timestamps are embedded in the snapshot.",
-      "id": "wikidata",
-      "licenceName": "CC0-1.0",
-      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "manifestId": "src-wikidata-2026-09-01"
+      "attribution": "Archived count-free effective language-catalog export from the ISJ.PERSJ conversion, retained for provenance comparison.",
+      "id": "persj-language-catalog-79c6c8e",
+      "licenceName": null,
+      "licenceUrl": null,
+      "manifestId": "src-persj-catalog-79c6c8e"
     },
     {
       "attribution": "Archived count-free effective language-catalog export from the ISJ.PERSJ conversion, retained for provenance comparison.",
@@ -91,10 +91,17 @@
     },
     {
       "attribution": "Archived count-free effective language-catalog export from the ISJ.PERSJ conversion, retained for provenance comparison.",
-      "id": "persj-language-catalog-79c6c8e",
+      "id": "persj-language-catalog-b94d7b2",
       "licenceName": null,
       "licenceUrl": null,
-      "manifestId": "src-persj-catalog-79c6c8e"
+      "manifestId": "src-persj-catalog-b94d7b2"
+    },
+    {
+      "attribution": "Wikidata language-item evidence retrieved 2026-09-01; individual entity revision IDs and timestamps are embedded in the snapshot.",
+      "id": "wikidata",
+      "licenceName": "CC0-1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "manifestId": "src-wikidata-2026-09-01"
     },
     {
       "attribution": "Wikidata reviewed language items, with individual revision IDs and timestamps; snapshot assembled 2026-09-06.",

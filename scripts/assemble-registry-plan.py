@@ -11,7 +11,7 @@ import subprocess
 import sys
 import xml.etree.ElementTree as ET
 
-from registry_build import PLAN_SCHEMA, RegistryBuildError, build_artifacts, load_sources, plan_payload_sha256, validate_production_plan_provenance
+from registry_build import PLAN_SCHEMA, RegistryBuildError, build_artifacts, load_sources, plan_payload_sha256, validate_production_plan_provenance, validate_generated_registry, validate_generated_manifest
 from registry_overrides import parse_overrides
 from registry_sources import parse_effective_persj_catalog, sha256
 from importlib import import_module
@@ -128,7 +128,9 @@ def main():
         for field,path in [('candidatesSha256','dist/registry-candidates.json'),('editorialReportSha256','dist/editorial-review.tsv'),('overridesSha256','registry/raskovnik-overrides.xml')]:plan['approval'][field]=sha256(ROOT/path)
         plan['approval']['planPayloadSha256']=plan_payload_sha256(plan)
         validate_production_plan_provenance(plan,ROOT)
-        build_artifacts(plan,json.loads((ROOT/'upstream/sources.json').read_text()),json.loads((ROOT/'registry/source-publication-metadata.json').read_text()),ROOT)
+        registry, manifest = build_artifacts(plan,json.loads((ROOT/'upstream/sources.json').read_text()),json.loads((ROOT/'registry/source-publication-metadata.json').read_text()),ROOT)
+        validate_generated_registry(registry,plan)
+        validate_generated_manifest(manifest,registry,plan,sources)
         output=(json.dumps(plan,ensure_ascii=False,sort_keys=True,indent=2)+'\n').encode();target=ROOT/'dist/effective-registry-plan.json'
         if args.check:
             if not target.exists() or target.read_bytes()!=output:raise RegistryBuildError('effective plan differs from approved inputs')

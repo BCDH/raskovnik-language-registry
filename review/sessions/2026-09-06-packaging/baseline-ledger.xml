@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<registryOverrides xmlns="https://raskovnik.org/ns/language-registry/overrides" formatVersion="1" registryVersion="2026.9.6-1">
+<registryOverrides xmlns="https://raskovnik.org/ns/language-registry/overrides" formatVersion="1" registryVersion="2026.9.1-1">
   <node ident="ae-x-old" kind="historical-stage" parent="ae" selectable="true" alignment="broader" glottocode="aves1237" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
     <name xml:lang="sr" source="raskovnik-review">староавестијски</name>
     <name xml:lang="en" source="raskovnik-review">Old Avestan</name>
@@ -153,12 +153,6 @@
     <name xml:lang="de" source="raskovnik-review">Dalmatisch</name>
     <note type="reviewReason">The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
   </node>
-  <node ident="dlm-x-vegliot" kind="variety" selectable="true" alignment="broader" glottocode="dalm1243" wikidata="" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06" parent="dlm">
-    <name xml:lang="sr" source="raskovnik-review">вељотски</name>
-    <name xml:lang="en" source="raskovnik-review">Vegliot</name>
-    <name xml:lang="de" source="raskovnik-review">Vegliotisch</name>
-    <note type="reviewReason">User-approved correction of the unused вељот. catalogue label. Vegliot is a Dalmatian variety; no exact Vegliot node exists in pinned Glottolog 5.3, so dalm1243 is broader. ISO vel and velu1238 identify unrelated Veluws and are neither identifiers nor aliases of this profile. Vegliot scope: https://hrcak.srce.hr/file/265826 ; German terminology: https://ewa.saw-leipzig.de/help/abbreviations/en .</note>
-  </node>
   <node ident="dsb-x-old" kind="historical-stage" selectable="true" alignment="broader" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06" glottocode="lowe1385" wikidata="">
     <name xml:lang="sr" source="raskovnik-review">стародоњолужички</name>
     <name xml:lang="en" source="raskovnik-review">Old Lower Sorbian</name>
@@ -171,12 +165,11 @@
     <name xml:lang="de" source="raskovnik-review">Amerikanisches Englisch</name>
     <note type="reviewReason">Wikidata Q7976 directly carries the registered IETF tag en-US and identifies American English. A locale variety does not require a coextensive Glottolog node; Standard English remains broader context only.</note>
   </node>
-  <node ident="et" kind="language" selectable="true" alignment="broader" glottocode="finn1317" wikidata="Q9072" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06" parent="und-x-glot-finn1317">
+  <node ident="et" kind="language" selectable="true" alignment="exact" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06" glottocode="esto1258" wikidata="Q9072">
     <name xml:lang="sr" source="raskovnik-review">естонски</name>
     <name xml:lang="en" source="raskovnik-review">Estonian</name>
     <name xml:lang="de" source="raskovnik-review">Estnisch</name>
-    <note type="reviewReason">User-approved preservation of generic Estonian et / est. The pinned IANA macrolanguage memberships include ekk and vro. Glottolog places esto1258 (ekk) and sout2679 (vro) in different Finnic branches; their common broader ancestor is finn1317. Q9072 is retained for generic Estonian, while its narrower P1394 claim does not establish an exact Glottolog equivalence.</note>
-    <note type="reviewReason">Supporting identifiers only; no exact equivalence inferred: glottolog:esto1258|iso639-3:ekk|relationship:narrower;glottolog:sout2679|iso639-3:vro|relationship:narrower</note>
+    <note type="reviewReason">Wikidata links the exact IETF tag et and ISO macrolanguage est to Q9072 and explicitly supplies P1394 esto1258. Glottolog assigns esto1258 the narrower ISO code ekk; that code difference is a documented macrolanguage crosswalk, not missing evidence.</note>
   </node>
   <node ident="fa" kind="language" selectable="true" alignment="broader" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06" glottocode="fars1254" wikidata="Q9168">
     <name xml:lang="sr" source="raskovnik-review">персијски</name>
@@ -282,13 +275,6 @@
     <name xml:lang="en" source="glottolog-5.3">Ancient Hebrew</name>
     <name xml:lang="de" source="raskovnik-review">Bibelhebräisch</name>
     <note type="reviewReason">The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
-  </node>
-  <node ident="hr-x-kajkav" kind="language" selectable="true" alignment="exact" glottocode="kajk1237" wikidata="" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
-    <name xml:lang="sr" source="raskovnik-review">кајкавски</name>
-    <name xml:lang="en" source="raskovnik-review">Kajkavian</name>
-    <name xml:lang="de" source="raskovnik-review">Kajkavisch</name>
-    <note type="reviewReason">The user explicitly chose to retain generic Kajkavian on 2026-09-06. Glottolog kajk1237 describes the spoken language, while the pinned ISO table names kjv Kaikavian Literary Language (historical). The registration authors distinguish the literary norm from the generic dialect group: https://kajkavski-jezik.eu/en/kajkavian-iso-639-3-language-code/ . The Glottolog cross-reference to kjv is narrower supporting evidence, never an exact ISO identity; all generic source forms remain hr-x-kajkav.</note>
-    <note type="reviewReason">Supporting identifiers only; no exact equivalence inferred: iso639-3:kjv|relationship:narrower|label:Kaikavian Literary Language;wikidata:Q838165|status:unpinned supporting proposal</note>
   </node>
   <node ident="hr-x-old" kind="historical-stage" selectable="true" alignment="broader" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-05" glottocode="croa1245" wikidata="">
     <name xml:lang="sr" source="raskovnik-review">старохрватски</name>
@@ -464,13 +450,6 @@
     <name xml:lang="de" source="raskovnik-review">Altfriesisch</name>
     <note type="reviewReason">The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
   </node>
-  <node ident="olt" kind="historical-stage" selectable="true" alignment="exact" glottocode="oldl1240" wikidata="" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06">
-    <name xml:lang="sr" source="raskovnik-review">старолитвански</name>
-    <name xml:lang="en" source="raskovnik-review">Old Lithuanian</name>
-    <name xml:lang="de" source="raskovnik-review">Altlitauisch</name>
-    <note type="reviewReason">User-approved source migration lt-x-old → olt. The pinned IANA and ISO tables register this historical language; the pinned Glottolog node identifies the same scope. Source evidence, reviewed labels and earlier review history are preserved.</note>
-    <note type="reviewReason">Supporting identifiers only; no exact equivalence inferred: wikidata:Q17417801|status:proposal retained as supporting evidence; no revision-pinned exact assignment</note>
-  </node>
   <node ident="orv" kind="language" selectable="true" alignment="exact" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06" glottocode="oldr1238" wikidata="Q35228">
     <name xml:lang="sr" source="raskovnik-review">староруски</name>
     <name xml:lang="en" source="raskovnik-review">Old Russian</name>
@@ -575,12 +554,6 @@
     <name xml:lang="en" source="glottolog-5.3">Megleno-Romanian</name>
     <name xml:lang="de" source="raskovnik-review">Meglenorumänisch</name>
     <note type="reviewReason">The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
-  </node>
-  <node ident="sga" kind="historical-stage" selectable="true" alignment="exact" glottocode="oldi1245" wikidata="Q35308" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06">
-    <name xml:lang="sr" source="raskovnik-review">староирски</name>
-    <name xml:lang="en" source="raskovnik-review">Old Irish</name>
-    <name xml:lang="de" source="raskovnik-review">Altirisch</name>
-    <note type="reviewReason">User-approved source migration ga-x-old → sga. The pinned IANA and ISO tables register this historical language; the pinned Glottolog node identifies the same scope. Source evidence, reviewed labels and earlier review history are preserved.</note>
   </node>
   <node ident="sgh" kind="language" selectable="true" alignment="exact" glottocode="shug1248" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
     <name xml:lang="sr" source="persj-conversion-catalog">шугнански</name>
@@ -1385,6 +1358,12 @@
     <name xml:lang="de" source="raskovnik-review">Altniederländisch-Altfränkische Gruppe</name>
     <note type="reviewReason">The approved classification-only policy supplies a deterministic BCP 47 identifier and permits English fallback without inventing Serbian or German translations. Wikidata evidence belongs to the reviewed language profile; the structural ancestor receives no exact QID.</note>
   </node>
+  <node ident="und-x-glot-oldi1245" kind="language" selectable="false" alignment="exact" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06" glottocode="oldi1245" wikidata="Q35308">
+    <name xml:lang="sr" source="raskovnik-review">староирски језик</name>
+    <name xml:lang="en" source="raskovnik-review">Early Irish</name>
+    <name xml:lang="de" source="raskovnik-review">Altirisch</name>
+    <note type="reviewReason">The approved classification-only policy supplies a deterministic BCP 47 identifier and permits English fallback without inventing Serbian or German translations. Accepted semantic Wikidata item Q35308 on exact-glottocode evidence; category, template, list, and disambiguation entities are excluded.</note>
+  </node>
   <node ident="und-x-glot-oldm1247" kind="family" selectable="false" alignment="exact" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06" glottocode="oldm1247" wikidata="">
     <name xml:lang="sr" source="raskovnik-review">старовелшко-нововелшка група</name>
     <name xml:lang="en" source="raskovnik-review">Old-Modern Welsh</name>
@@ -1679,13 +1658,6 @@
     <name xml:lang="de" source="raskovnik-review">Skythisch</name>
     <note type="reviewReason">Wikidata Q749834 directly carries both IETF and ISO xsc and supplies the German label Skythisch. The pinned Glottolog snapshot has no coextensive xsc node, so an exact Glottolog identifier is correctly left empty.</note>
   </node>
-  <node ident="xtg" kind="language" selectable="true" alignment="exact" glottocode="tran1282" wikidata="" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06">
-    <name xml:lang="sr" source="raskovnik-review">галски</name>
-    <name xml:lang="en" source="raskovnik-review">Gaulish</name>
-    <name xml:lang="de" source="raskovnik-review">Gallisch</name>
-    <note type="reviewReason">User-approved source migration cel-x-gaulish → xtg. The pinned IANA and ISO tables register this historical language; the pinned Glottolog node identifies the same scope. Source evidence, reviewed labels and earlier review history are preserved.</note>
-    <note type="reviewReason">Supporting identifiers only; no exact equivalence inferred: iana-grandfathered:cel-gaulish(deprecated);glottolog:cisa1237|iso639-3:xcg|label:Cisalpine Gaulish</note>
-  </node>
   <node ident="xum" kind="language" selectable="true" alignment="exact" glottocode="umbr1253" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
     <name xml:lang="sr" source="persj-conversion-catalog">умбријски</name>
     <name xml:lang="en" source="glottolog-5.3">Umbrian</name>
@@ -1741,16 +1713,11 @@
     <name xml:lang="de" source="raskovnik-review">Slowinzisch</name>
     <note type="reviewReason">Q36822 supplies P1394 slov1270 and matching English, German, and Serbian terminology.</note>
   </node>
-  <isoScopeException node="hr-x-kajkav" glottocode="kajk1237" iso6393="kjv" relationship="narrower" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
-    <evidence path="upstream/glottolog/5.3/languoid.csv" sha256="4d9a78cb328b5f8754ad73c2575eb89ae5131077a85cf2ac794285e04c429368" />
-    <evidence path="upstream/iso-639-3/2026-07-22/iso-639-3.tab" sha256="7a5ac370703ea0897356a8c383f2147865caf479e41c1c7bd96cc4c5f65e6907" />
-    <rationale>The user explicitly chose to retain generic Kajkavian on 2026-09-06. Glottolog kajk1237 describes the spoken language, while the pinned ISO table names kjv Kaikavian Literary Language (historical). The registration authors distinguish the literary norm from the generic dialect group: https://kajkavski-jezik.eu/en/kajkavian-iso-639-3-language-code/ . The Glottolog cross-reference to kjv is narrower supporting evidence, never an exact ISO identity; all generic source forms remain hr-x-kajkav.</rationale>
-  </isoScopeException>
   <reviewRecord key="tag-profile:cel" status="applied" source="review/sessions/2026-09-06" reviewer="ttasovac" date="2026-09-01">
     <payload>{"savedDecision": {"decision": "confirmed", "migratedFrom": "tag-profile:cel", "note": "", "proposalFingerprint": "7468801ee0015230ebf4bdb9b058698997b7ba92fe1b9903bc30333607ebe975", "updatedAt": "2026-09-01T06:28:05.601Z", "values": {"canonicalCode": "cel", "externalAlignment": "exact:celt1248", "kind": "family", "labelDe": "Keltische Sprachen", "labelEn": "Celtic languages", "labelSr": "келтски језици"}}, "values": {"canonicalCode": "cel", "externalAlignment": "exact:celt1248", "kind": "family", "labelDe": "Keltische Sprachen", "labelEn": "Celtic languages", "labelSr": "келтски језици"}}</payload>
     <rationale>Accepted semantic Wikidata item Q25293 on exact-glottocode evidence; category, template, list, and disambiguation entities are excluded. The exact semantic Wikidata entity supplies the German label. Pinned IANA collection scope and pinned Glottolog family level agree.</rationale>
   </reviewRecord>
-  <reviewRecord key="tag-profile:cel-x-gaulish" status="superseded" source="review/sessions/2026-09-06" reviewer="Codex" date="2026-09-06">
+  <reviewRecord key="tag-profile:cel-x-gaulish" status="pending" source="review/sessions/2026-09-06" reviewer="Codex" date="2026-09-06">
     <payload>{"savedDecision": null, "values": {"broaderGlottocode": "", "canonicalCode": "xtg", "exactGlottocode": "tran1282", "externalAlignment": "exact:tran1282", "kind": "language", "labelDe": "Gallisch", "labelEn": "Gaulish", "labelSr": "галски", "relatedIdentifiers": "iana-grandfathered:cel-gaulish(deprecated);glottolog:cisa1237|iso639-3:xcg|label:Cisalpine Gaulish", "wikidataQid": ""}}</payload>
     <rationale>Canonical source migration required: cel-x-gaulish → xtg; preserve proposal pending a provenance-pinned catalogue update.</rationale>
   </reviewRecord>
@@ -1786,7 +1753,7 @@
     <payload>{"savedDecision": null, "values": {"broaderGlottocode": "stan1293", "canonicalCode": "en-US", "exactGlottocode": "", "externalAlignment": "broader:stan1293", "kind": "variety", "labelDe": "Amerikanisches Englisch", "labelEn": "American English", "labelSr": "амерички енглески", "relatedIdentifiers": "", "wikidataQid": "Q7976"}}</payload>
     <rationale>Wikidata Q7976 directly carries the registered IETF tag en-US and identifies American English. A locale variety does not require a coextensive Glottolog node; Standard English remains broader context only.</rationale>
   </reviewRecord>
-  <reviewRecord key="tag-profile:et" status="superseded" source="review/sessions/2026-09-06" reviewer="Codex" date="2026-09-06">
+  <reviewRecord key="tag-profile:et" status="applied" source="review/sessions/2026-09-06" reviewer="Codex" date="2026-09-06">
     <payload>{"savedDecision": null, "values": {"broaderGlottocode": "", "canonicalCode": "et", "exactGlottocode": "esto1258", "externalAlignment": "exact:esto1258", "kind": "language", "labelDe": "Estnisch", "labelEn": "Estonian", "labelSr": "естонски", "relatedIdentifiers": "", "wikidataQid": "Q9072"}}</payload>
     <rationale>Wikidata links the exact IETF tag et and ISO macrolanguage est to Q9072 and explicitly supplies P1394 esto1258. Glottolog assigns esto1258 the narrower ISO code ekk; that code difference is a documented macrolanguage crosswalk, not missing evidence.</rationale>
   </reviewRecord>
@@ -1794,7 +1761,7 @@
     <payload>{"savedDecision": null, "values": {"broaderGlottocode": "fars1254", "canonicalCode": "fa", "exactGlottocode": "", "externalAlignment": "broader:fars1254", "kind": "language", "labelDe": "Persisch", "labelEn": "Persian", "labelSr": "персијски", "relatedIdentifiers": "glottolog:west2369|iso639-3:pes|label:Western Farsi;glottolog:dari1249|iso639-3:prs|label:Dari", "wikidataQid": "Q9168"}}</payload>
     <rationale>Wikidata Q9168 directly carries IETF fa, ISO macrolanguage fas, and P1394 fars1254. In pinned Glottolog fars1254 is the broader Farsic-Caucasian Tat family, not an exact Persian node; Western Farsi pes and Dari prs are narrower related nodes. All are displayed explicitly rather than suppressing Glottolog evidence.</rationale>
   </reviewRecord>
-  <reviewRecord key="tag-profile:ga-x-old" status="superseded" source="review/sessions/2026-09-06" reviewer="Codex" date="2026-09-06">
+  <reviewRecord key="tag-profile:ga-x-old" status="pending" source="review/sessions/2026-09-06" reviewer="Codex" date="2026-09-06">
     <payload>{"savedDecision": null, "values": {"broaderGlottocode": "", "canonicalCode": "sga", "exactGlottocode": "oldi1245", "externalAlignment": "exact:oldi1245", "kind": "historical-stage", "labelDe": "Altirisch", "labelEn": "Old Irish", "labelSr": "староирски", "relatedIdentifiers": "", "wikidataQid": "Q35308"}}</payload>
     <rationale>Canonical source migration required: ga-x-old → sga; preserve proposal pending a provenance-pinned catalogue update.</rationale>
   </reviewRecord>
@@ -1838,7 +1805,7 @@
     <payload>{"savedDecision": null, "values": {"broaderGlottocode": "", "canonicalCode": "grc-x-middle", "exactGlottocode": "medi1251", "externalAlignment": "exact:medi1251", "kind": "historical-stage", "labelDe": "Mittelgriechisch", "labelEn": "Medieval Greek", "labelSr": "средњогрчки", "relatedIdentifiers": "", "wikidataQid": "Q36387"}}</payload>
     <rationale>Wikidata Q36387 directly supplies P1394 medi1251; the Glottolog node is Medieval Greek and the German counterpart is Mittelgriechisch.</rationale>
   </reviewRecord>
-  <reviewRecord key="tag-profile:hr-x-kajkav" status="superseded" source="review/sessions/2026-09-06" reviewer="Codex" date="2026-09-06">
+  <reviewRecord key="tag-profile:hr-x-kajkav" status="pending" source="review/sessions/2026-09-06" reviewer="Codex" date="2026-09-06">
     <payload>{"savedDecision": null, "values": {"broaderGlottocode": "", "canonicalCode": "kjv", "exactGlottocode": "kajk1237", "externalAlignment": "exact:kajk1237", "kind": "language", "labelDe": "Kajkavisch", "labelEn": "Kajkavian", "labelSr": "кајкавски", "relatedIdentifiers": "iso639-3:kjv", "wikidataQid": "Q838165"}}</payload>
     <rationale>Canonical source migration required: hr-x-kajkav → kjv; preserve proposal pending a provenance-pinned catalogue update.</rationale>
   </reviewRecord>
@@ -1922,7 +1889,7 @@
     <payload>{"savedDecision": null, "values": {"broaderGlottocode": "", "canonicalCode": "la-x-vulgar", "exactGlottocode": "vulg1234", "externalAlignment": "exact:vulg1234", "kind": "historical-stage", "labelDe": "Vulgärlatein", "labelEn": "Vulgar Latin", "labelSr": "вулгарнолатински", "relatedIdentifiers": "", "wikidataQid": "Q37560"}}</payload>
     <rationale>The semantic Wikidata item identifies pinned Glottolog node vulg1234; its node lies within the previous broader lineage and has a compatible level. Accepted semantic Wikidata item Q37560 on wikidata-glottocode evidence; category, template, list, and disambiguation entities are excluded. The exact semantic Wikidata entity supplies the German label. The registered-base private-use tag accurately names the exact historical concept, and the pinned standards contain no applicable code.</rationale>
   </reviewRecord>
-  <reviewRecord key="tag-profile:lt-x-old" status="superseded" source="review/sessions/2026-09-06" reviewer="Codex" date="2026-09-06">
+  <reviewRecord key="tag-profile:lt-x-old" status="pending" source="review/sessions/2026-09-06" reviewer="Codex" date="2026-09-06">
     <payload>{"savedDecision": null, "values": {"broaderGlottocode": "", "canonicalCode": "olt", "exactGlottocode": "oldl1240", "externalAlignment": "exact:oldl1240", "kind": "historical-stage", "labelDe": "Altlitauisch", "labelEn": "Old Lithuanian", "labelSr": "старолитвански", "relatedIdentifiers": "", "wikidataQid": "Q17417801"}}</payload>
     <rationale>Canonical source migration required: lt-x-old → olt; preserve proposal pending a provenance-pinned catalogue update.</rationale>
   </reviewRecord>
@@ -2066,7 +2033,7 @@
     <payload>{"savedDecision": {"decision": "changed", "migratedFrom": "tag-profile:vec-x-trieste", "note": "", "previousDecision": "", "proposalFingerprint": "dc37930605fa0f945ba3ca16257847a75b522fd2428e34465a222b56d2746916", "updatedAt": "2026-09-05T14:49:18.623Z", "values": {"broaderGlottocode": "", "canonicalCode": "vec-x-trieste", "exactGlottocode": "trie1242", "kind": "variety", "labelDe": "Triestinisch", "labelEn": "Triestine", "labelSr": "тршћански", "relatedIdentifiers": "", "wikidataQid": "Q2739548"}}, "values": {"broaderGlottocode": "", "canonicalCode": "vec-x-trieste", "exactGlottocode": "trie1242", "kind": "variety", "labelDe": "Triestinisch", "labelEn": "Triestine", "labelSr": "тршћански", "relatedIdentifiers": "", "wikidataQid": "Q2739548"}}</payload>
     <rationale>Q2739548 supplies P1394 trie1242 and matches PERSJ exactly. Its German label Triester is not accepted as a language-name counterpart without further semantic evidence.</rationale>
   </reviewRecord>
-  <reviewRecord key="tag-profile:vel" status="superseded" source="review/sessions/2026-09-06" reviewer="Codex" date="2026-09-06">
+  <reviewRecord key="tag-profile:vel" status="pending" source="review/sessions/2026-09-06" reviewer="Codex" date="2026-09-06">
     <payload>{"savedDecision": null, "values": {"broaderGlottocode": "", "canonicalCode": "vel", "exactGlottocode": "velu1238", "externalAlignment": "exact:velu1238", "kind": "variety", "labelDe": "Veluws", "labelEn": "Veluws", "labelSr": "вељотски", "relatedIdentifiers": "", "wikidataQid": "Q2484810"}}</payload>
     <rationale>Source meaning вељотски denotes Vegliot, but registered vel / velu1238 denotes Dutch Low Saxon Veluws. Source mapping must be corrected; the proposed Veluws identity is not approved. Evidence: https://glottolog.org/resource/languoid/id/velu1238 ; https://hrcak.srce.hr/file/265826</rationale>
   </reviewRecord>
@@ -2713,29 +2680,5 @@
   <reviewRecord key="ancestor:west2838" status="applied" source="review/sessions/2026-09-06" reviewer="Codex" date="2026-09-06">
     <payload>{"savedDecision": null, "values": {"broaderGlottocode": "", "canonicalCode": "und-x-glot-west2838", "exactGlottocode": "west2838", "externalAlignment": "exact:west2838", "kind": "family", "labelDe": "Westiberisch", "labelEn": "West Iberian languages", "labelSr": "западноиберијски језици", "relatedIdentifiers": "", "wikidataQid": "Q1377152"}}</payload>
     <rationale>The approved classification-only policy supplies a deterministic BCP 47 identifier and permits English fallback without inventing Serbian or German translations. Accepted semantic Wikidata item Q1377152 on exact-glottocode evidence; category, template, list, and disambiguation entities are excluded.</rationale>
-  </reviewRecord>
-  <reviewRecord key="tag-profile:xtg" status="applied" source="review/sessions/2026-09-06-packaging" reviewer="Codex" date="2026-09-06">
-    <payload>{"authorization": "User-approved production packaging plan, 2026-09-06", "migrationFrom": "cel-x-gaulish", "savedDecision": null, "values": {"broaderGlottocode": "", "canonicalCode": "xtg", "exactGlottocode": "tran1282", "externalAlignment": "exact:tran1282", "kind": "language", "labelDe": "Gallisch", "labelEn": "Gaulish", "labelSr": "галски", "relatedIdentifiers": "iana-grandfathered:cel-gaulish(deprecated);glottolog:cisa1237|iso639-3:xcg|label:Cisalpine Gaulish", "wikidataQid": ""}}</payload>
-    <rationale>User-approved source migration cel-x-gaulish → xtg. The pinned IANA and ISO tables register this historical language; the pinned Glottolog node identifies the same scope. Source evidence, reviewed labels and earlier review history are preserved.</rationale>
-  </reviewRecord>
-  <reviewRecord key="tag-profile:sga" status="applied" source="review/sessions/2026-09-06-packaging" reviewer="Codex" date="2026-09-06">
-    <payload>{"authorization": "User-approved production packaging plan, 2026-09-06", "migrationFrom": "ga-x-old", "savedDecision": null, "values": {"broaderGlottocode": "", "canonicalCode": "sga", "exactGlottocode": "oldi1245", "externalAlignment": "exact:oldi1245", "kind": "historical-stage", "labelDe": "Altirisch", "labelEn": "Old Irish", "labelSr": "староирски", "relatedIdentifiers": "", "wikidataQid": "Q35308"}}</payload>
-    <rationale>User-approved source migration ga-x-old → sga. The pinned IANA and ISO tables register this historical language; the pinned Glottolog node identifies the same scope. Source evidence, reviewed labels and earlier review history are preserved.</rationale>
-  </reviewRecord>
-  <reviewRecord key="tag-profile:olt" status="applied" source="review/sessions/2026-09-06-packaging" reviewer="Codex" date="2026-09-06">
-    <payload>{"authorization": "User-approved production packaging plan, 2026-09-06", "migrationFrom": "lt-x-old", "savedDecision": null, "values": {"broaderGlottocode": "", "canonicalCode": "olt", "exactGlottocode": "oldl1240", "externalAlignment": "exact:oldl1240", "kind": "historical-stage", "labelDe": "Altlitauisch", "labelEn": "Old Lithuanian", "labelSr": "старолитвански", "relatedIdentifiers": "wikidata:Q17417801|status:proposal retained as supporting evidence; no revision-pinned exact assignment", "wikidataQid": ""}}</payload>
-    <rationale>User-approved source migration lt-x-old → olt. The pinned IANA and ISO tables register this historical language; the pinned Glottolog node identifies the same scope. Source evidence, reviewed labels and earlier review history are preserved.</rationale>
-  </reviewRecord>
-  <reviewRecord key="tag-profile:hr-x-kajkav" status="applied" source="review/sessions/2026-09-06-packaging" reviewer="ttasovac" date="2026-09-06">
-    <payload>{"authorization": "User-approved production packaging plan, 2026-09-06", "migrationFrom": "hr-x-kajkav", "savedDecision": null, "values": {"broaderGlottocode": "", "canonicalCode": "hr-x-kajkav", "exactGlottocode": "kajk1237", "externalAlignment": "exact:kajk1237", "kind": "language", "labelDe": "Kajkavisch", "labelEn": "Kajkavian", "labelSr": "кајкавски", "relatedIdentifiers": "iso639-3:kjv|relationship:narrower|label:Kaikavian Literary Language;wikidata:Q838165|status:unpinned supporting proposal", "wikidataQid": ""}}</payload>
-    <rationale>The user explicitly chose to retain generic Kajkavian on 2026-09-06. Glottolog kajk1237 describes the spoken language, while the pinned ISO table names kjv Kaikavian Literary Language (historical). The registration authors distinguish the literary norm from the generic dialect group: https://kajkavski-jezik.eu/en/kajkavian-iso-639-3-language-code/ . The Glottolog cross-reference to kjv is narrower supporting evidence, never an exact ISO identity; all generic source forms remain hr-x-kajkav.</rationale>
-  </reviewRecord>
-  <reviewRecord key="tag-profile:dlm-x-vegliot" status="applied" source="review/sessions/2026-09-06-packaging" reviewer="Codex" date="2026-09-06">
-    <payload>{"authorization": "User-approved production packaging plan, 2026-09-06", "migrationFrom": "vel", "savedDecision": null, "values": {"broaderGlottocode": "dalm1243", "canonicalCode": "dlm-x-vegliot", "exactGlottocode": "", "externalAlignment": "broader:dalm1243", "kind": "variety", "labelDe": "Vegliotisch", "labelEn": "Vegliot", "labelSr": "вељотски", "relatedIdentifiers": "", "wikidataQid": ""}}</payload>
-    <rationale>User-approved correction of the unused вељот. catalogue label. Vegliot is a Dalmatian variety; no exact Vegliot node exists in pinned Glottolog 5.3, so dalm1243 is broader. ISO vel and velu1238 identify unrelated Veluws and are neither identifiers nor aliases of this profile. Vegliot scope: https://hrcak.srce.hr/file/265826 ; German terminology: https://ewa.saw-leipzig.de/help/abbreviations/en .</rationale>
-  </reviewRecord>
-  <reviewRecord key="tag-profile:et" status="applied" source="review/sessions/2026-09-06-packaging" reviewer="Codex" date="2026-09-06">
-    <payload>{"authorization": "User-approved production packaging plan, 2026-09-06", "migrationFrom": "et", "savedDecision": null, "values": {"broaderGlottocode": "finn1317", "canonicalCode": "et", "exactGlottocode": "", "externalAlignment": "broader:finn1317", "kind": "language", "labelDe": "Estnisch", "labelEn": "Estonian", "labelSr": "естонски", "relatedIdentifiers": "glottolog:esto1258|iso639-3:ekk|relationship:narrower;glottolog:sout2679|iso639-3:vro|relationship:narrower", "wikidataQid": "Q9072"}}</payload>
-    <rationale>User-approved preservation of generic Estonian et / est. The pinned IANA macrolanguage memberships include ekk and vro. Glottolog places esto1258 (ekk) and sout2679 (vro) in different Finnic branches; their common broader ancestor is finn1317. Q9072 is retained for generic Estonian, while its narrower P1394 claim does not establish an exact Glottolog equivalence.</rationale>
   </reviewRecord>
 </registryOverrides>

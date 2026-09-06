@@ -18,7 +18,7 @@ from registry_overrides import RegistryOverrideError, parse_overrides  # noqa: E
 class RegistryOverridesTest(unittest.TestCase):
     def test_reviewed_design_decisions_are_explicit(self) -> None:
         overrides = parse_overrides(ROOT / "registry/raskovnik-overrides.xml")
-        self.assertEqual("2026.9.1-1", overrides.version)
+        self.assertEqual("2026.9.6-1", overrides.version)
         self.assertEqual("slav1255", overrides.nodes["sla"].glottocode)
         self.assertEqual("family", overrides.nodes["sla"].kind)
         self.assertEqual("Altavestisch", overrides.nodes["ae-x-old"].names["de"].value)

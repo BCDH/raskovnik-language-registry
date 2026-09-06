@@ -72,6 +72,12 @@ class RegistryBuildTest(unittest.TestCase):
         validate_generated_registry(self.registry, self.plan)
         validate_generated_manifest(self.manifest, self.registry, self.plan, self.sources)
 
+    def test_xml_bytes_do_not_depend_on_other_importers_namespace_state(self):
+        ET.register_namespace("", "https://raskovnik.org/ns/language-registry/overrides")
+        registry, manifest = self.build(copy.deepcopy(self.plan))
+        self.assertEqual(self.registry, registry)
+        self.assertEqual(self.manifest, manifest)
+
     def test_pinned_rng_schematron_and_manifest_rng_all_accept_fixture(self) -> None:
         with tempfile.TemporaryDirectory(prefix="registry-build-validation-") as directory:
             fixture_root = Path(directory)

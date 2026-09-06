@@ -58,10 +58,11 @@ class GenerateCandidatesTest(unittest.TestCase):
 
     def test_macrolanguage_and_structured_claim_bridges_are_not_lost(self) -> None:
         estonian = self.profiles["et"]
-        self.assertEqual("exact", estonian["glottolog"]["relationship"])
-        self.assertEqual("esto1258", estonian["glottolog"]["glottocode"])
+        self.assertEqual("broader", estonian["glottolog"]["relationship"])
+        self.assertEqual("finn1317", estonian["glottolog"]["glottocode"])
         self.assertEqual("Q9072", estonian["wikidataQidCandidate"])
-        self.assertNotIn("no-exact-glottolog-alignment", estonian["reviewReasons"])
+        self.assertIn("no-exact-glottolog-alignment", estonian["reviewReasons"])
+        self.assertEqual("approved", estonian["approval"]["status"])
 
         digor = self.profiles["osd"]
         self.assertEqual("exact", digor["glottolog"]["relationship"])
@@ -175,7 +176,11 @@ class GenerateCandidatesTest(unittest.TestCase):
         self.assertEqual("und-x-glot-alba1268", uncoded["canonicalCodeCandidate"])
         reviewed = next(row for row in ancestors if row["glottocode"] == "east2269")
         self.assertEqual("zls-x-east", reviewed["canonicalCodeCandidate"])
-        self.assertEqual(0, self.data["summary"]["ancestorExceptions"])
+        pending=[row for row in ancestors if row['reviewReasons'] and not row['approval']]
+        self.assertEqual(len(pending), self.data["summary"]["ancestorExceptions"])
+        for row in pending:
+            self.assertIn('ancestor-review-required', row['reviewReasons'])
+            self.assertFalse(row['selectableCandidate'])
 
     def test_outputs_contain_no_dictionary_evidence(self) -> None:
         serialized = __import__("json").dumps(self.data, ensure_ascii=False)

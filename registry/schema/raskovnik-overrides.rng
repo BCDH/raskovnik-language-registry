@@ -7,14 +7,29 @@
       <oneOrMore>
         <ref name="node"/>
       </oneOrMore>
+      <zeroOrMore><ref name="iso-scope-exception"/></zeroOrMore>
       <zeroOrMore><ref name="review-record"/></zeroOrMore>
     </element>
   </start>
 
+  <define name="iso-scope-exception">
+    <element name="isoScopeException">
+      <attribute name="node"><data type="language"/></attribute>
+      <attribute name="glottocode"><text/></attribute>
+      <attribute name="iso6393"><text/></attribute>
+      <attribute name="relationship"><value>narrower</value></attribute>
+      <attribute name="reviewStatus"><value>approved</value></attribute>
+      <attribute name="reviewedBy"><data type="token"/></attribute>
+      <attribute name="reviewedOn"><data type="date"/></attribute>
+      <oneOrMore><element name="evidence"><attribute name="path"><text/></attribute><attribute name="sha256"><text/></attribute></element></oneOrMore>
+      <element name="rationale"><text/></element>
+    </element>
+  </define>
+
   <define name="review-record">
     <element name="reviewRecord">
       <attribute name="key"><text/></attribute>
-      <attribute name="status"><choice><value>applied</value><value>pending</value></choice></attribute>
+      <attribute name="status"><choice><value>applied</value><value>pending</value><value>superseded</value></choice></attribute>
       <attribute name="source"><text/></attribute>
       <attribute name="reviewer"><text/></attribute>
       <attribute name="date"><data type="date"/></attribute>

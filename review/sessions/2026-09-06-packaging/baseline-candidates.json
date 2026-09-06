@@ -34,10 +34,7 @@
         "en": "Aeolic Greek",
         "sr": "еолски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q406373"
     },
@@ -67,9 +64,7 @@
         "en": "Afro-Asiatic",
         "sr": null
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -87,27 +82,25 @@
         "part1": null,
         "part2B": "akk",
         "part2T": "akk",
-        "part3": "akk",
-        "scope": "I",
-        "type": "H"
+        "part3": "akk"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Akkadian",
       "parentCandidate": null,
       "parentGlottocode": "east2678",
       "preferredLabels": {
-        "de": "Akkadisch",
+        "de": null,
         "en": "Akkadian",
-        "sr": "акадски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -124,27 +117,25 @@
         "part1": "sq",
         "part2B": "alb",
         "part2T": "sqi",
-        "part3": "sqi",
-        "scope": "M",
-        "type": "L"
+        "part3": "sqi"
       },
-      "kindCandidate": "language",
+      "kindCandidate": "family",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "family",
       "name": "Albanian",
       "parentCandidate": null,
       "parentGlottocode": "clas1257",
       "preferredLabels": {
-        "de": "Albanisch",
+        "de": null,
         "en": "Albanian",
-        "sr": "албански"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -316,9 +307,7 @@
         "part1": null,
         "part2B": "grc",
         "part2T": "grc",
-        "part3": "grc",
-        "scope": "I",
-        "type": "H"
+        "part3": "grc"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -335,9 +324,7 @@
         "en": "Ancient Greek",
         "sr": "старогрчки"
       },
-      "reviewReasons": [
-        "multiple-serbian-source-meanings"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q35497"
     },
@@ -362,9 +349,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "hbo",
-        "scope": "I",
-        "type": "H"
+        "part3": "hbo"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -381,9 +366,7 @@
         "en": "Ancient Hebrew",
         "sr": "старохебрејски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -413,9 +396,7 @@
         "en": "Ancient North Greek",
         "sr": null
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -519,9 +500,7 @@
         "en": "Arabian",
         "sr": null
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -546,9 +525,7 @@
         "part1": "ar",
         "part2B": "ara",
         "part2T": "ara",
-        "part3": "ara",
-        "scope": "M",
-        "type": "L"
+        "part3": "ara"
       },
       "kindCandidate": "family",
       "labelProvenance": {
@@ -620,27 +597,25 @@
         "part1": null,
         "part2B": "rup",
         "part2T": "rup",
-        "part3": "rup",
-        "scope": "I",
-        "type": "L"
+        "part3": "rup"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Aromanian",
       "parentCandidate": null,
       "parentGlottocode": "east2714",
       "preferredLabels": {
-        "de": "Aromunisch",
+        "de": null,
         "en": "Aromanian",
-        "sr": "арумунски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -676,10 +651,7 @@
         "en": "Attic Greek",
         "sr": "атички"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q506588"
     },
@@ -697,27 +669,25 @@
         "part1": "ae",
         "part2B": "ave",
         "part2T": "ave",
-        "part3": "ave",
-        "scope": "I",
-        "type": "H"
+        "part3": "ave"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Avestan",
       "parentCandidate": null,
       "parentGlottocode": "iran1269",
       "preferredLabels": {
-        "de": "Avestisch",
+        "de": null,
         "en": "Avestan",
-        "sr": "авестијски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -753,11 +723,7 @@
         "en": "Balto-Slavic",
         "sr": "балтословенски"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q147356"
     },
@@ -812,27 +778,25 @@
         "part1": "eu",
         "part2B": "baq",
         "part2T": "eus",
-        "part3": "eus",
-        "scope": "I",
-        "type": "L"
+        "part3": "eus"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Basque",
       "parentCandidate": null,
       "parentGlottocode": null,
       "preferredLabels": {
-        "de": "Baskisch",
+        "de": null,
         "en": "Basque",
-        "sr": "баскијски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -849,27 +813,25 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "bar",
-        "scope": "I",
-        "type": "L"
+        "part3": "bar"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Bavarian",
       "parentCandidate": null,
       "parentGlottocode": "baye1239",
       "preferredLabels": {
-        "de": "Bairisch",
+        "de": null,
         "en": "Bavarian",
-        "sr": "баварски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -923,27 +885,25 @@
         "part1": "be",
         "part2B": "bel",
         "part2T": "bel",
-        "part3": "bel",
-        "scope": "I",
-        "type": "L"
+        "part3": "bel"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Belarusian",
       "parentCandidate": null,
       "parentGlottocode": "east1426",
       "preferredLabels": {
-        "de": "Belarussisch",
+        "de": null,
         "en": "Belarusian",
-        "sr": "белоруски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -1004,9 +964,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "xbo",
-        "scope": "I",
-        "type": "H"
+        "part3": "xbo"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -1023,9 +981,7 @@
         "en": "Bolgarian",
         "sr": "протобугарски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -1118,27 +1074,25 @@
         "part1": "br",
         "part2B": "bre",
         "part2T": "bre",
-        "part3": "bre",
-        "scope": "I",
-        "type": "L"
+        "part3": "bre"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Breton",
       "parentCandidate": null,
       "parentGlottocode": "bret1245",
       "preferredLabels": {
-        "de": "Bretonisch",
+        "de": null,
         "en": "Breton",
-        "sr": "бретонски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -1229,27 +1183,25 @@
         "part1": "bg",
         "part2B": "bul",
         "part2T": "bul",
-        "part3": "bul",
-        "scope": "I",
-        "type": "L"
+        "part3": "bul"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Bulgarian",
       "parentCandidate": null,
       "parentGlottocode": "mace1252",
       "preferredLabels": {
-        "de": "Bulgarisch",
+        "de": null,
         "en": "Bulgarian",
-        "sr": "бугарски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -1359,10 +1311,7 @@
         "en": "Celtic languages",
         "sr": "келтски језици"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -1520,6 +1469,36 @@
         "en": [],
         "sr": []
       },
+      "approval": null,
+      "canonicalCodeCandidate": "und-x-glot-cent2329",
+      "glottocode": "cent2329",
+      "ianaScope": null,
+      "iso639": null,
+      "kindCandidate": "family",
+      "labelProvenance": {
+        "de": null,
+        "en": "glottolog-5.3",
+        "sr": null
+      },
+      "level": "family",
+      "name": "Central Finnic",
+      "parentCandidate": null,
+      "parentGlottocode": "neva1234",
+      "preferredLabels": {
+        "de": null,
+        "en": "Central Finnic",
+        "sr": null
+      },
+      "reviewReasons": [],
+      "selectableCandidate": false,
+      "wikidataQidCandidate": null
+    },
+    {
+      "aliasCandidates": {
+        "de": [],
+        "en": [],
+        "sr": []
+      },
       "approval": {
         "reasons": [
           "The approved classification-only policy supplies a deterministic BCP 47 identifier and permits English fallback without inventing Serbian or German translations. Wikidata evidence belongs to the reviewed language profile; the structural ancestor receives no exact QID."
@@ -1639,27 +1618,25 @@
         "part1": null,
         "part2B": "chg",
         "part2T": "chg",
-        "part3": "chg",
-        "scope": "I",
-        "type": "E"
+        "part3": "chg"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Chagatai",
       "parentCandidate": null,
       "parentGlottocode": "uygh1241",
       "preferredLabels": {
-        "de": "Tschagataisch",
+        "de": null,
         "en": "Chagatai",
-        "sr": "чагатајски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -1683,9 +1660,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "ckm",
-        "scope": "I",
-        "type": "L"
+        "part3": "ckm"
       },
       "kindCandidate": "variety",
       "labelProvenance": {
@@ -1702,9 +1677,7 @@
         "en": "Chakavski",
         "sr": "чакавски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -1803,27 +1776,25 @@
         "part1": "cv",
         "part2B": "chv",
         "part2T": "chv",
-        "part3": "chv",
-        "scope": "I",
-        "type": "L"
+        "part3": "chv"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Chuvash",
       "parentCandidate": null,
       "parentGlottocode": "bolg1249",
       "preferredLabels": {
-        "de": "Tschuwaschisch",
+        "de": null,
         "en": "Chuvash",
-        "sr": "чувашки"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -1944,38 +1915,6 @@
         "sr": []
       },
       "approval": null,
-      "canonicalCodeCandidate": "und-x-glot-cont1249",
-      "glottocode": "cont1249",
-      "ianaScope": null,
-      "iso639": null,
-      "kindCandidate": "family",
-      "labelProvenance": {
-        "de": null,
-        "en": "glottolog-5.3",
-        "sr": null
-      },
-      "level": "family",
-      "name": "Continental Transalpine Celtic",
-      "parentCandidate": null,
-      "parentGlottocode": "tgbc1234",
-      "preferredLabels": {
-        "de": null,
-        "en": "Continental Transalpine Celtic",
-        "sr": null
-      },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
-      "selectableCandidate": false,
-      "wikidataQidCandidate": null
-    },
-    {
-      "aliasCandidates": {
-        "de": [],
-        "en": [],
-        "sr": []
-      },
-      "approval": null,
       "canonicalCodeCandidate": "cop",
       "glottocode": "copt1239",
       "ianaScope": "individual",
@@ -1983,27 +1922,25 @@
         "part1": null,
         "part2B": "cop",
         "part2T": "cop",
-        "part3": "cop",
-        "scope": "I",
-        "type": "E"
+        "part3": "cop"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Coptic",
       "parentCandidate": null,
       "parentGlottocode": "egyp1245",
       "preferredLabels": {
-        "de": "Koptisch",
+        "de": null,
         "en": "Coptic",
-        "sr": "коптски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -2020,27 +1957,25 @@
         "part1": "kw",
         "part2B": "cor",
         "part2T": "cor",
-        "part3": "cor",
-        "scope": "I",
-        "type": "L"
+        "part3": "cor"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Cornish",
       "parentCandidate": null,
       "parentGlottocode": "midd1379",
       "preferredLabels": {
-        "de": "Kornisch",
+        "de": null,
         "en": "Cornish",
-        "sr": "корнволски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -2094,27 +2029,25 @@
         "part1": null,
         "part2B": "crh",
         "part2T": "crh",
-        "part3": "crh",
-        "scope": "I",
-        "type": "L"
+        "part3": "crh"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Crimean Tatar",
       "parentCandidate": null,
       "parentGlottocode": "crim1259",
       "preferredLabels": {
-        "de": "Krimtatarisch",
+        "de": null,
         "en": "Crimean Tatar",
-        "sr": "кримскотатарски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -2168,27 +2101,25 @@
         "part1": "hr",
         "part2B": "hrv",
         "part2T": "hrv",
-        "part3": "hrv",
-        "scope": "I",
-        "type": "L"
+        "part3": "hrv"
       },
       "kindCandidate": "variety",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "dialect",
       "name": "Croatian Standard",
       "parentCandidate": null,
       "parentGlottocode": "east2821",
       "preferredLabels": {
-        "de": "Kroatisch",
+        "de": null,
         "en": "Croatian Standard",
-        "sr": "хрватски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -2205,27 +2136,25 @@
         "part1": "cs",
         "part2B": "cze",
         "part2T": "ces",
-        "part3": "ces",
-        "scope": "I",
-        "type": "L"
+        "part3": "ces"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Czech",
       "parentCandidate": null,
       "parentGlottocode": "czec1260",
       "preferredLabels": {
-        "de": "Tschechisch",
+        "de": null,
         "en": "Czech",
-        "sr": "чешки"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -2261,10 +2190,7 @@
         "en": "Moravian",
         "sr": "моравски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q44268"
     },
@@ -2326,9 +2252,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "dlm",
-        "scope": "I",
-        "type": "E"
+        "part3": "dlm"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -2345,9 +2269,7 @@
         "en": "Dalmatian",
         "sr": "далматоромански"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -2402,27 +2324,25 @@
         "part1": "da",
         "part2B": "dan",
         "part2T": "dan",
-        "part3": "dan",
-        "scope": "I",
-        "type": "L"
+        "part3": "dan"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Danish",
       "parentCandidate": null,
       "parentGlottocode": "sout3248",
       "preferredLabels": {
-        "de": "Dänisch",
+        "de": null,
         "en": "Danish",
-        "sr": "дански"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -2446,9 +2366,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "osd",
-        "scope": "I",
-        "type": "L"
+        "part3": "osd"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -2465,9 +2383,7 @@
         "en": "Digor Ossetic",
         "sr": "дигорски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q3027861"
     },
@@ -2504,10 +2420,7 @@
         "en": "Doric Greek",
         "sr": "дорски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q285494"
     },
@@ -2525,27 +2438,25 @@
         "part1": "nl",
         "part2B": "dut",
         "part2T": "nld",
-        "part3": "nld",
-        "scope": "I",
-        "type": "L"
+        "part3": "nld"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Dutch",
       "parentCandidate": null,
       "parentGlottocode": "glob1241",
       "preferredLabels": {
-        "de": "Niederländisch",
+        "de": null,
         "en": "Dutch",
-        "sr": "холандски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -2581,12 +2492,9 @@
         "en": "East Slavic languages",
         "sr": "источнословенски језици"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
-      "wikidataQidCandidate": "Q144713"
+      "wikidataQidCandidate": null
     },
     {
       "aliasCandidates": {
@@ -2947,9 +2855,7 @@
         "en": "East Germanic",
         "sr": null
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -3053,9 +2959,7 @@
         "en": "Egyptian",
         "sr": null
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -3073,28 +2977,68 @@
         "part1": null,
         "part2B": "egy",
         "part2T": "egy",
-        "part3": "egy",
-        "scope": "I",
-        "type": "H"
+        "part3": "egy"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Egyptian (Ancient)",
       "parentCandidate": null,
       "parentGlottocode": "egyp1245",
       "preferredLabels": {
-        "de": "Ägyptisch",
+        "de": null,
         "en": "Egyptian (Ancient)",
-        "sr": "египатски"
+        "sr": null
+      },
+      "reviewReasons": [],
+      "selectableCandidate": false,
+      "wikidataQidCandidate": null
+    },
+    {
+      "aliasCandidates": {
+        "de": [],
+        "en": [],
+        "sr": []
+      },
+      "approval": {
+        "reasons": [
+          "Wikidata links the exact IETF tag et and ISO macrolanguage est to Q9072 and explicitly supplies P1394 esto1258. Glottolog assigns esto1258 the narrower ISO code ekk; that code difference is a documented macrolanguage crosswalk, not missing evidence."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
+      "canonicalCodeCandidate": "et",
+      "glottocode": "esto1258",
+      "ianaScope": "macrolanguage",
+      "iso639": {
+        "part1": null,
+        "part2B": null,
+        "part2T": null,
+        "part3": "ekk"
+      },
+      "kindCandidate": "language",
+      "labelProvenance": {
+        "de": "raskovnik-review",
+        "en": "raskovnik-review",
+        "sr": "raskovnik-review"
+      },
+      "level": "language",
+      "name": "Estonian",
+      "parentCandidate": null,
+      "parentGlottocode": "cent2329",
+      "preferredLabels": {
+        "de": "Estnisch",
+        "en": "Estonian",
+        "sr": "естонски"
       },
       "reviewReasons": [],
       "selectableCandidate": true,
-      "wikidataQidCandidate": null
+      "wikidataQidCandidate": "Q9072"
     },
     {
       "aliasCandidates": {
@@ -3110,27 +3054,25 @@
         "part1": "fo",
         "part2B": "fao",
         "part2T": "fao",
-        "part3": "fao",
-        "scope": "I",
-        "type": "L"
+        "part3": "fao"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Faroese",
       "parentCandidate": null,
       "parentGlottocode": "icel1246",
       "preferredLabels": {
-        "de": "Färöisch",
+        "de": null,
         "en": "Faroese",
-        "sr": "фарски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -3159,9 +3101,7 @@
         "en": "Farsic-Caucasian Tat",
         "sr": null
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -3216,27 +3156,25 @@
         "part1": "fi",
         "part2B": "fin",
         "part2T": "fin",
-        "part3": "fin",
-        "scope": "I",
-        "type": "L"
+        "part3": "fin"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Finnish",
       "parentCandidate": null,
       "parentGlottocode": "nucl1717",
       "preferredLabels": {
-        "de": "Finnisch",
+        "de": null,
         "en": "Finnish",
-        "sr": "фински"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -3260,9 +3198,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "frk",
-        "scope": "I",
-        "type": "H"
+        "part3": "frk"
       },
       "kindCandidate": "variety",
       "labelProvenance": {
@@ -3279,9 +3215,7 @@
         "en": "Old Frankish",
         "sr": "франачки"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -3318,11 +3252,7 @@
         "en": "Frisian languages",
         "sr": "фризијски"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q25325"
     },
@@ -3340,27 +3270,25 @@
         "part1": null,
         "part2B": "fur",
         "part2T": "fur",
-        "part3": "fur",
-        "scope": "I",
-        "type": "L"
+        "part3": "fur"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Friulian",
       "parentCandidate": null,
       "parentGlottocode": "ital1287",
       "preferredLabels": {
-        "de": "Friaulisch",
+        "de": null,
         "en": "Friulian",
-        "sr": "фурлански"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -3581,10 +3509,7 @@
         "en": "Germanic languages",
         "sr": "германски језици"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q21200"
     },
@@ -3602,27 +3527,25 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "aln",
-        "scope": "I",
-        "type": "L"
+        "part3": "aln"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Gheg Albanian",
       "parentCandidate": null,
       "parentGlottocode": "alba1267",
       "preferredLabels": {
-        "de": "Gegisch",
+        "de": null,
         "en": "Gheg Albanian",
-        "sr": "гегијски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -3787,27 +3710,25 @@
         "part1": null,
         "part2B": "got",
         "part2T": "got",
-        "part3": "got",
-        "scope": "I",
-        "type": "H"
+        "part3": "got"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Gothic",
       "parentCandidate": null,
       "parentGlottocode": "east2805",
       "preferredLabels": {
-        "de": "Gotisch",
+        "de": null,
         "en": "Gothic",
-        "sr": "готски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -3873,9 +3794,7 @@
         "en": "Greek",
         "sr": null
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -3893,27 +3812,25 @@
         "part1": "he",
         "part2B": "heb",
         "part2T": "heb",
-        "part3": "heb",
-        "scope": "I",
-        "type": "L"
+        "part3": "heb"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Modern Hebrew",
       "parentCandidate": null,
       "parentGlottocode": "hebr1246",
       "preferredLabels": {
-        "de": "Hebräisch",
+        "de": null,
         "en": "Modern Hebrew",
-        "sr": "хебрејски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -4023,10 +3940,7 @@
         "en": "High German",
         "sr": "високонемачки"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q52040"
     },
@@ -4044,27 +3958,25 @@
         "part1": null,
         "part2B": "hit",
         "part2T": "hit",
-        "part3": "hit",
-        "scope": "I",
-        "type": "H"
+        "part3": "hit"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Hittite",
       "parentCandidate": null,
       "parentGlottocode": "anat1257",
       "preferredLabels": {
-        "de": "Hethitisch",
+        "de": null,
         "en": "Hittite",
-        "sr": "хетитски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -4081,27 +3993,25 @@
         "part1": "hu",
         "part2B": "hun",
         "part2T": "hun",
-        "part3": "hun",
-        "scope": "I",
-        "type": "L"
+        "part3": "hun"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Hungarian",
       "parentCandidate": null,
       "parentGlottocode": "hung1287",
       "preferredLabels": {
-        "de": "Ungarisch",
+        "de": null,
         "en": "Hungarian",
-        "sr": "мађарски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -4192,27 +4102,25 @@
         "part1": "is",
         "part2B": "ice",
         "part2T": "isl",
-        "part3": "isl",
-        "scope": "I",
-        "type": "L"
+        "part3": "isl"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Icelandic",
       "parentCandidate": null,
       "parentGlottocode": "icel1246",
       "preferredLabels": {
-        "de": "Isländisch",
+        "de": null,
         "en": "Icelandic",
-        "sr": "исландски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -4285,10 +4193,7 @@
         "en": "Indo-European languages",
         "sr": "индоевропски језици"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q19860"
     },
@@ -4325,10 +4230,7 @@
         "en": "Indo-Iranian languages",
         "sr": "индоирански језици"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q33514"
     },
@@ -4365,10 +4267,7 @@
         "en": "Indo-Aryan languages",
         "sr": "индоаријски језици"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q33577"
     },
@@ -4442,12 +4341,9 @@
         "en": "Iranian languages",
         "sr": "ирански језици"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
-      "wikidataQidCandidate": "Q33527"
+      "wikidataQidCandidate": null
     },
     {
       "aliasCandidates": {
@@ -4500,27 +4396,25 @@
         "part1": "ga",
         "part2B": "gle",
         "part2T": "gle",
-        "part3": "gle",
-        "scope": "I",
-        "type": "L"
+        "part3": "gle"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Irish",
       "parentCandidate": null,
       "parentGlottocode": "mode1265",
       "preferredLabels": {
-        "de": "Irisch",
+        "de": null,
         "en": "Irish",
-        "sr": "ирски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -4544,9 +4438,7 @@
         "part1": "os",
         "part2B": "oss",
         "part2T": "oss",
-        "part3": "oss",
-        "scope": "I",
-        "type": "L"
+        "part3": "oss"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -4588,9 +4480,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "ruo",
-        "scope": "I",
-        "type": "L"
+        "part3": "ruo"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -4607,9 +4497,7 @@
         "en": "Istro-Romanian",
         "sr": "истроромански"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -4627,27 +4515,25 @@
         "part1": "it",
         "part2B": "ita",
         "part2T": "ita",
-        "part3": "ita",
-        "scope": "I",
-        "type": "L"
+        "part3": "ita"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Italian",
       "parentCandidate": null,
       "parentGlottocode": "cent2427",
       "preferredLabels": {
-        "de": "Italienisch",
+        "de": null,
         "en": "Italian",
-        "sr": "италијански"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -4683,10 +4569,7 @@
         "en": "Italic languages",
         "sr": "италски језици"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q131848"
     },
@@ -4807,47 +4690,6 @@
         "en": [],
         "sr": []
       },
-      "approval": {
-        "reasons": [
-          "The user explicitly chose to retain generic Kajkavian on 2026-09-06. Glottolog kajk1237 describes the spoken language, while the pinned ISO table names kjv Kaikavian Literary Language (historical). The registration authors distinguish the literary norm from the generic dialect group: https://kajkavski-jezik.eu/en/kajkavian-iso-639-3-language-code/ . The Glottolog cross-reference to kjv is narrower supporting evidence, never an exact ISO identity; all generic source forms remain hr-x-kajkav.",
-          "Supporting identifiers only; no exact equivalence inferred: iso639-3:kjv|relationship:narrower|label:Kaikavian Literary Language;wikidata:Q838165|status:unpinned supporting proposal"
-        ],
-        "reviewedBy": "ttasovac",
-        "reviewedOn": "2026-09-06",
-        "status": "approved"
-      },
-      "canonicalCodeCandidate": "hr-x-kajkav",
-      "glottocode": "kajk1237",
-      "ianaScope": null,
-      "iso639": null,
-      "kindCandidate": "language",
-      "labelProvenance": {
-        "de": "raskovnik-review",
-        "en": "raskovnik-review",
-        "sr": "raskovnik-review"
-      },
-      "level": "language",
-      "name": "Kajkavian",
-      "parentCandidate": null,
-      "parentGlottocode": "west2804",
-      "preferredLabels": {
-        "de": "Kajkavisch",
-        "en": "Kajkavian",
-        "sr": "кајкавски"
-      },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
-      "selectableCandidate": true,
-      "wikidataQidCandidate": null
-    },
-    {
-      "aliasCandidates": {
-        "de": [],
-        "en": [],
-        "sr": []
-      },
       "approval": null,
       "canonicalCodeCandidate": "xal",
       "glottocode": "kalm1243",
@@ -4856,27 +4698,25 @@
         "part1": null,
         "part2B": "xal",
         "part2T": "xal",
-        "part3": "xal",
-        "scope": "I",
-        "type": "L"
+        "part3": "xal"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Oirad-Kalmyk-Darkhat",
       "parentCandidate": null,
       "parentGlottocode": "mong1331",
       "preferredLabels": {
-        "de": "Kalmückisch",
+        "de": null,
         "en": "Oirad-Kalmyk-Darkhat",
-        "sr": "калмички"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -4930,27 +4770,25 @@
         "part1": null,
         "part2B": "csb",
         "part2T": "csb",
-        "part3": "csb",
-        "scope": "I",
-        "type": "L"
+        "part3": "csb"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Kashubian",
       "parentCandidate": null,
       "parentGlottocode": "lech1241",
       "preferredLabels": {
-        "de": "Kaschubisch",
+        "de": null,
         "en": "Kashubian",
-        "sr": "кашупски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -4967,27 +4805,25 @@
         "part1": "kk",
         "part2B": "kaz",
         "part2T": "kaz",
-        "part3": "kaz",
-        "scope": "I",
-        "type": "L"
+        "part3": "kaz"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Kazakh",
       "parentCandidate": null,
       "parentGlottocode": "sout2701",
       "preferredLabels": {
-        "de": "Kasachisch",
+        "de": null,
         "en": "Kazakh",
-        "sr": "казашки"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -5041,27 +4877,25 @@
         "part1": null,
         "part2B": "kho",
         "part2T": "kho",
-        "part3": "kho",
-        "scope": "I",
-        "type": "H"
+        "part3": "kho"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Khotanese",
       "parentCandidate": null,
       "parentGlottocode": "saka1298",
       "preferredLabels": {
-        "de": "Sakisch",
+        "de": null,
         "en": "Khotanese",
-        "sr": "хотански"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -5085,9 +4919,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "xco",
-        "scope": "I",
-        "type": "H"
+        "part3": "xco"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -5104,9 +4936,7 @@
         "en": "Khwarezmian",
         "sr": "хорезмијски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -5143,11 +4973,7 @@
         "en": "Kipchak languages",
         "sr": "кипчачки"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q1339898"
     },
@@ -5258,10 +5084,7 @@
         "en": "Kosovo-Resava dialect",
         "sr": "косовско-ресавски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -5279,27 +5102,25 @@
         "part1": "ku",
         "part2B": "kur",
         "part2T": "kur",
-        "part3": "kur",
-        "scope": "M",
-        "type": "L"
+        "part3": "kur"
       },
-      "kindCandidate": "language",
+      "kindCandidate": "family",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "family",
       "name": "Kurdish",
       "parentCandidate": null,
       "parentGlottocode": "laki1246",
       "preferredLabels": {
-        "de": "Kurmandschi",
+        "de": null,
         "en": "Kurdish",
-        "sr": "курдски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -5372,10 +5193,7 @@
         "en": "Late Latin",
         "sr": "каснослатински"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q1503113"
     },
@@ -5430,27 +5248,25 @@
         "part1": "la",
         "part2B": "lat",
         "part2T": "lat",
-        "part3": "lat",
-        "scope": "I",
-        "type": "H"
+        "part3": "lat"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Latin",
       "parentCandidate": null,
       "parentGlottocode": "impe1234",
       "preferredLabels": {
-        "de": "Latein",
+        "de": null,
         "en": "Latin",
-        "sr": "латински"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -5541,27 +5357,25 @@
         "part1": "lv",
         "part2B": "lav",
         "part2T": "lav",
-        "part3": "lav",
-        "scope": "M",
-        "type": "L"
+        "part3": "lav"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Latvian",
       "parentCandidate": null,
       "parentGlottocode": "east2280",
       "preferredLabels": {
-        "de": "Lettisch",
+        "de": null,
         "en": "Latvian",
-        "sr": "летонски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -5615,27 +5429,25 @@
         "part1": "lt",
         "part2B": "lit",
         "part2T": "lit",
-        "part3": "lit",
-        "scope": "I",
-        "type": "L"
+        "part3": "lit"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Lithuanian",
       "parentCandidate": null,
       "parentGlottocode": "east2280",
       "preferredLabels": {
-        "de": "Litauisch",
+        "de": null,
         "en": "Lithuanian",
-        "sr": "литвански"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -5652,27 +5464,25 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "lmo",
-        "scope": "I",
-        "type": "L"
+        "part3": "lmo"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Lombard",
       "parentCandidate": null,
       "parentGlottocode": "piem1239",
       "preferredLabels": {
-        "de": "Lombardisch",
+        "de": null,
         "en": "Lombard",
-        "sr": "ломбардски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -5689,27 +5499,25 @@
         "part1": null,
         "part2B": "dsb",
         "part2T": "dsb",
-        "part3": "dsb",
-        "scope": "I",
-        "type": "L"
+        "part3": "dsb"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Lower Sorbian",
       "parentCandidate": null,
       "parentGlottocode": "sorb1249",
       "preferredLabels": {
-        "de": "Niedersorbisch",
+        "de": null,
         "en": "Lower Sorbian",
-        "sr": "доњолужички"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -5775,9 +5583,7 @@
         "en": "Luvic",
         "sr": null
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -5815,11 +5621,7 @@
         "en": "Luwian",
         "sr": "лувијски"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q10713"
     },
@@ -5849,9 +5651,7 @@
         "en": "Luvo-Lydian",
         "sr": null
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -5881,9 +5681,7 @@
         "en": "Luvo-Palaic",
         "sr": null
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -5901,27 +5699,25 @@
         "part1": "mk",
         "part2B": "mac",
         "part2T": "mkd",
-        "part3": "mkd",
-        "scope": "I",
-        "type": "L"
+        "part3": "mkd"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Macedonian",
       "parentCandidate": null,
       "parentGlottocode": "mace1252",
       "preferredLabels": {
-        "de": "Mazedonisch",
+        "de": null,
         "en": "Macedonian",
-        "sr": "македонски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -6142,10 +5938,7 @@
         "en": "Medieval Latin",
         "sr": "средњолатински"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q1163234"
     },
@@ -6182,10 +5975,7 @@
         "en": "Medieval Greek",
         "sr": "средњогрчки"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q36387"
     },
@@ -6210,9 +6000,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "ruq",
-        "scope": "I",
-        "type": "L"
+        "part3": "ruq"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -6229,9 +6017,7 @@
         "en": "Megleno-Romanian",
         "sr": "мегленорумунски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -6293,9 +6079,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "gml",
-        "scope": "I",
-        "type": "H"
+        "part3": "gml"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -6312,9 +6096,7 @@
         "en": "Middle Low German",
         "sr": "средњодоњонемачки"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -6332,27 +6114,25 @@
         "part1": null,
         "part2B": "dum",
         "part2T": "dum",
-        "part3": "dum",
-        "scope": "I",
-        "type": "H"
+        "part3": "dum"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Middle Dutch",
       "parentCandidate": null,
       "parentGlottocode": "midd1347",
       "preferredLabels": {
-        "de": "Mittelniederländisch",
+        "de": null,
         "en": "Middle Dutch",
-        "sr": "средњохоландски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -6377,9 +6157,7 @@
         "part1": null,
         "part2B": "gmh",
         "part2T": "gmh",
-        "part3": "gmh",
-        "scope": "I",
-        "type": "H"
+        "part3": "gmh"
       },
       "kindCandidate": "historical-stage",
       "labelProvenance": {
@@ -6396,9 +6174,7 @@
         "en": "Middle High German",
         "sr": "средњонемачки"
       },
-      "reviewReasons": [
-        "multiple-serbian-source-meanings"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -6571,9 +6347,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "xbm",
-        "scope": "I",
-        "type": "H"
+        "part3": "xbm"
       },
       "kindCandidate": "variety",
       "labelProvenance": {
@@ -6590,9 +6364,7 @@
         "en": "Middle Breton",
         "sr": "средњобретонски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q787610"
     },
@@ -6610,27 +6382,25 @@
         "part1": null,
         "part2B": "mga",
         "part2T": "mga",
-        "part3": "mga",
-        "scope": "I",
-        "type": "H"
+        "part3": "mga"
       },
       "kindCandidate": "variety",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "dialect",
       "name": "Middle Irish (10-12th century)",
       "parentCandidate": null,
       "parentGlottocode": "oldi1245",
       "preferredLabels": {
-        "de": "Mittelirisch",
+        "de": null,
         "en": "Middle Irish (10-12th century)",
-        "sr": "средњоирски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -6654,9 +6424,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "wlm",
-        "scope": "I",
-        "type": "H"
+        "part3": "wlm"
       },
       "kindCandidate": "variety",
       "labelProvenance": {
@@ -6673,9 +6441,7 @@
         "en": "Middle Welsh",
         "sr": "средњокимријски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -6730,27 +6496,25 @@
         "part1": "el",
         "part2B": "gre",
         "part2T": "ell",
-        "part3": "ell",
-        "scope": "I",
-        "type": "L"
+        "part3": "ell"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Modern Greek",
       "parentCandidate": null,
       "parentGlottocode": "nucl1783",
       "preferredLabels": {
-        "de": "Griechisch",
+        "de": null,
         "en": "Modern Greek",
-        "sr": "новогрчки"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -6823,10 +6587,7 @@
         "en": "New High German",
         "sr": "нововисоконемачки"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q454476"
     },
@@ -6856,9 +6617,7 @@
         "en": "Modern Southwestern Iranian",
         "sr": null
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -6987,27 +6746,25 @@
         "part1": "mn",
         "part2B": "mon",
         "part2T": "mon",
-        "part3": "mon",
-        "scope": "M",
-        "type": "L"
+        "part3": "mon"
       },
-      "kindCandidate": "language",
+      "kindCandidate": "family",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "family",
       "name": "Mongolian",
       "parentCandidate": null,
       "parentGlottocode": "khal1273",
       "preferredLabels": {
-        "de": "Mongolisch",
+        "de": null,
         "en": "Mongolian",
-        "sr": "монголски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -7068,9 +6825,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "gmy",
-        "scope": "I",
-        "type": "H"
+        "part3": "gmy"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -7087,9 +6842,7 @@
         "en": "Achaean Greek",
         "sr": "микенски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -7181,27 +6934,25 @@
         "part1": null,
         "part2B": "nds",
         "part2T": "nds",
-        "part3": "nds",
-        "scope": "I",
-        "type": "L"
+        "part3": "nds"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Eastern Low German",
       "parentCandidate": null,
       "parentGlottocode": "east2291",
       "preferredLabels": {
-        "de": "Niederdeutsch",
+        "de": null,
         "en": "Eastern Low German",
-        "sr": "доњонемачки"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -7311,10 +7062,7 @@
         "en": "North Germanic languages",
         "sr": "северногермански језици"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q106085"
     },
@@ -7640,9 +7388,7 @@
         "en": "North Greek",
         "sr": null
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -7697,27 +7443,25 @@
         "part1": "no",
         "part2B": "nor",
         "part2T": "nor",
-        "part3": "nor",
-        "scope": "M",
-        "type": "L"
+        "part3": "nor"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Norwegian",
       "parentCandidate": null,
       "parentGlottocode": "west2805",
       "preferredLabels": {
-        "de": "Norwegisch",
+        "de": null,
         "en": "Norwegian",
-        "sr": "норвешки"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -7734,27 +7478,25 @@
         "part1": "hy",
         "part2B": "arm",
         "part2T": "hye",
-        "part3": "hye",
-        "scope": "I",
-        "type": "L"
+        "part3": "hye"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Eastern Armenian",
       "parentCandidate": null,
       "parentGlottocode": "east2768",
       "preferredLabels": {
-        "de": "Armenisch",
+        "de": null,
         "en": "Eastern Armenian",
-        "sr": "јерменски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -7771,27 +7513,25 @@
         "part1": "ps",
         "part2B": "pus",
         "part2T": "pus",
-        "part3": "pus",
-        "scope": "M",
-        "type": "L"
+        "part3": "pus"
       },
-      "kindCandidate": "language",
+      "kindCandidate": "family",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "family",
       "name": "Nuclear Pashto",
       "parentCandidate": null,
       "parentGlottocode": "pash1269",
       "preferredLabels": {
-        "de": "Paschtu",
+        "de": null,
         "en": "Nuclear Pashto",
-        "sr": "паштунски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -7808,27 +7548,25 @@
         "part1": "tr",
         "part2B": "tur",
         "part2T": "tur",
-        "part3": "tur",
-        "scope": "I",
-        "type": "L"
+        "part3": "tur"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Turkish",
       "parentCandidate": null,
       "parentGlottocode": "west2406",
       "preferredLabels": {
-        "de": "Türkisch",
+        "de": null,
         "en": "Turkish",
-        "sr": "турски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -7845,27 +7583,25 @@
         "part1": "ka",
         "part2B": "geo",
         "part2T": "kat",
-        "part3": "kat",
-        "scope": "I",
-        "type": "L"
+        "part3": "kat"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Georgian",
       "parentCandidate": null,
       "parentGlottocode": "geor1253",
       "preferredLabels": {
-        "de": "Georgisch",
+        "de": null,
         "en": "Georgian",
-        "sr": "грузијски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -8227,9 +7963,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "obt",
-        "scope": "I",
-        "type": "H"
+        "part3": "obt"
       },
       "kindCandidate": "variety",
       "labelProvenance": {
@@ -8246,9 +7980,7 @@
         "en": "Old Breton",
         "sr": "старобретонски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q3558112"
     },
@@ -8283,9 +8015,7 @@
         "en": "Old South-West British",
         "sr": null
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -8322,10 +8052,7 @@
         "en": "Old Czech",
         "sr": "старочешки"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q16315466"
     },
@@ -8351,9 +8078,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "oco",
-        "scope": "I",
-        "type": "H"
+        "part3": "oco"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -8370,9 +8095,7 @@
         "en": "Old Cornish",
         "sr": "старокорнволски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q48304520"
     },
@@ -8451,10 +8174,7 @@
         "en": "Old Danish",
         "sr": "стародански"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q12330003"
     },
@@ -8479,9 +8199,7 @@
         "part1": null,
         "part2B": "ang",
         "part2T": "ang",
-        "part3": "ang",
-        "scope": "I",
-        "type": "H"
+        "part3": "ang"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -8498,9 +8216,7 @@
         "en": "Old English",
         "sr": "староенглески"
       },
-      "reviewReasons": [
-        "multiple-serbian-source-meanings"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -8518,27 +8234,25 @@
         "part1": null,
         "part2B": "fro",
         "part2T": "fro",
-        "part3": "fro",
-        "scope": "I",
-        "type": "H"
+        "part3": "fro"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Old French (842-ca. 1400)",
       "parentCandidate": null,
       "parentGlottocode": "oila1234",
       "preferredLabels": {
-        "de": "Altfranzösisch",
+        "de": null,
         "en": "Old French (842-ca. 1400)",
-        "sr": "старофранцуски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -8562,9 +8276,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "ofs",
-        "scope": "I",
-        "type": "H"
+        "part3": "ofs"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -8581,9 +8293,7 @@
         "en": "Old Frisian",
         "sr": "старофризијски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -8601,27 +8311,25 @@
         "part1": null,
         "part2B": "goh",
         "part2T": "goh",
-        "part3": "goh",
-        "scope": "I",
-        "type": "H"
+        "part3": "goh"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Old High German (ca. 750-1050)",
       "parentCandidate": null,
       "parentGlottocode": "high1286",
       "preferredLabels": {
-        "de": "Althochdeutsch",
+        "de": null,
         "en": "Old High German (ca. 750-1050)",
-        "sr": "старовисоконемачки"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -8658,11 +8366,7 @@
         "en": "Old Indo-Aryan",
         "sr": "староиндијски"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -8674,24 +8378,22 @@
       },
       "approval": {
         "reasons": [
-          "User-approved source migration ga-x-old → sga. The pinned IANA and ISO tables register this historical language; the pinned Glottolog node identifies the same scope. Source evidence, reviewed labels and earlier review history are preserved."
+          "The approved classification-only policy supplies a deterministic BCP 47 identifier and permits English fallback without inventing Serbian or German translations. Accepted semantic Wikidata item Q35308 on exact-glottocode evidence; category, template, list, and disambiguation entities are excluded."
         ],
         "reviewedBy": "Codex",
         "reviewedOn": "2026-09-06",
         "status": "approved"
       },
-      "canonicalCodeCandidate": "sga",
+      "canonicalCodeCandidate": "und-x-glot-oldi1245",
       "glottocode": "oldi1245",
-      "ianaScope": "individual",
+      "ianaScope": null,
       "iso639": {
         "part1": null,
         "part2B": "sga",
         "part2T": "sga",
-        "part3": "sga",
-        "scope": "I",
-        "type": "H"
+        "part3": "sga"
       },
-      "kindCandidate": "historical-stage",
+      "kindCandidate": "language",
       "labelProvenance": {
         "de": "raskovnik-review",
         "en": "raskovnik-review",
@@ -8703,11 +8405,11 @@
       "parentGlottocode": "goid1240",
       "preferredLabels": {
         "de": "Altirisch",
-        "en": "Old Irish",
-        "sr": "староирски"
+        "en": "Early Irish",
+        "sr": "староирски језик"
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": "Q35308"
     },
     {
@@ -8743,59 +8445,9 @@
         "en": "Old Latin",
         "sr": "старолатински"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q12289"
-    },
-    {
-      "aliasCandidates": {
-        "de": [],
-        "en": [],
-        "sr": []
-      },
-      "approval": {
-        "reasons": [
-          "User-approved source migration lt-x-old → olt. The pinned IANA and ISO tables register this historical language; the pinned Glottolog node identifies the same scope. Source evidence, reviewed labels and earlier review history are preserved.",
-          "Supporting identifiers only; no exact equivalence inferred: wikidata:Q17417801|status:proposal retained as supporting evidence; no revision-pinned exact assignment"
-        ],
-        "reviewedBy": "Codex",
-        "reviewedOn": "2026-09-06",
-        "status": "approved"
-      },
-      "canonicalCodeCandidate": "olt",
-      "glottocode": "oldl1240",
-      "ianaScope": "individual",
-      "iso639": {
-        "part1": null,
-        "part2B": null,
-        "part2T": null,
-        "part3": "olt",
-        "scope": "I",
-        "type": "H"
-      },
-      "kindCandidate": "historical-stage",
-      "labelProvenance": {
-        "de": "raskovnik-review",
-        "en": "raskovnik-review",
-        "sr": "raskovnik-review"
-      },
-      "level": "dialect",
-      "name": "Old Lithuanian",
-      "parentCandidate": null,
-      "parentGlottocode": "lith1251",
-      "preferredLabels": {
-        "de": "Altlitauisch",
-        "en": "Old Lithuanian",
-        "sr": "старолитвански"
-      },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
-      "selectableCandidate": true,
-      "wikidataQidCandidate": null
     },
     {
       "aliasCandidates": {
@@ -8848,27 +8500,25 @@
         "part1": null,
         "part2B": "non",
         "part2T": "non",
-        "part3": "non",
-        "scope": "I",
-        "type": "H"
+        "part3": "non"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Old Norse",
       "parentCandidate": null,
       "parentGlottocode": "west2805",
       "preferredLabels": {
-        "de": "Altnordisch",
+        "de": null,
         "en": "Old Norse",
-        "sr": "старонордијски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -8885,27 +8535,25 @@
         "part1": null,
         "part2B": "peo",
         "part2T": "peo",
-        "part3": "peo",
-        "scope": "I",
-        "type": "H"
+        "part3": "peo"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Old Persian (ca. 600-400 B.C.)",
       "parentCandidate": null,
       "parentGlottocode": "sout3157",
       "preferredLabels": {
-        "de": "Altpersisch",
+        "de": null,
         "en": "Old Persian (ca. 600-400 B.C.)",
-        "sr": "староперсијски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -8941,10 +8589,7 @@
         "en": "Old Polish",
         "sr": "старопољски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q149838"
     },
@@ -8969,9 +8614,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "orv",
-        "scope": "I",
-        "type": "H"
+        "part3": "orv"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -8988,9 +8631,7 @@
         "en": "Old Russian",
         "sr": "староруски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q35228"
     },
@@ -9015,9 +8656,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "osx",
-        "scope": "I",
-        "type": "H"
+        "part3": "osx"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -9034,10 +8673,7 @@
         "en": "Old Saxon",
         "sr": "старосаксонски"
       },
-      "reviewReasons": [
-        "multiple-serbian-source-meanings",
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q35219"
     },
@@ -9074,10 +8710,7 @@
         "en": "Old Swedish",
         "sr": "старошведски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q2417210"
     },
@@ -9102,9 +8735,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "otk",
-        "scope": "I",
-        "type": "H"
+        "part3": "otk"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -9121,9 +8752,7 @@
         "en": "Old Turkish",
         "sr": "старотурски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -9158,9 +8787,7 @@
         "en": "Old-Middle Welsh",
         "sr": null
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -9186,9 +8813,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "owl",
-        "scope": "I",
-        "type": "H"
+        "part3": "owl"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -9205,9 +8830,7 @@
         "en": "Old Welsh",
         "sr": "старокимријски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q2266723"
     },
@@ -9232,9 +8855,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "osc",
-        "scope": "I",
-        "type": "H"
+        "part3": "osc"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -9251,9 +8872,7 @@
         "en": "Oscan",
         "sr": "осачки"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -9345,27 +8964,25 @@
         "part1": null,
         "part2B": "ota",
         "part2T": "ota",
-        "part3": "ota",
-        "scope": "I",
-        "type": "H"
+        "part3": "ota"
       },
       "kindCandidate": "variety",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "dialect",
       "name": "Ottoman Turkish",
       "parentCandidate": null,
       "parentGlottocode": "nucl1301",
       "preferredLabels": {
-        "de": "Osmanisch",
+        "de": null,
         "en": "Ottoman Turkish",
-        "sr": "османски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -9389,9 +9006,7 @@
         "part1": null,
         "part2B": "pal",
         "part2T": "pal",
-        "part3": "pal",
-        "scope": "I",
-        "type": "H"
+        "part3": "pal"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -9408,9 +9023,7 @@
         "en": "Middle Persian",
         "sr": "средњоперсијски"
       },
-      "reviewReasons": [
-        "multiple-serbian-source-meanings"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q32063"
     },
@@ -9435,9 +9048,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "xpr",
-        "scope": "I",
-        "type": "H"
+        "part3": "xpr"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -9454,9 +9065,7 @@
         "en": "Parthian",
         "sr": "парћански"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -9518,9 +9127,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "xpg",
-        "scope": "I",
-        "type": "H"
+        "part3": "xpg"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -9537,9 +9144,7 @@
         "en": "Phrygian",
         "sr": "фригијски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -9601,9 +9206,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "pox",
-        "scope": "I",
-        "type": "E"
+        "part3": "pox"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -9620,9 +9223,7 @@
         "en": "Polabian",
         "sr": "полапски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -9647,9 +9248,7 @@
         "part1": "pl",
         "part2B": "pol",
         "part2T": "pol",
-        "part3": "pol",
-        "scope": "I",
-        "type": "L"
+        "part3": "pol"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -9666,9 +9265,7 @@
         "en": "Polish",
         "sr": "пољски"
       },
-      "reviewReasons": [
-        "multiple-serbian-source-meanings"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -9723,27 +9320,25 @@
         "part1": "pt",
         "part2B": "por",
         "part2T": "por",
-        "part3": "por",
-        "scope": "I",
-        "type": "L"
+        "part3": "por"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Portuguese",
       "parentCandidate": null,
       "parentGlottocode": "braz1247",
       "preferredLabels": {
-        "de": "Portugiesisch",
+        "de": null,
         "en": "Portuguese",
-        "sr": "португалски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -9779,10 +9374,7 @@
         "en": "Provençal",
         "sr": "провансалски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "nonexact-standard-tag-alignment"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q241243"
     },
@@ -9800,27 +9392,25 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "prg",
-        "scope": "I",
-        "type": "L"
+        "part3": "prg"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Old Prussian",
       "parentCandidate": null,
       "parentGlottocode": "balt1263",
       "preferredLabels": {
-        "de": "Altpreußisch",
+        "de": null,
         "en": "Old Prussian",
-        "sr": "старопруски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -9845,9 +9435,7 @@
         "part1": "ro",
         "part2B": "rum",
         "part2T": "ron",
-        "part3": "ron",
-        "scope": "I",
-        "type": "L"
+        "part3": "ron"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -9864,9 +9452,7 @@
         "en": "Romanian",
         "sr": "румунски"
       },
-      "reviewReasons": [
-        "multiple-serbian-source-meanings"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q7913"
     },
@@ -9903,10 +9489,7 @@
         "en": "Romance languages",
         "sr": "романски језици"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q19814"
     },
@@ -9924,27 +9507,25 @@
         "part1": "ru",
         "part2B": "rus",
         "part2T": "rus",
-        "part3": "rus",
-        "scope": "I",
-        "type": "L"
+        "part3": "rus"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Russian",
       "parentCandidate": null,
       "parentGlottocode": "east1426",
       "preferredLabels": {
-        "de": "Russisch",
+        "de": null,
         "en": "Russian",
-        "sr": "руски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -9961,27 +9542,25 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "rue",
-        "scope": "I",
-        "type": "L"
+        "part3": "rue"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Rusyn",
       "parentCandidate": null,
       "parentGlottocode": "ukra1257",
       "preferredLabels": {
-        "de": "Russinisch",
+        "de": null,
         "en": "Rusyn",
-        "sr": "русински"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -10109,27 +9688,25 @@
         "part1": "sa",
         "part2B": "san",
         "part2T": "san",
-        "part3": "san",
-        "scope": "M",
-        "type": "H"
+        "part3": "san"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Sanskrit",
       "parentCandidate": null,
       "parentGlottocode": "indo1321",
       "preferredLabels": {
-        "de": "Sanskrit",
+        "de": null,
         "en": "Sanskrit",
-        "sr": "санскртски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -10158,9 +9735,7 @@
         "en": "Semitic",
         "sr": null
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -10186,9 +9761,7 @@
         "part1": "sr",
         "part2B": "srp",
         "part2T": "srp",
-        "part3": "srp",
-        "scope": "I",
-        "type": "L"
+        "part3": "srp"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -10279,10 +9852,7 @@
         "en": "Shtokavian",
         "sr": "штокавски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q148893"
     },
@@ -10344,9 +9914,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "sgh",
-        "scope": "I",
-        "type": "L"
+        "part3": "sgh"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -10363,9 +9931,7 @@
         "en": "Shughni",
         "sr": "шугнански"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -10439,10 +10005,7 @@
         "en": "Slavic",
         "sr": "словенски језици"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -10460,27 +10023,25 @@
         "part1": "sl",
         "part2B": "slv",
         "part2T": "slv",
-        "part3": "slv",
-        "scope": "I",
-        "type": "L"
+        "part3": "slv"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Slovenian",
       "parentCandidate": null,
       "parentGlottocode": "west2804",
       "preferredLabels": {
-        "de": "Slowenisch",
+        "de": null,
         "en": "Slovenian",
-        "sr": "словеначки"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -10497,27 +10058,25 @@
         "part1": "sk",
         "part2B": "slo",
         "part2T": "slk",
-        "part3": "slk",
-        "scope": "I",
-        "type": "L"
+        "part3": "slk"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Slovak",
       "parentCandidate": null,
       "parentGlottocode": "czec1260",
       "preferredLabels": {
-        "de": "Slowakisch",
+        "de": null,
         "en": "Slovak",
-        "sr": "словачки"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -10553,11 +10112,7 @@
         "en": "Slovincian",
         "sr": "словињски"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q36822"
     },
@@ -10594,10 +10149,7 @@
         "en": "Smederevo-Vršac dialect",
         "sr": "смедеревско-вршачки"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q7544335"
     },
@@ -10615,27 +10167,25 @@
         "part1": null,
         "part2B": "sog",
         "part2T": "sog",
-        "part3": "sog",
-        "scope": "I",
-        "type": "H"
+        "part3": "sog"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Sogdian",
       "parentCandidate": null,
       "parentGlottocode": "sogd1246",
       "preferredLabels": {
-        "de": "Sogdisch",
+        "de": null,
         "en": "Sogdian",
-        "sr": "согдијски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -10782,10 +10332,7 @@
         "en": "Sorbian languages",
         "sr": "лужичкосрпски језици"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q25442"
     },
@@ -10810,9 +10357,7 @@
         "part1": "sh",
         "part2B": null,
         "part2T": null,
-        "part3": "hbs",
-        "scope": "M",
-        "type": "L"
+        "part3": "hbs"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -10859,9 +10404,7 @@
         "en": "Southern Occitan",
         "sr": null
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -10935,12 +10478,9 @@
         "en": "South Slavic languages",
         "sr": "јужнословенски језици"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
-      "wikidataQidCandidate": "Q146665"
+      "wikidataQidCandidate": null
     },
     {
       "aliasCandidates": {
@@ -11141,27 +10681,25 @@
         "part1": "es",
         "part2B": "spa",
         "part2T": "spa",
-        "part3": "spa",
-        "scope": "I",
-        "type": "L"
+        "part3": "spa"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Spanish",
       "parentCandidate": null,
       "parentGlottocode": "cast1243",
       "preferredLabels": {
-        "de": "Spanisch",
+        "de": null,
         "en": "Spanish",
-        "sr": "шпански"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -11178,27 +10716,25 @@
         "part1": "ca",
         "part2B": "cat",
         "part2T": "cat",
-        "part3": "cat",
-        "scope": "I",
-        "type": "L"
+        "part3": "cat"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Catalan",
       "parentCandidate": null,
       "parentGlottocode": "sout3183",
       "preferredLabels": {
-        "de": "Katalanisch",
+        "de": null,
         "en": "Catalan",
-        "sr": "каталонски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -11215,27 +10751,25 @@
         "part1": "fr",
         "part2B": "fre",
         "part2T": "fra",
-        "part3": "fra",
-        "scope": "I",
-        "type": "L"
+        "part3": "fra"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "French",
       "parentCandidate": null,
       "parentGlottocode": "glob1239",
       "preferredLabels": {
-        "de": "Französisch",
+        "de": null,
         "en": "French",
-        "sr": "француски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -11252,27 +10786,25 @@
         "part1": "en",
         "part2B": "eng",
         "part2T": "eng",
-        "part3": "eng",
-        "scope": "I",
-        "type": "L"
+        "part3": "eng"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "English",
       "parentCandidate": null,
       "parentGlottocode": "macr1271",
       "preferredLabels": {
-        "de": "Englisch",
+        "de": null,
         "en": "English",
-        "sr": "енглески"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -11289,27 +10821,25 @@
         "part1": "de",
         "part2B": "ger",
         "part2T": "deu",
-        "part3": "deu",
-        "scope": "I",
-        "type": "L"
+        "part3": "deu"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "German",
       "parentCandidate": null,
       "parentGlottocode": "glob1243",
       "preferredLabels": {
-        "de": "Deutsch",
+        "de": null,
         "en": "German",
-        "sr": "немачки"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -11345,10 +10875,7 @@
         "en": "Šumadija-Vojvodina dialect",
         "sr": "шумадијско-војвођански"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q3655468"
     },
@@ -11366,27 +10893,25 @@
         "part1": null,
         "part2B": "sux",
         "part2T": "sux",
-        "part3": "sux",
-        "scope": "I",
-        "type": "H"
+        "part3": "sux"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Sumerian",
       "parentCandidate": null,
       "parentGlottocode": null,
       "preferredLabels": {
-        "de": "Sumerisch",
+        "de": null,
         "en": "Sumerian",
-        "sr": "сумерски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -11410,9 +10935,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "swg",
-        "scope": "I",
-        "type": "L"
+        "part3": "swg"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -11429,9 +10952,7 @@
         "en": "Swabian",
         "sr": "швапски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -11449,27 +10970,25 @@
         "part1": "sv",
         "part2B": "swe",
         "part2T": "swe",
-        "part3": "swe",
-        "scope": "I",
-        "type": "L"
+        "part3": "swe"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Swedish",
       "parentCandidate": null,
       "parentGlottocode": "east2781",
       "preferredLabels": {
-        "de": "Schwedisch",
+        "de": null,
         "en": "Swedish",
-        "sr": "шведски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -11486,27 +11005,25 @@
         "part1": "tt",
         "part2B": "tat",
         "part2T": "tat",
-        "part3": "tat",
-        "scope": "I",
-        "type": "L"
+        "part3": "tat"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Tatar",
       "parentCandidate": null,
       "parentGlottocode": "bash1267",
       "preferredLabels": {
-        "de": "Tatarisch",
+        "de": null,
         "en": "Tatar",
-        "sr": "татарски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -11580,11 +11097,7 @@
         "en": "Tocharian languages",
         "sr": "тохарски"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q37029"
     },
@@ -11609,9 +11122,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "als",
-        "scope": "I",
-        "type": "L"
+        "part3": "als"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -11628,56 +11139,7 @@
         "en": "Tosk",
         "sr": "тоскијски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
-      "selectableCandidate": true,
-      "wikidataQidCandidate": null
-    },
-    {
-      "aliasCandidates": {
-        "de": [],
-        "en": [],
-        "sr": []
-      },
-      "approval": {
-        "reasons": [
-          "User-approved source migration cel-x-gaulish → xtg. The pinned IANA and ISO tables register this historical language; the pinned Glottolog node identifies the same scope. Source evidence, reviewed labels and earlier review history are preserved.",
-          "Supporting identifiers only; no exact equivalence inferred: iana-grandfathered:cel-gaulish(deprecated);glottolog:cisa1237|iso639-3:xcg|label:Cisalpine Gaulish"
-        ],
-        "reviewedBy": "Codex",
-        "reviewedOn": "2026-09-06",
-        "status": "approved"
-      },
-      "canonicalCodeCandidate": "xtg",
-      "glottocode": "tran1282",
-      "ianaScope": "individual",
-      "iso639": {
-        "part1": null,
-        "part2B": null,
-        "part2T": null,
-        "part3": "xtg",
-        "scope": "I",
-        "type": "H"
-      },
-      "kindCandidate": "language",
-      "labelProvenance": {
-        "de": "raskovnik-review",
-        "en": "raskovnik-review",
-        "sr": "raskovnik-review"
-      },
-      "level": "language",
-      "name": "Transalpine Gaulish",
-      "parentCandidate": null,
-      "parentGlottocode": "cont1249",
-      "preferredLabels": {
-        "de": "Gallisch",
-        "en": "Gaulish",
-        "sr": "галски"
-      },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -11714,10 +11176,7 @@
         "en": "Triestine",
         "sr": "тршћански"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q2739548"
     },
@@ -11754,10 +11213,7 @@
         "en": "Turkic languages",
         "sr": "туркијски језици"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q34090"
     },
@@ -11775,27 +11231,25 @@
         "part1": "ug",
         "part2B": "uig",
         "part2T": "uig",
-        "part3": "uig",
-        "scope": "I",
-        "type": "L"
+        "part3": "uig"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Uighur",
       "parentCandidate": null,
       "parentGlottocode": "uigh1243",
       "preferredLabels": {
-        "de": "Uigurisch",
+        "de": null,
         "en": "Uighur",
-        "sr": "ујгурски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -11849,27 +11303,25 @@
         "part1": "uk",
         "part2B": "ukr",
         "part2T": "ukr",
-        "part3": "ukr",
-        "scope": "I",
-        "type": "L"
+        "part3": "ukr"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Ukrainian",
       "parentCandidate": null,
       "parentGlottocode": "ukra1257",
       "preferredLabels": {
-        "de": "Ukrainisch",
+        "de": null,
         "en": "Ukrainian",
-        "sr": "украјински"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -11930,9 +11382,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "xum",
-        "scope": "I",
-        "type": "H"
+        "part3": "xum"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -11949,9 +11399,7 @@
         "en": "Umbrian",
         "sr": "умбријски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -11969,27 +11417,25 @@
         "part1": null,
         "part2B": "hsb",
         "part2T": "hsb",
-        "part3": "hsb",
-        "scope": "I",
-        "type": "L"
+        "part3": "hsb"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Upper Sorbian",
       "parentCandidate": null,
       "parentGlottocode": "sorb1249",
       "preferredLabels": {
-        "de": "Obersorbisch",
+        "de": null,
         "en": "Upper Sorbian",
-        "sr": "горњолужички"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -12055,9 +11501,7 @@
         "en": "Uralic",
         "sr": null
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -12156,9 +11600,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "vsn",
-        "scope": "I",
-        "type": "H"
+        "part3": "vsn"
       },
       "kindCandidate": "variety",
       "labelProvenance": {
@@ -12175,11 +11617,44 @@
         "en": "Vedic Sanskrit",
         "sr": "ведски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
+    },
+    {
+      "aliasCandidates": {
+        "de": [],
+        "en": [],
+        "sr": []
+      },
+      "approval": null,
+      "canonicalCodeCandidate": "vel",
+      "glottocode": "velu1238",
+      "ianaScope": "individual",
+      "iso639": {
+        "part1": null,
+        "part2B": null,
+        "part2T": null,
+        "part3": "vel"
+      },
+      "kindCandidate": "variety",
+      "labelProvenance": {
+        "de": null,
+        "en": "glottolog-5.3",
+        "sr": null
+      },
+      "level": "dialect",
+      "name": "Veluws",
+      "parentCandidate": null,
+      "parentGlottocode": "west2356",
+      "preferredLabels": {
+        "de": null,
+        "en": "Veluws",
+        "sr": null
+      },
+      "reviewReasons": [],
+      "selectableCandidate": false,
+      "wikidataQidCandidate": "Q2484810"
     },
     {
       "aliasCandidates": {
@@ -12202,9 +11677,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "xve",
-        "scope": "I",
-        "type": "H"
+        "part3": "xve"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -12221,9 +11694,7 @@
         "en": "Venetic",
         "sr": "венетски"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -12241,27 +11712,25 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "vec",
-        "scope": "I",
-        "type": "L"
+        "part3": "vec"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Venetian",
       "parentCandidate": null,
       "parentGlottocode": "dalm1244",
       "preferredLabels": {
-        "de": "Venetisch",
+        "de": null,
         "en": "Venetian",
-        "sr": "венецијански"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -12297,10 +11766,7 @@
         "en": "Vulgar Latin",
         "sr": "вулгарнолатински"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q37560"
     },
@@ -12325,9 +11791,7 @@
         "part1": null,
         "part2B": null,
         "part2T": null,
-        "part3": "wbl",
-        "scope": "I",
-        "type": "L"
+        "part3": "wbl"
       },
       "kindCandidate": "language",
       "labelProvenance": {
@@ -12344,9 +11808,7 @@
         "en": "Wakhi",
         "sr": "вахански"
       },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": null
     },
@@ -12364,27 +11826,25 @@
         "part1": "cy",
         "part2B": "wel",
         "part2T": "cym",
-        "part3": "cym",
-        "scope": "I",
-        "type": "L"
+        "part3": "cym"
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": "cldr-exact",
+        "de": null,
         "en": "glottolog-5.3",
-        "sr": "persj-conversion-catalog"
+        "sr": null
       },
       "level": "language",
       "name": "Welsh",
       "parentCandidate": null,
       "parentGlottocode": "oldm1247",
       "preferredLabels": {
-        "de": "Walisisch",
+        "de": null,
         "en": "Welsh",
-        "sr": "кимријски"
+        "sr": null
       },
       "reviewReasons": [],
-      "selectableCandidate": true,
+      "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
     {
@@ -12423,6 +11883,85 @@
       "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": "Q4370412"
+    },
+    {
+      "aliasCandidates": {
+        "de": [],
+        "en": [],
+        "sr": []
+      },
+      "approval": {
+        "reasons": [
+          "The approved classification-only policy supplies a deterministic BCP 47 identifier and permits English fallback without inventing Serbian or German translations. Wikidata evidence belongs to the reviewed language profile; the structural ancestor receives no exact QID."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
+      "canonicalCodeCandidate": "und-x-glot-west2356",
+      "glottocode": "west2356",
+      "ianaScope": null,
+      "iso639": {
+        "part1": null,
+        "part2B": null,
+        "part2T": null,
+        "part3": "wep"
+      },
+      "kindCandidate": "language",
+      "labelProvenance": {
+        "de": "raskovnik-review",
+        "en": "raskovnik-review",
+        "sr": "raskovnik-review"
+      },
+      "level": "language",
+      "name": "Westphalic",
+      "parentCandidate": null,
+      "parentGlottocode": "west2357",
+      "preferredLabels": {
+        "de": "Westfälisch",
+        "en": "Westphalic",
+        "sr": "вестфалски"
+      },
+      "reviewReasons": [],
+      "selectableCandidate": false,
+      "wikidataQidCandidate": null
+    },
+    {
+      "aliasCandidates": {
+        "de": [],
+        "en": [],
+        "sr": []
+      },
+      "approval": {
+        "reasons": [
+          "The approved classification-only policy supplies a deterministic BCP 47 identifier and permits English fallback without inventing Serbian or German translations. Wikidata evidence belongs to the reviewed language profile; the structural ancestor receives no exact QID."
+        ],
+        "reviewedBy": "Codex",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
+      "canonicalCodeCandidate": "und-x-glot-west2357",
+      "glottocode": "west2357",
+      "ianaScope": null,
+      "iso639": null,
+      "kindCandidate": "family",
+      "labelProvenance": {
+        "de": "raskovnik-review",
+        "en": "raskovnik-review",
+        "sr": "raskovnik-review"
+      },
+      "level": "family",
+      "name": "West Low German",
+      "parentCandidate": null,
+      "parentGlottocode": "lowg1239",
+      "preferredLabels": {
+        "de": "Westniederdeutsch",
+        "en": "West Low German",
+        "sr": "западнонисконемачки"
+      },
+      "reviewReasons": [],
+      "selectableCandidate": false,
+      "wikidataQidCandidate": null
     },
     {
       "aliasCandidates": {
@@ -12531,10 +12070,7 @@
         "en": "West Slavic languages",
         "sr": "западнословенски језици"
       },
-      "reviewReasons": [
-        "collection-classification",
-        "non-cldr-german-label"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q145852"
     },
@@ -12564,9 +12100,7 @@
         "en": "West Germanic",
         "sr": null
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -12744,9 +12278,7 @@
         "en": "West Ancient Greek",
         "sr": null
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -12785,10 +12317,7 @@
         "en": "Zeta-Sjenica dialect",
         "sr": "зетско-сјенички"
       },
-      "reviewReasons": [
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": true,
       "wikidataQidCandidate": "Q12280481"
     }
@@ -14520,6 +14049,79 @@
         "src-base-9fd8761521733ce5"
       ],
       "status": "registered",
+      "wikidataQidCandidate": null
+    },
+    {
+      "aliasCandidates": {
+        "de": [],
+        "en": [],
+        "sr": []
+      },
+      "approval": null,
+      "glottolog": {
+        "glottocode": "celt1248",
+        "latitude": null,
+        "level": "family",
+        "longitude": null,
+        "name": "Celtic",
+        "relationship": "broader"
+      },
+      "iana": {
+        "descriptions": [
+          "Celtic languages"
+        ],
+        "primary": "cel",
+        "scope": "collection"
+      },
+      "id": "cel-x-gaulish",
+      "iso639": null,
+      "kindCandidate": "variety",
+      "labelProvenance": {
+        "de": null,
+        "en": "iana-2026-08-08",
+        "sr": "persj-conversion-catalog"
+      },
+      "lineage": [
+        {
+          "canonicalCode": "ine",
+          "glottocode": "indo1319",
+          "level": "family",
+          "name": "Indo-European"
+        },
+        {
+          "canonicalCode": "und-x-glot-clas1257",
+          "glottocode": "clas1257",
+          "level": "family",
+          "name": "Classical Indo-European"
+        },
+        {
+          "canonicalCode": "cel",
+          "glottocode": "celt1248",
+          "level": "family",
+          "name": "Celtic"
+        }
+      ],
+      "parentCandidate": null,
+      "preferredLabels": {
+        "de": null,
+        "en": null,
+        "sr": "галски"
+      },
+      "reviewReasons": [
+        "collection-classification",
+        "english-label-required",
+        "no-exact-glottolog-alignment",
+        "non-cldr-german-label",
+        "private-use-code"
+      ],
+      "selectableCandidate": true,
+      "serbianCandidates": [
+        "галски"
+      ],
+      "sourceRecordIds": [
+        "src-base-a2ec0e2d1ab3b7b1"
+      ],
+      "status": "private",
       "wikidataQidCandidate": null
     },
     {
@@ -17046,140 +16648,6 @@
         "en": [],
         "sr": []
       },
-      "approval": {
-        "reasons": [
-          "User-approved correction of the unused вељот. catalogue label. Vegliot is a Dalmatian variety; no exact Vegliot node exists in pinned Glottolog 5.3, so dalm1243 is broader. ISO vel and velu1238 identify unrelated Veluws and are neither identifiers nor aliases of this profile. Vegliot scope: https://hrcak.srce.hr/file/265826 ; German terminology: https://ewa.saw-leipzig.de/help/abbreviations/en ."
-        ],
-        "reviewedBy": "Codex",
-        "reviewedOn": "2026-09-06",
-        "status": "approved"
-      },
-      "glottolog": {
-        "glottocode": "dalm1243",
-        "latitude": 42.7095,
-        "level": "language",
-        "longitude": 18.0238,
-        "name": "Dalmatian",
-        "relationship": "broader"
-      },
-      "iana": {
-        "descriptions": [
-          "Dalmatian"
-        ],
-        "primary": "dlm",
-        "scope": "individual"
-      },
-      "id": "dlm-x-vegliot",
-      "iso639": {
-        "part1": null,
-        "part2B": null,
-        "part2T": null,
-        "part3": "dlm",
-        "scope": "I",
-        "type": "E"
-      },
-      "kindCandidate": "variety",
-      "labelProvenance": {
-        "de": "raskovnik-review",
-        "en": "raskovnik-review",
-        "sr": "raskovnik-review"
-      },
-      "lineage": [
-        {
-          "canonicalCode": "ine",
-          "glottocode": "indo1319",
-          "level": "family",
-          "name": "Indo-European"
-        },
-        {
-          "canonicalCode": "und-x-glot-clas1257",
-          "glottocode": "clas1257",
-          "level": "family",
-          "name": "Classical Indo-European"
-        },
-        {
-          "canonicalCode": "itc",
-          "glottocode": "ital1284",
-          "level": "family",
-          "name": "Italic"
-        },
-        {
-          "canonicalCode": "und-x-glot-lati1262",
-          "glottocode": "lati1262",
-          "level": "family",
-          "name": "Latino-Faliscan"
-        },
-        {
-          "canonicalCode": "und-x-glot-lati1263",
-          "glottocode": "lati1263",
-          "level": "family",
-          "name": "Latinic"
-        },
-        {
-          "canonicalCode": "und-x-glot-impe1234",
-          "glottocode": "impe1234",
-          "level": "family",
-          "name": "Imperial Latin"
-        },
-        {
-          "canonicalCode": "roa",
-          "glottocode": "roma1334",
-          "level": "family",
-          "name": "Romance"
-        },
-        {
-          "canonicalCode": "und-x-glot-ital1285",
-          "glottocode": "ital1285",
-          "level": "family",
-          "name": "Italo-Western Romance"
-        },
-        {
-          "canonicalCode": "und-x-glot-ital1286",
-          "glottocode": "ital1286",
-          "level": "family",
-          "name": "Italo-Dalmatian"
-        },
-        {
-          "canonicalCode": "und-x-glot-dalm1244",
-          "glottocode": "dalm1244",
-          "level": "family",
-          "name": "Dalmatian Romance"
-        },
-        {
-          "canonicalCode": "dlm",
-          "glottocode": "dalm1243",
-          "level": "language",
-          "name": "Dalmatian"
-        }
-      ],
-      "parentCandidate": "dlm",
-      "preferredLabels": {
-        "de": "Vegliotisch",
-        "en": "Vegliot",
-        "sr": "вељотски"
-      },
-      "reviewReasons": [
-        "english-label-required",
-        "no-exact-glottolog-alignment",
-        "non-cldr-german-label",
-        "private-use-code"
-      ],
-      "selectableCandidate": true,
-      "serbianCandidates": [
-        "вељотски"
-      ],
-      "sourceRecordIds": [
-        "src-base-f70d5379c508e87e"
-      ],
-      "status": "private",
-      "wikidataQidCandidate": null
-    },
-    {
-      "aliasCandidates": {
-        "de": [],
-        "en": [],
-        "sr": []
-      },
       "approval": null,
       "glottolog": {
         "glottocode": "lowe1385",
@@ -18093,22 +17561,14 @@
         "en": [],
         "sr": []
       },
-      "approval": {
-        "reasons": [
-          "User-approved preservation of generic Estonian et / est. The pinned IANA macrolanguage memberships include ekk and vro. Glottolog places esto1258 (ekk) and sout2679 (vro) in different Finnic branches; their common broader ancestor is finn1317. Q9072 is retained for generic Estonian, while its narrower P1394 claim does not establish an exact Glottolog equivalence.",
-          "Supporting identifiers only; no exact equivalence inferred: glottolog:esto1258|iso639-3:ekk|relationship:narrower;glottolog:sout2679|iso639-3:vro|relationship:narrower"
-        ],
-        "reviewedBy": "Codex",
-        "reviewedOn": "2026-09-06",
-        "status": "approved"
-      },
+      "approval": null,
       "glottolog": {
-        "glottocode": "finn1317",
-        "latitude": null,
-        "level": "family",
-        "longitude": null,
-        "name": "Finnic",
-        "relationship": "broader"
+        "glottocode": "esto1258",
+        "latitude": 58.55,
+        "level": "language",
+        "longitude": 25.82,
+        "name": "Estonian",
+        "relationship": "exact"
       },
       "iana": {
         "descriptions": [
@@ -18144,16 +17604,40 @@
           "glottocode": "finn1317",
           "level": "family",
           "name": "Finnic"
+        },
+        {
+          "canonicalCode": "und-x-glot-coas1319",
+          "glottocode": "coas1319",
+          "level": "family",
+          "name": "Coastal Finnic"
+        },
+        {
+          "canonicalCode": "und-x-glot-neva1234",
+          "glottocode": "neva1234",
+          "level": "family",
+          "name": "Neva"
+        },
+        {
+          "canonicalCode": "und-x-glot-cent2329",
+          "glottocode": "cent2329",
+          "level": "family",
+          "name": "Central Finnic"
+        },
+        {
+          "canonicalCode": "et",
+          "glottocode": "esto1258",
+          "level": "language",
+          "name": "Estonian"
         }
       ],
-      "parentCandidate": "und-x-glot-finn1317",
+      "parentCandidate": null,
       "preferredLabels": {
         "de": "Estnisch",
         "en": "Estonian",
         "sr": "естонски"
       },
       "reviewReasons": [
-        "no-exact-glottolog-alignment"
+        "exact-iso-scope-mismatch"
       ],
       "selectableCandidate": true,
       "serbianCandidates": [
@@ -19199,6 +18683,120 @@
         "src-base-10d22c274936ce25"
       ],
       "status": "registered",
+      "wikidataQidCandidate": null
+    },
+    {
+      "aliasCandidates": {
+        "de": [],
+        "en": [],
+        "sr": []
+      },
+      "approval": null,
+      "glottolog": {
+        "glottocode": "iris1253",
+        "latitude": 53.2186,
+        "level": "language",
+        "longitude": -7.61509,
+        "name": "Irish",
+        "relationship": "broader"
+      },
+      "iana": {
+        "descriptions": [
+          "Irish"
+        ],
+        "primary": "ga",
+        "scope": "individual"
+      },
+      "id": "ga-x-old",
+      "iso639": {
+        "part1": "ga",
+        "part2B": "gle",
+        "part2T": "gle",
+        "part3": "gle",
+        "scope": "I",
+        "type": "L"
+      },
+      "kindCandidate": "historical-stage",
+      "labelProvenance": {
+        "de": null,
+        "en": "iana-2026-08-08",
+        "sr": "persj-conversion-catalog"
+      },
+      "lineage": [
+        {
+          "canonicalCode": "ine",
+          "glottocode": "indo1319",
+          "level": "family",
+          "name": "Indo-European"
+        },
+        {
+          "canonicalCode": "und-x-glot-clas1257",
+          "glottocode": "clas1257",
+          "level": "family",
+          "name": "Classical Indo-European"
+        },
+        {
+          "canonicalCode": "cel",
+          "glottocode": "celt1248",
+          "level": "family",
+          "name": "Celtic"
+        },
+        {
+          "canonicalCode": "und-x-glot-nucl1715",
+          "glottocode": "nucl1715",
+          "level": "family",
+          "name": "Nuclear Celtic"
+        },
+        {
+          "canonicalCode": "und-x-glot-tgbc1234",
+          "glottocode": "tgbc1234",
+          "level": "family",
+          "name": "Core Celtic"
+        },
+        {
+          "canonicalCode": "und-x-glot-insu1254",
+          "glottocode": "insu1254",
+          "level": "family",
+          "name": "Insular Celtic"
+        },
+        {
+          "canonicalCode": "und-x-glot-goid1240",
+          "glottocode": "goid1240",
+          "level": "family",
+          "name": "Goidelic"
+        },
+        {
+          "canonicalCode": "und-x-glot-mode1265",
+          "glottocode": "mode1265",
+          "level": "family",
+          "name": "Modern Goidelic"
+        },
+        {
+          "canonicalCode": "ga",
+          "glottocode": "iris1253",
+          "level": "language",
+          "name": "Irish"
+        }
+      ],
+      "parentCandidate": null,
+      "preferredLabels": {
+        "de": null,
+        "en": "Old Irish",
+        "sr": "староирски"
+      },
+      "reviewReasons": [
+        "no-exact-glottolog-alignment",
+        "non-cldr-german-label",
+        "private-use-code"
+      ],
+      "selectableCandidate": true,
+      "serbianCandidates": [
+        "староирски"
+      ],
+      "sourceRecordIds": [
+        "src-extension-44ca02d95b2e947d"
+      ],
+      "status": "private",
       "wikidataQidCandidate": null
     },
     {
@@ -21290,22 +20888,14 @@
         "en": [],
         "sr": []
       },
-      "approval": {
-        "reasons": [
-          "The user explicitly chose to retain generic Kajkavian on 2026-09-06. Glottolog kajk1237 describes the spoken language, while the pinned ISO table names kjv Kaikavian Literary Language (historical). The registration authors distinguish the literary norm from the generic dialect group: https://kajkavski-jezik.eu/en/kajkavian-iso-639-3-language-code/ . The Glottolog cross-reference to kjv is narrower supporting evidence, never an exact ISO identity; all generic source forms remain hr-x-kajkav.",
-          "Supporting identifiers only; no exact equivalence inferred: iso639-3:kjv|relationship:narrower|label:Kaikavian Literary Language;wikidata:Q838165|status:unpinned supporting proposal"
-        ],
-        "reviewedBy": "ttasovac",
-        "reviewedOn": "2026-09-06",
-        "status": "approved"
-      },
+      "approval": null,
       "glottolog": {
-        "glottocode": "kajk1237",
-        "latitude": 45.649748,
-        "level": "language",
-        "longitude": 16.134109,
-        "name": "Kajkavian",
-        "relationship": "exact"
+        "glottocode": "croa1245",
+        "latitude": 45.555,
+        "level": "dialect",
+        "longitude": 15.982,
+        "name": "Croatian Standard",
+        "relationship": "broader"
       },
       "iana": {
         "descriptions": [
@@ -21323,11 +20913,11 @@
         "scope": "I",
         "type": "L"
       },
-      "kindCandidate": "language",
+      "kindCandidate": "variety",
       "labelProvenance": {
-        "de": "raskovnik-review",
-        "en": "raskovnik-review",
-        "sr": "raskovnik-review"
+        "de": null,
+        "en": "iana-2026-08-08",
+        "sr": "persj-conversion-catalog"
       },
       "lineage": [
         {
@@ -21367,19 +20957,45 @@
           "name": "Western South Slavic"
         },
         {
-          "canonicalCode": "hr-x-kajkav",
-          "glottocode": "kajk1237",
+          "canonicalCode": "sh",
+          "glottocode": "sout1528",
           "level": "language",
-          "name": "Kajkavian"
+          "name": "Serbian-Croatian-Bosnian"
+        },
+        {
+          "canonicalCode": "sh-x-shtokav",
+          "glottocode": "shto1241",
+          "level": "dialect",
+          "name": "Shtokavski"
+        },
+        {
+          "canonicalCode": "und-x-glot-news1236",
+          "glottocode": "news1236",
+          "level": "dialect",
+          "name": "New Shtokavian"
+        },
+        {
+          "canonicalCode": "und-x-glot-east2821",
+          "glottocode": "east2821",
+          "level": "dialect",
+          "name": "Eastern Herzegovinian Shtokavian"
+        },
+        {
+          "canonicalCode": "hr",
+          "glottocode": "croa1245",
+          "level": "dialect",
+          "name": "Croatian Standard"
         }
       ],
       "parentCandidate": null,
       "preferredLabels": {
-        "de": "Kajkavisch",
-        "en": "Kajkavian",
+        "de": null,
+        "en": null,
         "sr": "кајкавски"
       },
       "reviewReasons": [
+        "english-label-required",
+        "no-exact-glottolog-alignment",
         "non-cldr-german-label",
         "private-use-code"
       ],
@@ -25108,6 +24724,97 @@
       },
       "approval": null,
       "glottolog": {
+        "glottocode": "lith1251",
+        "latitude": 55.1429,
+        "level": "language",
+        "longitude": 23.9601,
+        "name": "Lithuanian",
+        "relationship": "broader"
+      },
+      "iana": {
+        "descriptions": [
+          "Lithuanian"
+        ],
+        "primary": "lt",
+        "scope": "individual"
+      },
+      "id": "lt-x-old",
+      "iso639": {
+        "part1": "lt",
+        "part2B": "lit",
+        "part2T": "lit",
+        "part3": "lit",
+        "scope": "I",
+        "type": "L"
+      },
+      "kindCandidate": "historical-stage",
+      "labelProvenance": {
+        "de": null,
+        "en": "iana-2026-08-08",
+        "sr": "persj-conversion-catalog"
+      },
+      "lineage": [
+        {
+          "canonicalCode": "ine",
+          "glottocode": "indo1319",
+          "level": "family",
+          "name": "Indo-European"
+        },
+        {
+          "canonicalCode": "und-x-glot-clas1257",
+          "glottocode": "clas1257",
+          "level": "family",
+          "name": "Classical Indo-European"
+        },
+        {
+          "canonicalCode": "ine-x-balto-slavic",
+          "glottocode": "balt1263",
+          "level": "family",
+          "name": "Balto-Slavic"
+        },
+        {
+          "canonicalCode": "und-x-glot-east2280",
+          "glottocode": "east2280",
+          "level": "family",
+          "name": "Eastern Baltic"
+        },
+        {
+          "canonicalCode": "lt",
+          "glottocode": "lith1251",
+          "level": "language",
+          "name": "Lithuanian"
+        }
+      ],
+      "parentCandidate": null,
+      "preferredLabels": {
+        "de": null,
+        "en": "Old Lithuanian",
+        "sr": "старолитвански"
+      },
+      "reviewReasons": [
+        "no-exact-glottolog-alignment",
+        "non-cldr-german-label",
+        "private-use-code"
+      ],
+      "selectableCandidate": true,
+      "serbianCandidates": [
+        "старолитвански"
+      ],
+      "sourceRecordIds": [
+        "src-compound-1fe6489c19f5aca0",
+        "src-extension-0f81faa41da0dbd1"
+      ],
+      "status": "private",
+      "wikidataQidCandidate": null
+    },
+    {
+      "aliasCandidates": {
+        "de": [],
+        "en": [],
+        "sr": []
+      },
+      "approval": null,
+      "glottolog": {
         "glottocode": "latv1249",
         "latitude": 56.826108,
         "level": "language",
@@ -25267,7 +24974,7 @@
           "name": "Goidelic"
         },
         {
-          "canonicalCode": "sga",
+          "canonicalCode": "und-x-glot-oldi1245",
           "glottocode": "oldi1245",
           "level": "language",
           "name": "Early Irish"
@@ -26447,109 +26154,6 @@
       ],
       "sourceRecordIds": [
         "src-compound-9b800528cba46877"
-      ],
-      "status": "registered",
-      "wikidataQidCandidate": null
-    },
-    {
-      "aliasCandidates": {
-        "de": [],
-        "en": [],
-        "sr": []
-      },
-      "approval": {
-        "reasons": [
-          "User-approved source migration lt-x-old → olt. The pinned IANA and ISO tables register this historical language; the pinned Glottolog node identifies the same scope. Source evidence, reviewed labels and earlier review history are preserved.",
-          "Supporting identifiers only; no exact equivalence inferred: wikidata:Q17417801|status:proposal retained as supporting evidence; no revision-pinned exact assignment"
-        ],
-        "reviewedBy": "Codex",
-        "reviewedOn": "2026-09-06",
-        "status": "approved"
-      },
-      "glottolog": {
-        "glottocode": "oldl1240",
-        "latitude": null,
-        "level": "dialect",
-        "longitude": null,
-        "name": "Old Lithuanian",
-        "relationship": "exact"
-      },
-      "iana": {
-        "descriptions": [
-          "Old Lithuanian"
-        ],
-        "primary": "olt",
-        "scope": "individual"
-      },
-      "id": "olt",
-      "iso639": {
-        "part1": null,
-        "part2B": null,
-        "part2T": null,
-        "part3": "olt",
-        "scope": "I",
-        "type": "H"
-      },
-      "kindCandidate": "historical-stage",
-      "labelProvenance": {
-        "de": "raskovnik-review",
-        "en": "raskovnik-review",
-        "sr": "raskovnik-review"
-      },
-      "lineage": [
-        {
-          "canonicalCode": "ine",
-          "glottocode": "indo1319",
-          "level": "family",
-          "name": "Indo-European"
-        },
-        {
-          "canonicalCode": "und-x-glot-clas1257",
-          "glottocode": "clas1257",
-          "level": "family",
-          "name": "Classical Indo-European"
-        },
-        {
-          "canonicalCode": "ine-x-balto-slavic",
-          "glottocode": "balt1263",
-          "level": "family",
-          "name": "Balto-Slavic"
-        },
-        {
-          "canonicalCode": "und-x-glot-east2280",
-          "glottocode": "east2280",
-          "level": "family",
-          "name": "Eastern Baltic"
-        },
-        {
-          "canonicalCode": "lt",
-          "glottocode": "lith1251",
-          "level": "language",
-          "name": "Lithuanian"
-        },
-        {
-          "canonicalCode": "olt",
-          "glottocode": "oldl1240",
-          "level": "dialect",
-          "name": "Old Lithuanian"
-        }
-      ],
-      "parentCandidate": null,
-      "preferredLabels": {
-        "de": "Altlitauisch",
-        "en": "Old Lithuanian",
-        "sr": "старолитвански"
-      },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
-      "selectableCandidate": true,
-      "serbianCandidates": [
-        "старолитвански"
-      ],
-      "sourceRecordIds": [
-        "src-compound-1fe6489c19f5aca0",
-        "src-extension-0f81faa41da0dbd1"
       ],
       "status": "registered",
       "wikidataQidCandidate": null
@@ -29435,117 +29039,6 @@
       ],
       "status": "registered",
       "wikidataQidCandidate": null
-    },
-    {
-      "aliasCandidates": {
-        "de": [],
-        "en": [],
-        "sr": []
-      },
-      "approval": {
-        "reasons": [
-          "User-approved source migration ga-x-old → sga. The pinned IANA and ISO tables register this historical language; the pinned Glottolog node identifies the same scope. Source evidence, reviewed labels and earlier review history are preserved."
-        ],
-        "reviewedBy": "Codex",
-        "reviewedOn": "2026-09-06",
-        "status": "approved"
-      },
-      "glottolog": {
-        "glottocode": "oldi1245",
-        "latitude": 53.0,
-        "level": "language",
-        "longitude": -8.0,
-        "name": "Early Irish",
-        "relationship": "exact"
-      },
-      "iana": {
-        "descriptions": [
-          "Old Irish (to 900)"
-        ],
-        "primary": "sga",
-        "scope": "individual"
-      },
-      "id": "sga",
-      "iso639": {
-        "part1": null,
-        "part2B": "sga",
-        "part2T": "sga",
-        "part3": "sga",
-        "scope": "I",
-        "type": "H"
-      },
-      "kindCandidate": "historical-stage",
-      "labelProvenance": {
-        "de": "raskovnik-review",
-        "en": "raskovnik-review",
-        "sr": "raskovnik-review"
-      },
-      "lineage": [
-        {
-          "canonicalCode": "ine",
-          "glottocode": "indo1319",
-          "level": "family",
-          "name": "Indo-European"
-        },
-        {
-          "canonicalCode": "und-x-glot-clas1257",
-          "glottocode": "clas1257",
-          "level": "family",
-          "name": "Classical Indo-European"
-        },
-        {
-          "canonicalCode": "cel",
-          "glottocode": "celt1248",
-          "level": "family",
-          "name": "Celtic"
-        },
-        {
-          "canonicalCode": "und-x-glot-nucl1715",
-          "glottocode": "nucl1715",
-          "level": "family",
-          "name": "Nuclear Celtic"
-        },
-        {
-          "canonicalCode": "und-x-glot-tgbc1234",
-          "glottocode": "tgbc1234",
-          "level": "family",
-          "name": "Core Celtic"
-        },
-        {
-          "canonicalCode": "und-x-glot-insu1254",
-          "glottocode": "insu1254",
-          "level": "family",
-          "name": "Insular Celtic"
-        },
-        {
-          "canonicalCode": "und-x-glot-goid1240",
-          "glottocode": "goid1240",
-          "level": "family",
-          "name": "Goidelic"
-        },
-        {
-          "canonicalCode": "sga",
-          "glottocode": "oldi1245",
-          "level": "language",
-          "name": "Early Irish"
-        }
-      ],
-      "parentCandidate": null,
-      "preferredLabels": {
-        "de": "Altirisch",
-        "en": "Old Irish",
-        "sr": "староирски"
-      },
-      "reviewReasons": [],
-      "selectableCandidate": true,
-      "serbianCandidates": [
-        "староирски"
-      ],
-      "sourceRecordIds": [
-        "src-extension-44ca02d95b2e947d"
-      ],
-      "status": "registered",
-      "wikidataQidCandidate": "Q35308"
     },
     {
       "aliasCandidates": {
@@ -33581,6 +33074,136 @@
         "en": [],
         "sr": []
       },
+      "approval": null,
+      "glottolog": {
+        "glottocode": "velu1238",
+        "latitude": 52.2702,
+        "level": "dialect",
+        "longitude": 5.94408,
+        "name": "Veluws",
+        "relationship": "exact"
+      },
+      "iana": {
+        "descriptions": [
+          "Veluws"
+        ],
+        "primary": "vel",
+        "scope": "individual"
+      },
+      "id": "vel",
+      "iso639": {
+        "part1": null,
+        "part2B": null,
+        "part2T": null,
+        "part3": "vel",
+        "scope": "I",
+        "type": "L"
+      },
+      "kindCandidate": "variety",
+      "labelProvenance": {
+        "de": null,
+        "en": "glottolog-5.3",
+        "sr": "persj-conversion-catalog"
+      },
+      "lineage": [
+        {
+          "canonicalCode": "ine",
+          "glottocode": "indo1319",
+          "level": "family",
+          "name": "Indo-European"
+        },
+        {
+          "canonicalCode": "und-x-glot-clas1257",
+          "glottocode": "clas1257",
+          "level": "family",
+          "name": "Classical Indo-European"
+        },
+        {
+          "canonicalCode": "gem",
+          "glottocode": "germ1287",
+          "level": "family",
+          "name": "Germanic"
+        },
+        {
+          "canonicalCode": "und-x-glot-nort3152",
+          "glottocode": "nort3152",
+          "level": "family",
+          "name": "Northwest Germanic"
+        },
+        {
+          "canonicalCode": "gmw",
+          "glottocode": "west2793",
+          "level": "family",
+          "name": "West Germanic"
+        },
+        {
+          "canonicalCode": "und-x-glot-nort3175",
+          "glottocode": "nort3175",
+          "level": "family",
+          "name": "North Sea Germanic"
+        },
+        {
+          "canonicalCode": "und-x-glot-alts1234",
+          "glottocode": "alts1234",
+          "level": "family",
+          "name": "Altsächsisch"
+        },
+        {
+          "canonicalCode": "und-x-glot-midd1345",
+          "glottocode": "midd1345",
+          "level": "family",
+          "name": "Middle-Modern Low German"
+        },
+        {
+          "canonicalCode": "und-x-glot-lowg1239",
+          "glottocode": "lowg1239",
+          "level": "family",
+          "name": "Low German"
+        },
+        {
+          "canonicalCode": "und-x-glot-west2357",
+          "glottocode": "west2357",
+          "level": "family",
+          "name": "West Low German"
+        },
+        {
+          "canonicalCode": "und-x-glot-west2356",
+          "glottocode": "west2356",
+          "level": "language",
+          "name": "Westphalic"
+        },
+        {
+          "canonicalCode": "vel",
+          "glottocode": "velu1238",
+          "level": "dialect",
+          "name": "Veluws"
+        }
+      ],
+      "parentCandidate": null,
+      "preferredLabels": {
+        "de": null,
+        "en": "Veluws",
+        "sr": "вељотски"
+      },
+      "reviewReasons": [
+        "non-cldr-german-label"
+      ],
+      "selectableCandidate": true,
+      "serbianCandidates": [
+        "вељотски"
+      ],
+      "sourceRecordIds": [
+        "src-base-f70d5379c508e87e"
+      ],
+      "status": "registered",
+      "wikidataQidCandidate": "Q2484810"
+    },
+    {
+      "aliasCandidates": {
+        "de": [],
+        "en": [],
+        "sr": []
+      },
       "approval": {
         "reasons": [
           "The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
@@ -34809,114 +34432,6 @@
       },
       "approval": {
         "reasons": [
-          "User-approved source migration cel-x-gaulish → xtg. The pinned IANA and ISO tables register this historical language; the pinned Glottolog node identifies the same scope. Source evidence, reviewed labels and earlier review history are preserved.",
-          "Supporting identifiers only; no exact equivalence inferred: iana-grandfathered:cel-gaulish(deprecated);glottolog:cisa1237|iso639-3:xcg|label:Cisalpine Gaulish"
-        ],
-        "reviewedBy": "Codex",
-        "reviewedOn": "2026-09-06",
-        "status": "approved"
-      },
-      "glottolog": {
-        "glottocode": "tran1282",
-        "latitude": 43.97,
-        "level": "language",
-        "longitude": 3.3,
-        "name": "Transalpine Gaulish",
-        "relationship": "exact"
-      },
-      "iana": {
-        "descriptions": [
-          "Transalpine Gaulish"
-        ],
-        "primary": "xtg",
-        "scope": "individual"
-      },
-      "id": "xtg",
-      "iso639": {
-        "part1": null,
-        "part2B": null,
-        "part2T": null,
-        "part3": "xtg",
-        "scope": "I",
-        "type": "H"
-      },
-      "kindCandidate": "language",
-      "labelProvenance": {
-        "de": "raskovnik-review",
-        "en": "raskovnik-review",
-        "sr": "raskovnik-review"
-      },
-      "lineage": [
-        {
-          "canonicalCode": "ine",
-          "glottocode": "indo1319",
-          "level": "family",
-          "name": "Indo-European"
-        },
-        {
-          "canonicalCode": "und-x-glot-clas1257",
-          "glottocode": "clas1257",
-          "level": "family",
-          "name": "Classical Indo-European"
-        },
-        {
-          "canonicalCode": "cel",
-          "glottocode": "celt1248",
-          "level": "family",
-          "name": "Celtic"
-        },
-        {
-          "canonicalCode": "und-x-glot-nucl1715",
-          "glottocode": "nucl1715",
-          "level": "family",
-          "name": "Nuclear Celtic"
-        },
-        {
-          "canonicalCode": "und-x-glot-tgbc1234",
-          "glottocode": "tgbc1234",
-          "level": "family",
-          "name": "Core Celtic"
-        },
-        {
-          "canonicalCode": "und-x-glot-cont1249",
-          "glottocode": "cont1249",
-          "level": "family",
-          "name": "Continental Transalpine Celtic"
-        },
-        {
-          "canonicalCode": "xtg",
-          "glottocode": "tran1282",
-          "level": "language",
-          "name": "Transalpine Gaulish"
-        }
-      ],
-      "parentCandidate": null,
-      "preferredLabels": {
-        "de": "Gallisch",
-        "en": "Gaulish",
-        "sr": "галски"
-      },
-      "reviewReasons": [
-        "non-cldr-german-label"
-      ],
-      "selectableCandidate": true,
-      "serbianCandidates": [
-        "галски"
-      ],
-      "sourceRecordIds": [
-        "src-base-a2ec0e2d1ab3b7b1"
-      ],
-      "status": "registered",
-      "wikidataQidCandidate": null
-    },
-    {
-      "aliasCandidates": {
-        "de": [],
-        "en": [],
-        "sr": []
-      },
-      "approval": {
-        "reasons": [
           "The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged."
         ],
         "reviewedBy": "raskovnik-design-2026-08-31",
@@ -35662,13 +35177,13 @@
     "glottologVersion": "5.3",
     "ianaFileDate": "2026-08-08",
     "iso6393Snapshot": "2026-07-22",
-    "persjCommit": "a258c532c1037b9550d22154ccd9f34cef1a2073"
+    "persjCommit": "b94d7b2c57a3133b43522efd20c99f8cb2feb8fd"
   },
   "summary": {
     "ambiguousCollectionMappings": 0,
-    "ancestorExceptions": 20,
-    "ancestorNodes": 332,
-    "profileExceptions": 0,
+    "ancestorExceptions": 0,
+    "ancestorNodes": 333,
+    "profileExceptions": 6,
     "sourceRecords": 311,
     "tagProfiles": 214
   }

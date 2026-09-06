@@ -26,14 +26,14 @@ from registry_sources import (
     standard_prefix,
     validate_registered_tag,
 )
-from registry_overrides import parse_overrides
+from registry_overrides import parse_overrides, approved_iso_scope_exceptions
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT = ROOT / "dist/registry-candidates.json"
 DEFAULT_REVIEW = ROOT / "dist/editorial-review.tsv"
-PERSJ_COMMIT = "b94d7b2c57a3133b43522efd20c99f8cb2feb8fd"
-PERSJ_SNAPSHOT = ROOT / "upstream/persj/b94d7b2/effective-language-catalog.xml"
+PERSJ_COMMIT = "a258c532c1037b9550d22154ccd9f34cef1a2073"
+PERSJ_SNAPSHOT = ROOT / "upstream/persj/a258c53/effective-language-catalog.xml"
 
 
 def name_key(value: str) -> str:
@@ -219,8 +219,10 @@ def validate_reviewed_wikidata_assignment(
     return item
 
 
-def build_candidates() -> dict[str, object]:
-    overrides = parse_overrides(ROOT / "registry/raskovnik-overrides.xml")
+def build_candidates(*, overrides_path: Path | None = None) -> dict[str, object]:
+    ledger_path = overrides_path or ROOT / "registry/raskovnik-overrides.xml"
+    overrides = parse_overrides(ledger_path)
+    scope_exceptions = approved_iso_scope_exceptions(ROOT, ledger_path=ledger_path)
     profiles, source_records = parse_effective_persj_catalog(PERSJ_SNAPSHOT)
     iana_date, iana = parse_iana_registry(
         ROOT / "upstream/iana/2026-08-08/language-subtag-registry"
@@ -474,6 +476,10 @@ def build_candidates() -> dict[str, object]:
         if exact_glottolog is not None and exact_glottolog.iso639_3 in iso_by_id and tag == primary and iso is not None and iso.identifier != exact_glottolog.iso639_3:
             row["reviewReasons"] = sorted(set(row["reviewReasons"]) | {"exact-iso-scope-mismatch"})
             row["approval"] = None
+        if exact_glottolog is not None and tag != primary and exact_glottolog.iso639_3 in iso_by_id:
+            if (tag, exact_glottolog.glottocode, exact_glottolog.iso639_3) not in scope_exceptions:
+                row["reviewReasons"] = sorted(set(row["reviewReasons"]) | {"exact-iso-scope-review"})
+                row["approval"] = None
         profile_rows.append(row)
 
     reverse_collection_map = {
@@ -577,7 +583,7 @@ def build_candidates() -> dict[str, object]:
                     else {"sr": [], "en": [], "de": []}
                 ),
                 "wikidataQidCandidate": None,
-                "reviewReasons": [] if code else ["canonical-ancestor-code-required"],
+                "reviewReasons": ([] if override is not None else ["ancestor-review-required"]) + ([] if code else ["canonical-ancestor-code-required"]),
                 "approval": (
                     {
                         "status": override.review_status,
@@ -617,8 +623,23 @@ def build_candidates() -> dict[str, object]:
         if qid in profile_qids and profile_qids[qid] != ancestor["canonicalCodeCandidate"]:
             ancestor["wikidataQidCandidate"] = None
         exact_iso = iso_by_id.get(glottolog[ancestor["glottocode"]].iso639_3)
-        if exact_iso is not None:
+        if (ancestor["canonicalCodeCandidate"], ancestor["glottocode"], glottolog[ancestor["glottocode"]].iso639_3) in scope_exceptions:
+            ancestor["iso639"] = None
+        elif exact_iso is not None:
             ancestor["iso639"] = {"part3":exact_iso.identifier,"part2B":exact_iso.part2b,"part2T":exact_iso.part2t,"part1":exact_iso.part1}
+
+    # A profile and its structural occurrence describe one display node. The
+    # profile owns its reviewed labels/kind/selectability, including macrolanguages.
+    by_code = {p["id"]: p for p in profile_rows}
+    for ancestor in ancestor_rows:
+        profile = by_code.get(ancestor["canonicalCodeCandidate"])
+        if profile is None or not profile.get("glottolog") or profile["glottolog"]["relationship"] != "exact" or profile["glottolog"]["glottocode"] != ancestor["glottocode"]:
+            continue
+        for key in ("kindCandidate", "parentCandidate", "selectableCandidate", "preferredLabels", "labelProvenance", "aliasCandidates", "wikidataQidCandidate", "reviewReasons", "approval"):
+            ancestor[key] = profile[key]
+        bare = profile["id"] == profile["iana"]["primary"]
+        ancestor["iso639"] = profile["iso639"] if bare else None
+        ancestor["ianaScope"] = profile["iana"]["scope"] if bare else None
 
     return {
         "schema": "language-registry-candidates-v1",

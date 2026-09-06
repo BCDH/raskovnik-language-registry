@@ -6,6 +6,7 @@ from collections import Counter
 import copy
 from functools import lru_cache
 import hashlib
+import importlib
 import importlib.util
 import json
 import os
@@ -40,7 +41,12 @@ def load_session(directory):
         raise ValueError('review snapshot identity does not match archived candidates')
     current = json.loads((ROOT / 'dist/registry-candidates.json').read_text())
     if current['sources'] != baseline['sources']:
-        raise ValueError('stale source snapshot; explicit reconciliation required')
+        migration = ROOT/'review/sessions/2026-09-06-packaging/manifest.json'
+        if not migration.exists():
+            raise ValueError('stale source snapshot; explicit reconciliation required')
+        imported, _ = importlib.import_module('reconcile-packaging-review').validated_migration(ROOT)
+        if imported['fromSources'] != baseline['sources']:
+            raise ValueError('stale source snapshot; no matching reconciliation')
     original = json.loads((directory / 'user-review.json').read_text())
     for key, record in original['review'].items():
         actual = copy.deepcopy(review['review'][key])
@@ -59,6 +65,7 @@ def proposed(row):
 
 
 def serialized(root):
+    ET.register_namespace('', OVERRIDE_NS)
     ET.indent(root, space='  ')
     return b'<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(root, encoding='utf-8') + b'\n'
 
@@ -75,6 +82,9 @@ def atomic_write(path, data):
 
 
 def reconcile(directory=SESSION):
+    if directory == SESSION and (ROOT/'review/sessions/2026-09-06-packaging/manifest.json').exists():
+        load_session(directory)
+        return importlib.import_module('reconcile-packaging-review').reconcile(ROOT)
     review, baseline, rows = load_session(directory)
     tree = ET.parse(ROOT/'registry/raskovnik-overrides.xml').getroot()
     for record in list(tree.findall(NS+'reviewRecord')):

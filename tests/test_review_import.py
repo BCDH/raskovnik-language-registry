@@ -39,10 +39,12 @@ class ReviewImportTests(unittest.TestCase):
             for language,suffix in [('sr','Sr'),('en','En'),('de','De')]:
                 self.assertEqual(record['values']['label'+suffix],names[language])
 
-    def test_only_specific_source_conflicts_remain(self):
-        self.assertEqual({'tag-profile:cel-x-gaulish','tag-profile:ga-x-old','tag-profile:hr-x-kajkav','tag-profile:lt-x-old','tag-profile:vel'},
-                         {r['key'] for r in self.records if r['status']=='pending'})
+    def test_packaging_conflicts_are_resolved_with_explicit_history(self):
+        self.assertFalse([r for r in self.records if r['status']=='pending'])
         self.assertEqual('Codex',self.by_key['tag-profile:cs-x-old']['reviewer'])
+        self.assertEqual('ttasovac',self.by_key['tag-profile:hr-x-kajkav']['reviewer'])
+        self.assertEqual('superseded',self.by_key['tag-profile:cel-x-gaulish']['status'])
+        self.assertEqual('applied',self.by_key['tag-profile:xtg']['status'])
 
     def test_related_identifiers_are_not_exact_and_blank_qid_stays_blank(self):
         tree=ET.fromstring(self.data)
@@ -76,16 +78,16 @@ class ReviewImportTests(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError,'Glottolog alignment'):GEN.validate_reviewed_wikidata_assignment(**args,relationship='exact')
 
 class PlanAssemblyTests(unittest.TestCase):
-    def test_full_approved_subset_compiles_without_emitting_release_artifacts(self):
+    def test_full_inventory_compiles_without_omitting_profiles(self):
         from registry_build import build_artifacts,load_sources
         from registry_sources import parse_effective_persj_catalog
         data=json.loads((ROOT/'dist/registry-candidates.json').read_text())
         excluded={p['id'] for p in data['profiles'] if p['reviewReasons'] and not p['approval']}
-        self.assertEqual({'cel-x-gaulish','ga-x-old','hr-x-kajkav','lt-x-old','vel','et'},excluded)
+        self.assertEqual(set(),excluded)
         data['profiles']=[p for p in data['profiles'] if p['id'] not in excluded]
         data['ancestorCandidates']=[a for a in data['ancestorCandidates'] if a['canonicalCodeCandidate'] not in excluded]
         codes={p['id'] for p in data['profiles']}
-        _,records=parse_effective_persj_catalog(ROOT/'upstream/persj/b94d7b2/effective-language-catalog.xml')
+        _,records=parse_effective_persj_catalog(GEN.PERSJ_SNAPSHOT)
         records=tuple(s for s in records if s.tag in codes)
         lock=json.loads((ROOT/'upstream/sources.json').read_text());publication=json.loads((ROOT/'registry/source-publication-metadata.json').read_text())
         sources=load_sources(lock,publication,ROOT)
@@ -93,7 +95,26 @@ class PlanAssemblyTests(unittest.TestCase):
         plan['approval'].update(mode='fixture',candidatesSha256=None,editorialReportSha256=None,overridesSha256=None,planPayloadSha256=None)
         registry,manifest=build_artifacts(plan,lock,publication,ROOT)
         self.assertTrue(registry);self.assertTrue(manifest)
-        self.assertEqual(377,len(plan['nodes']))
+        self.assertEqual(214,len(plan['tagProfiles']))
+        self.assertEqual({p['id'] for p in data['profiles']},{p['id'] for p in plan['tagProfiles']})
+        kajkavian=next(n for n in plan['nodes'] if n['id']=='hr-x-kajkav')
+        self.assertEqual([{'type':'Glottolog','value':'kajk1237'}],kajkavian['identifiers'])
+        from registry_build import validate_production_plan_provenance, plan_payload_sha256
+        from registry_sources import sha256
+        plan['approval'].update(mode='release',candidatesSha256=sha256(ROOT/'dist/registry-candidates.json'),editorialReportSha256=sha256(ROOT/'dist/editorial-review.tsv'),overridesSha256=sha256(ROOT/'registry/raskovnik-overrides.xml'))
+        plan['approval']['planPayloadSha256']=plan_payload_sha256(plan)
+        if data['summary']['ancestorExceptions']:
+            with self.assertRaisesRegex(RegistryBuildError,'unapproved exceptions'):
+                validate_production_plan_provenance(plan,ROOT)
+        else:
+            validate_production_plan_provenance(plan,ROOT)
+        for ancestor in data['ancestorCandidates']:
+            profile=next((p for p in data['profiles'] if p['id']==ancestor['canonicalCodeCandidate']),None)
+            if profile and profile.get('glottolog') and profile['glottolog']['relationship']=='exact':
+                self.assertEqual(profile['selectableCandidate'],ancestor['selectableCandidate'])
+                self.assertEqual(profile['kindCandidate'],ancestor['kindCandidate'])
+                self.assertEqual(profile['preferredLabels'],ancestor['preferredLabels'])
+
 
     def test_backend_compatibility_rejects_drift(self):
         with tempfile.TemporaryDirectory() as d:
@@ -106,7 +127,7 @@ class PlanAssemblyTests(unittest.TestCase):
         profile=copy.deepcopy(next(p for p in data['profiles'] if p['id']=='sr'))
         profile['parentCandidate']=None;profile['lineage']=[];profile['sourceRecordIds']=[]
         data['profiles']=[profile];data['ancestorCandidates']=[]
-        kwargs=dict(source_records=(),source_ids={'src-raskovnik-review','src-glottolog-5-3','src-iana-2026-08-08','src-cldr-48-2','src-persj-catalog-b94d7b2'},compatibility=[],version='2026.9.6-1',reviewed_on='2026-09-06')
+        kwargs=dict(source_records=(),source_ids={'src-raskovnik-review','src-glottolog-5-3','src-iana-2026-08-08','src-cldr-48-2','src-persj-catalog-'+GEN.PERSJ_COMMIT[:7]},compatibility=[],version='2026.9.6-1',reviewed_on='2026-09-06')
         plan=ASSEMBLE.assemble(data,**kwargs)
         self.assertEqual(plan,ASSEMBLE.assemble(copy.deepcopy(data),**kwargs))
         self.assertEqual(['sr'],plan['nodes'][0]['directTagProfileIds'])

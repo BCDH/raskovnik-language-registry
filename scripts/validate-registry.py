@@ -11,6 +11,8 @@ from pathlib import Path
 
 from registry_build import (
     RegistryBuildError,
+    build_artifacts,
+    validate_production_plan_provenance,
     load_json,
     load_sources,
     validate_generated_manifest,
@@ -38,6 +40,11 @@ def validate_paths(registry_path: Path, manifest_path: Path, plan_path: Path) ->
     source_lock = load_json(ROOT / "upstream/sources.json")
     publication = load_json(ROOT / "registry/source-publication-metadata.json")
     sources = load_sources(source_lock, publication, ROOT)
+    if plan["approval"]["mode"] == "release":
+        validate_production_plan_provenance(plan, ROOT)
+    expected_registry, expected_manifest = build_artifacts(plan, source_lock, publication, ROOT)
+    if (registry, manifest) != (expected_registry, expected_manifest):
+        raise RegistryBuildError("artifacts differ from standards-validated plan")
     run_validator(
         ["jing", str(ROOT / "registry/schema/lex-0-f6d51f29.rng"), str(registry_path)],
         "pinned Lex-0 RNG validation",

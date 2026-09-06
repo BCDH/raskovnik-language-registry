@@ -1,0 +1,106 @@
+[
+  {
+    "alignment": "exact",
+    "date": "2026-09-06",
+    "glottocode": "tran1282",
+    "kind": "language",
+    "labels": {
+      "de": "Gallisch",
+      "en": "Gaulish",
+      "sr": "галски"
+    },
+    "oldTag": "cel-x-gaulish",
+    "rationale": "User-approved source migration cel-x-gaulish → xtg. The pinned IANA and ISO tables register this historical language; the pinned Glottolog node identifies the same scope. Source evidence, reviewed labels and earlier review history are preserved.",
+    "relatedIdentifiers": "iana-grandfathered:cel-gaulish(deprecated);glottolog:cisa1237|iso639-3:xcg|label:Cisalpine Gaulish",
+    "reviewer": "Codex",
+    "tag": "xtg",
+    "wikidata": ""
+  },
+  {
+    "alignment": "exact",
+    "date": "2026-09-06",
+    "glottocode": "oldi1245",
+    "kind": "historical-stage",
+    "labels": {
+      "de": "Altirisch",
+      "en": "Old Irish",
+      "sr": "староирски"
+    },
+    "oldTag": "ga-x-old",
+    "rationale": "User-approved source migration ga-x-old → sga. The pinned IANA and ISO tables register this historical language; the pinned Glottolog node identifies the same scope. Source evidence, reviewed labels and earlier review history are preserved.",
+    "relatedIdentifiers": "",
+    "reviewer": "Codex",
+    "tag": "sga",
+    "wikidata": "Q35308"
+  },
+  {
+    "alignment": "exact",
+    "date": "2026-09-06",
+    "glottocode": "oldl1240",
+    "kind": "historical-stage",
+    "labels": {
+      "de": "Altlitauisch",
+      "en": "Old Lithuanian",
+      "sr": "старолитвански"
+    },
+    "oldTag": "lt-x-old",
+    "rationale": "User-approved source migration lt-x-old → olt. The pinned IANA and ISO tables register this historical language; the pinned Glottolog node identifies the same scope. Source evidence, reviewed labels and earlier review history are preserved.",
+    "relatedIdentifiers": "wikidata:Q17417801|status:proposal retained as supporting evidence; no revision-pinned exact assignment",
+    "reviewer": "Codex",
+    "tag": "olt",
+    "wikidata": ""
+  },
+  {
+    "alignment": "exact",
+    "date": "2026-09-06",
+    "glottocode": "kajk1237",
+    "kind": "language",
+    "labels": {
+      "de": "Kajkavisch",
+      "en": "Kajkavian",
+      "sr": "кајкавски"
+    },
+    "oldTag": "hr-x-kajkav",
+    "rationale": "The user explicitly chose to retain generic Kajkavian on 2026-09-06. Glottolog kajk1237 describes the spoken language, while the pinned ISO table names kjv Kaikavian Literary Language (historical). The registration authors distinguish the literary norm from the generic dialect group: https://kajkavski-jezik.eu/en/kajkavian-iso-639-3-language-code/ . The Glottolog cross-reference to kjv is narrower supporting evidence, never an exact ISO identity; all generic source forms remain hr-x-kajkav.",
+    "relatedIdentifiers": "iso639-3:kjv|relationship:narrower|label:Kaikavian Literary Language;wikidata:Q838165|status:unpinned supporting proposal",
+    "reviewer": "ttasovac",
+    "tag": "hr-x-kajkav",
+    "wikidata": ""
+  },
+  {
+    "alignment": "broader",
+    "date": "2026-09-06",
+    "glottocode": "dalm1243",
+    "kind": "variety",
+    "labels": {
+      "de": "Vegliotisch",
+      "en": "Vegliot",
+      "sr": "вељотски"
+    },
+    "oldTag": "vel",
+    "parent": "dlm",
+    "rationale": "User-approved correction of the unused вељот. catalogue label. Vegliot is a Dalmatian variety; no exact Vegliot node exists in pinned Glottolog 5.3, so dalm1243 is broader. ISO vel and velu1238 identify unrelated Veluws and are neither identifiers nor aliases of this profile. Vegliot scope: https://hrcak.srce.hr/file/265826 ; German terminology: https://ewa.saw-leipzig.de/help/abbreviations/en .",
+    "relatedIdentifiers": "",
+    "reviewer": "Codex",
+    "tag": "dlm-x-vegliot",
+    "wikidata": ""
+  },
+  {
+    "alignment": "broader",
+    "date": "2026-09-06",
+    "glottocode": "finn1317",
+    "kind": "language",
+    "labels": {
+      "de": "Estnisch",
+      "en": "Estonian",
+      "sr": "естонски"
+    },
+    "oldTag": "et",
+    "parent": "und-x-glot-finn1317",
+    "rationale": "User-approved preservation of generic Estonian et / est. The pinned IANA macrolanguage memberships include ekk and vro. Glottolog places esto1258 (ekk) and sout2679 (vro) in different Finnic branches; their common broader ancestor is finn1317. Q9072 is retained for generic Estonian, while its narrower P1394 claim does not establish an exact Glottolog equivalence.",
+    "relatedIdentifiers": "glottolog:esto1258|iso639-3:ekk|relationship:narrower;glottolog:sout2679|iso639-3:vro|relationship:narrower",
+    "reviewer": "Codex",
+    "tag": "et",
+    "wikidata": "Q9072"
+  }
+]

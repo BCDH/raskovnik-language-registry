@@ -182,3 +182,46 @@ def parse_overrides(path: Path, *, require_approved: bool = True) -> RegistryOve
                 )
             nodes_by_wikidata[wikidata] = reviewed
     return RegistryOverrides(version, nodes, nodes_by_glottocode)
+
+
+def approved_iso_scope_exceptions(root: Path, *, ledger_path: Path | None = None) -> frozenset[tuple[str, str, str]]:
+    """Authorize only ledger-bound, hash-pinned narrower ISO cross-references."""
+    import hashlib
+    from datetime import date
+    path = ledger_path or root / "registry/raskovnik-overrides.xml"
+    if not path.exists():
+        return frozenset()
+    tree = ET.parse(path).getroot()
+    ns = "{" + OVERRIDE_NS + "}"
+    nodes = {n.get("ident"): n for n in tree.findall(ns + "node")}
+    result = set()
+    required_evidence = {
+        "upstream/glottolog/5.3/languoid.csv",
+        "upstream/iso-639-3/2026-07-22/iso-639-3.tab",
+    }
+    for item in tree.findall(ns + "isoScopeException"):
+        key = (item.get("node"), item.get("glottocode"), item.get("iso6393"))
+        node = nodes.get(key[0])
+        if (key in result or item.get("relationship") != "narrower"
+            or item.get("reviewStatus") != "approved" or not item.get("reviewedBy")
+            or node is None or node.get("reviewStatus") != "approved"
+            or node.get("alignment") != "exact" or node.get("glottocode") != key[1]
+            or not normalized(item.findtext(ns + "rationale", ""))):
+            raise RegistryOverrideError("invalid or unapproved ISO scope exception: " + str(key))
+        try:
+            date.fromisoformat(item.get("reviewedOn", ""))
+        except ValueError as exc:
+            raise RegistryOverrideError("invalid ISO scope review date") from exc
+        evidence = item.findall(ns + "evidence")
+        if {e.get("path") for e in evidence} != required_evidence or len(evidence) != 2:
+            raise RegistryOverrideError("ISO scope exception requires pinned Glottolog and ISO evidence")
+        for e in evidence:
+            if hashlib.sha256((root / e.get("path")).read_bytes()).hexdigest() != e.get("sha256"):
+                raise RegistryOverrideError("stale ISO scope exception evidence")
+        from registry_sources import parse_glottolog, parse_iso639_3
+        glot, _ = parse_glottolog(root / "upstream/glottolog/5.3/languoid.csv")
+        iso, _, _ = parse_iso639_3(root / "upstream/iso-639-3/2026-07-22/iso-639-3.tab")
+        if key[1] not in glot or key[2] not in iso or glot[key[1]].iso639_3 != key[2]:
+            raise RegistryOverrideError("ISO scope exception no longer matches pinned cross-reference")
+        result.add(key)
+    return frozenset(result)

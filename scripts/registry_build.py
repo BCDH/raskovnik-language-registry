@@ -216,6 +216,7 @@ def validate_plan(
         dict[str, Any],
     ]
     | None = None,
+    *, iso_scope_exceptions: frozenset = frozenset(),
 ) -> None:
     _walk_keys(plan)
     _require_exact_keys(
@@ -629,7 +630,10 @@ def validate_plan(
                     raise RegistryBuildError(f"unknown or duplicate exact Glottocode {glottocode!r}")
                 seen_glottocodes.add(glottocode)
                 glottolog_iso = glottolog[glottocode].iso639_3
-                if glottolog_iso in iso_by_id and external.get("ISO639-3") != glottolog_iso:
+                if (identifier, glottocode, glottolog_iso) in iso_scope_exceptions and external.get("ISO639-3") is not None:
+                    raise RegistryBuildError(f"node {identifier!r} promotes a reviewed narrower ISO reference to exact")
+                if (glottolog_iso in iso_by_id and external.get("ISO639-3") != glottolog_iso
+                    and (identifier, glottocode, glottolog_iso) not in iso_scope_exceptions):
                     raise RegistryBuildError(f"node {identifier!r} has an incomplete Glottolog/ISO exact inventory")
             iso3 = external.get("ISO639-3")
             if iso3 is not None:
@@ -808,7 +812,7 @@ def validate_production_plan_provenance(plan: dict[str, Any], root: Path) -> Non
             raise RegistryBuildError(f"release plan labels differ for ancestor {ancestor['glottocode']!r}")
 
     _profiles, catalog_records = parse_effective_persj_catalog(
-        root / "upstream/persj/b94d7b2/effective-language-catalog.xml"
+        root / "upstream/persj" / candidates["sources"]["persjCommit"][:7] / "effective-language-catalog.xml"
     )
     plan_catalog = next(
         (catalog for catalog in plan["catalogs"] if catalog["dictionaryId"] == "ISJ.PERSJ"),
@@ -987,9 +991,10 @@ def build_registry_tree(
         dict[str, Any],
         dict[str, Any],
     ],
+    *, iso_scope_exceptions: frozenset = frozenset(),
 ) -> ET.Element:
     source_by_id = {source["manifestId"]: source for source in sources}
-    validate_plan(plan, set(source_by_id), standards)
+    validate_plan(plan, set(source_by_id), standards, iso_scope_exceptions=iso_scope_exceptions)
     root = ET.Element(qname(TEI_NS, "TEI"), {"type": "lex-0"})
     header = _subelement(root, "teiHeader")
     file_desc = _subelement(header, "fileDesc")
@@ -1241,6 +1246,9 @@ def build_registry_tree(
 
 
 def xml_bytes(root: ET.Element) -> bytes:
+    # Other XML tooling shares ElementTree namespace state in the test/import process.
+    ET.register_namespace("", TEI_NS)
+    ET.register_namespace("m", MANIFEST_NS)
     ET.indent(root, space="  ")
     return ET.tostring(root, encoding="utf-8", xml_declaration=True, short_empty_elements=True) + b"\n"
 
@@ -1343,6 +1351,8 @@ def build_manifest_tree(
 def build_artifacts(
     plan: dict[str, Any], source_lock: dict[str, Any], publication: dict[str, Any], root: Path
 ) -> tuple[bytes, bytes]:
+    from registry_overrides import approved_iso_scope_exceptions
+    scope_exceptions = approved_iso_scope_exceptions(root)
     sources = load_sources(source_lock, publication, root)
     _iana_date, iana = parse_iana_registry(
         root / "upstream/iana/2026-08-08/language-subtag-registry"
@@ -1369,6 +1379,7 @@ def build_artifacts(
                 wikidata_by_iso,
                 wikidata_by_ietf,
             ),
+            iso_scope_exceptions=scope_exceptions,
         )
     )
     manifest = xml_bytes(build_manifest_tree(plan, sources, registry))

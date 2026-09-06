@@ -27,12 +27,20 @@
       <attribute name="selectable"><choice><value>true</value><value>false</value></choice></attribute>
       <attribute name="alignment"><choice><value>exact</value><value>broader</value><value>none</value></choice></attribute>
       <optional><attribute name="glottocode"><data type="string"><param name="pattern">[a-z0-9]{8}</param></data></attribute></optional>
+      <optional><attribute name="wikidata"><data type="string"><param name="pattern">Q[1-9][0-9]*</param></data></attribute></optional>
       <attribute name="reviewStatus"><choice><value>approved</value><value>pending</value></choice></attribute>
       <attribute name="reviewedBy"><data type="token"/></attribute>
       <attribute name="reviewedOn"><data type="date"/></attribute>
       <ref name="name-sr"/>
       <ref name="name-en"/>
       <ref name="name-de"/>
+      <zeroOrMore>
+        <element name="alias">
+          <attribute name="xml:lang"><choice><value>sr</value><value>en</value><value>de</value></choice></attribute>
+          <ref name="name-source"/>
+          <text/>
+        </element>
+      </zeroOrMore>
       <oneOrMore>
         <element name="note">
           <attribute name="type"><value>reviewReason</value></attribute>

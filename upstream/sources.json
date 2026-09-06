@@ -95,6 +95,48 @@
     {
       "id": "persj-language-catalog",
       "title": "ISJ.PERSJ conversion language catalog",
+      "version": "b94d7b2",
+      "revision": "b94d7b2c57a3133b43522efd20c99f8cb2feb8fd",
+      "url": "https://github.com/ttasovac/new-conversions4raskovnik/commit/b94d7b2c57a3133b43522efd20c99f8cb2feb8fd",
+      "files": [
+        {
+          "path": "upstream/persj/b94d7b2/effective-language-catalog.xml",
+          "bytes": 95751,
+          "sha256": "065e079c13ffdde51be93b3cea679b93d958ea499d0b93e7b86c9ada611206bd"
+        }
+      ]
+    },
+    {
+      "id": "persj-language-catalog-3f18f46",
+      "title": "ISJ.PERSJ conversion language catalog",
+      "version": "3f18f46",
+      "revision": "3f18f464b2ed4da453fb2d82ec283862dc29a384",
+      "url": "https://github.com/ttasovac/new-conversions4raskovnik/commit/3f18f464b2ed4da453fb2d82ec283862dc29a384",
+      "files": [
+        {
+          "path": "upstream/persj/3f18f46/effective-language-catalog.xml",
+          "bytes": 95732,
+          "sha256": "f29034930598ab87eab6a1d7c3c47f6a6118f5917159b49dbbe0e60e65411a61"
+        }
+      ]
+    },
+    {
+      "id": "persj-language-catalog-6101bcb",
+      "title": "ISJ.PERSJ conversion language catalog",
+      "version": "6101bcb",
+      "revision": "6101bcb9249371ef67f8ed6f5d6116436afc325d",
+      "url": "https://github.com/ttasovac/new-conversions4raskovnik/commit/6101bcb9249371ef67f8ed6f5d6116436afc325d",
+      "files": [
+        {
+          "path": "upstream/persj/6101bcb/effective-language-catalog.xml",
+          "bytes": 95670,
+          "sha256": "e3707c5d3ca37a62cb3989e7e3e65b5f5442782ffe7891b168e6564e26779f0e"
+        }
+      ]
+    },
+    {
+      "id": "persj-language-catalog-670dac4",
+      "title": "ISJ.PERSJ conversion language catalog",
       "version": "670dac4",
       "revision": "670dac4d45a2762f34597860c9bf8c080b3cbee3",
       "url": "https://github.com/ttasovac/new-conversions4raskovnik/commit/670dac4d45a2762f34597860c9bf8c080b3cbee3",
@@ -103,6 +145,48 @@
           "path": "upstream/persj/670dac4/effective-language-catalog.xml",
           "bytes": 95131,
           "sha256": "8fca96347a0ff24afbf1b46b67adec26af103eef23b126b69e1736d9f489d735"
+        }
+      ]
+    },
+    {
+      "id": "persj-language-catalog-79c6c8e",
+      "title": "ISJ.PERSJ conversion language catalog",
+      "version": "79c6c8e",
+      "revision": "79c6c8eeb40ff3fdd3372054a6f51104624c137f",
+      "url": "https://github.com/ttasovac/new-conversions4raskovnik/commit/79c6c8eeb40ff3fdd3372054a6f51104624c137f",
+      "files": [
+        {
+          "path": "upstream/persj/79c6c8e/effective-language-catalog.xml",
+          "bytes": 95819,
+          "sha256": "b486dc1354a1903ee47b77258881ad56b8512d6d8acedac567d46ad7ae63c1b0"
+        }
+      ]
+    },
+    {
+      "id": "persj-language-catalog-84ca19d",
+      "title": "ISJ.PERSJ conversion language catalog",
+      "version": "84ca19d",
+      "revision": "84ca19d36c576f97a73d17c75fb17a68dd9542bd",
+      "url": "https://github.com/ttasovac/new-conversions4raskovnik/commit/84ca19d36c576f97a73d17c75fb17a68dd9542bd",
+      "files": [
+        {
+          "path": "upstream/persj/84ca19d/effective-language-catalog.xml",
+          "bytes": 95887,
+          "sha256": "5c4db3dd24abdc887411c5ec71cac3bbf261b9fb2468fca4cf6e7f53d5b9baea"
+        }
+      ]
+    },
+    {
+      "id": "wikidata",
+      "title": "Wikidata language-item evidence",
+      "version": "2026-09-01",
+      "revision": "per-item revision IDs and timestamps embedded in snapshot",
+      "url": "https://www.wikidata.org/",
+      "files": [
+        {
+          "path": "upstream/wikidata/2026-09-01/language-items.json",
+          "bytes": 90477,
+          "sha256": "267c60bcef457c2d09593b297844009b1a6a53e54e183c97ce27a52a31a7643d"
         }
       ]
     }

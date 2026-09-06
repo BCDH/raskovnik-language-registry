@@ -21,6 +21,7 @@ from registry_sources import (
     parse_glottolog,
     parse_iana_registry,
     parse_iso639_3,
+    parse_wikidata_evidence,
     primary_subtag,
     standard_prefix,
     validate_registered_tag,
@@ -31,6 +32,8 @@ from registry_overrides import parse_overrides
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT = ROOT / "dist/registry-candidates.json"
 DEFAULT_REVIEW = ROOT / "dist/editorial-review.tsv"
+PERSJ_COMMIT = "b94d7b2c57a3133b43522efd20c99f8cb2feb8fd"
+PERSJ_SNAPSHOT = ROOT / "upstream/persj/b94d7b2/effective-language-catalog.xml"
 
 
 def name_key(value: str) -> str:
@@ -167,11 +170,49 @@ def preferred_serbian(profile: TagProfile) -> str:
     return sorted(names, key=lambda value: (len(value), value))[0]
 
 
+def deterministic_ancestor_code(glottocode: str) -> str:
+    """Return the policy-owned BCP 47 identifier for an uncoded structural node."""
+    return f"und-x-glot-{glottocode}"
+
+
+def validate_reviewed_wikidata_assignment(
+    *,
+    ident: str,
+    qid: str,
+    items: dict[str, object],
+    alignment: GlottologRecord | None,
+    iso: Iso6393Record | None,
+) -> object:
+    """Resolve a reviewed semantic QID and reject every structured-claim conflict."""
+    item = items.get(qid)
+    if item is None:
+        raise RuntimeError(
+            f"reviewed Wikidata assignment {qid!r} for {ident!r} is absent from the pinned evidence snapshot"
+        )
+    if item.ietf_tags and ident.casefold() not in {
+        value.casefold() for value in item.ietf_tags
+    }:
+        raise RuntimeError(
+            f"reviewed Wikidata assignment {qid!r} conflicts with tag {ident!r}"
+        )
+    if item.glottocodes and (
+        alignment is None or alignment.glottocode not in item.glottocodes
+    ):
+        raise RuntimeError(
+            f"reviewed Wikidata assignment {qid!r} conflicts with the Glottolog alignment for {ident!r}"
+        )
+    if item.iso639_3 and (
+        iso is None or iso.identifier not in item.iso639_3
+    ):
+        raise RuntimeError(
+            f"reviewed Wikidata assignment {qid!r} conflicts with the ISO 639-3 identity for {ident!r}"
+        )
+    return item
+
+
 def build_candidates() -> dict[str, object]:
     overrides = parse_overrides(ROOT / "registry/raskovnik-overrides.xml")
-    profiles, source_records = parse_effective_persj_catalog(
-        ROOT / "upstream/persj/670dac4/effective-language-catalog.xml"
-    )
+    profiles, source_records = parse_effective_persj_catalog(PERSJ_SNAPSHOT)
     iana_date, iana = parse_iana_registry(
         ROOT / "upstream/iana/2026-08-08/language-subtag-registry"
     )
@@ -181,6 +222,9 @@ def build_candidates() -> dict[str, object]:
     glottolog, glottolog_by_iso = parse_glottolog(
         ROOT / "upstream/glottolog/5.3/languoid.csv"
     )
+    wikidata, wikidata_by_glottocode, wikidata_by_iso, wikidata_by_ietf = parse_wikidata_evidence(
+        ROOT / "upstream/wikidata/2026-09-01/language-items.json"
+    )
     cldr_languages, cldr_territories, cldr_variants = parse_cldr_german(
         ROOT / "upstream/cldr/48.2/de.xml"
     )
@@ -189,6 +233,7 @@ def build_candidates() -> dict[str, object]:
     profile_rows: list[dict[str, object]] = []
     glottocode_to_code: dict[str, str] = {}
     for tag, profile in sorted(profiles.items()):
+        override = overrides.nodes.get(tag)
         validate_registered_tag(tag, iana)
         primary = primary_subtag(tag)
         primary_record = iana.get(("language", primary))
@@ -206,6 +251,44 @@ def build_candidates() -> dict[str, object]:
             exact_glottolog = base_glottolog
         else:
             broader_glottolog = base_glottolog
+        ietf_item = wikidata_by_ietf.get(tag.casefold())
+        iso_item = wikidata_by_iso.get(iso.identifier) if tag == primary and iso is not None else None
+        identity_item = (
+            None
+            if ietf_item is not None and iso_item is not None and ietf_item.qid != iso_item.qid
+            else ietf_item or iso_item
+        )
+        if identity_item is not None:
+            claimed = [glottolog[code] for code in identity_item.glottocodes if code in glottolog]
+            compatible = [
+                record
+                for record in claimed
+                if (
+                    primary_record.fields.get("Scope") == ("collection",)
+                    and record.level == "family"
+                    or primary_record.fields.get("Scope") != ("collection",)
+                    and record.level != "family"
+                )
+            ]
+            if len(compatible) == 1:
+                exact_glottolog = compatible[0]
+                broader_glottolog = None
+        if override is not None:
+            if override.alignment == "none":
+                exact_glottolog = None
+                broader_glottolog = None
+            else:
+                reviewed_alignment = glottolog.get(override.glottocode or "")
+                if reviewed_alignment is None:
+                    raise RuntimeError(
+                        f"approved override {tag!r} references unknown Glottocode {override.glottocode!r}"
+                    )
+                exact_glottolog = (
+                    reviewed_alignment if override.alignment == "exact" else None
+                )
+                broader_glottolog = (
+                    reviewed_alignment if override.alignment == "broader" else None
+                )
         if exact_glottolog is not None:
             previous = glottocode_to_code.get(exact_glottolog.glottocode)
             if previous is not None and previous != tag:
@@ -213,6 +296,36 @@ def build_candidates() -> dict[str, object]:
                     f"Glottolog {exact_glottolog.glottocode} maps to {previous!r} and {tag!r}"
                 )
             glottocode_to_code[exact_glottolog.glottocode] = tag
+        wikidata_item = identity_item
+        if exact_glottolog is not None:
+            glottolog_item = wikidata_by_glottocode.get(exact_glottolog.glottocode)
+            if wikidata_item is not None and glottolog_item is not None and wikidata_item.qid != glottolog_item.qid:
+                raise RuntimeError(
+                    f"conflicting Wikidata IETF/Glottolog claims for {tag!r}: "
+                    f"{wikidata_item.qid} and {glottolog_item.qid}"
+                )
+            wikidata_item = wikidata_item or glottolog_item
+        if tag == primary and iso is not None:
+            if identity_item is not None and ietf_item is None and wikidata_item is not None and iso_item is not None and wikidata_item.qid != iso_item.qid:
+                raise RuntimeError(
+                    f"conflicting Wikidata Glottolog/ISO claims for {tag!r}: "
+                    f"{wikidata_item.qid} and {iso_item.qid}"
+                )
+            wikidata_item = wikidata_item or iso_item
+        if override is not None and override.wikidata is not None:
+            reviewed_item = validate_reviewed_wikidata_assignment(
+                ident=tag,
+                qid=override.wikidata,
+                items=wikidata,
+                alignment=exact_glottolog or broader_glottolog,
+                iso=iso,
+            )
+            if wikidata_item is not None and wikidata_item.qid != reviewed_item.qid:
+                raise RuntimeError(
+                    f"reviewed Wikidata assignment for {tag!r} conflicts with exact structured claims: "
+                    f"{override.wikidata} and {wikidata_item.qid}"
+                )
+            wikidata_item = reviewed_item
         german, german_source = german_candidate(
             tag, cldr_languages, cldr_territories, cldr_variants
         )
@@ -250,6 +363,8 @@ def build_candidates() -> dict[str, object]:
                 "id": tag,
                 "status": profile.status,
                 "kindCandidate": kind_candidate(tag, primary_record, alignment),
+                "parentCandidate": None,
+                "selectableCandidate": True,
                 "preferredLabels": {
                     "sr": preferred_serbian(profile),
                     "en": english,
@@ -260,6 +375,7 @@ def build_candidates() -> dict[str, object]:
                     "en": "glottolog-5.3" if exact_glottolog else "iana-2026-08-08",
                     "de": german_source,
                 },
+                "aliasCandidates": {"sr": [], "en": [], "de": []},
                 "serbianCandidates": list(profile.serbian_names),
                 "iana": {
                     "primary": primary,
@@ -290,14 +406,16 @@ def build_candidates() -> dict[str, object]:
                     if alignment is not None
                     else None
                 ),
+                "wikidataQidCandidate": wikidata_item.qid if wikidata_item else None,
                 "lineage": lineage,
                 "sourceRecordIds": [record.identifier for record in profile.source_records],
                 "reviewReasons": sorted(set(reasons)),
                 "approval": None,
             }
-        override = overrides.nodes.get(tag)
         if override is not None:
             row["kindCandidate"] = override.kind
+            row["parentCandidate"] = override.parent
+            row["selectableCandidate"] = override.selectable
             row["preferredLabels"] = {
                 language: override.names[language].value
                 for language in ("sr", "en", "de")
@@ -306,12 +424,38 @@ def build_candidates() -> dict[str, object]:
                 language: override.names[language].source
                 for language in ("sr", "en", "de")
             }
+            row["aliasCandidates"] = {
+                language: [
+                    {"value": alias.value, "source": alias.source}
+                    for alias in override.aliases[language]
+                ]
+                for language in ("sr", "en", "de")
+            }
             row["approval"] = {
                 "status": override.review_status,
                 "reviewedBy": override.reviewed_by,
                 "reviewedOn": override.reviewed_on,
                 "reasons": list(override.reasons),
             }
+        # The 2026-09-06 source-label split is authorized; finer identities and
+        # German labels remain proposals, never implicit editorial approvals.
+        if override is None and tag in {"os", "ira-x-ossetic"}:
+            row["reviewReasons"] = sorted(set(row["reviewReasons"]) | {"non-cldr-german-label"})
+            row["labelProvenance"]["de"] = "ossetian-split-proposal-2026-09-06"
+            if tag == "os":
+                row["preferredLabels"]["de"] = "Iron-Ossetisch"
+            else:
+                if "Q33968" not in wikidata:
+                    raise RuntimeError("generic Ossetian proposal requires pinned Q33968 evidence")
+                row["preferredLabels"].update({"en": "Ossetian", "de": "Ossetisch"})
+                row["labelProvenance"]["en"] = "ossetian-split-proposal-2026-09-06"
+                row["kindCandidate"] = "language"
+                row["parentCandidate"] = "ira"
+                row["glottolog"] = None
+                row["lineage"] = []
+                row["wikidataQidCandidate"] = "Q33968"
+                row["reviewReasons"] = sorted(set(row["reviewReasons"]) | {"wikidata-scope-review", "lineage-review-required"})
+                row["reviewReasons"].remove("english-label-required")
         profile_rows.append(row)
 
     reverse_collection_map = {
@@ -339,11 +483,29 @@ def build_candidates() -> dict[str, object]:
     for row in profile_rows:
         for lineage_node in row["lineage"]:
             ancestor_glottocodes.add(lineage_node["glottocode"])
+    for glottocode in ancestor_glottocodes:
+        if glottocode not in glottocode_to_code and glottocode not in reverse_collection_map:
+            glottocode_to_code[glottocode] = deterministic_ancestor_code(glottocode)
+    for row in profile_rows:
+        for lineage_node in row["lineage"]:
+            lineage_node["canonicalCode"] = (
+                glottocode_to_code.get(lineage_node["glottocode"])
+                or reverse_collection_map.get(lineage_node["glottocode"])
+            )
     ancestor_rows: list[dict[str, object]] = []
     for glottocode in sorted(ancestor_glottocodes):
         record = glottolog[glottocode]
         code = glottocode_to_code.get(glottocode) or reverse_collection_map.get(glottocode)
         override = overrides.nodes_by_glottocode.get(glottocode)
+        ancestor_primary = primary_subtag(code) if code is not None else None
+        ancestor_iana = (
+            iana.get(("language", ancestor_primary)) if ancestor_primary is not None else None
+        )
+        ancestor_iso = (
+            iso_for_primary(ancestor_primary, iso_by_id, iso_by_part1, iso_by_part2)
+            if ancestor_primary is not None
+            else None
+        )
         ancestor_rows.append(
             {
                 "glottocode": glottocode,
@@ -351,6 +513,52 @@ def build_candidates() -> dict[str, object]:
                 "level": record.level,
                 "parentGlottocode": record.parent_id,
                 "canonicalCodeCandidate": code,
+                "ianaScope": (
+                    ancestor_iana.fields.get("Scope", ("individual",))[0]
+                    if ancestor_iana is not None and code == ancestor_primary
+                    else None
+                ),
+                "iso639": (
+                    {
+                        "part3": ancestor_iso.identifier,
+                        "part2B": ancestor_iso.part2b,
+                        "part2T": ancestor_iso.part2t,
+                        "part1": ancestor_iso.part1,
+                    }
+                    if ancestor_iso is not None and code == ancestor_primary
+                    else None
+                ),
+                "kindCandidate": override.kind if override is not None else record.level,
+                "parentCandidate": override.parent if override is not None else None,
+                "selectableCandidate": override.selectable if override is not None else False,
+                "preferredLabels": (
+                    {
+                        language: override.names[language].value
+                        for language in ("sr", "en", "de")
+                    }
+                    if override is not None
+                    else {"sr": None, "en": record.name, "de": None}
+                ),
+                "labelProvenance": (
+                    {
+                        language: override.names[language].source
+                        for language in ("sr", "en", "de")
+                    }
+                    if override is not None
+                    else {"sr": None, "en": "glottolog-5.3", "de": None}
+                ),
+                "aliasCandidates": (
+                    {
+                        language: [
+                            {"value": alias.value, "source": alias.source}
+                            for alias in override.aliases[language]
+                        ]
+                        for language in ("sr", "en", "de")
+                    }
+                    if override is not None
+                    else {"sr": [], "en": [], "de": []}
+                ),
+                "wikidataQidCandidate": None,
                 "reviewReasons": [] if code else ["canonical-ancestor-code-required"],
                 "approval": (
                     {
@@ -364,11 +572,31 @@ def build_candidates() -> dict[str, object]:
                 ),
             }
         )
+        ancestor = ancestor_rows[-1]
+        automatic_item = wikidata_by_glottocode.get(glottocode)
+        if override is not None and override.wikidata is not None:
+            reviewed_item = validate_reviewed_wikidata_assignment(
+                ident=override.ident,
+                qid=override.wikidata,
+                items=wikidata,
+                alignment=record,
+                iso=iso_for_primary(
+                    primary_subtag(override.ident), iso_by_id, iso_by_part1, iso_by_part2
+                ),
+            )
+            if automatic_item is not None and automatic_item.qid != reviewed_item.qid:
+                raise RuntimeError(
+                    f"reviewed Wikidata assignment for {override.ident!r} conflicts with "
+                    f"Glottolog claim {automatic_item.qid}"
+                )
+            ancestor["wikidataQidCandidate"] = reviewed_item.qid
+        elif automatic_item is not None:
+            ancestor["wikidataQidCandidate"] = automatic_item.qid
 
     return {
         "schema": "language-registry-candidates-v1",
         "sources": {
-            "persjCommit": "670dac4d45a2762f34597860c9bf8c080b3cbee3",
+            "persjCommit": PERSJ_COMMIT,
             "ianaFileDate": iana_date,
             "glottologVersion": "5.3",
             "cldrVersion": "48.2",

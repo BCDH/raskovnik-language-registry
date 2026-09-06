@@ -20,6 +20,7 @@ from registry_sources import (
     parse_effective_persj_catalog,
     parse_iana_registry,
     parse_iso639_3,
+    parse_wikidata_evidence,
     sha256,
     technical_id,
     validate_registered_tag,
@@ -50,7 +51,15 @@ SOURCE_RECORD_KINDS = frozenset(
     {"language-label", "compound-language-label"}
 )
 EXTERNAL_IDENTIFIER_TYPES = frozenset(
-    {"Glottolog", "ISO639-1", "ISO639-2B", "ISO639-2T", "ISO639-3", "ISO639-5"}
+    {
+        "Glottolog",
+        "ISO639-1",
+        "ISO639-2B",
+        "ISO639-2T",
+        "ISO639-3",
+        "ISO639-5",
+        "Wikidata",
+    }
 )
 LANGUAGES = ("sr", "en", "de")
 FORBIDDEN_PLAN_KEYS = frozenset(
@@ -66,6 +75,7 @@ FORBIDDEN_PLAN_KEYS = frozenset(
 )
 SHA256_RE = re.compile(r"[0-9a-f]{64}")
 XML_ID_RE = re.compile(r"[A-Za-z_][A-Za-z0-9_.-]*")
+QID_RE = re.compile(r"Q[1-9][0-9]*")
 
 ET.register_namespace("", TEI_NS)
 ET.register_namespace("m", MANIFEST_NS)
@@ -196,7 +206,16 @@ def name_id(code: str, language: str, role: str, index: int | None = None) -> st
 def validate_plan(
     plan: dict[str, Any],
     source_ids: set[str],
-    standards: tuple[dict[Any, Any], dict[str, Any], dict[str, Any]] | None = None,
+    standards: tuple[
+        dict[Any, Any],
+        dict[str, Any],
+        dict[str, Any],
+        dict[str, Any],
+        dict[str, Any],
+        dict[str, Any],
+        dict[str, Any],
+    ]
+    | None = None,
 ) -> None:
     _walk_keys(plan)
     _require_exact_keys(
@@ -319,6 +338,7 @@ def validate_plan(
 
     nodes: dict[str, dict[str, Any]] = {}
     node_order: list[str] = []
+    seen_wikidata_qids: set[str] = set()
     for index, node in enumerate(_require_array(plan["nodes"], "plan.nodes")):
         context = f"plan.nodes[{index}]"
         if not isinstance(node, dict):
@@ -357,7 +377,7 @@ def validate_plan(
         kind = node["kind"]
         if kind not in NODE_KINDS:
             raise RegistryBuildError(f"{context}.kind is not controlled")
-        _require_boolean(node["selectable"], f"{context}.selectable")
+        selectable = _require_boolean(node["selectable"], f"{context}.selectable")
         if node["classificationStatus"] not in CLASSIFICATION_STATUSES:
             raise RegistryBuildError(f"{context}.classificationStatus is not controlled")
         if node["classificationNote"] is not None:
@@ -368,13 +388,24 @@ def validate_plan(
             )
             if all(node["classificationNote"][language] is None for language in LANGUAGES):
                 raise RegistryBuildError(f"{context}.classificationNote must contain a localized value")
-        _validate_labels(node["labels"], f"{context}.labels")
+        _validate_labels(
+            node["labels"], f"{context}.labels", nullable_values=not selectable
+        )
+        if node["labels"]["en"] is None:
+            raise RegistryBuildError(f"{context}.labels.en is required for every node")
         label_sources = node["labelSources"]
         if not isinstance(label_sources, dict):
             raise RegistryBuildError(f"{context}.labelSources must be an object")
         _require_exact_keys(label_sources, set(LANGUAGES), f"{context}.labelSources")
         for language in LANGUAGES:
-            if label_sources[language] not in source_ids:
+            label = node["labels"][language]
+            source_id = label_sources[language]
+            if label is None:
+                if selectable or source_id is not None:
+                    raise RegistryBuildError(
+                        f"{context}.labelSources.{language} must be null exactly when its nonselectable label is null"
+                    )
+            elif source_id not in source_ids:
                 raise RegistryBuildError(f"{context}.labelSources.{language} does not resolve")
         _validate_aliases(node["aliases"], f"{context}.aliases")
         for language in LANGUAGES:
@@ -399,6 +430,13 @@ def validate_plan(
                 if re.fullmatch(r"[a-z0-9]{8}", value) is None:
                     raise RegistryBuildError(f"invalid Glottocode in {identifier_context}")
                 glottocode = value
+            elif external_type == "Wikidata":
+                assert isinstance(value, str)
+                if QID_RE.fullmatch(value) is None or value in seen_wikidata_qids:
+                    raise RegistryBuildError(
+                        f"invalid or duplicate exact Wikidata QID in {identifier_context}"
+                    )
+                seen_wikidata_qids.add(value)
 
         for location_index, location in enumerate(_require_array(node["locations"], f"{context}.locations")):
             location_context = f"{context}.locations[{location_index}]"
@@ -577,7 +615,7 @@ def validate_plan(
         raise RegistryBuildError("every source record must occur in exactly one tag profile inverse")
 
     if standards is not None:
-        iana, glottolog, iso_by_id = standards
+        iana, glottolog, iso_by_id, wikidata, wikidata_by_glottocode, wikidata_by_iso, wikidata_by_ietf = standards
         seen_glottocodes: set[str] = set()
         for identifier, node in nodes.items():
             try:
@@ -613,6 +651,39 @@ def validate_plan(
                     raise RegistryBuildError(f"node {identifier!r} has an incomplete exact ISO inventory")
                 if "-" not in identifier and iso.part1 is not None and identifier != iso.part1:
                     raise RegistryBuildError(f"node {identifier!r} does not use the shortest exact standard code")
+            wikidata_qid = external.get("Wikidata")
+            if wikidata_qid is not None:
+                wikidata_item = wikidata.get(wikidata_qid)
+                if wikidata_item is None:
+                    raise RegistryBuildError(
+                        f"node {identifier!r} has a Wikidata assignment absent from the pinned snapshot"
+                    )
+                glottolog_item = wikidata_by_glottocode.get(glottocode) if glottocode else None
+                iso_item = wikidata_by_iso.get(iso3) if iso3 else None
+                ietf_item = wikidata_by_ietf.get(identifier.casefold())
+                expected_qids = {
+                    item.qid for item in (glottolog_item, iso_item, ietf_item) if item is not None
+                }
+                if len(expected_qids) > 1 or (
+                    expected_qids and wikidata_qid not in expected_qids
+                ):
+                    raise RegistryBuildError(
+                        f"node {identifier!r} has a conflicting or unsupported Wikidata assignment"
+                    )
+                if wikidata_item.ietf_tags and identifier.casefold() not in {
+                    value.casefold() for value in wikidata_item.ietf_tags
+                }:
+                    raise RegistryBuildError(
+                        f"node {identifier!r} conflicts with its Wikidata IETF language-tag claim"
+                    )
+                if wikidata_item.glottocodes and glottocode not in wikidata_item.glottocodes:
+                    raise RegistryBuildError(
+                        f"node {identifier!r} conflicts with its Wikidata Glottolog claim"
+                    )
+                if wikidata_item.iso639_3 and iso3 not in wikidata_item.iso639_3:
+                    raise RegistryBuildError(
+                        f"node {identifier!r} conflicts with its Wikidata ISO 639-3 claim"
+                    )
 
 
 def validate_production_plan_provenance(plan: dict[str, Any], root: Path) -> None:
@@ -647,6 +718,22 @@ def validate_production_plan_provenance(plan: dict[str, Any], root: Path) -> Non
         profile = plan_profiles[identifier]
         if node is None or node["directTagProfileIds"] != [identifier]:
             raise RegistryBuildError(f"release plan lacks the canonical display/profile node {identifier!r}")
+        if node["kind"] != candidate["kindCandidate"] or node["selectable"] != candidate["selectableCandidate"]:
+            raise RegistryBuildError(f"release plan kind or selectability differs for {identifier!r}")
+        if candidate.get("parentCandidate") is not None and node["parentId"] != candidate["parentCandidate"]:
+            raise RegistryBuildError(f"release plan parent differs for {identifier!r}")
+        if node["labels"] != candidate["preferredLabels"] or profile["labels"] != candidate["preferredLabels"]:
+            raise RegistryBuildError(f"release plan preferred labels differ for {identifier!r}")
+        expected_alias_values = {
+            language: [item["value"] for item in candidate.get("aliasCandidates", {}).get(language, [])]
+            for language in LANGUAGES
+        }
+        actual_alias_values = {
+            language: [item["value"] for item in node["aliases"][language]]
+            for language in LANGUAGES
+        }
+        if any(expected_alias_values[language] for language in LANGUAGES) and actual_alias_values != expected_alias_values:
+            raise RegistryBuildError(f"release plan reviewed aliases differ for {identifier!r}")
         if profile["sourceRecordIds"] != sorted(candidate["sourceRecordIds"]):
             raise RegistryBuildError(f"release plan source-record inverse differs for {identifier!r}")
         if candidate["reviewReasons"] and (
@@ -673,6 +760,8 @@ def validate_production_plan_provenance(plan: dict[str, Any], root: Path) -> Non
                 )
             if candidate["iana"]["scope"] == "collection":
                 expected_identifiers["ISO639-5"] = identifier
+        if candidate.get("wikidataQidCandidate") is not None:
+            expected_identifiers["Wikidata"] = candidate["wikidataQidCandidate"]
         actual_identifiers = {item["type"]: item["value"] for item in node["identifiers"]}
         if actual_identifiers != expected_identifiers:
             raise RegistryBuildError(f"release plan exact identifier inventory differs for {identifier!r}")
@@ -686,11 +775,38 @@ def validate_production_plan_provenance(plan: dict[str, Any], root: Path) -> Non
         ):
             raise RegistryBuildError(f"ancestor {ancestor['glottocode']!r} remains unapproved")
         node = plan_nodes.get(code)
-        if node is None or {item["type"]: item["value"] for item in node["identifiers"]}.get("Glottolog") != ancestor["glottocode"]:
+        if node is None:
             raise RegistryBuildError(f"release plan omits approved ancestor {ancestor['glottocode']!r}")
+        expected_identifiers = {"Glottolog": ancestor["glottocode"]}
+        iso = ancestor.get("iso639")
+        if iso is not None:
+            expected_identifiers.update(
+                {
+                    key: value
+                    for key, value in {
+                        "ISO639-1": iso["part1"],
+                        "ISO639-2B": iso["part2B"],
+                        "ISO639-2T": iso["part2T"],
+                        "ISO639-3": iso["part3"],
+                    }.items()
+                    if value is not None
+                }
+            )
+        if ancestor.get("ianaScope") == "collection":
+            expected_identifiers["ISO639-5"] = code
+        if ancestor.get("wikidataQidCandidate") is not None:
+            expected_identifiers["Wikidata"] = ancestor["wikidataQidCandidate"]
+        if {item["type"]: item["value"] for item in node["identifiers"]} != expected_identifiers:
+            raise RegistryBuildError(f"release plan identifiers differ for ancestor {ancestor['glottocode']!r}")
+        if node["kind"] != ancestor["kindCandidate"] or node["selectable"] != ancestor["selectableCandidate"]:
+            raise RegistryBuildError(f"release plan kind or selectability differs for ancestor {ancestor['glottocode']!r}")
+        if ancestor.get("parentCandidate") is not None and node["parentId"] != ancestor["parentCandidate"]:
+            raise RegistryBuildError(f"release plan parent differs for ancestor {ancestor['glottocode']!r}")
+        if ancestor["approval"] is not None and node["labels"] != ancestor["preferredLabels"]:
+            raise RegistryBuildError(f"release plan labels differ for ancestor {ancestor['glottocode']!r}")
 
     _profiles, catalog_records = parse_effective_persj_catalog(
-        root / "upstream/persj/670dac4/effective-language-catalog.xml"
+        root / "upstream/persj/b94d7b2/effective-language-catalog.xml"
     )
     plan_catalog = next(
         (catalog for catalog in plan["catalogs"] if catalog["dictionaryId"] == "ISJ.PERSJ"),
@@ -860,7 +976,15 @@ def _format_coordinate(value: int | float) -> str:
 def build_registry_tree(
     plan: dict[str, Any],
     sources: list[dict[str, Any]],
-    standards: tuple[dict[Any, Any], dict[str, Any], dict[str, Any]],
+    standards: tuple[
+        dict[Any, Any],
+        dict[str, Any],
+        dict[str, Any],
+        dict[str, Any],
+        dict[str, Any],
+        dict[str, Any],
+        dict[str, Any],
+    ],
 ) -> ET.Element:
     source_by_id = {source["manifestId"]: source for source in sources}
     validate_plan(plan, set(source_by_id), standards)
@@ -953,18 +1077,19 @@ def build_registry_tree(
         for external in node["identifiers"]:
             _subelement(element, "ident", external["value"], type=external["type"])
         for language in LANGUAGES:
-            _subelement(
-                element,
-                "name",
-                node["labels"][language],
-                type="languageName",
-                role="languageReferenceName",
-                source=f"#{node['labelSources'][language]}",
-                **{
-                    qname(XML_NS, "id"): name_id(identifier, language, "preferred"),
-                    qname(XML_NS, "lang"): language,
-                },
-            )
+            if node["labels"][language] is not None:
+                _subelement(
+                    element,
+                    "name",
+                    node["labels"][language],
+                    type="languageName",
+                    role="languageReferenceName",
+                    source=f"#{node['labelSources'][language]}",
+                    **{
+                        qname(XML_NS, "id"): name_id(identifier, language, "preferred"),
+                        qname(XML_NS, "lang"): language,
+                    },
+                )
             for alias_index, alias in enumerate(node["aliases"][language]):
                 _subelement(
                     element,
@@ -1226,7 +1351,24 @@ def build_artifacts(
     iso_by_id, _iso_by_part1, _iso_by_part2 = parse_iso639_3(
         root / "upstream/iso-639-3/2026-07-22/iso-639-3.tab"
     )
-    registry = xml_bytes(build_registry_tree(plan, sources, (iana, glottolog, iso_by_id)))
+    wikidata, wikidata_by_glottocode, wikidata_by_iso, wikidata_by_ietf = parse_wikidata_evidence(
+        root / "upstream/wikidata/2026-09-01/language-items.json"
+    )
+    registry = xml_bytes(
+        build_registry_tree(
+            plan,
+            sources,
+            (
+                iana,
+                glottolog,
+                iso_by_id,
+                wikidata,
+                wikidata_by_glottocode,
+                wikidata_by_iso,
+                wikidata_by_ietf,
+            ),
+        )
+    )
     manifest = xml_bytes(build_manifest_tree(plan, sources, registry))
     return registry, manifest
 
@@ -1325,13 +1467,17 @@ def project_registry_core(registry_bytes: bytes, manifest_bytes: bytes) -> dict[
             for name in direct_children(element, "name")
             if name.get("type") == "languageName" and name.get("role") == "languageReferenceName"
         ]
-        labels = {
+        labels_by_language = {
             name.get(qname(XML_NS, "lang")): normalized(name.text or "")
             for name in preferred_names
         }
-        label_sources = {
+        label_sources_by_language = {
             name.get(qname(XML_NS, "lang")): name.get("source", "").removeprefix("#")
             for name in preferred_names
+        }
+        labels = {language: labels_by_language.get(language) for language in LANGUAGES}
+        label_sources = {
+            language: label_sources_by_language.get(language) for language in LANGUAGES
         }
         aliases: dict[str, list[dict[str, str]]] = {language: [] for language in LANGUAGES}
         for name in direct_children(element, "name"):

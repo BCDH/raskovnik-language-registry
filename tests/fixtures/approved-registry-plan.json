@@ -39,7 +39,7 @@
     {
       "dictionaryId": "ISJ.PERSJ",
       "id": "catalog-isj-persj",
-      "sourceId": "src-persj-catalog-670dac4"
+      "sourceId": "src-persj-catalog-6101bcb"
     }
   ],
   "compatibleDictionaries": [
@@ -73,6 +73,10 @@
         {
           "type": "ISO639-5",
           "value": "ine"
+        },
+        {
+          "type": "Wikidata",
+          "value": "Q19860"
         }
       ],
       "kind": "family",
@@ -416,7 +420,7 @@
       "mappedTagProfileId": "ae",
       "note": null,
       "sourceLabel": "авест.",
-      "sourceId": "src-persj-catalog-670dac4"
+      "sourceId": "src-persj-catalog-6101bcb"
     },
     {
       "abbreviation": "ставест.",
@@ -435,7 +439,7 @@
         "sr": null
       },
       "sourceLabel": "ставест.",
-      "sourceId": "src-persj-catalog-670dac4"
+      "sourceId": "src-persj-catalog-6101bcb"
     },
     {
       "abbreviation": "мак.",
@@ -450,7 +454,7 @@
       "mappedTagProfileId": "mk",
       "note": null,
       "sourceLabel": "мак.",
-      "sourceId": "src-persj-catalog-670dac4"
+      "sourceId": "src-persj-catalog-6101bcb"
     },
     {
       "abbreviation": "аустр.",
@@ -465,7 +469,7 @@
       "mappedTagProfileId": "de-AT",
       "note": null,
       "sourceLabel": "аустр.",
-      "sourceId": "src-persj-catalog-670dac4"
+      "sourceId": "src-persj-catalog-6101bcb"
     },
     {
       "abbreviation": null,
@@ -480,7 +484,7 @@
       "mappedTagProfileId": "mk",
       "note": null,
       "sourceLabel": "македонском",
-      "sourceId": "src-persj-catalog-670dac4"
+      "sourceId": "src-persj-catalog-6101bcb"
     },
     {
       "abbreviation": "слов.",
@@ -495,7 +499,7 @@
       "mappedTagProfileId": "sla",
       "note": null,
       "sourceLabel": "слов.",
-      "sourceId": "src-persj-catalog-670dac4"
+      "sourceId": "src-persj-catalog-6101bcb"
     }
   ],
   "tagProfiles": [

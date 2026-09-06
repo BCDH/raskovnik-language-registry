@@ -20,12 +20,12 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SOURCE = Path(
     "/Users/ttasovac/Development/ttasovac/new-conversions4raskovnik/PERSJ"
 )
-DEFAULT_OUTPUT = ROOT / "upstream/persj/670dac4/effective-language-catalog.xml"
-SOURCE_COMMIT = "670dac4d45a2762f34597860c9bf8c080b3cbee3"
+DEFAULT_OUTPUT = ROOT / "upstream/persj/b94d7b2/effective-language-catalog.xml"
+SOURCE_COMMIT = "b94d7b2c57a3133b43522efd20c99f8cb2feb8fd"
 CATALOG_PATH = Path("resources/example-language-tags.xml")
 EXTENSIONS_PATH = Path("resources/etymon-language-extensions.xml")
-CATALOG_SHA256 = "ea852f0b07a053aba5b473b54845b5b9daf61f0a2c0ffaca06a8cffb17e1d84c"
-EXTENSIONS_SHA256 = "743f455c3e60f6889ff32c1c88cde466181ded5e447c4fb3be9a76bf770d0cf5"
+CATALOG_SHA256 = "6f24ea60b350bf292f04dad5be923c66294246c6198f3f1544d39dec67b8c3c6"
+EXTENSIONS_SHA256 = "73256fc64c70f9d0f24f6afdea3c7131e7685515b6c5ee2b49fe89891937fffe"
 
 
 def build_tree(source: Path) -> ET.ElementTree:

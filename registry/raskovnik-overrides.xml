@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<registryOverrides xmlns="https://raskovnik.org/ns/language-registry/overrides" formatVersion="1" registryVersion="2026.8.31-1">
+<registryOverrides xmlns="https://raskovnik.org/ns/language-registry/overrides" formatVersion="1" registryVersion="2026.9.1-1">
   <node ident="ae-x-old" kind="historical-stage" parent="ae" selectable="true" alignment="broader" glottocode="aves1237" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
     <name xml:lang="sr" source="raskovnik-review">староавестијски</name>
     <name xml:lang="en" source="raskovnik-review">Old Avestan</name>
@@ -47,6 +47,135 @@
     <name xml:lang="en" source="raskovnik-review">Middle Bulgarian</name>
     <name xml:lang="de" source="raskovnik-review">Mittelbulgarisch</name>
     <note type="reviewReason">The corpus historical stage is broader-aligned to the Glottolog Bulgarian language and retains the established registered-base private-use code.</note>
+  </node>
+  <node ident="cu" kind="language" selectable="true" alignment="exact" glottocode="chur1257" wikidata="Q33251" reviewStatus="approved" reviewedBy="raskovnik-design-2026-09-01" reviewedOn="2026-09-01">
+    <name xml:lang="sr" source="raskovnik-review">старословенски и црквенословенски (ISO 639 обухват)</name>
+    <name xml:lang="en" source="raskovnik-review">Old Church Slavonic and Church Slavonic (ISO 639 umbrella)</name>
+    <name xml:lang="de" source="raskovnik-review">Alt- und Kirchenslawisch (ISO-639-Sammelbegriff)</name>
+    <alias xml:lang="sr" source="raskovnik-review">старословенски</alias>
+    <alias xml:lang="sr" source="raskovnik-review">црквенословенски</alias>
+    <alias xml:lang="en" source="iana-2026-08-08">Church Slavic</alias>
+    <alias xml:lang="en" source="iana-2026-08-08">Church Slavonic</alias>
+    <alias xml:lang="en" source="iana-2026-08-08">Old Bulgarian</alias>
+    <alias xml:lang="en" source="iana-2026-08-08">Old Church Slavonic</alias>
+    <alias xml:lang="en" source="iana-2026-08-08">Old Slavonic</alias>
+    <alias xml:lang="de" source="raskovnik-review">Altkirchenslawisch</alias>
+    <alias xml:lang="de" source="raskovnik-review">Kirchenslawisch</alias>
+    <note type="reviewReason">The standard cu/chu identity and exact Glottolog node deliberately cover both the ninth–eleventh-century language and later Church Slavonic; this selectable standards umbrella has no direct PERSJ source record and groups the six project distinctions below it.</note>
+  </node>
+  <node ident="cu-x-old" kind="historical-stage" parent="cu" selectable="true" alignment="broader" glottocode="chur1257" wikidata="Q35499" reviewStatus="approved" reviewedBy="raskovnik-design-2026-09-01" reviewedOn="2026-09-01">
+    <name xml:lang="sr" source="raskovnik-review">старословенски</name>
+    <name xml:lang="en" source="raskovnik-review">Old Church Slavonic</name>
+    <name xml:lang="de" source="raskovnik-review">Altkirchenslawisch</name>
+    <note type="reviewReason">The PERSJ стсл. concept denotes the ninth–eleventh-century language; it requires a registered-base private-use stage tag because ISO 639 and Glottolog intentionally collapse it with later Church Slavonic.</note>
+  </node>
+  <node ident="cu-x-church" kind="historical-stage" parent="cu" selectable="true" alignment="broader" glottocode="chur1257" reviewStatus="approved" reviewedBy="raskovnik-design-2026-09-01" reviewedOn="2026-09-01">
+    <name xml:lang="sr" source="raskovnik-review">црквенословенски</name>
+    <name xml:lang="en" source="raskovnik-review">Church Slavonic</name>
+    <name xml:lang="de" source="raskovnik-review">Kirchenslawisch</name>
+    <note type="reviewReason">The PERSJ цсл. concept denotes the post-eleventh-century phase and is the parent of national recensions; it is broader-aligned to the standards umbrella node.</note>
+  </node>
+  <node ident="cu-x-rus" kind="variety" parent="cu-x-church" selectable="true" alignment="broader" glottocode="chur1257" reviewStatus="approved" reviewedBy="raskovnik-design-2026-09-01" reviewedOn="2026-09-01">
+    <name xml:lang="sr" source="raskovnik-review">рускословенски</name>
+    <name xml:lang="en" source="raskovnik-review">Russian Church Slavonic</name>
+    <name xml:lang="de" source="raskovnik-review">Russisch-Kirchenslawisch</name>
+    <note type="reviewReason">The PERSJ рус.-цсл. source label denotes the Russian recension of post-eleventh-century Church Slavonic and has no applicable standard code.</note>
+  </node>
+  <node ident="cu-x-srp" kind="variety" parent="cu-x-church" selectable="true" alignment="broader" glottocode="chur1257" wikidata="Q3507864" reviewStatus="approved" reviewedBy="raskovnik-design-2026-09-01" reviewedOn="2026-09-01">
+    <name xml:lang="sr" source="raskovnik-review">српскословенски</name>
+    <name xml:lang="en" source="raskovnik-review">Serbian Church Slavonic</name>
+    <name xml:lang="de" source="raskovnik-review">Serbisch-Kirchenslawisch</name>
+    <note type="reviewReason">The PERSJ српсл. and српссл. spellings are source synonyms for the Serbian recension of post-eleventh-century Church Slavonic; the code-free semantic Wikidata item is explicitly reviewed.</note>
+  </node>
+  <node ident="cu-x-bul" kind="variety" parent="cu-x-church" selectable="true" alignment="broader" glottocode="chur1257" reviewStatus="approved" reviewedBy="raskovnik-design-2026-09-01" reviewedOn="2026-09-01">
+    <name xml:lang="sr" source="raskovnik-review">бугарскословенски</name>
+    <name xml:lang="en" source="raskovnik-review">Bulgarian Church Slavonic</name>
+    <name xml:lang="de" source="raskovnik-review">Bulgarisch-Kirchenslawisch</name>
+    <note type="reviewReason">The previously unregistered PERSJ буг.-цсл. compound denotes the Bulgarian recension of post-eleventh-century Church Slavonic and has no applicable standard code.</note>
+  </node>
+  <node ident="cu-Glag-x-hrv" kind="variety" parent="cu-x-church" selectable="true" alignment="broader" glottocode="chur1257" reviewStatus="approved" reviewedBy="raskovnik-design-2026-09-01" reviewedOn="2026-09-01">
+    <name xml:lang="sr" source="raskovnik-review">хрватски црквенословенски (глагољски)</name>
+    <name xml:lang="en" source="raskovnik-review">Croatian Church Slavonic (Glagolitic)</name>
+    <name xml:lang="de" source="raskovnik-review">Kroatisch-Kirchenslawisch (glagolitisch)</name>
+    <note type="reviewReason">The PERSJ хрв.-глаг. source label denotes the Croatian recension of Church Slavonic in Glagolitic script; the canonical tag preserves both semantic variety and registered script information.</note>
+  </node>
+  <node ident="cel" kind="family" selectable="true" alignment="exact" glottocode="celt1248" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="raskovnik-review">келтски језици</name>
+    <name xml:lang="en" source="raskovnik-review">Celtic languages</name>
+    <name xml:lang="de" source="raskovnik-review">Keltische Sprachen</name>
+    <note type="reviewReason">The exact IANA collection and Glottolog family mapping and its direct English, Serbian, and German Wikipedia counterparts were approved; source records preserve the catalog label.</note>
+  </node>
+  <node ident="gem" kind="family" selectable="true" alignment="exact" glottocode="germ1287" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="raskovnik-review">германски језици</name>
+    <name xml:lang="en" source="raskovnik-review">Germanic languages</name>
+    <name xml:lang="de" source="raskovnik-review">Germanische Sprachen</name>
+    <note type="reviewReason">The exact IANA collection and Glottolog family mapping and its direct English, Serbian, and German Wikipedia counterparts were approved; source records preserve the catalog label.</note>
+  </node>
+  <node ident="gmq" kind="family" selectable="true" alignment="exact" glottocode="nort3160" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="raskovnik-review">северногермански језици</name>
+    <name xml:lang="en" source="raskovnik-review">North Germanic languages</name>
+    <name xml:lang="de" source="raskovnik-review">Nordgermanische Sprachen</name>
+    <note type="reviewReason">The exact IANA collection and Glottolog family mapping and its direct English, Serbian, and German Wikipedia counterparts were approved; source records preserve the catalog label.</note>
+  </node>
+  <node ident="iir" kind="family" selectable="true" alignment="exact" glottocode="indo1320" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="raskovnik-review">индоирански језици</name>
+    <name xml:lang="en" source="raskovnik-review">Indo-Iranian languages</name>
+    <name xml:lang="de" source="raskovnik-review">Indoiranische Sprachen</name>
+    <note type="reviewReason">The exact IANA collection and Glottolog family mapping and its direct English, Serbian, and German Wikipedia counterparts were approved; source records preserve the catalog label.</note>
+  </node>
+  <node ident="ine" kind="family" selectable="true" alignment="exact" glottocode="indo1319" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="raskovnik-review">индоевропски језици</name>
+    <name xml:lang="en" source="raskovnik-review">Indo-European languages</name>
+    <name xml:lang="de" source="raskovnik-review">Indogermanische Sprachen</name>
+    <note type="reviewReason">The exact IANA collection and Glottolog family mapping and its direct English, Serbian, and German Wikipedia counterparts were approved; source records preserve the catalog label.</note>
+  </node>
+  <node ident="ira" kind="family" selectable="true" alignment="exact" glottocode="iran1269" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="raskovnik-review">ирански језици</name>
+    <name xml:lang="en" source="raskovnik-review">Iranian languages</name>
+    <name xml:lang="de" source="raskovnik-review">Iranische Sprachen</name>
+    <note type="reviewReason">The exact IANA collection and Glottolog family mapping and its direct English, Serbian, and German Wikipedia counterparts were approved; source records preserve the catalog label.</note>
+  </node>
+  <node ident="itc" kind="family" selectable="true" alignment="exact" glottocode="ital1284" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="raskovnik-review">италски језици</name>
+    <name xml:lang="en" source="raskovnik-review">Italic languages</name>
+    <name xml:lang="de" source="raskovnik-review">Italische Sprachen</name>
+    <note type="reviewReason">The exact IANA collection and Glottolog family mapping and its direct English, Serbian, and German Wikipedia counterparts were approved; source records preserve the catalog label.</note>
+  </node>
+  <node ident="roa" kind="family" selectable="true" alignment="exact" glottocode="roma1334" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="raskovnik-review">романски језици</name>
+    <name xml:lang="en" source="raskovnik-review">Romance languages</name>
+    <name xml:lang="de" source="raskovnik-review">Romanische Sprachen</name>
+    <note type="reviewReason">The exact IANA collection and Glottolog family mapping and its direct English, Serbian, and German Wikipedia counterparts were approved; source records preserve the catalog label.</note>
+  </node>
+  <node ident="trk" kind="family" selectable="true" alignment="exact" glottocode="turk1311" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="raskovnik-review">туркијски језици</name>
+    <name xml:lang="en" source="raskovnik-review">Turkic languages</name>
+    <name xml:lang="de" source="raskovnik-review">Turksprachen</name>
+    <note type="reviewReason">The exact IANA collection and Glottolog family mapping and its direct English, Serbian, and German Wikipedia counterparts were approved; source records preserve the catalog label.</note>
+  </node>
+  <node ident="wen" kind="family" selectable="true" alignment="exact" glottocode="sorb1249" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="raskovnik-review">лужичкосрпски језици</name>
+    <name xml:lang="en" source="raskovnik-review">Sorbian languages</name>
+    <name xml:lang="de" source="raskovnik-review">Sorbische Sprache</name>
+    <note type="reviewReason">The exact IANA collection and Glottolog family mapping and its direct English, Serbian, and German Wikipedia counterparts were approved; source records preserve the catalog label.</note>
+  </node>
+  <node ident="zle" kind="family" selectable="true" alignment="exact" glottocode="east1426" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="raskovnik-review">источнословенски језици</name>
+    <name xml:lang="en" source="raskovnik-review">East Slavic languages</name>
+    <name xml:lang="de" source="raskovnik-review">Ostslawische Sprachen</name>
+    <note type="reviewReason">The exact IANA collection and Glottolog family mapping and its direct English, Serbian, and German Wikipedia counterparts were approved; source records preserve the catalog label.</note>
+  </node>
+  <node ident="zls" kind="family" selectable="true" alignment="exact" glottocode="sout3147" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="raskovnik-review">јужнословенски језици</name>
+    <name xml:lang="en" source="raskovnik-review">South Slavic languages</name>
+    <name xml:lang="de" source="raskovnik-review">Südslawische Sprachen</name>
+    <note type="reviewReason">The exact IANA collection and Glottolog family mapping and its direct English, Serbian, and German Wikipedia counterparts were approved; source records preserve the catalog label.</note>
+  </node>
+  <node ident="zlw" kind="family" selectable="true" alignment="exact" glottocode="west2792" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
+    <name xml:lang="sr" source="raskovnik-review">западнословенски језици</name>
+    <name xml:lang="en" source="raskovnik-review">West Slavic languages</name>
+    <name xml:lang="de" source="raskovnik-review">Westslawische Sprachen</name>
+    <note type="reviewReason">The exact IANA collection and Glottolog family mapping and its direct English, Serbian, and German Wikipedia counterparts were approved; source records preserve the catalog label.</note>
   </node>
   <node ident="ckm" kind="variety" selectable="true" alignment="exact" glottocode="chak1265" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
     <name xml:lang="sr" source="persj-conversion-catalog">чакавски</name>

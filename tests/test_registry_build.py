@@ -132,6 +132,69 @@ class RegistryBuildTest(unittest.TestCase):
         self.assertEqual(["mk", "sla"], resolve_tags(self.plan, "sla", "inclusive"))
         self.assertEqual([], resolve_tags(self.plan, "zls-x-east", "direct"))
 
+    def test_wikidata_identifier_round_trips(self) -> None:
+        projected = project_registry_core(self.registry, self.manifest)
+        indo_european = next(node for node in projected["nodes"] if node["id"] == "ine")
+        self.assertIn(
+            {"type": "Wikidata", "value": "Q19860"},
+            indo_european["identifiers"],
+        )
+
+    def test_wikidata_identifier_rejects_bad_duplicate_and_conflicting_qids(self) -> None:
+        invalid = copy.deepcopy(self.plan)
+        ine = next(node for node in invalid["nodes"] if node["id"] == "ine")
+        next(item for item in ine["identifiers"] if item["type"] == "Wikidata")["value"] = "Q01"
+        with self.assertRaisesRegex(RegistryBuildError, "invalid or duplicate exact Wikidata"):
+            self.build(invalid)
+
+        duplicate = copy.deepcopy(self.plan)
+        sla = next(node for node in duplicate["nodes"] if node["id"] == "sla")
+        sla["identifiers"].append({"type": "Wikidata", "value": "Q19860"})
+        with self.assertRaisesRegex(RegistryBuildError, "invalid or duplicate exact Wikidata"):
+            self.build(duplicate)
+
+        conflict = copy.deepcopy(self.plan)
+        ine = next(node for node in conflict["nodes"] if node["id"] == "ine")
+        next(item for item in ine["identifiers"] if item["type"] == "Wikidata")["value"] = "Q16315466"
+        with self.assertRaisesRegex(RegistryBuildError, "conflicting or unsupported Wikidata"):
+            self.build(conflict)
+
+    def test_pinned_semantic_wikidata_item_without_standard_claims_is_accepted(self) -> None:
+        plan = copy.deepcopy(self.plan)
+        stage = next(node for node in plan["nodes"] if node["id"] == "ae-x-old")
+        stage["identifiers"].append({"type": "Wikidata", "value": "Q35499"})
+        registry, _manifest = self.build(plan)
+        root = ET.fromstring(registry)
+        namespace = {"tei": TEI_NS}
+        item = root.find(
+            ".//tei:language[@ident='ae-x-old']/tei:ident[@type='Wikidata']",
+            namespace,
+        )
+        self.assertIsNotNone(item)
+        self.assertEqual("Q35499", item.text)
+
+    def test_nonselectable_ancestor_may_use_english_only_labels(self) -> None:
+        plan = copy.deepcopy(self.plan)
+        ancestor = next(node for node in plan["nodes"] if node["id"] == "zls-x-east")
+        ancestor["selectable"] = False
+        for language in ("sr", "de"):
+            ancestor["labels"][language] = None
+            ancestor["labelSources"][language] = None
+        registry, manifest = self.build(plan)
+        projected = project_registry_core(registry, manifest)
+        node = next(item for item in projected["nodes"] if item["id"] == "zls-x-east")
+        self.assertEqual(
+            {"sr": None, "en": "Eastern South Slavic", "de": None},
+            node["labels"],
+        )
+
+        selectable = copy.deepcopy(plan)
+        next(node for node in selectable["nodes"] if node["id"] == "zls-x-east")[
+            "selectable"
+        ] = True
+        with self.assertRaisesRegex(RegistryBuildError, "labels.sr"):
+            self.build(selectable)
+
     def test_mixed_case_ids_and_null_abbreviation_are_lossless(self) -> None:
         root = ET.fromstring(self.registry)
         namespace = {"tei": TEI_NS, "xml": XML_NS}

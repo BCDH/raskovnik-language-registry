@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 from pathlib import Path
 from xml.etree import ElementTree as ET
@@ -51,10 +52,12 @@ class ReviewedNode:
     selectable: bool
     alignment: str
     glottocode: str | None
+    wikidata: str | None
     review_status: str
     reviewed_by: str
     reviewed_on: str
     names: dict[str, ReviewedName]
+    aliases: dict[str, tuple[ReviewedName, ...]]
     reasons: tuple[str, ...]
 
 
@@ -74,6 +77,7 @@ def parse_overrides(path: Path, *, require_approved: bool = True) -> RegistryOve
         raise RegistryOverrideError("registry override version is required")
     nodes: dict[str, ReviewedNode] = {}
     nodes_by_glottocode: dict[str, ReviewedNode] = {}
+    nodes_by_wikidata: dict[str, ReviewedNode] = {}
     for node in root.findall(f"{{{OVERRIDE_NS}}}node"):
         ident = canonical_language_tag(node.get("ident", ""))
         kind = node.get("kind", "")
@@ -83,6 +87,7 @@ def parse_overrides(path: Path, *, require_approved: bool = True) -> RegistryOve
         selectable_text = node.get("selectable", "")
         alignment = node.get("alignment", "")
         glottocode = node.get("glottocode")
+        wikidata = node.get("wikidata")
         review_status = node.get("reviewStatus", "")
         reviewed_by = normalized(node.get("reviewedBy", ""))
         reviewed_on = node.get("reviewedOn", "")
@@ -98,6 +103,8 @@ def parse_overrides(path: Path, *, require_approved: bool = True) -> RegistryOve
             raise RegistryOverrideError(f"unaligned node {ident!r} has a Glottocode")
         if alignment != "none" and not glottocode:
             raise RegistryOverrideError(f"aligned node {ident!r} lacks a Glottocode")
+        if wikidata is not None and re.fullmatch(r"Q[1-9][0-9]*", wikidata) is None:
+            raise RegistryOverrideError(f"invalid Wikidata QID for {ident!r}")
         if review_status not in {"approved", "pending"}:
             raise RegistryOverrideError(f"invalid review status for {ident!r}")
         if require_approved and review_status != "approved":
@@ -116,6 +123,23 @@ def parse_overrides(path: Path, *, require_approved: bool = True) -> RegistryOve
             names[language] = ReviewedName(language, value, source)
         if set(names) != {"sr", "en", "de"}:
             raise RegistryOverrideError(f"trilingual preferred names required for {ident!r}")
+        aliases: dict[str, list[ReviewedName]] = {language: [] for language in ("sr", "en", "de")}
+        seen_aliases: set[tuple[str, str]] = set()
+        for alias_node in node.findall(f"{{{OVERRIDE_NS}}}alias"):
+            language = alias_node.get(f"{{{XML_NS}}}lang", "")
+            source = alias_node.get("source", "")
+            value = normalized(alias_node.text or "")
+            key = (language, value.casefold())
+            if (
+                language not in aliases
+                or source not in LABEL_SOURCES
+                or not value
+                or key in seen_aliases
+                or value.casefold() == names[language].value.casefold()
+            ):
+                raise RegistryOverrideError(f"invalid alias for {ident!r}")
+            seen_aliases.add(key)
+            aliases[language].append(ReviewedName(language, value, source))
         reasons = tuple(
             normalized(reason.text or "")
             for reason in node.findall(f"{{{OVERRIDE_NS}}}note[@type='reviewReason']")
@@ -129,10 +153,15 @@ def parse_overrides(path: Path, *, require_approved: bool = True) -> RegistryOve
             selectable_text == "true",
             alignment,
             glottocode,
+            wikidata,
             review_status,
             reviewed_by,
             reviewed_on,
             names,
+            {
+                language: tuple(values)
+                for language, values in aliases.items()
+            },
             reasons,
         )
         nodes[ident] = reviewed
@@ -143,4 +172,11 @@ def parse_overrides(path: Path, *, require_approved: bool = True) -> RegistryOve
                     f"Glottocode {glottocode!r} is claimed by {previous.ident!r} and {ident!r}"
                 )
             nodes_by_glottocode[glottocode] = reviewed
+        if wikidata:
+            previous = nodes_by_wikidata.get(wikidata)
+            if previous is not None and previous.ident != ident:
+                raise RegistryOverrideError(
+                    f"Wikidata QID {wikidata!r} is claimed by {previous.ident!r} and {ident!r}"
+                )
+            nodes_by_wikidata[wikidata] = reviewed
     return RegistryOverrides(version, nodes, nodes_by_glottocode)

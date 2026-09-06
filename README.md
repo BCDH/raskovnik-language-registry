@@ -6,7 +6,7 @@ The released eXist XAR installs `registry.xml` and `manifest.xml` at `/db/apps/r
 
 ## Source layers
 
-- `upstream/` contains immutable, checksum-locked public inputs: Glottolog 5.3, Unicode CLDR 48.2, IANA's 2026-08-08 Language Subtag Registry, the 2026-07-22 ISO 639-3 table, and a count-free mapping export from the PERSJ conversion at commit `670dac4d45a2762f34597860c9bf8c080b3cbee3`.
+- `upstream/` contains immutable, checksum-locked public inputs: Glottolog 5.3, Unicode CLDR 48.2, IANA's 2026-08-08 Language Subtag Registry, the 2026-07-22 ISO 639-3 table, and a count-free mapping export from the PERSJ conversion at commit `b94d7b2c57a3133b43522efd20c99f8cb2feb8fd`. The active catalogue preserves Serbo-Croatian as `sh` separately from Serbian `sr`, and generic Ossetian as `ira-x-ossetic` separately from explicit Iron `os`; earlier catalogue snapshots remain archived.
 - `registry/source-publication-metadata.json` supplements each pinned upstream source only with its public manifest ID, licence, and attribution. Its upstream records use an exact allowlist and unique IDs; they cannot replace pinned titles, versions, revisions, URLs, or file inventories.
 - `registry/raskovnik-overrides.xml` records reviewed project labels, codes, lineages, and nonexact alignments. Pending linguistic judgments are not silently promoted into the effective registry.
 - `dist/registry-candidates.json` and `dist/editorial-review.tsv` are deterministic review artifacts. `dist/registry.xml` and `dist/manifest.xml` will become the release inputs after the editorial gate closes.
@@ -65,3 +65,7 @@ The importer verifies the pinned source hashes and deliberately strips compound 
 ## Package contract
 
 The package URI is `http://raskovnik.org/raskovnik-language-registry`; it depends on `raskovnik-data-core >= 2026.6.6-1`. The XAR contains only the effective `registry.xml`, `manifest.xml`, `post-install.xq`, and generated EXPath descriptors. Registry releases are published from this repository and pinned by compatible backend release sets; generated registry data is not copied into the backend repository.
+
+## Ossetian identity split (2026-09-06)
+
+The user-authorized source-label split reserves `os` for explicit Iron evidence and `ira-x-ossetic` for generic Ossetian. Candidate labels are иронски / Iron Ossetian / Iron-Ossetisch and осетски / Ossetian / Ossetisch. The Iron candidate retains the standards-derived `iron1242` and `Q2585922` proposal. The generic candidate retains pinned `Q33968` as review evidence, with no Glottolog equivalence or finer lineage asserted. German labels, the private-use profile, and unresolved identity questions remain blocked by the editorial gate; neither profile aliases the other. These candidate-only proposals do not modify the approved override ledger or import HTML-review decisions.

@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import csv
 import hashlib
+import json
 import re
 import unicodedata
 from dataclasses import dataclass
@@ -18,6 +19,10 @@ PERSJ_EXTENSION_NS = "urn:persj:etymon-languages"
 REGISTRY_SOURCE_NS = "https://raskovnik.org/ns/language-registry/source"
 XML_NS = "http://www.w3.org/XML/1998/namespace"
 PRIVATE_MODIFIERS = frozenset({"young", "new", "middle", "old"})
+QID_RE = re.compile(r"Q[1-9][0-9]*")
+NON_SEMANTIC_WIKIDATA_TYPES = frozenset(
+    {"Q4167836", "Q4167410", "Q11266439", "Q13406463"}
+)
 
 
 class RegistrySourceError(RuntimeError):
@@ -63,6 +68,21 @@ class GlottologRecord:
 
 
 @dataclass(frozen=True)
+class WikidataItem:
+    qid: str
+    last_revision_id: int
+    last_revision_timestamp: str
+    labels: dict[str, str | None]
+    descriptions: dict[str, str | None]
+    glottocodes: tuple[str, ...]
+    iso639_3: tuple[str, ...]
+    ietf_tags: tuple[str, ...]
+    instance_of: tuple[str, ...]
+    subclass_of: tuple[str, ...]
+    sitelinks: dict[str, str | None]
+
+
+@dataclass(frozen=True)
 class SourceRecord:
     identifier: str
     kind: str
@@ -92,6 +112,88 @@ def normalized(value: str) -> str:
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def parse_wikidata_evidence(
+    path: Path,
+) -> tuple[
+    dict[str, WikidataItem],
+    dict[str, WikidataItem],
+    dict[str, WikidataItem],
+    dict[str, WikidataItem],
+]:
+    """Parse the reviewed snapshot and return QID, Glottocode, ISO, and IETF maps."""
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        raise RegistrySourceError(f"cannot read Wikidata evidence {path}: {exc}") from exc
+    if payload.get("schemaVersion") != "raskovnik-wikidata-language-evidence-v1":
+        raise RegistrySourceError("unsupported Wikidata evidence schema")
+    items: dict[str, WikidataItem] = {}
+    by_glottocode: dict[str, WikidataItem] = {}
+    by_iso: dict[str, WikidataItem] = {}
+    by_ietf: dict[str, WikidataItem] = {}
+    for raw in payload.get("items", []):
+        qid = raw.get("qid")
+        if not isinstance(qid, str) or QID_RE.fullmatch(qid) is None or qid in items:
+            raise RegistrySourceError(f"invalid or duplicate Wikidata QID {qid!r}")
+        claims = raw.get("claims", {})
+        instance_of = tuple(claims.get("P31", []))
+        if NON_SEMANTIC_WIKIDATA_TYPES.intersection(instance_of):
+            raise RegistrySourceError(f"non-semantic Wikidata item is forbidden: {qid}")
+        revision = raw.get("lastRevisionId")
+        timestamp = raw.get("lastRevisionTimestamp")
+        if isinstance(revision, bool) or not isinstance(revision, int) or revision <= 0:
+            raise RegistrySourceError(f"Wikidata item {qid} lacks a valid revision ID")
+        if not isinstance(timestamp, str) or not timestamp.endswith("Z"):
+            raise RegistrySourceError(f"Wikidata item {qid} lacks a revision timestamp")
+        glottocodes = tuple(claims.get("P1394", []))
+        iso639_3 = tuple(claims.get("P220", []))
+        ietf_tags = tuple(claims.get("P305", []))
+        if any(re.fullmatch(r"[a-z0-9]{8}", value) is None for value in glottocodes):
+            raise RegistrySourceError(f"Wikidata item {qid} has an invalid Glottocode claim")
+        if any(re.fullmatch(r"[a-z]{3}", value) is None for value in iso639_3):
+            raise RegistrySourceError(f"Wikidata item {qid} has an invalid ISO 639-3 claim")
+        if any(
+            not isinstance(value, str)
+            or re.fullmatch(r"[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*", value) is None
+            for value in ietf_tags
+        ):
+            raise RegistrySourceError(f"Wikidata item {qid} has an invalid IETF tag claim")
+        item = WikidataItem(
+            qid=qid,
+            last_revision_id=revision,
+            last_revision_timestamp=timestamp,
+            labels={language: raw["labels"].get(language) for language in ("sr", "en", "de")},
+            descriptions={
+                language: raw["descriptions"].get(language)
+                for language in ("sr", "en", "de")
+            },
+            glottocodes=glottocodes,
+            iso639_3=iso639_3,
+            ietf_tags=ietf_tags,
+            instance_of=instance_of,
+            subclass_of=tuple(claims.get("P279", [])),
+            sitelinks={
+                language: raw["sitelinks"].get(language)
+                for language in ("sr", "en", "de")
+            },
+        )
+        items[qid] = item
+        for value, target, kind in (
+            *((value, by_glottocode, "Glottocode") for value in glottocodes),
+            *((value, by_iso, "ISO 639-3") for value in iso639_3),
+            *((value.casefold(), by_ietf, "IETF language tag") for value in ietf_tags),
+        ):
+            if value in target:
+                raise RegistrySourceError(
+                    f"duplicate exact Wikidata {kind} assignment {value!r}: "
+                    f"{target[value].qid} and {qid}"
+                )
+            target[value] = item
+    if not items:
+        raise RegistrySourceError("Wikidata evidence snapshot is empty")
+    return items, by_glottocode, by_iso, by_ietf
 
 
 def canonical_language_tag(tag: str) -> str:

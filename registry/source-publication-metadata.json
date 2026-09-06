@@ -52,7 +52,49 @@
       "id": "persj-language-catalog",
       "licenceName": null,
       "licenceUrl": null,
+      "manifestId": "src-persj-catalog-b94d7b2"
+    },
+    {
+      "attribution": "Archived count-free effective language-catalog export from the ISJ.PERSJ conversion, retained for provenance comparison.",
+      "id": "persj-language-catalog-3f18f46",
+      "licenceName": null,
+      "licenceUrl": null,
+      "manifestId": "src-persj-catalog-3f18f46"
+    },
+    {
+      "attribution": "Archived count-free effective language-catalog export from the ISJ.PERSJ conversion, retained for provenance comparison.",
+      "id": "persj-language-catalog-6101bcb",
+      "licenceName": null,
+      "licenceUrl": null,
+      "manifestId": "src-persj-catalog-6101bcb"
+    },
+    {
+      "attribution": "Archived count-free effective language-catalog export from the ISJ.PERSJ conversion, retained for provenance comparison.",
+      "id": "persj-language-catalog-670dac4",
+      "licenceName": null,
+      "licenceUrl": null,
       "manifestId": "src-persj-catalog-670dac4"
+    },
+    {
+      "attribution": "Wikidata language-item evidence retrieved 2026-09-01; individual entity revision IDs and timestamps are embedded in the snapshot.",
+      "id": "wikidata",
+      "licenceName": "CC0-1.0",
+      "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "manifestId": "src-wikidata-2026-09-01"
+    },
+    {
+      "attribution": "Archived count-free effective language-catalog export from the ISJ.PERSJ conversion, retained for provenance comparison.",
+      "id": "persj-language-catalog-84ca19d",
+      "licenceName": null,
+      "licenceUrl": null,
+      "manifestId": "src-persj-catalog-84ca19d"
+    },
+    {
+      "attribution": "Archived count-free effective language-catalog export from the ISJ.PERSJ conversion, retained for provenance comparison.",
+      "id": "persj-language-catalog-79c6c8e",
+      "licenceName": null,
+      "licenceUrl": null,
+      "manifestId": "src-persj-catalog-79c6c8e"
     }
   ]
 }

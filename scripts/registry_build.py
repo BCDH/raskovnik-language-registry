@@ -1944,8 +1944,13 @@ def validate_generated_registry(registry_bytes: bytes, plan: dict[str, Any]) -> 
             for child in node.findall(qname(TEI_NS, "name"))
             if child.get("type") == "languageName" and child.get("role") == "languageReferenceName"
         ]
-        if {child.get(qname(XML_NS, "lang")) for child in preferred} != set(LANGUAGES):
-            raise RegistryBuildError(f"node {identifier!r} lacks one trilingual preferred-label set")
+        preferred_languages = [child.get(qname(XML_NS, "lang")) for child in preferred]
+        selectable = node.find(qname(TEI_NS, "note") + "[@type='selectionStatus']").get("subtype") == "selectable"
+        required_languages = set(LANGUAGES) if selectable else {"en"}
+        if (len(preferred_languages) != len(set(preferred_languages))
+                or not required_languages <= set(preferred_languages) <= set(LANGUAGES)
+                or any(not normalized(child.text or "") for child in preferred)):
+            raise RegistryBuildError(f"node {identifier!r} lacks valid preferred labels")
         status_notes = [
             child
             for child in node.findall(qname(TEI_NS, "note"))

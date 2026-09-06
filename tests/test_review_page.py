@@ -35,8 +35,8 @@ class ReviewPageTests(unittest.TestCase):
         rows, _ = module.build(self.candidates)
         self.assertEqual(len(rows),len(self.candidates['profiles'])+len(self.candidates['ancestorCandidates']))
         row = next(r for r in rows if r['id']=='afro1255')
-        self.assertEqual(row['proposedLabelDe'],'')
-        self.assertIn('missing-label-de',row['remainingReviewReasons'])
+        self.assertEqual(row['proposedLabelDe'],'Afroasiatische Sprachen')
+        self.assertNotIn('missing-label-de',row['remainingReviewReasons'])
 
     def test_previous_embedded_source_hash_is_migratable(self):
         rows, _ = module.build(self.candidates)

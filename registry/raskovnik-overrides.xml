@@ -12,6 +12,12 @@
     <name xml:lang="de" source="raskovnik-review">Jungavestisch</name>
     <note type="reviewReason">The corpus stage is broader-aligned to the Glottolog Avestan language and retains the established registered-base private-use code.</note>
   </node>
+  <node ident="afa" kind="family" selectable="false" alignment="exact" glottocode="afro1255" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">афроазијски језици</name>
+    <name xml:lang="en" source="glottolog-5.3">Afro-Asiatic</name>
+    <name xml:lang="de" source="raskovnik-review">Afroasiatische Sprachen</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
+  </node>
   <node ident="als" kind="language" selectable="true" alignment="exact" glottocode="tosk1239" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
     <name xml:lang="sr" source="raskovnik-review">тоскијски</name>
     <name xml:lang="en" source="raskovnik-review">Tosk</name>
@@ -165,6 +171,12 @@
     <name xml:lang="de" source="raskovnik-review">Altniedersorbisch</name>
     <note type="reviewReason">The productive PERSJ compound identifies an Old Lower Sorbian stage and pinned Lower Sorbian is valid broader context; no coextensive Glottolog/Wikidata node or direct German label was found.</note>
   </node>
+  <node ident="egx" kind="family" selectable="false" alignment="exact" glottocode="egyp1245" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">египатски језици</name>
+    <name xml:lang="en" source="glottolog-5.3">Egyptian</name>
+    <name xml:lang="de" source="raskovnik-review">Ägyptische Sprachen</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
+  </node>
   <node ident="en-US" kind="variety" selectable="true" alignment="broader" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06" glottocode="stan1293" wikidata="Q7976">
     <name xml:lang="sr" source="raskovnik-review">амерички енглески</name>
     <name xml:lang="en" source="raskovnik-review">American English</name>
@@ -203,6 +215,12 @@
     <name xml:lang="de" source="raskovnik-review">Urgermanisch</name>
     <note type="reviewReason">Wikidata Q669623 is the semantic proto-language and even records the project tag gem-x-proto; pinned Glottolog has the Germanic family but no coextensive reconstructed-language node.</note>
   </node>
+  <node ident="gme" kind="family" selectable="false" alignment="exact" glottocode="east2805" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">источногермански језици</name>
+    <name xml:lang="en" source="glottolog-5.3">East Germanic</name>
+    <name xml:lang="de" source="raskovnik-review">Ostgermanische Sprachen</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
+  </node>
   <node ident="gmh" kind="historical-stage" selectable="true" alignment="exact" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06" glottocode="midd1343" wikidata="">
     <name xml:lang="sr" source="raskovnik-review">средњонемачки</name>
     <name xml:lang="en" source="raskovnik-review">Middle High German</name>
@@ -221,6 +239,12 @@
     <name xml:lang="en" source="raskovnik-review">North Germanic languages</name>
     <name xml:lang="de" source="raskovnik-review">Nordgermanische Sprachen</name>
     <note type="reviewReason">The exact IANA collection and Glottolog family mapping and its direct English, Serbian, and German Wikipedia counterparts were approved; source records preserve the catalog label.</note>
+  </node>
+  <node ident="gmw" kind="family" selectable="false" alignment="exact" glottocode="west2793" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">западногермански језици</name>
+    <name xml:lang="en" source="glottolog-5.3">West Germanic</name>
+    <name xml:lang="de" source="raskovnik-review">Westgermanische Sprachen</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
   </node>
   <node ident="gmw-x-frisian" kind="family" selectable="true" alignment="exact" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06" glottocode="fris1239" wikidata="Q25325">
     <name xml:lang="sr" source="raskovnik-review">фризијски</name>
@@ -276,6 +300,12 @@
     <name xml:lang="en" source="raskovnik-review">Medieval Greek</name>
     <name xml:lang="de" source="raskovnik-review">Mittelgriechisch</name>
     <note type="reviewReason">Wikidata Q36387 directly supplies P1394 medi1251; the Glottolog node is Medieval Greek and the German counterpart is Mittelgriechisch.</note>
+  </node>
+  <node ident="grk" kind="family" selectable="false" alignment="exact" glottocode="gree1276" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">грчки језици</name>
+    <name xml:lang="en" source="glottolog-5.3">Greek</name>
+    <name xml:lang="de" source="raskovnik-review">Griechische Sprachen</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
   </node>
   <node ident="hbo" kind="language" selectable="true" alignment="exact" glottocode="anci1244" reviewStatus="approved" reviewedBy="raskovnik-design-2026-08-31" reviewedOn="2026-08-31">
     <name xml:lang="sr" source="persj-conversion-catalog">старохебрејски</name>
@@ -576,6 +606,12 @@
     <name xml:lang="de" source="raskovnik-review">Meglenorumänisch</name>
     <note type="reviewReason">The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
   </node>
+  <node ident="sem" kind="family" selectable="false" alignment="exact" glottocode="semi1276" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">семитски језици</name>
+    <name xml:lang="en" source="glottolog-5.3">Semitic</name>
+    <name xml:lang="de" source="raskovnik-review">Semitische Sprachen</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
+  </node>
   <node ident="sga" kind="historical-stage" selectable="true" alignment="exact" glottocode="oldi1245" wikidata="Q35308" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06">
     <name xml:lang="sr" source="raskovnik-review">староирски</name>
     <name xml:lang="en" source="raskovnik-review">Old Irish</name>
@@ -748,6 +784,12 @@
     <name xml:lang="de" source="raskovnik-review">Anatolische Sprachen</name>
     <note type="reviewReason">The approved classification-only policy supplies a deterministic BCP 47 identifier and permits English fallback without inventing Serbian or German translations. Accepted semantic Wikidata item Q147085 on exact-glottocode evidence; category, template, list, and disambiguation entities are excluded.</note>
   </node>
+  <node ident="und-x-glot-anci1249" kind="language" selectable="false" alignment="exact" glottocode="anci1249" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">северни старогрчки</name>
+    <name xml:lang="en" source="glottolog-5.3">Ancient North Greek</name>
+    <name xml:lang="de" source="raskovnik-review">Nördliches Altgriechisch</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
+  </node>
   <node ident="und-x-glot-angl1264" kind="family" selectable="false" alignment="exact" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06" glottocode="angl1264" wikidata="Q5329170">
     <name xml:lang="sr" source="raskovnik-review">англо-фризијски језици</name>
     <name xml:lang="en" source="raskovnik-review">Anglo-Frisian languages</name>
@@ -759,6 +801,12 @@
     <name xml:lang="en" source="raskovnik-review">Anglic languages</name>
     <name xml:lang="de" source="raskovnik-review">Anglisch</name>
     <note type="reviewReason">The approved classification-only policy supplies a deterministic BCP 47 identifier and permits English fallback without inventing Serbian or German translations. Accepted semantic Wikidata item Q1346342 on exact-glottocode evidence; category, template, list, and disambiguation entities are excluded.</note>
+  </node>
+  <node ident="und-x-glot-arab1394" kind="family" selectable="false" alignment="exact" glottocode="arab1394" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">арапски језици</name>
+    <name xml:lang="en" source="glottolog-5.3">Arabian</name>
+    <name xml:lang="de" source="raskovnik-review">Arabische Sprachgruppe</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
   </node>
   <node ident="und-x-glot-arme1241" kind="family" selectable="false" alignment="exact" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06" glottocode="arme1241" wikidata="Q12627235">
     <name xml:lang="sr" source="raskovnik-review">јерменски језици</name>
@@ -881,6 +929,12 @@
     <name xml:lang="de" source="raskovnik-review">Gemeintürkische Sprachen</name>
     <note type="reviewReason">The approved classification-only policy supplies a deterministic BCP 47 identifier and permits English fallback without inventing Serbian or German translations. Accepted semantic Wikidata item Q1126028 on exact-glottocode evidence; category, template, list, and disambiguation entities are excluded.</note>
   </node>
+  <node ident="und-x-glot-cont1249" kind="family" selectable="false" alignment="exact" glottocode="cont1249" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">континентални трансалпски келтски језици</name>
+    <name xml:lang="en" source="glottolog-5.3">Continental Transalpine Celtic</name>
+    <name xml:lang="de" source="raskovnik-review">Kontinentale transalpine keltische Sprachen</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
+  </node>
   <node ident="und-x-glot-crim1256" kind="family" selectable="false" alignment="exact" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06" glottocode="crim1256" wikidata="">
     <name xml:lang="sr" source="raskovnik-review">кримскотатарско-урумска група</name>
     <name xml:lang="en" source="raskovnik-review">Crimean Tatar-Urum</name>
@@ -964,6 +1018,12 @@
     <name xml:lang="en" source="raskovnik-review">Eastern Romanian</name>
     <name xml:lang="de" source="raskovnik-review">Ostrumänische Gruppe</name>
     <note type="reviewReason">The approved classification-only policy supplies a deterministic BCP 47 identifier and permits English fallback without inventing Serbian or German translations. Wikidata evidence belongs to the reviewed language profile; the structural ancestor receives no exact QID.</note>
+  </node>
+  <node ident="und-x-glot-fars1254" kind="family" selectable="false" alignment="exact" glottocode="fars1254" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">персијско-кавкаски татски језици</name>
+    <name xml:lang="en" source="glottolog-5.3">Farsic-Caucasian Tat</name>
+    <name xml:lang="de" source="raskovnik-review">Farsisch-kaukasisch-tatische Sprachen</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
   </node>
   <node ident="und-x-glot-finn1317" kind="family" selectable="false" alignment="exact" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06" glottocode="finn1317" wikidata="Q33328">
     <name xml:lang="sr" source="raskovnik-review">прибалтичкофински језици</name>
@@ -1151,6 +1211,24 @@
     <name xml:lang="de" source="raskovnik-review">Niederdeutsche Sprache</name>
     <note type="reviewReason">The approved classification-only policy supplies a deterministic BCP 47 identifier and permits English fallback without inventing Serbian or German translations. Accepted semantic Wikidata item Q25433 on exact-glottocode evidence; category, template, list, and disambiguation entities are excluded. Wikidata evidence belongs to the reviewed language profile; the structural ancestor receives no exact QID.</note>
   </node>
+  <node ident="und-x-glot-luvi1234" kind="family" selectable="false" alignment="exact" glottocode="luvi1234" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">лувијска група</name>
+    <name xml:lang="en" source="glottolog-5.3">Luvic</name>
+    <name xml:lang="de" source="raskovnik-review">Luwische Sprachgruppe</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
+  </node>
+  <node ident="und-x-glot-luvo1234" kind="family" selectable="false" alignment="exact" glottocode="luvo1234" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">лувијско-лидијски језици</name>
+    <name xml:lang="en" source="glottolog-5.3">Luvo-Lydian</name>
+    <name xml:lang="de" source="raskovnik-review">Luwisch-lydische Sprachen</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
+  </node>
+  <node ident="und-x-glot-luvo1235" kind="family" selectable="false" alignment="exact" glottocode="luvo1235" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">лувијско-палајски језици</name>
+    <name xml:lang="en" source="glottolog-5.3">Luvo-Palaic</name>
+    <name xml:lang="de" source="raskovnik-review">Luwisch-palaische Sprachen</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
+  </node>
   <node ident="und-x-glot-mace1252" kind="family" selectable="false" alignment="exact" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06" glottocode="mace1252" wikidata="">
     <name xml:lang="sr" source="raskovnik-review">македонско-бугарска група</name>
     <name xml:lang="en" source="raskovnik-review">Macedo-Bulgarian</name>
@@ -1222,6 +1300,12 @@
     <name xml:lang="en" source="raskovnik-review">Modern Dutch</name>
     <name xml:lang="de" source="raskovnik-review">Neuniederländische Gruppe</name>
     <note type="reviewReason">The approved classification-only policy supplies a deterministic BCP 47 identifier and permits English fallback without inventing Serbian or German translations. Wikidata evidence belongs to the reviewed language profile; the structural ancestor receives no exact QID.</note>
+  </node>
+  <node ident="und-x-glot-mode1259" kind="family" selectable="false" alignment="exact" glottocode="mode1259" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">савремени југозападни ирански језици</name>
+    <name xml:lang="en" source="glottolog-5.3">Modern Southwestern Iranian</name>
+    <name xml:lang="de" source="raskovnik-review">Moderne südwestiranische Sprachen</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
   </node>
   <node ident="und-x-glot-mode1265" kind="family" selectable="false" alignment="exact" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06" glottocode="mode1265" wikidata="">
     <name xml:lang="sr" source="raskovnik-review">савремена гојделска група</name>
@@ -1319,6 +1403,12 @@
     <name xml:lang="de" source="raskovnik-review">Nordrumänische Gruppe</name>
     <note type="reviewReason">The approved classification-only policy supplies a deterministic BCP 47 identifier and permits English fallback without inventing Serbian or German translations. Wikidata evidence belongs to the reviewed language profile; the structural ancestor receives no exact QID.</note>
   </node>
+  <node ident="und-x-glot-nort3405" kind="family" selectable="false" alignment="exact" glottocode="nort3405" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">северногрчки језици</name>
+    <name xml:lang="en" source="glottolog-5.3">North Greek</name>
+    <name xml:lang="de" source="raskovnik-review">Nordgriechische Sprachen</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
+  </node>
   <node ident="und-x-glot-nort3424" kind="family" selectable="false" alignment="exact" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06" glottocode="nort3424" wikidata="">
     <name xml:lang="sr" source="raskovnik-review">северозападнокипчачка група</name>
     <name xml:lang="en" source="raskovnik-review">Northwest Kipchak</name>
@@ -1379,6 +1469,12 @@
     <name xml:lang="de" source="raskovnik-review">Ostmongolische Gruppe</name>
     <note type="reviewReason">The approved classification-only policy supplies a deterministic BCP 47 identifier and permits English fallback without inventing Serbian or German translations. Wikidata evidence belongs to the reviewed language profile; the structural ancestor receives no exact QID.</note>
   </node>
+  <node ident="und-x-glot-oldc1252" kind="language" selectable="false" alignment="exact" glottocode="oldc1252" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">стари југозападни бритонски</name>
+    <name xml:lang="en" source="glottolog-5.3">Old South-West British</name>
+    <name xml:lang="de" source="raskovnik-review">Altsüdwestbritannisch</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
+  </node>
   <node ident="und-x-glot-oldd1237" kind="language" selectable="false" alignment="exact" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06" glottocode="oldd1237" wikidata="">
     <name xml:lang="sr" source="raskovnik-review">старонизоземско-старофраначка група</name>
     <name xml:lang="en" source="raskovnik-review">Old Dutch-Old Frankish</name>
@@ -1390,6 +1486,12 @@
     <name xml:lang="en" source="raskovnik-review">Old-Modern Welsh</name>
     <name xml:lang="de" source="raskovnik-review">Alt- und neuwalisische Gruppe</name>
     <note type="reviewReason">The approved classification-only policy supplies a deterministic BCP 47 identifier and permits English fallback without inventing Serbian or German translations. Wikidata evidence belongs to the reviewed language profile; the structural ancestor receives no exact QID.</note>
+  </node>
+  <node ident="und-x-glot-oldw1239" kind="language" selectable="false" alignment="exact" glottocode="oldw1239" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">старо- и средњовелшки</name>
+    <name xml:lang="en" source="glottolog-5.3">Old-Middle Welsh</name>
+    <name xml:lang="de" source="raskovnik-review">Alt- und Mittelwalisisch</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
   </node>
   <node ident="und-x-glot-osse1243" kind="family" selectable="false" alignment="exact" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06" glottocode="osse1243" wikidata="">
     <name xml:lang="sr" source="raskovnik-review">савремена осетска група</name>
@@ -1474,6 +1576,12 @@
     <name xml:lang="en" source="raskovnik-review">Sogdic</name>
     <name xml:lang="de" source="raskovnik-review">Sogdische Gruppe</name>
     <note type="reviewReason">The approved classification-only policy supplies a deterministic BCP 47 identifier and permits English fallback without inventing Serbian or German translations. Wikidata evidence belongs to the reviewed language profile; the structural ancestor receives no exact QID.</note>
+  </node>
+  <node ident="und-x-glot-sout2612" kind="variety" selectable="false" alignment="exact" glottocode="sout2612" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">јужни окситански</name>
+    <name xml:lang="en" source="glottolog-5.3">Southern Occitan</name>
+    <name xml:lang="de" source="raskovnik-review">Südokzitanisch</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
   </node>
   <node ident="und-x-glot-sout2701" kind="family" selectable="false" alignment="exact" reviewStatus="approved" reviewedBy="Codex" reviewedOn="2026-09-06" glottocode="sout2701" wikidata="Q4326954">
     <name xml:lang="sr" source="raskovnik-review">јужнокипчачка група</name>
@@ -1600,6 +1708,18 @@
     <name xml:lang="en" source="raskovnik-review">West Iberian languages</name>
     <name xml:lang="de" source="raskovnik-review">Westiberisch</name>
     <note type="reviewReason">The approved classification-only policy supplies a deterministic BCP 47 identifier and permits English fallback without inventing Serbian or German translations. Accepted semantic Wikidata item Q1377152 on exact-glottocode evidence; category, template, list, and disambiguation entities are excluded.</note>
+  </node>
+  <node ident="und-x-glot-west2995" kind="variety" selectable="false" alignment="exact" glottocode="west2995" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">западни старогрчки</name>
+    <name xml:lang="en" source="glottolog-5.3">West Ancient Greek</name>
+    <name xml:lang="de" source="raskovnik-review">Westliches Altgriechisch</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
+  </node>
+  <node ident="urj" kind="family" selectable="false" alignment="exact" glottocode="ural1272" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-06">
+    <name xml:lang="sr" source="raskovnik-review">уралски језици</name>
+    <name xml:lang="en" source="glottolog-5.3">Uralic</name>
+    <name xml:lang="de" source="raskovnik-review">Uralische Sprachen</name>
+    <note type="reviewReason">Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims.</note>
   </node>
   <node ident="vec-x-old" kind="historical-stage" selectable="true" alignment="broader" reviewStatus="approved" reviewedBy="ttasovac" reviewedOn="2026-09-05" glottocode="vene1258" wikidata="">
     <name xml:lang="sr" source="raskovnik-review">старовенецијански</name>

@@ -47,29 +47,34 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "afa",
       "glottocode": "afro1255",
       "ianaScope": "collection",
       "iso639": null,
       "kindCandidate": "family",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "family",
       "name": "Afro-Asiatic",
       "parentCandidate": null,
       "parentGlottocode": null,
       "preferredLabels": {
-        "de": null,
+        "de": "Afroasiatische Sprachen",
         "en": "Afro-Asiatic",
-        "sr": null
+        "sr": "афроазијски језици"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -393,29 +398,34 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "und-x-glot-anci1249",
       "glottocode": "anci1249",
       "ianaScope": null,
       "iso639": null,
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "language",
       "name": "Ancient North Greek",
       "parentCandidate": null,
       "parentGlottocode": "nort3405",
       "preferredLabels": {
-        "de": null,
+        "de": "Nördliches Altgriechisch",
         "en": "Ancient North Greek",
-        "sr": null
+        "sr": "северни старогрчки"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -499,29 +509,34 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "und-x-glot-arab1394",
       "glottocode": "arab1394",
       "ianaScope": null,
       "iso639": null,
       "kindCandidate": "family",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "family",
       "name": "Arabian",
       "parentCandidate": null,
       "parentGlottocode": "cent2236",
       "preferredLabels": {
-        "de": null,
+        "de": "Arabische Sprachgruppe",
         "en": "Arabian",
-        "sr": null
+        "sr": "арапски језици"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -1943,29 +1958,34 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "und-x-glot-cont1249",
       "glottocode": "cont1249",
       "ianaScope": null,
       "iso639": null,
       "kindCandidate": "family",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "family",
       "name": "Continental Transalpine Celtic",
       "parentCandidate": null,
       "parentGlottocode": "tgbc1234",
       "preferredLabels": {
-        "de": null,
+        "de": "Kontinentale transalpine keltische Sprachen",
         "en": "Continental Transalpine Celtic",
-        "sr": null
+        "sr": "континентални трансалпски келтски језици"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -2927,29 +2947,34 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "gme",
       "glottocode": "east2805",
       "ianaScope": "collection",
       "iso639": null,
       "kindCandidate": "family",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "family",
       "name": "East Germanic",
       "parentCandidate": null,
       "parentGlottocode": "germ1287",
       "preferredLabels": {
-        "de": null,
+        "de": "Ostgermanische Sprachen",
         "en": "East Germanic",
-        "sr": null
+        "sr": "источногермански језици"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -3033,29 +3058,34 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "egx",
       "glottocode": "egyp1245",
       "ianaScope": "collection",
       "iso639": null,
       "kindCandidate": "family",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "family",
       "name": "Egyptian",
       "parentCandidate": null,
       "parentGlottocode": "afro1255",
       "preferredLabels": {
-        "de": null,
+        "de": "Ägyptische Sprachen",
         "en": "Egyptian",
-        "sr": null
+        "sr": "египатски језици"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -3139,29 +3169,34 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "und-x-glot-fars1254",
       "glottocode": "fars1254",
       "ianaScope": null,
       "iso639": null,
       "kindCandidate": "family",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "family",
       "name": "Farsic-Caucasian Tat",
       "parentCandidate": null,
       "parentGlottocode": "mode1259",
       "preferredLabels": {
-        "de": null,
+        "de": "Farsisch-kaukasisch-tatische Sprachen",
         "en": "Farsic-Caucasian Tat",
-        "sr": null
+        "sr": "персијско-кавкаски татски језици"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -3853,29 +3888,34 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "grk",
       "glottocode": "gree1276",
       "ianaScope": "collection",
       "iso639": null,
       "kindCandidate": "family",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "family",
       "name": "Greek",
       "parentCandidate": null,
       "parentGlottocode": "grae1234",
       "preferredLabels": {
-        "de": null,
+        "de": "Griechische Sprachen",
         "en": "Greek",
-        "sr": null
+        "sr": "грчки језици"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -5755,29 +5795,34 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "und-x-glot-luvi1234",
       "glottocode": "luvi1234",
       "ianaScope": null,
       "iso639": null,
       "kindCandidate": "family",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "family",
       "name": "Luvic",
       "parentCandidate": null,
       "parentGlottocode": "luvo1235",
       "preferredLabels": {
-        "de": null,
+        "de": "Luwische Sprachgruppe",
         "en": "Luvic",
-        "sr": null
+        "sr": "лувијска група"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -5829,29 +5874,34 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "und-x-glot-luvo1234",
       "glottocode": "luvo1234",
       "ianaScope": null,
       "iso639": null,
       "kindCandidate": "family",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "family",
       "name": "Luvo-Lydian",
       "parentCandidate": null,
       "parentGlottocode": "anat1257",
       "preferredLabels": {
-        "de": null,
+        "de": "Luwisch-lydische Sprachen",
         "en": "Luvo-Lydian",
-        "sr": null
+        "sr": "лувијско-лидијски језици"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -5861,29 +5911,34 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "und-x-glot-luvo1235",
       "glottocode": "luvo1235",
       "ianaScope": null,
       "iso639": null,
       "kindCandidate": "family",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "family",
       "name": "Luvo-Palaic",
       "parentCandidate": null,
       "parentGlottocode": "luvo1234",
       "preferredLabels": {
-        "de": null,
+        "de": "Luwisch-palaische Sprachen",
         "en": "Luvo-Palaic",
-        "sr": null
+        "sr": "лувијско-палајски језици"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -6836,29 +6891,34 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "und-x-glot-mode1259",
       "glottocode": "mode1259",
       "ianaScope": null,
       "iso639": null,
       "kindCandidate": "family",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "family",
       "name": "Modern Southwestern Iranian",
       "parentCandidate": null,
       "parentGlottocode": "midd1352",
       "preferredLabels": {
-        "de": null,
+        "de": "Moderne südwestiranische Sprachen",
         "en": "Modern Southwestern Iranian",
-        "sr": null
+        "sr": "савремени југозападни ирански језици"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -7620,29 +7680,34 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "und-x-glot-nort3405",
       "glottocode": "nort3405",
       "ianaScope": null,
       "iso639": null,
       "kindCandidate": "family",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "family",
       "name": "North Greek",
       "parentCandidate": null,
       "parentGlottocode": "gree1276",
       "preferredLabels": {
-        "de": null,
+        "de": "Nordgriechische Sprachen",
         "en": "North Greek",
-        "sr": null
+        "sr": "северногрчки језици"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -8258,7 +8323,14 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "und-x-glot-oldc1252",
       "glottocode": "oldc1252",
       "ianaScope": null,
@@ -8270,22 +8342,20 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "language",
       "name": "Old South-West British",
       "parentCandidate": null,
       "parentGlottocode": "sout3176",
       "preferredLabels": {
-        "de": null,
+        "de": "Altsüdwestbritannisch",
         "en": "Old South-West British",
-        "sr": null
+        "sr": "стари југозападни бритонски"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -9133,7 +9203,14 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "und-x-glot-oldw1239",
       "glottocode": "oldw1239",
       "ianaScope": null,
@@ -9145,22 +9222,20 @@
       },
       "kindCandidate": "language",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "language",
       "name": "Old-Middle Welsh",
       "parentCandidate": null,
       "parentGlottocode": "oldm1247",
       "preferredLabels": {
-        "de": null,
+        "de": "Alt- und Mittelwalisisch",
         "en": "Old-Middle Welsh",
-        "sr": null
+        "sr": "старо- и средњовелшки"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -10138,29 +10213,34 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "sem",
       "glottocode": "semi1276",
       "ianaScope": "collection",
       "iso639": null,
       "kindCandidate": "family",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "family",
       "name": "Semitic",
       "parentCandidate": null,
       "parentGlottocode": "afro1255",
       "preferredLabels": {
-        "de": null,
+        "de": "Semitische Sprachen",
         "en": "Semitic",
-        "sr": null
+        "sr": "семитски језици"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -10839,29 +10919,34 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "und-x-glot-sout2612",
       "glottocode": "sout2612",
       "ianaScope": null,
       "iso639": null,
       "kindCandidate": "variety",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "dialect",
       "name": "Southern Occitan",
       "parentCandidate": null,
       "parentGlottocode": "occi1239",
       "preferredLabels": {
-        "de": null,
+        "de": "Südokzitanisch",
         "en": "Southern Occitan",
-        "sr": null
+        "sr": "јужни окситански"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -12035,29 +12120,34 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "urj",
       "glottocode": "ural1272",
       "ianaScope": "collection",
       "iso639": null,
       "kindCandidate": "family",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "family",
       "name": "Uralic",
       "parentCandidate": null,
       "parentGlottocode": null,
       "preferredLabels": {
-        "de": null,
+        "de": "Uralische Sprachen",
         "en": "Uralic",
-        "sr": null
+        "sr": "уралски језици"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -12544,29 +12634,34 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "gmw",
       "glottocode": "west2793",
       "ianaScope": "collection",
       "iso639": null,
       "kindCandidate": "family",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "family",
       "name": "West Germanic",
       "parentCandidate": null,
       "parentGlottocode": "nort3152",
       "preferredLabels": {
-        "de": null,
+        "de": "Westgermanische Sprachen",
         "en": "West Germanic",
-        "sr": null
+        "sr": "западногермански језици"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -12724,29 +12819,34 @@
         "en": [],
         "sr": []
       },
-      "approval": null,
+      "approval": {
+        "reasons": [
+          "Complete ancestor-label proposal batch approved by ttasovac for the TEI master migration on 2026-09-06; editorial translations, without independent attestation claims."
+        ],
+        "reviewedBy": "ttasovac",
+        "reviewedOn": "2026-09-06",
+        "status": "approved"
+      },
       "canonicalCodeCandidate": "und-x-glot-west2995",
       "glottocode": "west2995",
       "ianaScope": null,
       "iso639": null,
       "kindCandidate": "variety",
       "labelProvenance": {
-        "de": null,
+        "de": "raskovnik-review",
         "en": "glottolog-5.3",
-        "sr": null
+        "sr": "raskovnik-review"
       },
       "level": "dialect",
       "name": "West Ancient Greek",
       "parentCandidate": null,
       "parentGlottocode": "anci1249",
       "preferredLabels": {
-        "de": null,
+        "de": "Westliches Altgriechisch",
         "en": "West Ancient Greek",
-        "sr": null
+        "sr": "западни старогрчки"
       },
-      "reviewReasons": [
-        "ancestor-review-required"
-      ],
+      "reviewReasons": [],
       "selectableCandidate": false,
       "wikidataQidCandidate": null
     },
@@ -35666,7 +35766,7 @@
   },
   "summary": {
     "ambiguousCollectionMappings": 0,
-    "ancestorExceptions": 20,
+    "ancestorExceptions": 0,
     "ancestorNodes": 332,
     "profileExceptions": 0,
     "sourceRecords": 311,

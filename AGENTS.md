@@ -1,13 +1,13 @@
 # Repository guidance
 
-This repository owns the public, versioned Raskovnik language registry and its eXist XAR. It does not own dictionary evidence, entries, forms, counts, coverage, or dictionary authorization.
+`registry/registry.xml` is the sole editable language-data authority. Edit TEI directly, preserving style, stable IDs, display nesting, source links, and reviewed distinctions. Do not regenerate it from the retired bootstrap or edit distribution files.
 
-Normal builds are offline. Do not replace a pinned source with a moving URL, edit immutable files under `upstream/`, or bypass `scripts/check-inputs.py`. Refresh an upstream source as an explicit reviewed change and update its exact size, SHA-256, revision, licence, and attribution in `upstream/sources.json`.
+Run `make check` and `make package`. Normal builds are offline. Keep the Lex-0 development schema and IANA/ISO data pinned in `registry/standards-lock.json`; standards refreshes require explicit review and updated provenance/checksums. Never silently change exact identities or erase reviewed exclusions.
 
-The PERSJ source mapping checked into `upstream/` is deliberately count-free. Regenerate or compare it with `scripts/import-persj.py`; never copy the conversion extension file containing occurrence counts into this public repository.
+The registry is public and count-free. It does not own dictionary evidence, forms, counts, coverage results, or authorization. Do not import private conversion statistics.
 
-Do not hand-edit generated files under `dist/`. Run `make candidates` and then `make check`. A release is not ready while `make editorial-gate` fails. Never add placeholder labels, inferred lineages, invented Glottolog equivalences, or implicit approvals merely to close that gate.
+Commit the TEI master, focused validation/packaging code, schemas, small standards tables, tests, and durable documentation. Do not commit `dist/`, `target/`, XARs, review exports, or bulk upstream datasets. Bootstrap history is preserved at commit `2f63dc0`.
 
-`registry/raskovnik-overrides.xml` is the durable editorial decision ledger. Every private-use code, reconstruction, collective, disputed or nonexact alignment, uncoded ancestor, and non-CLDR German label must remain blocked until its trilingual labels, lineage, provenance, rationale, reviewer, and review date are recorded there.
+The XAR contains only registry.xml, manifest.xml, post-install.xq, and generated descriptors. It installs at `/db/apps/raskovnik-data/metadata/languages`. Backend release sets own deployment, verification, rollback, and cache clearing. Manifest v2 uses language-tag coverage; never restore dictionary-hash compatibility pins or copy generated registry data into the backend.
 
-The release XAR must contain only `registry.xml`, `manifest.xml`, `post-install.xq`, and generated EXPath descriptors. It installs under `/db/apps/raskovnik-data/metadata/languages` and depends on `raskovnik-data-core`. Registry release artifacts are published from this repository and consumed by exact backend release-set pins; do not copy generated registry data into `raskovnik-backend`.
+Read sibling repository instructions and check their status before coordinated edits. Do not print credentials or publish/deploy without authorization. Keep Markdown paragraphs and list items on one physical source line.

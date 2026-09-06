@@ -4,7 +4,7 @@
 
   <groupId>org.raskovnik</groupId>
   <artifactId>raskovnik-language-registry</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>0.1.0</version>
 
   <name>Raskovnik Language Registry</name>
   <description>Versioned language classification and metadata package for Raskovnik</description>
@@ -36,6 +36,25 @@
 
   <build>
     <plugins>
+
+      <plugin>
+        <groupId>ro.kuberam.maven.plugins</groupId>
+        <artifactId>kuberam-expath-plugin</artifactId>
+        <version>0.6.3</version>
+        <executions>
+          <execution>
+            <id>create-xar</id>
+            <phase>package</phase>
+            <goals>
+              <goal>make-xar</goal>
+            </goals>
+            <configuration>
+              <descriptor>xar-assembly.xml</descriptor>
+              <finalName>${package-final-name}</finalName>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-antrun-plugin</artifactId>
@@ -58,7 +77,8 @@
               <skip>false</skip>
               <target>
                 <exec executable="python3" failonerror="true">
-                  <arg value="${project.basedir}/scripts/build-registry.py"/>
+                  <arg value="${project.basedir}/scripts/registry.py"/>
+                  <arg value="build"/>
                 </exec>
                 <available file="${project.basedir}/dist/registry.xml" property="registry.xml.present"/>
                 <available file="${project.basedir}/dist/manifest.xml" property="registry.manifest.present"/>
@@ -67,23 +87,18 @@
               </target>
             </configuration>
           </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>ro.kuberam.maven.plugins</groupId>
-        <artifactId>kuberam-expath-plugin</artifactId>
-        <version>0.6.3</version>
-        <executions>
           <execution>
-            <id>create-xar</id>
+            <id>verify-xar-and-release-metadata</id>
             <phase>package</phase>
-            <goals>
-              <goal>make-xar</goal>
-            </goals>
-            <configuration>
-              <descriptor>xar-assembly.xml</descriptor>
-              <finalName>${package-final-name}</finalName>
-            </configuration>
+            <goals><goal>run</goal></goals>
+            <configuration><target>
+              <exec executable="python3" failonerror="true">
+                <arg value="${project.basedir}/scripts/registry.py"/>
+                <arg value="release"/>
+                <arg value="--xar"/>
+                <arg value="${project.build.directory}/${package-final-name}.xar"/>
+              </exec>
+            </target></configuration>
           </execution>
         </executions>
       </plugin>

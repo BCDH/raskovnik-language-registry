@@ -2,11 +2,11 @@
 <grammar xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="https://raskovnik.org/ns/language-registry/manifest">
   <start>
     <element name="registryManifest">
-      <attribute name="formatVersion"><value>1</value></attribute>
+      <attribute name="formatVersion"><value>2</value></attribute>
+      <attribute name="compatibilityPolicy"><value>language-tag-coverage-v1</value></attribute>
       <attribute name="registryVersion"><data type="token"><param name="minLength">1</param></data></attribute>
       <attribute name="builtAt"><data type="dateTime"/></attribute>
       <attribute name="contentSha256"><ref name="sha256"/></attribute>
-      <attribute name="planSha256"><ref name="sha256"/></attribute>
       <attribute name="displayClassificationId"><data type="IDREF"/></attribute>
       <element name="schema">
         <attribute name="id"><value>tei-lex-0</value></attribute>
@@ -17,7 +17,6 @@
       <element name="sources"><oneOrMore><ref name="source"/></oneOrMore></element>
       <element name="classifications"><oneOrMore><ref name="classification"/></oneOrMore></element>
       <element name="catalogs"><zeroOrMore><ref name="catalog"/></zeroOrMore></element>
-      <element name="compatibility"><zeroOrMore><ref name="dictionary"/></zeroOrMore></element>
     </element>
   </start>
 
@@ -62,13 +61,6 @@
       <attribute name="xml:id"><data type="ID"/></attribute>
       <attribute name="dictionaryId"><data type="token"><param name="minLength">1</param></data></attribute>
       <element name="source"><attribute name="ref"><data type="string"><param name="pattern">#[A-Za-z_][A-Za-z0-9_.\-]*</param></data></attribute></element>
-    </element>
-  </define>
-
-  <define name="dictionary">
-    <element name="dictionary">
-      <attribute name="id"><data type="token"><param name="minLength">1</param></data></attribute>
-      <attribute name="resourceHash"><data type="string"><param name="pattern">sha256:[0-9a-f]{64}</param></data></attribute>
     </element>
   </define>
 

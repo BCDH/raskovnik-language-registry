@@ -8,6 +8,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 from xml.etree import ElementTree as E
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -80,6 +81,40 @@ class TeiRegistryTests(unittest.TestCase):
         self.assertIsNone(generic.find(R.T+'ident[@type="Glottolog"]'))
         self.assertEqual(iron.findtext(R.T+'ident[@type="Glottolog"]'),'iron1242')
         self.assertNotEqual(generic.findtext(R.T+'ident[@type="Wikidata"]'),iron.findtext(R.T+'ident[@type="Wikidata"]'))
+
+    def test_historical_placements_preserve_profiles_and_exclude_retired_ids(self):
+        parents={child:parent for parent in self.root.iter() for child in parent}
+        for code,parent,retired in [('inc-x-old','inc','oldi1244'),('otk','trk','oldt1247')]:
+            node=self.node(self.root,code)
+            self.assertEqual(parents[node].get('ident'),parent)
+            self.assertEqual(node.get('type'),'historical-stage')
+            self.assertIsNone(node.find(R.T+'ident[@type="Glottolog"]'))
+            self.assertEqual(node.findtext(R.T+'note[@type="tagProfile"]'),code)
+            self.assertEqual(node.findtext(R.T+'note[@type="excludedExactIdentifier"][@subtype="Glottolog"]'),retired)
+            self.assertEqual({n.get(R.X+'lang') for n in node.findall(R.T+'note[@type="classificationNote"]')},{'sr','en','de'})
+        self.assertIsNone(self.node(self.root,'otk').find(R.T+'settingDesc'))
+        self.assertNotIn('und-x-glot-book1242',{n.get('ident') for n in self.root.iter()})
+
+    def test_retired_and_unreviewed_glottolog_identifiers_fail(self):
+        for code in ['oldi1244','oldt1247','book1242','abcd1234']:
+            def mutation(root):
+                self.node(root).find(R.T+'ident[@type="Glottolog"]').text=code
+            with self.subTest(code=code),self.assertRaisesRegex(ValueError,'Glottolog'):
+                R.validate(self.changed(mutation))
+
+    def test_bookkeeping_ancestry_cannot_be_marked_active(self):
+        review=json.loads((ROOT/'registry/glottolog-review.json').read_text())
+        code=self.node(self.root).findtext(R.T+'ident[@type="Glottolog"]')
+        review['records'][code]['ancestors'].append('book1242')
+        with patch.object(R.json,'loads',return_value=review), self.assertRaisesRegex(ValueError,'Bookkeeping'):
+            R.validate_glottolog(self.root)
+
+    def test_glottolog_review_must_match_source_snapshot(self):
+        for field in ['version','sha256']:
+            review=json.loads((ROOT/'registry/glottolog-review.json').read_text())
+            review[field]='changed'
+            with patch.object(R.json,'loads',return_value=review), self.assertRaisesRegex(ValueError,'provenance'):
+                R.validate_glottolog(self.root)
 
     def test_clean_checkout_packages_without_sibling_repositories(self):
         with tempfile.TemporaryDirectory() as directory:

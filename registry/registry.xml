@@ -2169,6 +2169,25 @@
                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-178913356559c5d1" source="#src-persj-catalog-a258c53" xml:id="src-base-178913356559c5d1-label-en" xml:lang="en">Indo-Aryan languages</name>
                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-178913356559c5d1" source="#src-persj-catalog-a258c53" xml:id="src-base-178913356559c5d1-label-de" xml:lang="de">Indoarische Sprachen</name>
                 <note type="editorialReview" resp="#reviewer-codex" xml:lang="en">Reviewed 2026-09-06. Wikidata Q33577 directly carries IETF/ISO collection code inc and P1394 indo1321. Pinned IANA marks inc as a collection and pinned Glottolog marks indo1321 as a family, so scope and classification agree.</note>
+                <language ident="inc-x-old" type="historical-stage" role="objectLanguage">
+                  <ident type="BCP47" xml:id="lang-inc-x-old">inc-x-old</ident>
+                  <name type="languageName" role="languageReferenceName" source="#src-raskovnik-review" xml:id="name-inc-x-old-sr-preferred" xml:lang="sr">староиндијски</name>
+                  <name type="languageName" role="languageReferenceName" source="#src-raskovnik-review" xml:id="name-inc-x-old-en-preferred" xml:lang="en">Old Indo-Aryan</name>
+                  <name type="languageName" role="languageReferenceName" source="#src-raskovnik-review" xml:id="name-inc-x-old-de-preferred" xml:lang="de">Altindoarisch</name>
+                  <note type="selectionStatus" subtype="selectable" source="#src-raskovnik-review">This node may be selected.</note>
+                  <note type="classificationStatus" subtype="reviewed" source="#src-raskovnik-review">Classification status: reviewed.</note>
+                  <note type="tagProfile" subtype="direct" source="#src-raskovnik-review" xml:id="profile-inc-x-old">inc-x-old</note>
+                  <name type="sourceLabel" role="language-label" subtype="abbreviation" source="#src-persj-catalog-a258c53" ana="#profile-inc-x-old #catalog-isj-persj" xml:id="src-base-5002743d7b924699" xml:lang="sr">стинд.</name>
+                  <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-5002743d7b924699" source="#src-persj-catalog-a258c53" xml:id="src-base-5002743d7b924699-label-sr" xml:lang="sr">староиндијски</name>
+                  <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-5002743d7b924699" source="#src-persj-catalog-a258c53" xml:id="src-base-5002743d7b924699-label-en" xml:lang="en">Old Indo-Aryan</name>
+                  <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-5002743d7b924699" source="#src-persj-catalog-a258c53" xml:id="src-base-5002743d7b924699-label-de" xml:lang="de">Altindoarisch</name>
+                  <note type="editorialReview" resp="#reviewer-codex" xml:lang="en">Reviewed 2026-09-06. Full-snapshot Glottolog provides exact Old Indic node oldi1244. Its qmx value is not present in pinned ISO or IANA and is not treated as an applicable standard code; the registered-base private tag remains. Supporting identifiers only; no exact equivalence inferred: glottolog-code:qmx(unregistered-bookkeeping-code)</note>
+                  <note type="classificationNote" source="#src-raskovnik-review" xml:lang="sr">Староиндијски је сврстан у индоаријске језике као ширу групу; то није тачна еквиваленција са Glottolog чвором indo1321.</note>
+                  <note type="classificationNote" source="#src-raskovnik-review" xml:lang="en">Old Indo-Aryan is placed under Indo-Aryan as a broader group, not equated with Glottolog node indo1321.</note>
+                  <note type="classificationNote" source="#src-raskovnik-review" xml:lang="de">Altindoarisch ist der übergeordneten Gruppe Indoarisch zugeordnet, nicht mit dem Glottolog-Knoten indo1321 gleichgesetzt.</note>
+                  <note type="excludedExactIdentifier" subtype="Glottolog" source="#src-raskovnik-review">oldi1244</note>
+                  <note type="editorialReview" resp="#reviewer-codex" xml:lang="en">Reviewed 2026-09-08. Supersedes the earlier exact Glottolog alignment: oldi1244 is retired under Bookkeeping in Glottolog 5.3. Indo-Aryan (indo1321) is reviewed broader placement, not an exact replacement. Canonical tag and dictionary source mappings are unchanged.</note>
+                </language>
                 <languageGrp ident="sa" type="language">
                   <ident type="BCP47" xml:id="lang-sa">sa</ident>
                   <ident type="Glottolog">sans1269</ident>
@@ -6030,6 +6049,27 @@
           <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-cbe54cf09c36d39f" source="#src-persj-catalog-a258c53" xml:id="src-full-name-cbe54cf09c36d39f-label-de" xml:lang="de">Turksprachen</name>
           <note type="sourceRecordNote" corresp="#src-full-name-cbe54cf09c36d39f" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
           <note type="editorialReview" resp="https://github.com/raskovnik-design-2026-08-31" xml:lang="en">Reviewed 2026-08-31. The exact IANA collection and Glottolog family mapping and its direct English, Serbian, and German Wikipedia counterparts were approved; source records preserve the catalog label.</note>
+          <language ident="otk" type="historical-stage" role="objectLanguage">
+            <ident type="BCP47" xml:id="lang-otk">otk</ident>
+            <ident type="ISO639-3">otk</ident>
+            <name type="languageName" role="languageReferenceName" source="#src-persj-catalog-a258c53" xml:id="name-otk-sr-preferred" xml:lang="sr">старотурски</name>
+            <name type="languageName" role="languageReferenceName" source="#src-glottolog-5-3" xml:id="name-otk-en-preferred" xml:lang="en">Old Turkish</name>
+            <name type="languageName" role="languageReferenceName" source="#src-raskovnik-review" xml:id="name-otk-de-preferred" xml:lang="de">Alttürkisch</name>
+            <note type="selectionStatus" subtype="selectable" source="#src-raskovnik-review">This node may be selected.</note>
+            <note type="classificationStatus" subtype="reviewed" source="#src-raskovnik-review">Classification status: reviewed.</note>
+            <note type="tagProfile" subtype="direct" source="#src-raskovnik-review" xml:id="profile-otk">otk</note>
+            <name type="sourceLabel" role="compound-language-label" subtype="abbreviation" source="#src-persj-catalog-a258c53" ana="#profile-otk #catalog-isj-persj" xml:id="src-compound-11ddb2951a09e704" xml:lang="sr">сттур.</name>
+            <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-compound-11ddb2951a09e704" source="#src-persj-catalog-a258c53" xml:id="src-compound-11ddb2951a09e704-label-sr" xml:lang="sr">старотурски</name>
+            <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-compound-11ddb2951a09e704" source="#src-persj-catalog-a258c53" xml:id="src-compound-11ddb2951a09e704-label-en" xml:lang="en">Old Turkish</name>
+            <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-compound-11ddb2951a09e704" source="#src-persj-catalog-a258c53" xml:id="src-compound-11ddb2951a09e704-label-de" xml:lang="de">Alttürkisch</name>
+            <note type="sourceRecordNote" corresp="#src-compound-11ddb2951a09e704" source="#src-persj-catalog-a258c53" xml:lang="en">productive compound audited in the PERSJ conversion</note>
+            <note type="editorialReview" resp="https://github.com/raskovnik-design-2026-08-31" xml:lang="en">Reviewed 2026-08-31. The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
+            <note type="classificationNote" source="#src-raskovnik-review" xml:lang="sr">Старотурски је сврстан у туркијске језике као ширу групу; то није тачна еквиваленција са Glottolog чвором turk1311.</note>
+            <note type="classificationNote" source="#src-raskovnik-review" xml:lang="en">Old Turkic is placed under Turkic as a broader group, not equated with Glottolog node turk1311.</note>
+            <note type="classificationNote" source="#src-raskovnik-review" xml:lang="de">Alttürkisch ist der übergeordneten Gruppe der Turksprachen zugeordnet, nicht mit dem Glottolog-Knoten turk1311 gleichgesetzt.</note>
+            <note type="excludedExactIdentifier" subtype="Glottolog" source="#src-raskovnik-review">oldt1247</note>
+            <note type="editorialReview" resp="#reviewer-codex" xml:lang="en">Reviewed 2026-09-08. Supersedes the earlier exact Glottolog alignment: oldt1247 is retired under Bookkeeping in Glottolog 5.3. Turkic (turk1311) is reviewed broader placement, not an exact replacement. Canonical tag and dictionary source mappings are unchanged.</note>
+          </language>
           <languageGrp ident="und-x-glot-bolg1249" type="family">
             <ident type="BCP47" xml:id="lang-und-x-glot-bolg1249">und-x-glot-bolg1249</ident>
             <ident type="Glottolog">bolg1249</ident>
@@ -6467,56 +6507,6 @@
             </languageGrp>
           </languageGrp>
         </languageGrp>
-        <languageGrp ident="und-x-glot-book1242" type="family">
-          <ident type="BCP47" xml:id="lang-und-x-glot-book1242">und-x-glot-book1242</ident>
-          <ident type="Glottolog">book1242</ident>
-          <name type="languageName" role="languageReferenceName" source="#src-raskovnik-review" xml:id="name-und-x-glot-book1242-en-preferred" xml:lang="en">Bookkeeping</name>
-          <note type="selectionStatus" subtype="nonselectable" source="#src-raskovnik-review">This structural node is not selectable.</note>
-          <note type="classificationStatus" subtype="reviewed" source="#src-raskovnik-review">Classification status: reviewed.</note>
-          <note type="classificationNote" source="#src-raskovnik-review" xml:lang="en">Administrative Glottolog Bookkeeping node; not a linguistic family.</note>
-          <note type="editorialReview" resp="#reviewer-codex" xml:lang="en">Reviewed 2026-09-06. The approved classification-only policy supplies a deterministic BCP 47 identifier and permits English fallback without inventing Serbian or German translations. Wikidata evidence belongs to the reviewed language profile; the structural ancestor receives no exact QID. Administrative Glottolog Bookkeeping node, not a linguistic family; nonselectable and retained as classification context.</note>
-          <language ident="inc-x-old" type="historical-stage" role="objectLanguage">
-            <ident type="BCP47" xml:id="lang-inc-x-old">inc-x-old</ident>
-            <ident type="Glottolog">oldi1244</ident>
-            <name type="languageName" role="languageReferenceName" source="#src-raskovnik-review" xml:id="name-inc-x-old-sr-preferred" xml:lang="sr">староиндијски</name>
-            <name type="languageName" role="languageReferenceName" source="#src-raskovnik-review" xml:id="name-inc-x-old-en-preferred" xml:lang="en">Old Indo-Aryan</name>
-            <name type="languageName" role="languageReferenceName" source="#src-raskovnik-review" xml:id="name-inc-x-old-de-preferred" xml:lang="de">Altindoarisch</name>
-            <note type="selectionStatus" subtype="selectable" source="#src-raskovnik-review">This node may be selected.</note>
-            <note type="classificationStatus" subtype="reviewed" source="#src-raskovnik-review">Classification status: reviewed.</note>
-            <note type="classificationNote" source="#src-raskovnik-review" xml:lang="en">Supporting identifiers only; no exact equivalence inferred: glottolog-code:qmx(unregistered-bookkeeping-code)</note>
-            <note type="tagProfile" subtype="direct" source="#src-raskovnik-review" xml:id="profile-inc-x-old">inc-x-old</note>
-            <name type="sourceLabel" role="language-label" subtype="abbreviation" source="#src-persj-catalog-a258c53" ana="#profile-inc-x-old #catalog-isj-persj" xml:id="src-base-5002743d7b924699" xml:lang="sr">стинд.</name>
-            <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-5002743d7b924699" source="#src-persj-catalog-a258c53" xml:id="src-base-5002743d7b924699-label-sr" xml:lang="sr">староиндијски</name>
-            <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-5002743d7b924699" source="#src-persj-catalog-a258c53" xml:id="src-base-5002743d7b924699-label-en" xml:lang="en">Old Indo-Aryan</name>
-            <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-5002743d7b924699" source="#src-persj-catalog-a258c53" xml:id="src-base-5002743d7b924699-label-de" xml:lang="de">Altindoarisch</name>
-            <note type="editorialReview" resp="#reviewer-codex" xml:lang="en">Reviewed 2026-09-06. Full-snapshot Glottolog provides exact Old Indic node oldi1244. Its qmx value is not present in pinned ISO or IANA and is not treated as an applicable standard code; the registered-base private tag remains. Supporting identifiers only; no exact equivalence inferred: glottolog-code:qmx(unregistered-bookkeeping-code)</note>
-          </language>
-          <language ident="otk" type="language" role="objectLanguage">
-            <ident type="BCP47" xml:id="lang-otk">otk</ident>
-            <ident type="Glottolog">oldt1247</ident>
-            <ident type="ISO639-3">otk</ident>
-            <name type="languageName" role="languageReferenceName" source="#src-persj-catalog-a258c53" xml:id="name-otk-sr-preferred" xml:lang="sr">старотурски</name>
-            <name type="languageName" role="languageReferenceName" source="#src-glottolog-5-3" xml:id="name-otk-en-preferred" xml:lang="en">Old Turkish</name>
-            <name type="languageName" role="languageReferenceName" source="#src-raskovnik-review" xml:id="name-otk-de-preferred" xml:lang="de">Alttürkisch</name>
-            <note type="selectionStatus" subtype="selectable" source="#src-raskovnik-review">This node may be selected.</note>
-            <note type="classificationStatus" subtype="reviewed" source="#src-raskovnik-review">Classification status: reviewed.</note>
-            <note type="tagProfile" subtype="direct" source="#src-raskovnik-review" xml:id="profile-otk">otk</note>
-            <name type="sourceLabel" role="compound-language-label" subtype="abbreviation" source="#src-persj-catalog-a258c53" ana="#profile-otk #catalog-isj-persj" xml:id="src-compound-11ddb2951a09e704" xml:lang="sr">сттур.</name>
-            <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-compound-11ddb2951a09e704" source="#src-persj-catalog-a258c53" xml:id="src-compound-11ddb2951a09e704-label-sr" xml:lang="sr">старотурски</name>
-            <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-compound-11ddb2951a09e704" source="#src-persj-catalog-a258c53" xml:id="src-compound-11ddb2951a09e704-label-en" xml:lang="en">Old Turkish</name>
-            <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-compound-11ddb2951a09e704" source="#src-persj-catalog-a258c53" xml:id="src-compound-11ddb2951a09e704-label-de" xml:lang="de">Alttürkisch</name>
-            <note type="sourceRecordNote" corresp="#src-compound-11ddb2951a09e704" source="#src-persj-catalog-a258c53" xml:lang="en">productive compound audited in the PERSJ conversion</note>
-            <note type="editorialReview" resp="https://github.com/raskovnik-design-2026-08-31" xml:lang="en">Reviewed 2026-08-31. The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
-            <settingDesc>
-              <place>
-                <location type="representative" source="#src-glottolog-5-3">
-                  <geo>37 59</geo>
-                </location>
-                <idno type="sourceNode">oldt1247</idno>
-              </place>
-            </settingDesc>
-          </language>
-        </languageGrp>
         <languageGrp ident="und-x-glot-kart1248" type="family">
           <ident type="BCP47" xml:id="lang-und-x-glot-kart1248">und-x-glot-kart1248</ident>
           <ident type="Glottolog">kart1248</ident>
@@ -6843,7 +6833,7 @@
       </langUsage>
     </profileDesc>
     <revisionDesc status="published">
-      <change type="registryVersion" n="2026.9.6-1" when="2026-09-06T00:00:00Z">Published Raskovnik language registry 2026.9.6-1.</change>
+      <change type="registryVersion" n="2026.9.8-1" when="2026-09-08T00:00:00Z">Reviewed broader linguistic placement replaces Bookkeeping for Old Indo-Aryan and Old Turkic.</change>
       <change type="editorialReview" when="2026-09-06" who="https://github.com/ttasovac">Approved the complete 20-ancestor Serbian/German label batch. Existing decisions and three English-only nonselectable fallbacks remain unchanged.</change>
       <change type="sourceMigration" when="2026-09-06" corresp="https://github.com/BCDH/raskovnik-language-registry/commit/2f63dc0">Promoted the validated complete compiler output to the editable TEI master: 380 nodes, 214 profiles, 311 count-free source records. Bootstrap sources, exact review payloads and reconciliation remain in this Git checkpoint.</change>
     </revisionDesc>

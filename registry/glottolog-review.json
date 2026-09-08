@@ -1,0 +1,4038 @@
+{
+  "version": "5.3",
+  "reviewed": "2026-09-08",
+  "source": "https://github.com/BCDH/raskovnik-language-registry/blob/2f63dc0/upstream/glottolog/5.3/languoid.csv",
+  "sha256": "4d9a78cb328b5f8754ad73c2575eb89ae5131077a85cf2ac794285e04c429368",
+  "records": {
+    "aeol1234": {
+      "name": "Aeolic Greek",
+      "status": "active",
+      "ancestors": [
+        "anci1249",
+        "nort3405",
+        "gree1276",
+        "grae1234",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "afro1255": {
+      "name": "Afro-Asiatic",
+      "status": "active",
+      "ancestors": []
+    },
+    "akka1240": {
+      "name": "Akkadian",
+      "status": "active",
+      "ancestors": [
+        "east2678",
+        "semi1276",
+        "afro1255"
+      ]
+    },
+    "alba1267": {
+      "name": "Albanian",
+      "status": "active",
+      "ancestors": [
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "alba1268": {
+      "name": "Albanian-Tosk",
+      "status": "active",
+      "ancestors": [
+        "alba1267",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "alem1243": {
+      "name": "Alemannic",
+      "status": "active",
+      "ancestors": [
+        "mode1258",
+        "midd1349",
+        "high1286",
+        "high1289",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "alts1234": {
+      "name": "Altsächsisch",
+      "status": "active",
+      "ancestors": [
+        "nort3175",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "anat1257": {
+      "name": "Anatolian",
+      "status": "active",
+      "ancestors": [
+        "indo1319"
+      ]
+    },
+    "anci1242": {
+      "name": "Ionic-Attic Ancient Greek",
+      "status": "active",
+      "ancestors": [
+        "cent2404",
+        "east2798",
+        "gree1276",
+        "grae1234",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "anci1244": {
+      "name": "Ancient Hebrew",
+      "status": "active",
+      "ancestors": [
+        "hebr1246",
+        "cana1267",
+        "nort3165",
+        "cent2236",
+        "west2786",
+        "semi1276",
+        "afro1255"
+      ]
+    },
+    "anci1249": {
+      "name": "Ancient North Greek",
+      "status": "active",
+      "ancestors": [
+        "nort3405",
+        "gree1276",
+        "grae1234",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "angl1264": {
+      "name": "Anglo-Frisian",
+      "status": "active",
+      "ancestors": [
+        "nort3175",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "angl1265": {
+      "name": "Anglic",
+      "status": "active",
+      "ancestors": [
+        "angl1264",
+        "nort3175",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "arab1394": {
+      "name": "Arabian",
+      "status": "active",
+      "ancestors": [
+        "cent2236",
+        "west2786",
+        "semi1276",
+        "afro1255"
+      ]
+    },
+    "arab1395": {
+      "name": "Arabic",
+      "status": "active",
+      "ancestors": [
+        "arab1394",
+        "cent2236",
+        "west2786",
+        "semi1276",
+        "afro1255"
+      ]
+    },
+    "arme1241": {
+      "name": "Armenic",
+      "status": "active",
+      "ancestors": [
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "arom1237": {
+      "name": "Aromanian",
+      "status": "active",
+      "ancestors": [
+        "east2714",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "atti1240": {
+      "name": "Attic",
+      "status": "active",
+      "ancestors": [
+        "anci1242",
+        "cent2404",
+        "east2798",
+        "gree1276",
+        "grae1234",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "aves1237": {
+      "name": "Avestan",
+      "status": "active",
+      "ancestors": [
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "balt1263": {
+      "name": "Balto-Slavic",
+      "status": "active",
+      "ancestors": [
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "bash1267": {
+      "name": "Bashkiric",
+      "status": "active",
+      "ancestors": [
+        "nort2696",
+        "nort3424",
+        "kipc1239",
+        "kipc1240",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "basq1248": {
+      "name": "Basque",
+      "status": "active",
+      "ancestors": []
+    },
+    "bava1246": {
+      "name": "Bavarian",
+      "status": "active",
+      "ancestors": [
+        "baye1239",
+        "mode1258",
+        "midd1349",
+        "high1286",
+        "high1289",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "baye1239": {
+      "name": "Bairisch",
+      "status": "active",
+      "ancestors": [
+        "mode1258",
+        "midd1349",
+        "high1286",
+        "high1289",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "bela1254": {
+      "name": "Belarusian",
+      "status": "active",
+      "ancestors": [
+        "east1426",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "bolg1249": {
+      "name": "Bolgar",
+      "status": "active",
+      "ancestors": [
+        "turk1311"
+      ]
+    },
+    "bolg1250": {
+      "name": "Bolgarian",
+      "status": "active",
+      "ancestors": [
+        "bolg1249",
+        "turk1311"
+      ]
+    },
+    "book1242": {
+      "name": "Bookkeeping",
+      "status": "bookkeeping",
+      "ancestors": []
+    },
+    "braz1247": {
+      "name": "Brazil-Portugal Portuguese",
+      "status": "active",
+      "ancestors": [
+        "macr1272",
+        "gali1263",
+        "west2838",
+        "sout3183",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "bret1244": {
+      "name": "Breton",
+      "status": "active",
+      "ancestors": [
+        "bret1245",
+        "midd1379",
+        "sout3176",
+        "bryt1239",
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "bret1245": {
+      "name": "Bretonic",
+      "status": "active",
+      "ancestors": [
+        "midd1379",
+        "sout3176",
+        "bryt1239",
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "bryt1239": {
+      "name": "Brythonic",
+      "status": "active",
+      "ancestors": [
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "bulg1262": {
+      "name": "Bulgarian",
+      "status": "active",
+      "ancestors": [
+        "mace1252",
+        "east2269",
+        "sout3147",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "cana1267": {
+      "name": "Canaanite",
+      "status": "active",
+      "ancestors": [
+        "nort3165",
+        "cent2236",
+        "west2786",
+        "semi1276",
+        "afro1255"
+      ]
+    },
+    "cast1243": {
+      "name": "Castilic",
+      "status": "active",
+      "ancestors": [
+        "west2838",
+        "sout3183",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "celt1248": {
+      "name": "Celtic",
+      "status": "active",
+      "ancestors": [
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "cent2236": {
+      "name": "Central Semitic",
+      "status": "active",
+      "ancestors": [
+        "west2786",
+        "semi1276",
+        "afro1255"
+      ]
+    },
+    "cent2283": {
+      "name": "Central Oil",
+      "status": "active",
+      "ancestors": [
+        "oila1234",
+        "gall1280",
+        "nort3208",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "cent2317": {
+      "name": "Central Iranian PBS",
+      "status": "active",
+      "ancestors": [
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "cent2318": {
+      "name": "Central Iranian PB",
+      "status": "active",
+      "ancestors": [
+        "cent2317",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "cent2399": {
+      "name": "Central Eastern Iranian",
+      "status": "active",
+      "ancestors": [
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "cent2404": {
+      "name": "Central Greek",
+      "status": "active",
+      "ancestors": [
+        "east2798",
+        "gree1276",
+        "grae1234",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "cent2427": {
+      "name": "Central Italian Romance",
+      "status": "active",
+      "ancestors": [
+        "ital1287",
+        "ital1286",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "chag1247": {
+      "name": "Chagatai",
+      "status": "active",
+      "ancestors": [
+        "uygh1241",
+        "kipc1240",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "chak1265": {
+      "name": "Chakavski",
+      "status": "active",
+      "ancestors": [
+        "sout1528",
+        "west2804",
+        "sout3147",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "chur1257": {
+      "name": "Church Slavic",
+      "status": "active",
+      "ancestors": [
+        "east2269",
+        "sout3147",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "chuv1255": {
+      "name": "Chuvash",
+      "status": "active",
+      "ancestors": [
+        "bolg1249",
+        "turk1311"
+      ]
+    },
+    "clas1257": {
+      "name": "Classical Indo-European",
+      "status": "active",
+      "ancestors": [
+        "indo1319"
+      ]
+    },
+    "coas1319": {
+      "name": "Coastal Finnic",
+      "status": "active",
+      "ancestors": [
+        "finn1317",
+        "ural1272"
+      ]
+    },
+    "comm1245": {
+      "name": "Common Turkic",
+      "status": "active",
+      "ancestors": [
+        "turk1311"
+      ]
+    },
+    "cont1249": {
+      "name": "Continental Transalpine Celtic",
+      "status": "active",
+      "ancestors": [
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "copt1239": {
+      "name": "Coptic",
+      "status": "active",
+      "ancestors": [
+        "egyp1245",
+        "afro1255"
+      ]
+    },
+    "corn1251": {
+      "name": "Cornish",
+      "status": "active",
+      "ancestors": [
+        "midd1379",
+        "sout3176",
+        "bryt1239",
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "crim1256": {
+      "name": "Crimean Tatar-Urum",
+      "status": "active",
+      "ancestors": [
+        "west1472",
+        "nort3424",
+        "kipc1239",
+        "kipc1240",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "crim1257": {
+      "name": "Crimean Tatar",
+      "status": "active",
+      "ancestors": [
+        "crim1259",
+        "crim1256",
+        "west1472",
+        "nort3424",
+        "kipc1239",
+        "kipc1240",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "crim1259": {
+      "name": "Crimeaic",
+      "status": "active",
+      "ancestors": [
+        "crim1256",
+        "west1472",
+        "nort3424",
+        "kipc1239",
+        "kipc1240",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "croa1245": {
+      "name": "Croatian Standard",
+      "status": "active",
+      "ancestors": [
+        "east2821",
+        "news1236",
+        "shto1241",
+        "sout1528",
+        "west2804",
+        "sout3147",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "czec1258": {
+      "name": "Czech",
+      "status": "active",
+      "ancestors": [
+        "czec1260",
+        "west2792",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "czec1259": {
+      "name": "Czecho-Moravian",
+      "status": "active",
+      "ancestors": [
+        "czec1258",
+        "czec1260",
+        "west2792",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "czec1260": {
+      "name": "Czech-Slovak",
+      "status": "active",
+      "ancestors": [
+        "west2792",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "dalm1243": {
+      "name": "Dalmatian",
+      "status": "active",
+      "ancestors": [
+        "dalm1244",
+        "ital1286",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "dalm1244": {
+      "name": "Dalmatian Romance",
+      "status": "active",
+      "ancestors": [
+        "ital1286",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "dani1285": {
+      "name": "Danish",
+      "status": "active",
+      "ancestors": [
+        "sout3248",
+        "nort3160",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "digo1242": {
+      "name": "Digor Ossetian",
+      "status": "active",
+      "ancestors": [
+        "osse1243",
+        "osse1245",
+        "sogd1247",
+        "cent2317",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "dori1248": {
+      "name": "Doric",
+      "status": "active",
+      "ancestors": [
+        "west2995",
+        "anci1249",
+        "nort3405",
+        "gree1276",
+        "grae1234",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "dutc1256": {
+      "name": "Dutch",
+      "status": "active",
+      "ancestors": [
+        "glob1241",
+        "mode1257",
+        "midd1347",
+        "macr1270",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "east1426": {
+      "name": "East Slavic",
+      "status": "active",
+      "ancestors": [
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "east2269": {
+      "name": "Eastern South Slavic",
+      "status": "active",
+      "ancestors": [
+        "sout3147",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "east2280": {
+      "name": "Eastern Baltic",
+      "status": "active",
+      "ancestors": [
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "east2291": {
+      "name": "Greater East Low German",
+      "status": "active",
+      "ancestors": [
+        "lowg1239",
+        "midd1345",
+        "alts1234",
+        "nort3175",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "east2678": {
+      "name": "East Semitic",
+      "status": "active",
+      "ancestors": [
+        "semi1276",
+        "afro1255"
+      ]
+    },
+    "east2714": {
+      "name": "Eastern Romance",
+      "status": "active",
+      "ancestors": [
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "east2768": {
+      "name": "Eastern-Western Armenian",
+      "status": "active",
+      "ancestors": [
+        "arme1241",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "east2780": {
+      "name": "East-Central Swedic",
+      "status": "active",
+      "ancestors": [
+        "nort3266",
+        "nort3160",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "east2781": {
+      "name": "East Swedic",
+      "status": "active",
+      "ancestors": [
+        "east2780",
+        "nort3266",
+        "nort3160",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "east2798": {
+      "name": "South Greek",
+      "status": "active",
+      "ancestors": [
+        "gree1276",
+        "grae1234",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "east2805": {
+      "name": "East Germanic",
+      "status": "active",
+      "ancestors": [
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "east2821": {
+      "name": "Eastern Herzegovinian Shtokavian",
+      "status": "active",
+      "ancestors": [
+        "news1236",
+        "shto1241",
+        "sout1528",
+        "west2804",
+        "sout3147",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "east2865": {
+      "name": "Eastern Romanian",
+      "status": "active",
+      "ancestors": [
+        "nort3361",
+        "east2714",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "egyp1245": {
+      "name": "Egyptian",
+      "status": "active",
+      "ancestors": [
+        "afro1255"
+      ]
+    },
+    "egyp1246": {
+      "name": "Egyptian (Ancient)",
+      "status": "active",
+      "ancestors": [
+        "egyp1245",
+        "afro1255"
+      ]
+    },
+    "faro1244": {
+      "name": "Faroese",
+      "status": "active",
+      "ancestors": [
+        "icel1246",
+        "west2805",
+        "nort3160",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "fars1254": {
+      "name": "Farsic-Caucasian Tat",
+      "status": "active",
+      "ancestors": [
+        "mode1259",
+        "midd1352",
+        "sout3157",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "finn1317": {
+      "name": "Finnic",
+      "status": "active",
+      "ancestors": [
+        "ural1272"
+      ]
+    },
+    "finn1318": {
+      "name": "Finnish",
+      "status": "active",
+      "ancestors": [
+        "nucl1717",
+        "nort3282",
+        "neva1234",
+        "coas1319",
+        "finn1317",
+        "ural1272"
+      ]
+    },
+    "fran1264": {
+      "name": "Old Frankish",
+      "status": "active",
+      "ancestors": [
+        "oldd1237",
+        "macr1270",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "fris1239": {
+      "name": "Frisian",
+      "status": "active",
+      "ancestors": [
+        "angl1264",
+        "nort3175",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "friu1240": {
+      "name": "Friulian",
+      "status": "active",
+      "ancestors": [
+        "ital1287",
+        "ital1286",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "gali1263": {
+      "name": "Galician Romance",
+      "status": "active",
+      "ancestors": [
+        "west2838",
+        "sout3183",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "gall1279": {
+      "name": "Gallo-Italian",
+      "status": "active",
+      "ancestors": [
+        "nort3208",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "gall1280": {
+      "name": "Gallo-Rhaetian",
+      "status": "active",
+      "ancestors": [
+        "nort3208",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "geor1252": {
+      "name": "Georgian-Zan",
+      "status": "active",
+      "ancestors": [
+        "kart1248"
+      ]
+    },
+    "geor1253": {
+      "name": "Georgic",
+      "status": "active",
+      "ancestors": [
+        "geor1252",
+        "kart1248"
+      ]
+    },
+    "germ1287": {
+      "name": "Germanic",
+      "status": "active",
+      "ancestors": [
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "gheg1238": {
+      "name": "Gheg Albanian",
+      "status": "active",
+      "ancestors": [
+        "alba1267",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "glob1239": {
+      "name": "Global French",
+      "status": "active",
+      "ancestors": [
+        "macr1273",
+        "cent2283",
+        "oila1234",
+        "gall1280",
+        "nort3208",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "glob1241": {
+      "name": "Global Dutch",
+      "status": "active",
+      "ancestors": [
+        "mode1257",
+        "midd1347",
+        "macr1270",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "glob1243": {
+      "name": "Global German",
+      "status": "active",
+      "ancestors": [
+        "uppe1464",
+        "mode1258",
+        "midd1349",
+        "high1286",
+        "high1289",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "goid1240": {
+      "name": "Goidelic",
+      "status": "active",
+      "ancestors": [
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "goth1244": {
+      "name": "Gothic",
+      "status": "active",
+      "ancestors": [
+        "east2805",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "grae1234": {
+      "name": "Graeco-Phrygian",
+      "status": "active",
+      "ancestors": [
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "gree1276": {
+      "name": "Greek",
+      "status": "active",
+      "ancestors": [
+        "grae1234",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "hebr1245": {
+      "name": "Modern Hebrew",
+      "status": "active",
+      "ancestors": [
+        "hebr1246",
+        "cana1267",
+        "nort3165",
+        "cent2236",
+        "west2786",
+        "semi1276",
+        "afro1255"
+      ]
+    },
+    "hebr1246": {
+      "name": "Hebrewic",
+      "status": "active",
+      "ancestors": [
+        "cana1267",
+        "nort3165",
+        "cent2236",
+        "west2786",
+        "semi1276",
+        "afro1255"
+      ]
+    },
+    "high1286": {
+      "name": "Upper German",
+      "status": "active",
+      "ancestors": [
+        "high1289",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "high1289": {
+      "name": "High German",
+      "status": "active",
+      "ancestors": [
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "hitt1242": {
+      "name": "Hittite",
+      "status": "active",
+      "ancestors": [
+        "anat1257",
+        "indo1319"
+      ]
+    },
+    "hung1274": {
+      "name": "Hungarian",
+      "status": "active",
+      "ancestors": [
+        "hung1287",
+        "ural1272"
+      ]
+    },
+    "hung1287": {
+      "name": "Hungaric",
+      "status": "active",
+      "ancestors": [
+        "ural1272"
+      ]
+    },
+    "icel1246": {
+      "name": "Icelandic-Faroese",
+      "status": "active",
+      "ancestors": [
+        "west2805",
+        "nort3160",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "icel1247": {
+      "name": "Icelandic",
+      "status": "active",
+      "ancestors": [
+        "icel1246",
+        "west2805",
+        "nort3160",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "impe1234": {
+      "name": "Imperial Latin",
+      "status": "active",
+      "ancestors": [
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "indo1319": {
+      "name": "Indo-European",
+      "status": "active",
+      "ancestors": []
+    },
+    "indo1320": {
+      "name": "Indo-Iranian",
+      "status": "active",
+      "ancestors": [
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "indo1321": {
+      "name": "Indo-Aryan",
+      "status": "active",
+      "ancestors": [
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "insu1254": {
+      "name": "Insular Celtic",
+      "status": "active",
+      "ancestors": [
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "iran1269": {
+      "name": "Iranian",
+      "status": "active",
+      "ancestors": [
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "iran1271": {
+      "name": "Iranian-Nuristani",
+      "status": "active",
+      "ancestors": [
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "iris1253": {
+      "name": "Irish",
+      "status": "active",
+      "ancestors": [
+        "mode1265",
+        "goid1240",
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "iron1242": {
+      "name": "Iron Ossetian",
+      "status": "active",
+      "ancestors": [
+        "osse1243",
+        "osse1245",
+        "sogd1247",
+        "cent2317",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "istr1245": {
+      "name": "Istro-Romanian",
+      "status": "active",
+      "ancestors": [
+        "nort3361",
+        "east2714",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "ital1282": {
+      "name": "Italian",
+      "status": "active",
+      "ancestors": [
+        "cent2427",
+        "ital1287",
+        "ital1286",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "ital1284": {
+      "name": "Italic",
+      "status": "active",
+      "ancestors": [
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "ital1285": {
+      "name": "Italo-Western Romance",
+      "status": "active",
+      "ancestors": [
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "ital1286": {
+      "name": "Italo-Dalmatian",
+      "status": "active",
+      "ancestors": [
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "ital1287": {
+      "name": "Italian Romance",
+      "status": "active",
+      "ancestors": [
+        "ital1286",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "kajk1237": {
+      "name": "Kajkavian",
+      "status": "active",
+      "ancestors": [
+        "west2804",
+        "sout3147",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "kalm1243": {
+      "name": "Oirad-Kalmyk-Darkhat",
+      "status": "active",
+      "ancestors": [
+        "mong1331",
+        "khal1273",
+        "oira1260",
+        "mong1329",
+        "mong1349"
+      ]
+    },
+    "kart1248": {
+      "name": "Kartvelian",
+      "status": "active",
+      "ancestors": []
+    },
+    "kash1274": {
+      "name": "Kashubian",
+      "status": "active",
+      "ancestors": [
+        "lech1241",
+        "west2792",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "kaza1248": {
+      "name": "Kazakh",
+      "status": "active",
+      "ancestors": [
+        "sout2701",
+        "sout3396",
+        "kipc1239",
+        "kipc1240",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "khal1273": {
+      "name": "Khalkha-Buriat",
+      "status": "active",
+      "ancestors": [
+        "oira1260",
+        "mong1329",
+        "mong1349"
+      ]
+    },
+    "khot1251": {
+      "name": "Khotanese",
+      "status": "active",
+      "ancestors": [
+        "saka1298",
+        "saka1303",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "khwa1238": {
+      "name": "Khwarezmian",
+      "status": "active",
+      "ancestors": [
+        "sogd1248",
+        "sogd1247",
+        "cent2317",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "kipc1239": {
+      "name": "Kipchak",
+      "status": "active",
+      "ancestors": [
+        "kipc1240",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "kipc1240": {
+      "name": "Kipchak-Turkestan",
+      "status": "active",
+      "ancestors": [
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "koin1234": {
+      "name": "Koineic Greek",
+      "status": "active",
+      "ancestors": [
+        "cent2404",
+        "east2798",
+        "gree1276",
+        "grae1234",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "koso1247": {
+      "name": "Kosovo-Resava",
+      "status": "active",
+      "ancestors": [
+        "news1236",
+        "shto1241",
+        "sout1528",
+        "west2804",
+        "sout3147",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "kurd1259": {
+      "name": "Kurdish",
+      "status": "active",
+      "ancestors": [
+        "laki1246",
+        "nort3177",
+        "cent2318",
+        "cent2317",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "laki1246": {
+      "name": "Laki-Kurdish",
+      "status": "active",
+      "ancestors": [
+        "nort3177",
+        "cent2318",
+        "cent2317",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "late1252": {
+      "name": "Late Latin",
+      "status": "active",
+      "ancestors": [
+        "lati1261",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "late1254": {
+      "name": "Later Anglic",
+      "status": "active",
+      "ancestors": [
+        "angl1265",
+        "angl1264",
+        "nort3175",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "lati1261": {
+      "name": "Latin",
+      "status": "active",
+      "ancestors": [
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "lati1262": {
+      "name": "Latino-Faliscan",
+      "status": "active",
+      "ancestors": [
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "lati1263": {
+      "name": "Latinic",
+      "status": "active",
+      "ancestors": [
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "latv1249": {
+      "name": "Latvian",
+      "status": "active",
+      "ancestors": [
+        "east2280",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "lech1241": {
+      "name": "Lechitic",
+      "status": "active",
+      "ancestors": [
+        "west2792",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "lith1251": {
+      "name": "Lithuanian",
+      "status": "active",
+      "ancestors": [
+        "east2280",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "lomb1257": {
+      "name": "Lombard",
+      "status": "active",
+      "ancestors": [
+        "piem1239",
+        "gall1279",
+        "nort3208",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "lowe1385": {
+      "name": "Lower Sorbian",
+      "status": "active",
+      "ancestors": [
+        "sorb1249",
+        "west2792",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "lowg1239": {
+      "name": "Low German",
+      "status": "active",
+      "ancestors": [
+        "midd1345",
+        "alts1234",
+        "nort3175",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "luvi1234": {
+      "name": "Luvic",
+      "status": "active",
+      "ancestors": [
+        "luvo1235",
+        "luvo1234",
+        "anat1257",
+        "indo1319"
+      ]
+    },
+    "luvi1235": {
+      "name": "Luvian",
+      "status": "active",
+      "ancestors": [
+        "luvi1234",
+        "luvo1235",
+        "luvo1234",
+        "anat1257",
+        "indo1319"
+      ]
+    },
+    "luvo1234": {
+      "name": "Luvo-Lydian",
+      "status": "active",
+      "ancestors": [
+        "anat1257",
+        "indo1319"
+      ]
+    },
+    "luvo1235": {
+      "name": "Luvo-Palaic",
+      "status": "active",
+      "ancestors": [
+        "luvo1234",
+        "anat1257",
+        "indo1319"
+      ]
+    },
+    "mace1250": {
+      "name": "Macedonian",
+      "status": "active",
+      "ancestors": [
+        "mace1252",
+        "east2269",
+        "sout3147",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "mace1252": {
+      "name": "Macedo-Bulgarian",
+      "status": "active",
+      "ancestors": [
+        "east2269",
+        "sout3147",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "macr1270": {
+      "name": "Macro-Dutch",
+      "status": "active",
+      "ancestors": [
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "macr1271": {
+      "name": "Macro-English",
+      "status": "active",
+      "ancestors": [
+        "merc1242",
+        "late1254",
+        "angl1265",
+        "angl1264",
+        "nort3175",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "macr1272": {
+      "name": "Macro-Portuguese",
+      "status": "active",
+      "ancestors": [
+        "gali1263",
+        "west2838",
+        "sout3183",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "macr1273": {
+      "name": "Macro-French",
+      "status": "active",
+      "ancestors": [
+        "cent2283",
+        "oila1234",
+        "gall1280",
+        "nort3208",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "medi1250": {
+      "name": "Medieval Latin",
+      "status": "active",
+      "ancestors": [
+        "lati1261",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "medi1251": {
+      "name": "Medieval Greek",
+      "status": "active",
+      "ancestors": [
+        "koin1234",
+        "cent2404",
+        "east2798",
+        "gree1276",
+        "grae1234",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "megl1237": {
+      "name": "Megleno-Romanian",
+      "status": "active",
+      "ancestors": [
+        "east2865",
+        "nort3361",
+        "east2714",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "merc1242": {
+      "name": "Middle-Modern English",
+      "status": "active",
+      "ancestors": [
+        "late1254",
+        "angl1265",
+        "angl1264",
+        "nort3175",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "midd1318": {
+      "name": "Middle Low German",
+      "status": "active",
+      "ancestors": [
+        "midd1345",
+        "alts1234",
+        "nort3175",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "midd1321": {
+      "name": "Middle Dutch",
+      "status": "active",
+      "ancestors": [
+        "midd1347",
+        "macr1270",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "midd1343": {
+      "name": "Middle High German",
+      "status": "active",
+      "ancestors": [
+        "midd1349",
+        "high1286",
+        "high1289",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "midd1345": {
+      "name": "Middle-Modern Low German",
+      "status": "active",
+      "ancestors": [
+        "alts1234",
+        "nort3175",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "midd1347": {
+      "name": "Middle-Modern Dutch",
+      "status": "active",
+      "ancestors": [
+        "macr1270",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "midd1349": {
+      "name": "Middle-Modern High German",
+      "status": "active",
+      "ancestors": [
+        "high1286",
+        "high1289",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "midd1352": {
+      "name": "Middle-Modern Persian",
+      "status": "active",
+      "ancestors": [
+        "sout3157",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "midd1359": {
+      "name": "Middle Breton",
+      "status": "active",
+      "ancestors": [
+        "bret1244",
+        "bret1245",
+        "midd1379",
+        "sout3176",
+        "bryt1239",
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "midd1360": {
+      "name": "Middle Irish (10-12th century)",
+      "status": "active",
+      "ancestors": [
+        "oldi1245",
+        "goid1240",
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "midd1363": {
+      "name": "Middle Welsh",
+      "status": "active",
+      "ancestors": [
+        "oldw1239",
+        "oldm1247",
+        "bryt1239",
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "midd1379": {
+      "name": "Middle-Modern Southwestern Brythonic",
+      "status": "active",
+      "ancestors": [
+        "sout3176",
+        "bryt1239",
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "mode1248": {
+      "name": "Modern Greek",
+      "status": "active",
+      "ancestors": [
+        "nucl1783",
+        "mode1266",
+        "koin1234",
+        "cent2404",
+        "east2798",
+        "gree1276",
+        "grae1234",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "mode1257": {
+      "name": "Modern Dutch",
+      "status": "active",
+      "ancestors": [
+        "midd1347",
+        "macr1270",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "mode1258": {
+      "name": "Modern High German",
+      "status": "active",
+      "ancestors": [
+        "midd1349",
+        "high1286",
+        "high1289",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "mode1259": {
+      "name": "Modern Southwestern Iranian",
+      "status": "active",
+      "ancestors": [
+        "midd1352",
+        "sout3157",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "mode1265": {
+      "name": "Modern Goidelic",
+      "status": "active",
+      "ancestors": [
+        "goid1240",
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "mode1266": {
+      "name": "Modern Koineic Greek",
+      "status": "active",
+      "ancestors": [
+        "koin1234",
+        "cent2404",
+        "east2798",
+        "gree1276",
+        "grae1234",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "mong1329": {
+      "name": "Mongolic",
+      "status": "active",
+      "ancestors": [
+        "mong1349"
+      ]
+    },
+    "mong1331": {
+      "name": "Mongolian",
+      "status": "active",
+      "ancestors": [
+        "khal1273",
+        "oira1260",
+        "mong1329",
+        "mong1349"
+      ]
+    },
+    "mong1349": {
+      "name": "Mongolic-Khitan",
+      "status": "active",
+      "ancestors": []
+    },
+    "myce1241": {
+      "name": "Achaean Greek",
+      "status": "active",
+      "ancestors": [
+        "east2798",
+        "gree1276",
+        "grae1234",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "neva1234": {
+      "name": "Neva",
+      "status": "active",
+      "ancestors": [
+        "coas1319",
+        "finn1317",
+        "ural1272"
+      ]
+    },
+    "news1236": {
+      "name": "New Shtokavian",
+      "status": "active",
+      "ancestors": [
+        "shto1241",
+        "sout1528",
+        "west2804",
+        "sout3147",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "nort2627": {
+      "name": "Eastern Low German",
+      "status": "active",
+      "ancestors": [
+        "east2291",
+        "lowg1239",
+        "midd1345",
+        "alts1234",
+        "nort3175",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "nort2696": {
+      "name": "North Kipchak",
+      "status": "active",
+      "ancestors": [
+        "nort3424",
+        "kipc1239",
+        "kipc1240",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "nort3152": {
+      "name": "Northwest Germanic",
+      "status": "active",
+      "ancestors": [
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "nort3160": {
+      "name": "North Germanic",
+      "status": "active",
+      "ancestors": [
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "nort3165": {
+      "name": "Northwest Semitic",
+      "status": "active",
+      "ancestors": [
+        "cent2236",
+        "west2786",
+        "semi1276",
+        "afro1255"
+      ]
+    },
+    "nort3175": {
+      "name": "North Sea Germanic",
+      "status": "active",
+      "ancestors": [
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "nort3177": {
+      "name": "Northwestern Iranian",
+      "status": "active",
+      "ancestors": [
+        "cent2318",
+        "cent2317",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "nort3208": {
+      "name": "Northwestern Shifted Romance",
+      "status": "active",
+      "ancestors": [
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "nort3266": {
+      "name": "North Scandinavian",
+      "status": "active",
+      "ancestors": [
+        "nort3160",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "nort3282": {
+      "name": "North Finnic",
+      "status": "active",
+      "ancestors": [
+        "neva1234",
+        "coas1319",
+        "finn1317",
+        "ural1272"
+      ]
+    },
+    "nort3310": {
+      "name": "North Alemannic",
+      "status": "active",
+      "ancestors": [
+        "alem1243",
+        "mode1258",
+        "midd1349",
+        "high1286",
+        "high1289",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "nort3361": {
+      "name": "Northern Romanian",
+      "status": "active",
+      "ancestors": [
+        "east2714",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "nort3405": {
+      "name": "North Greek",
+      "status": "active",
+      "ancestors": [
+        "gree1276",
+        "grae1234",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "nort3424": {
+      "name": "Northwest Kipchak",
+      "status": "active",
+      "ancestors": [
+        "kipc1239",
+        "kipc1240",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "norw1258": {
+      "name": "Norwegian",
+      "status": "active",
+      "ancestors": [
+        "west2805",
+        "nort3160",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "nucl1235": {
+      "name": "Eastern Armenian",
+      "status": "active",
+      "ancestors": [
+        "east2768",
+        "arme1241",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "nucl1276": {
+      "name": "Nuclear Pashto",
+      "status": "active",
+      "ancestors": [
+        "pash1269",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "nucl1301": {
+      "name": "Turkish",
+      "status": "active",
+      "ancestors": [
+        "west2406",
+        "nucl1769",
+        "oghu1243",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "nucl1302": {
+      "name": "Georgian",
+      "status": "active",
+      "ancestors": [
+        "geor1253",
+        "geor1252",
+        "kart1248"
+      ]
+    },
+    "nucl1715": {
+      "name": "Nuclear Celtic",
+      "status": "active",
+      "ancestors": [
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "nucl1717": {
+      "name": "Nuclear Finnish",
+      "status": "active",
+      "ancestors": [
+        "nort3282",
+        "neva1234",
+        "coas1319",
+        "finn1317",
+        "ural1272"
+      ]
+    },
+    "nucl1769": {
+      "name": "Nuclear Oghuz",
+      "status": "active",
+      "ancestors": [
+        "oghu1243",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "nucl1783": {
+      "name": "Nuclear Modern Greek",
+      "status": "active",
+      "ancestors": [
+        "mode1266",
+        "koin1234",
+        "cent2404",
+        "east2798",
+        "gree1276",
+        "grae1234",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "occi1239": {
+      "name": "Occitan",
+      "status": "active",
+      "ancestors": [
+        "occi1240",
+        "sout3183",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "occi1240": {
+      "name": "Occitanic",
+      "status": "active",
+      "ancestors": [
+        "sout3183",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oghu1243": {
+      "name": "Oghuz",
+      "status": "active",
+      "ancestors": [
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "oila1234": {
+      "name": "Oil",
+      "status": "active",
+      "ancestors": [
+        "gall1280",
+        "nort3208",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oira1260": {
+      "name": "Eastern Mongolic",
+      "status": "active",
+      "ancestors": [
+        "mong1329",
+        "mong1349"
+      ]
+    },
+    "oldb1248": {
+      "name": "Old Breton",
+      "status": "active",
+      "ancestors": [
+        "oldc1252",
+        "sout3176",
+        "bryt1239",
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oldc1252": {
+      "name": "Old South-West British",
+      "status": "active",
+      "ancestors": [
+        "sout3176",
+        "bryt1239",
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oldc1253": {
+      "name": "Old Czech",
+      "status": "active",
+      "ancestors": [
+        "czec1258",
+        "czec1260",
+        "west2792",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oldc1254": {
+      "name": "Old Cornish",
+      "status": "active",
+      "ancestors": [
+        "oldc1252",
+        "sout3176",
+        "bryt1239",
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oldd1237": {
+      "name": "Old Dutch-Old Frankish",
+      "status": "active",
+      "ancestors": [
+        "macr1270",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oldd1239": {
+      "name": "Old Danish",
+      "status": "active",
+      "ancestors": [
+        "dani1285",
+        "sout3248",
+        "nort3160",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "olde1238": {
+      "name": "Old English (ca. 450-1100)",
+      "status": "active",
+      "ancestors": [
+        "angl1265",
+        "angl1264",
+        "nort3175",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oldf1239": {
+      "name": "Old French (842-ca. 1400)",
+      "status": "active",
+      "ancestors": [
+        "oila1234",
+        "gall1280",
+        "nort3208",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oldf1241": {
+      "name": "Old Frisian",
+      "status": "active",
+      "ancestors": [
+        "fris1239",
+        "angl1264",
+        "nort3175",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oldh1241": {
+      "name": "Old High German (ca. 750-1050)",
+      "status": "active",
+      "ancestors": [
+        "high1286",
+        "high1289",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oldi1244": {
+      "name": "Old Indic",
+      "status": "bookkeeping",
+      "ancestors": [
+        "book1242"
+      ]
+    },
+    "oldi1245": {
+      "name": "Early Irish",
+      "status": "active",
+      "ancestors": [
+        "goid1240",
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oldl1238": {
+      "name": "Old Latin",
+      "status": "active",
+      "ancestors": [
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oldl1240": {
+      "name": "Old Lithuanian",
+      "status": "active",
+      "ancestors": [
+        "lith1251",
+        "east2280",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oldm1247": {
+      "name": "Old-Modern Welsh",
+      "status": "active",
+      "ancestors": [
+        "bryt1239",
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oldn1244": {
+      "name": "Old Norse",
+      "status": "active",
+      "ancestors": [
+        "west2805",
+        "nort3160",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oldp1254": {
+      "name": "Old Persian (ca. 600-400 B.C.)",
+      "status": "active",
+      "ancestors": [
+        "sout3157",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oldp1256": {
+      "name": "Old Polish",
+      "status": "active",
+      "ancestors": [
+        "poli1260",
+        "poli1262",
+        "lech1241",
+        "west2792",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oldr1238": {
+      "name": "Old Russian",
+      "status": "active",
+      "ancestors": [
+        "east1426",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "olds1250": {
+      "name": "Old Saxon",
+      "status": "active",
+      "ancestors": [
+        "alts1234",
+        "nort3175",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "olds1252": {
+      "name": "Old Swedish",
+      "status": "active",
+      "ancestors": [
+        "swed1254",
+        "east2781",
+        "east2780",
+        "nort3266",
+        "nort3160",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oldt1247": {
+      "name": "Old Turkish",
+      "status": "bookkeeping",
+      "ancestors": [
+        "book1242"
+      ]
+    },
+    "oldw1239": {
+      "name": "Old-Middle Welsh",
+      "status": "active",
+      "ancestors": [
+        "oldm1247",
+        "bryt1239",
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "oldw1241": {
+      "name": "Old Welsh",
+      "status": "active",
+      "ancestors": [
+        "oldw1239",
+        "oldm1247",
+        "bryt1239",
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "osca1245": {
+      "name": "Oscan",
+      "status": "active",
+      "ancestors": [
+        "sabe1249",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "osse1243": {
+      "name": "Modern Ossetic",
+      "status": "active",
+      "ancestors": [
+        "osse1245",
+        "sogd1247",
+        "cent2317",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "osse1245": {
+      "name": "Ossetic",
+      "status": "active",
+      "ancestors": [
+        "sogd1247",
+        "cent2317",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "otto1234": {
+      "name": "Ottoman Turkish",
+      "status": "active",
+      "ancestors": [
+        "nucl1301",
+        "west2406",
+        "nucl1769",
+        "oghu1243",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "pahl1241": {
+      "name": "Pahlavi",
+      "status": "active",
+      "ancestors": [
+        "midd1352",
+        "sout3157",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "part1239": {
+      "name": "Parthian",
+      "status": "active",
+      "ancestors": [
+        "nort3177",
+        "cent2318",
+        "cent2317",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "pash1269": {
+      "name": "Pashto",
+      "status": "active",
+      "ancestors": [
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "phry1239": {
+      "name": "Phrygian",
+      "status": "active",
+      "ancestors": [
+        "grae1234",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "piem1239": {
+      "name": "Piemontese-Lombard",
+      "status": "active",
+      "ancestors": [
+        "gall1279",
+        "nort3208",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "pola1255": {
+      "name": "Polabian",
+      "status": "active",
+      "ancestors": [
+        "lech1241",
+        "west2792",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "poli1260": {
+      "name": "Polish",
+      "status": "active",
+      "ancestors": [
+        "poli1262",
+        "lech1241",
+        "west2792",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "poli1262": {
+      "name": "Polish-Silesian",
+      "status": "active",
+      "ancestors": [
+        "lech1241",
+        "west2792",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "port1283": {
+      "name": "Portuguese",
+      "status": "active",
+      "ancestors": [
+        "braz1247",
+        "macr1272",
+        "gali1263",
+        "west2838",
+        "sout3183",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "prov1235": {
+      "name": "Provençal",
+      "status": "active",
+      "ancestors": [
+        "sout2612",
+        "occi1239",
+        "occi1240",
+        "sout3183",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "prus1238": {
+      "name": "Old Prussian",
+      "status": "active",
+      "ancestors": [
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "roma1327": {
+      "name": "Romanian",
+      "status": "active",
+      "ancestors": [
+        "east2865",
+        "nort3361",
+        "east2714",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "roma1334": {
+      "name": "Romance",
+      "status": "active",
+      "ancestors": [
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "russ1263": {
+      "name": "Russian",
+      "status": "active",
+      "ancestors": [
+        "east1426",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "rusy1239": {
+      "name": "Rusyn",
+      "status": "active",
+      "ancestors": [
+        "ukra1257",
+        "east1426",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "sabe1249": {
+      "name": "Sabellic",
+      "status": "active",
+      "ancestors": [
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "saka1298": {
+      "name": "Saka",
+      "status": "active",
+      "ancestors": [
+        "saka1303",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "saka1303": {
+      "name": "Saka-Wakhi",
+      "status": "active",
+      "ancestors": [
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "sans1269": {
+      "name": "Sanskrit",
+      "status": "active",
+      "ancestors": [
+        "indo1321",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "semi1276": {
+      "name": "Semitic",
+      "status": "active",
+      "ancestors": [
+        "afro1255"
+      ]
+    },
+    "serb1264": {
+      "name": "Serbian Standard",
+      "status": "active",
+      "ancestors": [
+        "east2821",
+        "news1236",
+        "shto1241",
+        "sout1528",
+        "west2804",
+        "sout3147",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "shif1234": {
+      "name": "Shifted Western Romance",
+      "status": "active",
+      "ancestors": [
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "shto1241": {
+      "name": "Shtokavski",
+      "status": "active",
+      "ancestors": [
+        "sout1528",
+        "west2804",
+        "sout3147",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "shug1237": {
+      "name": "Shughni-Yazgulami",
+      "status": "active",
+      "ancestors": [
+        "cent2399",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "shug1248": {
+      "name": "Shughni",
+      "status": "active",
+      "ancestors": [
+        "shug1253",
+        "shug1237",
+        "cent2399",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "shug1253": {
+      "name": "Shughnic",
+      "status": "active",
+      "ancestors": [
+        "shug1237",
+        "cent2399",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "slav1255": {
+      "name": "Slavic",
+      "status": "active",
+      "ancestors": [
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "slov1268": {
+      "name": "Slovenian",
+      "status": "active",
+      "ancestors": [
+        "west2804",
+        "sout3147",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "slov1269": {
+      "name": "Slovak",
+      "status": "active",
+      "ancestors": [
+        "czec1260",
+        "west2792",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "slov1270": {
+      "name": "Slovincian",
+      "status": "active",
+      "ancestors": [
+        "kash1274",
+        "lech1241",
+        "west2792",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "smed1234": {
+      "name": "Smederevo-Vršac",
+      "status": "active",
+      "ancestors": [
+        "news1236",
+        "shto1241",
+        "sout1528",
+        "west2804",
+        "sout3147",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "sogd1245": {
+      "name": "Sogdian",
+      "status": "active",
+      "ancestors": [
+        "sogd1246",
+        "sogd1248",
+        "sogd1247",
+        "cent2317",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "sogd1246": {
+      "name": "Sogdian-Yagnobi",
+      "status": "active",
+      "ancestors": [
+        "sogd1248",
+        "sogd1247",
+        "cent2317",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "sogd1247": {
+      "name": "Sogdic-Ossetic",
+      "status": "active",
+      "ancestors": [
+        "cent2317",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "sogd1248": {
+      "name": "Sogdic",
+      "status": "active",
+      "ancestors": [
+        "sogd1247",
+        "cent2317",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "sorb1249": {
+      "name": "Sorbian",
+      "status": "active",
+      "ancestors": [
+        "west2792",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "sout1528": {
+      "name": "Serbian-Croatian-Bosnian",
+      "status": "active",
+      "ancestors": [
+        "west2804",
+        "sout3147",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "sout2612": {
+      "name": "Southern Occitan",
+      "status": "active",
+      "ancestors": [
+        "occi1239",
+        "occi1240",
+        "sout3183",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "sout2701": {
+      "name": "South Kipchak",
+      "status": "active",
+      "ancestors": [
+        "sout3396",
+        "kipc1239",
+        "kipc1240",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "sout3147": {
+      "name": "South Slavic",
+      "status": "active",
+      "ancestors": [
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "sout3157": {
+      "name": "Southwestern Iranian",
+      "status": "active",
+      "ancestors": [
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "sout3176": {
+      "name": "Southwestern Brythonic",
+      "status": "active",
+      "ancestors": [
+        "bryt1239",
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "sout3183": {
+      "name": "Southwestern Shifted Romance",
+      "status": "active",
+      "ancestors": [
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "sout3248": {
+      "name": "South Scandinavian",
+      "status": "active",
+      "ancestors": [
+        "nort3160",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "sout3396": {
+      "name": "Southeast Kipchak",
+      "status": "active",
+      "ancestors": [
+        "kipc1239",
+        "kipc1240",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "stan1288": {
+      "name": "Spanish",
+      "status": "active",
+      "ancestors": [
+        "cast1243",
+        "west2838",
+        "sout3183",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "stan1289": {
+      "name": "Catalan",
+      "status": "active",
+      "ancestors": [
+        "sout3183",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "stan1290": {
+      "name": "French",
+      "status": "active",
+      "ancestors": [
+        "glob1239",
+        "macr1273",
+        "cent2283",
+        "oila1234",
+        "gall1280",
+        "nort3208",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "stan1293": {
+      "name": "English",
+      "status": "active",
+      "ancestors": [
+        "macr1271",
+        "merc1242",
+        "late1254",
+        "angl1265",
+        "angl1264",
+        "nort3175",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "stan1295": {
+      "name": "German",
+      "status": "active",
+      "ancestors": [
+        "glob1243",
+        "uppe1464",
+        "mode1258",
+        "midd1349",
+        "high1286",
+        "high1289",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "suma1275": {
+      "name": "Šumadija-Vojvodina",
+      "status": "active",
+      "ancestors": [
+        "news1236",
+        "shto1241",
+        "sout1528",
+        "west2804",
+        "sout3147",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "sume1241": {
+      "name": "Sumerian",
+      "status": "active",
+      "ancestors": []
+    },
+    "swab1242": {
+      "name": "Swabian",
+      "status": "active",
+      "ancestors": [
+        "nort3310",
+        "alem1243",
+        "mode1258",
+        "midd1349",
+        "high1286",
+        "high1289",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "swed1254": {
+      "name": "Swedish",
+      "status": "active",
+      "ancestors": [
+        "east2781",
+        "east2780",
+        "nort3266",
+        "nort3160",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "tata1255": {
+      "name": "Tatar",
+      "status": "active",
+      "ancestors": [
+        "bash1267",
+        "nort2696",
+        "nort3424",
+        "kipc1239",
+        "kipc1240",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "tgbc1234": {
+      "name": "Core Celtic",
+      "status": "active",
+      "ancestors": [
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "tokh1241": {
+      "name": "Tokharian",
+      "status": "active",
+      "ancestors": [
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "tosk1239": {
+      "name": "Northern Tosk Albanian",
+      "status": "active",
+      "ancestors": [
+        "alba1268",
+        "alba1267",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "tran1282": {
+      "name": "Transalpine Gaulish",
+      "status": "active",
+      "ancestors": [
+        "cont1249",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "trie1242": {
+      "name": "Triestine",
+      "status": "active",
+      "ancestors": [
+        "vene1258",
+        "dalm1244",
+        "ital1286",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "turk1311": {
+      "name": "Turkic",
+      "status": "active",
+      "ancestors": []
+    },
+    "uigh1240": {
+      "name": "Uighur",
+      "status": "active",
+      "ancestors": [
+        "uigh1243",
+        "uygh1240",
+        "uygh1241",
+        "kipc1240",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "uigh1243": {
+      "name": "Uyghuric",
+      "status": "active",
+      "ancestors": [
+        "uygh1240",
+        "uygh1241",
+        "kipc1240",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "ukra1253": {
+      "name": "Ukrainian",
+      "status": "active",
+      "ancestors": [
+        "ukra1257",
+        "east1426",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "ukra1257": {
+      "name": "Ukrainian-Rusyn",
+      "status": "active",
+      "ancestors": [
+        "east1426",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "umbr1253": {
+      "name": "Umbrian",
+      "status": "active",
+      "ancestors": [
+        "sabe1249",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "uppe1395": {
+      "name": "Upper Sorbian",
+      "status": "active",
+      "ancestors": [
+        "sorb1249",
+        "west2792",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "uppe1464": {
+      "name": "Upper Franconian",
+      "status": "active",
+      "ancestors": [
+        "mode1258",
+        "midd1349",
+        "high1286",
+        "high1289",
+        "west2793",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "ural1272": {
+      "name": "Uralic",
+      "status": "active",
+      "ancestors": []
+    },
+    "uygh1240": {
+      "name": "Modern Turkestan",
+      "status": "active",
+      "ancestors": [
+        "uygh1241",
+        "kipc1240",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "uygh1241": {
+      "name": "Turkestan",
+      "status": "active",
+      "ancestors": [
+        "kipc1240",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "vedi1234": {
+      "name": "Vedic Sanskrit",
+      "status": "active",
+      "ancestors": [
+        "sans1269",
+        "indo1321",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "vene1257": {
+      "name": "Venetic",
+      "status": "active",
+      "ancestors": [
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "vene1258": {
+      "name": "Venetian",
+      "status": "active",
+      "ancestors": [
+        "dalm1244",
+        "ital1286",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "vulg1234": {
+      "name": "Vulgar Latin",
+      "status": "active",
+      "ancestors": [
+        "lati1261",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "wakh1245": {
+      "name": "Wakhi",
+      "status": "active",
+      "ancestors": [
+        "saka1303",
+        "iran1269",
+        "iran1271",
+        "indo1320",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "wels1247": {
+      "name": "Welsh",
+      "status": "active",
+      "ancestors": [
+        "oldm1247",
+        "bryt1239",
+        "insu1254",
+        "tgbc1234",
+        "nucl1715",
+        "celt1248",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "west1472": {
+      "name": "West Kipchak",
+      "status": "active",
+      "ancestors": [
+        "nort3424",
+        "kipc1239",
+        "kipc1240",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "west2406": {
+      "name": "West Oghuz",
+      "status": "active",
+      "ancestors": [
+        "nucl1769",
+        "oghu1243",
+        "comm1245",
+        "turk1311"
+      ]
+    },
+    "west2786": {
+      "name": "West Semitic",
+      "status": "active",
+      "ancestors": [
+        "semi1276",
+        "afro1255"
+      ]
+    },
+    "west2792": {
+      "name": "West Slavic",
+      "status": "active",
+      "ancestors": [
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "west2793": {
+      "name": "West Germanic",
+      "status": "active",
+      "ancestors": [
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "west2804": {
+      "name": "Western South Slavic",
+      "status": "active",
+      "ancestors": [
+        "sout3147",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "west2805": {
+      "name": "West Scandinavian",
+      "status": "active",
+      "ancestors": [
+        "nort3160",
+        "nort3152",
+        "germ1287",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "west2813": {
+      "name": "Western Romance",
+      "status": "active",
+      "ancestors": [
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "west2838": {
+      "name": "West Ibero-Romance",
+      "status": "active",
+      "ancestors": [
+        "sout3183",
+        "shif1234",
+        "west2813",
+        "ital1285",
+        "roma1334",
+        "impe1234",
+        "lati1263",
+        "lati1262",
+        "ital1284",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "west2995": {
+      "name": "West Ancient Greek",
+      "status": "active",
+      "ancestors": [
+        "anci1249",
+        "nort3405",
+        "gree1276",
+        "grae1234",
+        "clas1257",
+        "indo1319"
+      ]
+    },
+    "zeta1234": {
+      "name": "Zeta-Raška",
+      "status": "active",
+      "ancestors": [
+        "news1236",
+        "shto1241",
+        "sout1528",
+        "west2804",
+        "sout3147",
+        "slav1255",
+        "balt1263",
+        "clas1257",
+        "indo1319"
+      ]
+    }
+  }
+}

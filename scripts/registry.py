@@ -40,6 +40,30 @@ def standards():
     return lock
 
 
+def validate_glottolog(root):
+    review = json.loads((ROOT/'registry/glottolog-review.json').read_text())
+    source = root.find('.//'+T+'bibl[@'+X+'id="src-glottolog-5-3"]')
+    if source is None or source.findtext(T+'idno[@type="version"]') != review['version']:
+        raise ValueError('Glottolog review version disagrees with registry provenance')
+    if not any(f.get('target') == review['source'] and f.text == review['sha256']
+               for f in source.findall(T+'ref[@type="sourceFile"]')):
+        raise ValueError('Glottolog review snapshot disagrees with registry provenance')
+    records = review['records']
+    for node in root.iter():
+        if node.tag not in (T+'language', T+'languageGrp'):
+            continue
+        code = node.findtext(T+'ident[@type="Glottolog"]')
+        if node.get('ident') == 'und-x-glot-book1242':
+            raise ValueError('Bookkeeping cannot be a display node')
+        if code is None:
+            continue
+        record = records.get(code)
+        if record is None:
+            raise ValueError('Glottolog identifier requires snapshot review: '+code)
+        if record['status'] != 'active' or 'book1242' in record['ancestors']:
+            raise ValueError('retired or Bookkeeping Glottolog identifier: '+code)
+
+
 def validate(data):
     standards()
     root = E.fromstring(data)
@@ -48,6 +72,7 @@ def validate(data):
     if change is None:
         raise ValueError('registry version missing')
     validate_registry(data)
+    validate_glottolog(root)
     ids = {n.get(X+'id'): n for n in root.iter() if n.get(X+'id')}
     for n in root.iter():
         for attr in ('source','ana','corresp','target','resp','who'):

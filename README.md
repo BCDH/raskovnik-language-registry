@@ -38,3 +38,13 @@ Deploy the manifest-v2 registry with the matching backend app as one release set
 Commit `2f63dc0` preserves the completed reproducible bootstrap, full review archive, override ledger, and initial validated TEI master. All 89 bootstrap tests passed and the editorial gate was empty. The initial inventory was 380 nodes, 214 direct profiles, and 311 source records. The promoted TEI was compared against the complete compiler projection before the bootstrap was removed; [migration digests](docs/tei-migration-digests.json) record the initial semantic projection, not a constraint on subsequent editing.
 
 The complete 20-ancestor translation batch was approved by ttasovac on 2026-09-06. Earlier human decisions, the three English-only fallbacks, generic Ossetian/Iron separation, and Kajkavian's narrower-ISO exclusion are retained.
+
+## Glottolog placement policy
+
+Prefer an active exact equivalent; otherwise retain the dictionary concept beneath a reviewed broader linguistic node. If neither is supported, retain an explicitly unresolved placement rather than invent equivalence. A broader ancestor's Glottocode belongs to that ancestor, never to the historical concept's exact identifiers. Retired and Bookkeeping records may appear only as provenance or reviewed exclusions, not as active identifiers or display nodes.
+
+`registry/glottolog-review.json` records all 332 Glottocodes checked against the provenance-pinned Glottolog 5.3 languoid snapshot, including the three excluded Bookkeeping records. It records upstream ancestry and status, not alternative editable language mappings. Validation runs offline and fails on unreviewed identifiers, excluded statuses, or snapshot-provenance drift. New Glottocodes require review against that snapshot and a table update; an upstream upgrade requires a fresh audit. Bulk upstream files remain outside the build and repository.
+
+The 2026.9.8-1 revision places `inc-x-old` beneath `inc` (Indo-Aryan) and `otk` beneath `trk` (Turkic). These are broader editorial placements, not exact Glottolog replacements. Dictionary tags and source-label profiles are unchanged. Install the package through the backend registry release workflow, then rebuild prepared language summaries with `langsum:refresh-all()` before clearing RESTXQ caches; building it alone does not update the running explorer.
+
+A registry-only install invalidates the prepared language summaries for every dictionary. Verify successful summary regeneration and authenticated language-registry/evidence API responses before reporting installation complete; matching package hashes alone does not establish explorer readiness. The standard backend installed-manifest workflow performs this refresh, so registry-only tooling must retain that step.

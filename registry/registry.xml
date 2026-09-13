@@ -3760,16 +3760,16 @@
                     <ident type="ISO639-2T">chu</ident>
                     <ident type="ISO639-3">chu</ident>
                     <ident type="Wikidata">Q33251</ident>
-                    <name type="languageName" role="languageReferenceName" source="#src-raskovnik-review" xml:id="name-cu-sr-preferred" xml:lang="sr">старословенски и црквенословенски (ISO 639 обухват)</name>
+                    <name type="languageName" role="languageReferenceName" source="#src-raskovnik-review" xml:id="name-cu-sr-preferred" xml:lang="sr">старословенски и црквенословенски</name>
                     <name type="languageName" role="languageAlias" source="#src-raskovnik-review" xml:id="name-cu-sr-alias-1" xml:lang="sr">старословенски</name>
                     <name type="languageName" role="languageAlias" source="#src-raskovnik-review" xml:id="name-cu-sr-alias-2" xml:lang="sr">црквенословенски</name>
-                    <name type="languageName" role="languageReferenceName" source="#src-raskovnik-review" xml:id="name-cu-en-preferred" xml:lang="en">Old Church Slavonic and Church Slavonic (ISO 639 umbrella)</name>
+                    <name type="languageName" role="languageReferenceName" source="#src-raskovnik-review" xml:id="name-cu-en-preferred" xml:lang="en">Old Church Slavonic and Church Slavonic</name>
                     <name type="languageName" role="languageAlias" source="#src-iana-2026-08-08" xml:id="name-cu-en-alias-1" xml:lang="en">Church Slavic</name>
                     <name type="languageName" role="languageAlias" source="#src-iana-2026-08-08" xml:id="name-cu-en-alias-2" xml:lang="en">Church Slavonic</name>
                     <name type="languageName" role="languageAlias" source="#src-iana-2026-08-08" xml:id="name-cu-en-alias-3" xml:lang="en">Old Bulgarian</name>
                     <name type="languageName" role="languageAlias" source="#src-iana-2026-08-08" xml:id="name-cu-en-alias-4" xml:lang="en">Old Church Slavonic</name>
                     <name type="languageName" role="languageAlias" source="#src-iana-2026-08-08" xml:id="name-cu-en-alias-5" xml:lang="en">Old Slavonic</name>
-                    <name type="languageName" role="languageReferenceName" source="#src-raskovnik-review" xml:id="name-cu-de-preferred" xml:lang="de">Alt- und Kirchenslawisch (ISO-639-Sammelbegriff)</name>
+                    <name type="languageName" role="languageReferenceName" source="#src-raskovnik-review" xml:id="name-cu-de-preferred" xml:lang="de">Alt- und Kirchenslawisch</name>
                     <name type="languageName" role="languageAlias" source="#src-raskovnik-review" xml:id="name-cu-de-alias-1" xml:lang="de">Altkirchenslawisch</name>
                     <name type="languageName" role="languageAlias" source="#src-raskovnik-review" xml:id="name-cu-de-alias-2" xml:lang="de">Kirchenslawisch</name>
                     <note type="selectionStatus" subtype="selectable" source="#src-raskovnik-review">This node may be selected.</note>

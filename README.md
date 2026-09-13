@@ -48,3 +48,5 @@ Prefer an active exact equivalent; otherwise retain the dictionary concept benea
 The 2026.9.8-1 revision places `inc-x-old` beneath `inc` (Indo-Aryan) and `otk` beneath `trk` (Turkic). These are broader editorial placements, not exact Glottolog replacements. Dictionary tags and source-label profiles are unchanged. Install the package through the backend registry release workflow, then rebuild prepared language summaries with `langsum:refresh-all()` before clearing RESTXQ caches; building it alone does not update the running explorer.
 
 A registry-only install invalidates the prepared language summaries for every dictionary. Verify successful summary regeneration and authenticated language-registry/evidence API responses before reporting installation complete; matching package hashes alone does not establish explorer readiness. The standard backend installed-manifest workflow performs this refresh, so registry-only tooling must retain that step.
+
+The shared admin editing contract, reviewed geography vocabulary, and manifest v3 rollout are documented in [Registry editing through the shared admin](docs/admin-editor.md).

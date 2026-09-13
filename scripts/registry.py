@@ -14,6 +14,7 @@ from registry_integrity import validate_registry
 from registry_standards import parse_iana_registry, parse_iso639_3, validate_registered_tag
 
 ROOT = Path(__file__).resolve().parents[1]
+SCHEMA_ROOT = ROOT/'registry/schema'
 T = '{http://www.tei-c.org/ns/1.0}'
 X = '{http://www.w3.org/XML/1998/namespace}'
 M = '{https://raskovnik.org/ns/language-registry/manifest}'
@@ -67,6 +68,8 @@ def validate_glottolog(root):
 def validate(data):
     standards()
     root = E.fromstring(data)
+    from registry_geography import validate_geography
+    validate_geography(root)
     change = root.find(T+'teiHeader/'+T+'revisionDesc/'+T+'change[@type="registryVersion"]')
     nodes = [n for n in root.iter() if n.tag in (T+'language', T+'languageGrp')]
     if change is None:
@@ -156,7 +159,7 @@ def validate(data):
     with tempfile.TemporaryDirectory() as directory:
         path = Path(directory)/'registry.xml';path.write_bytes(data)
         checked(['jing',str(ROOT/'registry/schema/lex-0-f6d51f29.rng'),str(path)])
-        checked(['xmllint','--noout','--schematron',str(ROOT/'registry/schema/language-registry.sch'),str(path)])
+        checked(['xmllint','--noout','--schematron',str(SCHEMA_ROOT/'language-registry.sch'),str(path)])
     return root
 
 
@@ -166,6 +169,9 @@ def manifest(data, root):
     if len(displays)!=1:
         raise ValueError('exactly one display classification is required')
     result = E.Element(M+'registryManifest',dict(formatVersion='2',compatibilityPolicy=POLICY,registryVersion=change.get('n'),builtAt=change.get('when'),contentSha256=digest(data),displayClassificationId=displays[0].get(X+'id')))
+    if root.find('.//'+T+'change[@type="geographyPolicy"][@n="reviewed-v1"]') is not None:
+        result.set('formatVersion','3')
+        result.set('geographyPolicy','reviewed-v1')
     lex = next(s for s in standards()['sources'] if s['id']=='lex-0')
     E.SubElement(result,M+'schema',dict(id='tei-lex-0',version=lex['version'],revision=lex['revision'],sha256=lex['files'][0]['sha256']))
     sources = E.SubElement(result,M+'sources')
@@ -196,7 +202,7 @@ def manifest(data, root):
     output=b'<?xml version="1.0" encoding="UTF-8"?>\n'+E.tostring(result,encoding='utf-8')+b'\n'
     with tempfile.TemporaryDirectory() as directory:
         path=Path(directory)/'manifest.xml';path.write_bytes(output)
-        checked(['jing',str(ROOT/'registry/schema/registry-manifest.rng'),str(path)])
+        checked(['jing',str(SCHEMA_ROOT/'registry-manifest.rng'),str(path)])
     return output
 
 

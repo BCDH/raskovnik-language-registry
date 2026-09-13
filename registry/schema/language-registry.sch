@@ -3,6 +3,19 @@
   <title>Raskovnik effective language-registry constraints</title>
   <ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>
 
+  <pattern id="reviewed-geography">
+    <rule context="tei:note">
+      <assert test="not(@type='geographyProfile') or (@subtype='individual' or @subtype='aggregate')">A geographic profile is individual or aggregate.</assert>
+      <assert test="not(@type='geographyProfile') or (count(../tei:note[@type='geographyProfile'])=1)">Only one geographic profile is allowed.</assert>
+      <assert test="not(@type='geographyProfile') or (ancestor::tei:TEI/tei:teiHeader/tei:revisionDesc/tei:change[@type='geographyPolicy'][@n='reviewed-v1'])">Reviewed geography requires its explicit resolver policy.</assert>
+      <assert test="not(@type='geographyProfile') or (@subtype!='aggregate' or not(../tei:settingDesc/tei:place/tei:location))">An aggregate cannot own coordinate locations.</assert>
+      <assert test="not(@type='geographyDecision') or (@subtype='pending' or @subtype='approved' or @subtype='blocked')">Invalid geography review status.</assert>
+      <assert test="not(@type='geographyDecision') or (@n='own' or @n='broader' or @n='proxy' or @n='member')">Invalid geographic relationship.</assert>
+      <assert test="not(@type='geographyDecision') or (normalize-space(tei:seg[@type='region'])!='' and normalize-space(tei:seg[@type='period'])!='' and normalize-space(tei:seg[@type='rationale'])!='' and normalize-space(tei:seg[@type='reviewedAt'])!='')">Geography decisions need their region, period, rationale, and review date.</assert>
+      <assert test="not(@type='geographyDecision') or (../tei:note[@type='geographyProfile'])">A decision requires a profile.</assert>
+    </rule>
+  </pattern>
+
   <pattern id="document-shape">
     <rule context="tei:TEI">
       <assert test="@type = 'lex-0'">The registry TEI must have type="lex-0".</assert>

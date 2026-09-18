@@ -18,4 +18,6 @@ jobs:
           java-version: '17'
           cache: maven
       - run: sudo apt-get update && sudo apt-get install -y jing libxml2-utils
+      - name: Provision Maven dependencies for offline package checks
+        run: mvn -B dependency:go-offline
       - run: make package MVN='mvn -B'

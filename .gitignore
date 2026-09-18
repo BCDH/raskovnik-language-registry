@@ -1,0 +1,5 @@
+/target/
+/dist/
+*.xar
+__pycache__/
+*.pyc

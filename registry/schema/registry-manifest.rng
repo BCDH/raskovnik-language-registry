@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="https://raskovnik.org/ns/language-registry/manifest">
+  <start>
+    <element name="registryManifest">
+      <choice>
+        <attribute name="formatVersion"><value>2</value></attribute>
+        <group>
+          <attribute name="formatVersion"><value>3</value></attribute>
+          <attribute name="geographyPolicy"><value>reviewed-v1</value></attribute>
+        </group>
+      </choice>
+      <attribute name="compatibilityPolicy"><value>language-tag-coverage-v1</value></attribute>
+      <attribute name="registryVersion"><data type="token"><param name="minLength">1</param></data></attribute>
+      <attribute name="builtAt"><data type="dateTime"/></attribute>
+      <attribute name="contentSha256"><ref name="sha256"/></attribute>
+      <attribute name="displayClassificationId"><data type="IDREF"/></attribute>
+      <element name="schema">
+        <attribute name="id"><value>tei-lex-0</value></attribute>
+        <attribute name="version"><value>0.9.6-dev</value></attribute>
+        <attribute name="revision"><value>f6d51f29d1d2227c012dafcef20bec0708938505</value></attribute>
+        <attribute name="sha256"><value>5ff670bcbc608f2c26af304860a241a56e9b15fdf9e3e37361e504d1edc519ed</value></attribute>
+      </element>
+      <element name="sources"><oneOrMore><ref name="source"/></oneOrMore></element>
+      <element name="classifications"><oneOrMore><ref name="classification"/></oneOrMore></element>
+      <element name="catalogs"><zeroOrMore><ref name="catalog"/></zeroOrMore></element>
+    </element>
+  </start>
+
+  <define name="source">
+    <element name="source">
+      <attribute name="xml:id"><data type="ID"/></attribute>
+      <attribute name="upstreamId"><data type="token"><param name="minLength">1</param></data></attribute>
+      <attribute name="title"><data type="token"><param name="minLength">1</param></data></attribute>
+      <attribute name="url"><data type="anyURI"><param name="minLength">1</param></data></attribute>
+      <optional><attribute name="version"><data type="token"><param name="minLength">1</param></data></attribute></optional>
+      <optional><attribute name="revision"><data type="token"><param name="minLength">1</param></data></attribute></optional>
+      <optional>
+        <element name="licence">
+          <attribute name="name"><data type="token"><param name="minLength">1</param></data></attribute>
+          <attribute name="url"><data type="anyURI"><param name="minLength">1</param></data></attribute>
+        </element>
+      </optional>
+      <element name="attribution"><data type="string"><param name="minLength">1</param></data></element>
+      <zeroOrMore>
+        <element name="file">
+          <attribute name="path"><data type="token"><param name="minLength">1</param></data></attribute>
+          <attribute name="bytes"><data type="nonNegativeInteger"/></attribute>
+          <attribute name="sha256"><ref name="sha256"/></attribute>
+        </element>
+      </zeroOrMore>
+    </element>
+  </define>
+
+  <define name="classification">
+    <element name="classification">
+      <attribute name="xml:id"><data type="ID"/></attribute>
+      <optional><attribute name="version"><data type="token"><param name="minLength">1</param></data></attribute></optional>
+      <ref name="label-sr"/>
+      <ref name="label-en"/>
+      <ref name="label-de"/>
+      <oneOrMore><element name="source"><attribute name="ref"><data type="string"><param name="pattern">#[A-Za-z_][A-Za-z0-9_.\-]*</param></data></attribute></element></oneOrMore>
+    </element>
+  </define>
+
+  <define name="catalog">
+    <element name="catalog">
+      <attribute name="xml:id"><data type="ID"/></attribute>
+      <attribute name="dictionaryId"><data type="token"><param name="minLength">1</param></data></attribute>
+      <element name="source"><attribute name="ref"><data type="string"><param name="pattern">#[A-Za-z_][A-Za-z0-9_.\-]*</param></data></attribute></element>
+    </element>
+  </define>
+
+  <define name="label-sr"><element name="label"><attribute name="xml:lang"><value>sr</value></attribute><text/></element></define>
+  <define name="label-en"><element name="label"><attribute name="xml:lang"><value>en</value></attribute><text/></element></define>
+  <define name="label-de"><element name="label"><attribute name="xml:lang"><value>de</value></attribute><text/></element></define>
+  <define name="sha256"><data type="string"><param name="pattern">[0-9a-f]{64}</param></data></define>
+</grammar>

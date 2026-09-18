@@ -1,0 +1,23 @@
+name: Registry validation and package
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+      - run: sudo apt-get update && sudo apt-get install -y jing libxml2-utils
+      - name: Provision Maven dependencies for offline package checks
+        run: mvn -B dependency:go-offline
+      - run: make package MVN='mvn -B'

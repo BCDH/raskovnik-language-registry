@@ -6833,7 +6833,8 @@
       </langUsage>
     </profileDesc>
     <revisionDesc status="published">
-      <change type="registryVersion" n="2026.9.8-1" when="2026-09-08T00:00:00Z">Reviewed broader linguistic placement replaces Bookkeeping for Old Indo-Aryan and Old Turkic.</change>
+      <change type="registryVersion" n="2026.9.18-1" when="2026-09-18T00:00:00Z">First published TEI registry package with validated language profiles and the editorial workflow.</change>
+      <change n="2026.9.8-1" when="2026-09-08T00:00:00Z">Reviewed broader linguistic placement replaces Bookkeeping for Old Indo-Aryan and Old Turkic.</change>
       <change type="editorialReview" when="2026-09-06" who="https://github.com/ttasovac">Approved the complete 20-ancestor Serbian/German label batch. Existing decisions and three English-only nonselectable fallbacks remain unchanged.</change>
       <change type="sourceMigration" when="2026-09-06" corresp="https://github.com/BCDH/raskovnik-language-registry/commit/2f63dc0">Promoted the validated complete compiler output to the editable TEI master: 380 nodes, 214 profiles, 311 count-free source records. Bootstrap sources, exact review payloads and reconciliation remain in this Git checkpoint.</change>
     </revisionDesc>

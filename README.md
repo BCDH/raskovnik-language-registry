@@ -15,7 +15,7 @@ Requirements: Python 3.10+, Jing, xmllint, Java, and Maven. Maven plugin depende
 
 Edit labels in place and preserve technical IDs, canonical tags, source-record links, and display nesting. Every selectable node requires Serbian, English, and German names; nonselectable ancestors require English and may omit the other two. Explicit private tags have registered bases. Exact identifiers must not absorb broader or narrower supporting evidence; `note[@type='excludedExactIdentifier']` preserves reviewed exclusions. Add ordinary TEI review notes and revision history when decisions change.
 
-The version and release timestamp come from the single `revisionDesc/change[@type='registryVersion']`; package version comes from `pom.xml`. Update these intentionally for a release. Packaging preserves the master bytes exactly and derives the complete manifest from TEI. The master is never rebuilt from upstream datasets.
+The version and release timestamp come from the single `revisionDesc/change[@type='registryVersion']`; package version comes from `pom.xml`. For a new release, run `make prepare-release` before committing the source: it advances both versions, retains the previous TEI revision in the history, then validates and packages. Rerunning it before committing does not bump again. The equivalent dotfiles shortcut is `infra ras-loc registry:prepare`. Ordinary `make check` and `make package` preserve the master bytes. The master is never rebuilt from upstream datasets.
 
 ## Standards and provenance
 
@@ -26,6 +26,8 @@ Glottolog, CLDR, Wikidata, conversion-catalogue, and review provenance remain in
 ## Release and installation
 
 The XAR contains `registry.xml`, manifest v2, the installation hook, and four generated EXPath/eXist descriptors. It depends on `raskovnik-data-core` and installs under `/db/apps/raskovnik-data/metadata/languages`.
+
+For a local installation, run `infra ras-loc registry:install`. It advances the local version when needed, packages the current source, checks it against installed dictionaries, installs only the registry, refreshes prepared language summaries, and verifies the local APIs. It does not publish a GitHub release or deploy staging. The backend command behind the shortcut is `./scripts/exist-local.sh --registry-xar <xar> --registry-manifest dist/release.json install-registry`; `registry-state` reports the installed version and content hash without changing it.
 
 Publish the XAR and `dist/release.json` together from this repository when a release is authorized. Backend release sets select the exact registry release with `prepare-release.sh --assemble-release-set --registry-release <tag>` and own installation, verification, rollback, and frontend cache clearing. There is no standalone deployment script here.
 

@@ -344,16 +344,6 @@
                     <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-extension-79aadc1f0e9544dc" source="#src-persj-catalog-a258c53" xml:id="src-extension-79aadc1f0e9544dc-label-en" xml:lang="en">Arabic</name>
                     <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-extension-79aadc1f0e9544dc" source="#src-persj-catalog-a258c53" xml:id="src-extension-79aadc1f0e9544dc-label-de" xml:lang="de">Arabisch</name>
                     <note type="sourceRecordNote" corresp="#src-extension-79aadc1f0e9544dc" source="#src-persj-catalog-a258c53" xml:lang="en">source abbreviation variant for Arabic</note>
-                    <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-ar #catalog-isj-persj" xml:id="src-full-name-88f07e80d1ed45fb" xml:lang="sr">арапско</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-88f07e80d1ed45fb" source="#src-persj-catalog-a258c53" xml:id="src-full-name-88f07e80d1ed45fb-label-sr" xml:lang="sr">арапски</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-88f07e80d1ed45fb" source="#src-persj-catalog-a258c53" xml:id="src-full-name-88f07e80d1ed45fb-label-en" xml:lang="en">Arabic</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-88f07e80d1ed45fb" source="#src-persj-catalog-a258c53" xml:id="src-full-name-88f07e80d1ed45fb-label-de" xml:lang="de">Arabisch</name>
-                    <note type="sourceRecordNote" corresp="#src-full-name-88f07e80d1ed45fb" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
-                    <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-ar #catalog-isj-persj" xml:id="src-full-name-a211ae03b235baa6" xml:lang="sr">арапског</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-a211ae03b235baa6" source="#src-persj-catalog-a258c53" xml:id="src-full-name-a211ae03b235baa6-label-sr" xml:lang="sr">арапски</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-a211ae03b235baa6" source="#src-persj-catalog-a258c53" xml:id="src-full-name-a211ae03b235baa6-label-en" xml:lang="en">Arabic</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-a211ae03b235baa6" source="#src-persj-catalog-a258c53" xml:id="src-full-name-a211ae03b235baa6-label-de" xml:lang="de">Arabisch</name>
-                    <note type="sourceRecordNote" corresp="#src-full-name-a211ae03b235baa6" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                     <note type="editorialReview" resp="https://github.com/raskovnik-design-2026-08-31" xml:lang="en">Reviewed 2026-08-31. The registered Arabic macrolanguage code is represented by the exact Glottolog Arabic family node, retaining direct ar evidence and allowing inclusive descendant resolution.</note>
                   </language>
                 </languageGrp>
@@ -428,11 +418,6 @@
                         <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-da431fbea3595e4c" source="#src-persj-catalog-a258c53" xml:id="src-base-da431fbea3595e4c-label-sr" xml:lang="sr">хебрејски</name>
                         <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-da431fbea3595e4c" source="#src-persj-catalog-a258c53" xml:id="src-base-da431fbea3595e4c-label-en" xml:lang="en">Modern Hebrew</name>
                         <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-da431fbea3595e4c" source="#src-persj-catalog-a258c53" xml:id="src-base-da431fbea3595e4c-label-de" xml:lang="de">Hebräisch</name>
-                        <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-he #catalog-isj-persj" xml:id="src-full-name-0edaf9afb1e1e99c" xml:lang="sr">хебрејском</name>
-                        <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-0edaf9afb1e1e99c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-0edaf9afb1e1e99c-label-sr" xml:lang="sr">хебрејски</name>
-                        <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-0edaf9afb1e1e99c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-0edaf9afb1e1e99c-label-en" xml:lang="en">Modern Hebrew</name>
-                        <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-0edaf9afb1e1e99c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-0edaf9afb1e1e99c-label-de" xml:lang="de">Hebräisch</name>
-                        <note type="sourceRecordNote" corresp="#src-full-name-0edaf9afb1e1e99c" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                         <settingDesc>
                           <place>
                             <location type="representative" source="#src-glottolog-5-3">
@@ -1029,11 +1014,6 @@
               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-9c98248f47817db5" source="#src-persj-catalog-a258c53" xml:id="src-base-9c98248f47817db5-label-sr" xml:lang="sr">германски</name>
               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-9c98248f47817db5" source="#src-persj-catalog-a258c53" xml:id="src-base-9c98248f47817db5-label-en" xml:lang="en">Germanic languages</name>
               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-9c98248f47817db5" source="#src-persj-catalog-a258c53" xml:id="src-base-9c98248f47817db5-label-de" xml:lang="de">Germanische Sprachen</name>
-              <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-gem #catalog-isj-persj" xml:id="src-full-name-ccb72131745e0e4f" xml:lang="sr">германског</name>
-              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-ccb72131745e0e4f" source="#src-persj-catalog-a258c53" xml:id="src-full-name-ccb72131745e0e4f-label-sr" xml:lang="sr">германски</name>
-              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-ccb72131745e0e4f" source="#src-persj-catalog-a258c53" xml:id="src-full-name-ccb72131745e0e4f-label-en" xml:lang="en">Germanic languages</name>
-              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-ccb72131745e0e4f" source="#src-persj-catalog-a258c53" xml:id="src-full-name-ccb72131745e0e4f-label-de" xml:lang="de">Germanische Sprachen</name>
-              <note type="sourceRecordNote" corresp="#src-full-name-ccb72131745e0e4f" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
               <note type="editorialReview" resp="https://github.com/raskovnik-design-2026-08-31" xml:lang="en">Reviewed 2026-08-31. The exact IANA collection and Glottolog family mapping and its direct English, Serbian, and German Wikipedia counterparts were approved; source records preserve the catalog label.</note>
               <language ident="gem-x-proto" type="reconstructed-language" role="objectLanguage">
                 <ident type="BCP47" xml:id="lang-gem-x-proto">gem-x-proto</ident>
@@ -1607,21 +1587,11 @@
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-f2252ec27f1a10ed" source="#src-persj-catalog-a258c53" xml:id="src-base-f2252ec27f1a10ed-label-sr" xml:lang="sr">немачки</name>
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-f2252ec27f1a10ed" source="#src-persj-catalog-a258c53" xml:id="src-base-f2252ec27f1a10ed-label-en" xml:lang="en">German</name>
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-f2252ec27f1a10ed" source="#src-persj-catalog-a258c53" xml:id="src-base-f2252ec27f1a10ed-label-de" xml:lang="de">Deutsch</name>
-                                <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-de #catalog-isj-persj" xml:id="src-full-name-066db5043a0fa1ff" xml:lang="sr">немачког</name>
-                                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-066db5043a0fa1ff" source="#src-persj-catalog-a258c53" xml:id="src-full-name-066db5043a0fa1ff-label-sr" xml:lang="sr">немачки</name>
-                                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-066db5043a0fa1ff" source="#src-persj-catalog-a258c53" xml:id="src-full-name-066db5043a0fa1ff-label-en" xml:lang="en">German</name>
-                                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-066db5043a0fa1ff" source="#src-persj-catalog-a258c53" xml:id="src-full-name-066db5043a0fa1ff-label-de" xml:lang="de">Deutsch</name>
-                                <note type="sourceRecordNote" corresp="#src-full-name-066db5043a0fa1ff" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                                 <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-de #catalog-isj-persj" xml:id="src-full-name-41c3c2e80a55334e" xml:lang="sr">немачки</name>
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-41c3c2e80a55334e" source="#src-persj-catalog-a258c53" xml:id="src-full-name-41c3c2e80a55334e-label-sr" xml:lang="sr">немачки</name>
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-41c3c2e80a55334e" source="#src-persj-catalog-a258c53" xml:id="src-full-name-41c3c2e80a55334e-label-en" xml:lang="en">German</name>
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-41c3c2e80a55334e" source="#src-persj-catalog-a258c53" xml:id="src-full-name-41c3c2e80a55334e-label-de" xml:lang="de">Deutsch</name>
                                 <note type="sourceRecordNote" corresp="#src-full-name-41c3c2e80a55334e" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
-                                <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-de #catalog-isj-persj" xml:id="src-full-name-ff52313d602b867c" xml:lang="sr">немачком</name>
-                                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-ff52313d602b867c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-ff52313d602b867c-label-sr" xml:lang="sr">немачки</name>
-                                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-ff52313d602b867c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-ff52313d602b867c-label-en" xml:lang="en">German</name>
-                                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-ff52313d602b867c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-ff52313d602b867c-label-de" xml:lang="de">Deutsch</name>
-                                <note type="sourceRecordNote" corresp="#src-full-name-ff52313d602b867c" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                                 <settingDesc>
                                   <place>
                                     <location type="representative" source="#src-glottolog-5-3">
@@ -1711,11 +1681,6 @@
                         <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-extension-eec4f7aa521479a0" source="#src-persj-catalog-a258c53" xml:id="src-extension-eec4f7aa521479a0-label-en" xml:lang="en">Middle Dutch</name>
                         <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-extension-eec4f7aa521479a0" source="#src-persj-catalog-a258c53" xml:id="src-extension-eec4f7aa521479a0-label-de" xml:lang="de">Mittelniederländisch</name>
                         <note type="sourceRecordNote" corresp="#src-extension-eec4f7aa521479a0" source="#src-persj-catalog-a258c53" xml:lang="en">Middle Dutch language label</note>
-                        <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-dum #catalog-isj-persj" xml:id="src-full-name-a586c2568c98ffdf" xml:lang="sr">средњохоландског</name>
-                        <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-a586c2568c98ffdf" source="#src-persj-catalog-a258c53" xml:id="src-full-name-a586c2568c98ffdf-label-sr" xml:lang="sr">средњохоландски</name>
-                        <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-a586c2568c98ffdf" source="#src-persj-catalog-a258c53" xml:id="src-full-name-a586c2568c98ffdf-label-en" xml:lang="en">Middle Dutch</name>
-                        <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-a586c2568c98ffdf" source="#src-persj-catalog-a258c53" xml:id="src-full-name-a586c2568c98ffdf-label-de" xml:lang="de">Mittelniederländisch</name>
-                        <note type="sourceRecordNote" corresp="#src-full-name-a586c2568c98ffdf" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                         <settingDesc>
                           <place>
                             <location type="representative" source="#src-glottolog-5-3">
@@ -1847,11 +1812,6 @@
                         <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-compound-0a812e40b4364bfe" source="#src-persj-catalog-a258c53" xml:id="src-compound-0a812e40b4364bfe-label-en" xml:lang="en">Old Saxon</name>
                         <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-compound-0a812e40b4364bfe" source="#src-persj-catalog-a258c53" xml:id="src-compound-0a812e40b4364bfe-label-de" xml:lang="de">Altsächsisch</name>
                         <note type="sourceRecordNote" corresp="#src-compound-0a812e40b4364bfe" source="#src-persj-catalog-a258c53" xml:lang="en">productive compound audited in the PERSJ conversion</note>
-                        <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-osx #catalog-isj-persj" xml:id="src-full-name-0b2900e823031010" xml:lang="sr">старосаским</name>
-                        <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-0b2900e823031010" source="#src-persj-catalog-a258c53" xml:id="src-full-name-0b2900e823031010-label-sr" xml:lang="sr">старосаксонски</name>
-                        <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-0b2900e823031010" source="#src-persj-catalog-a258c53" xml:id="src-full-name-0b2900e823031010-label-en" xml:lang="en">Old Saxon</name>
-                        <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-0b2900e823031010" source="#src-persj-catalog-a258c53" xml:id="src-full-name-0b2900e823031010-label-de" xml:lang="de">Altsächsisch</name>
-                        <note type="sourceRecordNote" corresp="#src-full-name-0b2900e823031010" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                         <note type="editorialReview" resp="#reviewer-codex" xml:lang="en">Reviewed 2026-09-06. IANA/ISO osx, Q35219, and pinned Glottolog olds1250 agree. PERSJ's стародоњонемачки is a documented synonym for Old Saxon/Old Low German, not a separate identity.</note>
                         <settingDesc>
                           <place>
@@ -2089,11 +2049,6 @@
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-extension-8576dad8fe976fc9" source="#src-persj-catalog-a258c53" xml:id="src-extension-8576dad8fe976fc9-label-en" xml:lang="en">English</name>
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-extension-8576dad8fe976fc9" source="#src-persj-catalog-a258c53" xml:id="src-extension-8576dad8fe976fc9-label-de" xml:lang="de">Englisch</name>
                                 <note type="sourceRecordNote" corresp="#src-extension-8576dad8fe976fc9" source="#src-persj-catalog-a258c53" xml:lang="en">source abbreviation variant for English</note>
-                                <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-en #catalog-isj-persj" xml:id="src-full-name-0425da8bf32cff7d" xml:lang="sr">енглеском</name>
-                                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-0425da8bf32cff7d" source="#src-persj-catalog-a258c53" xml:id="src-full-name-0425da8bf32cff7d-label-sr" xml:lang="sr">енглески</name>
-                                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-0425da8bf32cff7d" source="#src-persj-catalog-a258c53" xml:id="src-full-name-0425da8bf32cff7d-label-en" xml:lang="en">English</name>
-                                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-0425da8bf32cff7d" source="#src-persj-catalog-a258c53" xml:id="src-full-name-0425da8bf32cff7d-label-de" xml:lang="de">Englisch</name>
-                                <note type="sourceRecordNote" corresp="#src-full-name-0425da8bf32cff7d" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                                 <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-en #catalog-isj-persj" xml:id="src-full-name-a66af23bc2794c1c" xml:lang="sr">енглески</name>
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-a66af23bc2794c1c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-a66af23bc2794c1c-label-sr" xml:lang="sr">енглески</name>
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-a66af23bc2794c1c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-a66af23bc2794c1c-label-en" xml:lang="en">English</name>
@@ -2147,11 +2102,6 @@
               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-a48c6950728f7086" source="#src-persj-catalog-a258c53" xml:id="src-base-a48c6950728f7086-label-sr" xml:lang="sr">индоирански</name>
               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-a48c6950728f7086" source="#src-persj-catalog-a258c53" xml:id="src-base-a48c6950728f7086-label-en" xml:lang="en">Indo-Iranian languages</name>
               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-a48c6950728f7086" source="#src-persj-catalog-a258c53" xml:id="src-base-a48c6950728f7086-label-de" xml:lang="de">Indoiranische Sprachen</name>
-              <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-iir #catalog-isj-persj" xml:id="src-full-name-03ead9c8b6881f38" xml:lang="sr">индоиранско</name>
-              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-03ead9c8b6881f38" source="#src-persj-catalog-a258c53" xml:id="src-full-name-03ead9c8b6881f38-label-sr" xml:lang="sr">индоирански</name>
-              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-03ead9c8b6881f38" source="#src-persj-catalog-a258c53" xml:id="src-full-name-03ead9c8b6881f38-label-en" xml:lang="en">Indo-Iranian languages</name>
-              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-03ead9c8b6881f38" source="#src-persj-catalog-a258c53" xml:id="src-full-name-03ead9c8b6881f38-label-de" xml:lang="de">Indoiranische Sprachen</name>
-              <note type="sourceRecordNote" corresp="#src-full-name-03ead9c8b6881f38" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
               <note type="editorialReview" resp="https://github.com/raskovnik-design-2026-08-31" xml:lang="en">Reviewed 2026-08-31. The exact IANA collection and Glottolog family mapping and its direct English, Serbian, and German Wikipedia counterparts were approved; source records preserve the catalog label.</note>
               <languageGrp ident="inc" type="family">
                 <ident type="BCP47" xml:id="lang-inc">inc</ident>
@@ -2260,11 +2210,6 @@
                   <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-3716602367462c06" source="#src-persj-catalog-a258c53" xml:id="src-base-3716602367462c06-label-sr" xml:lang="sr">ирански</name>
                   <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-3716602367462c06" source="#src-persj-catalog-a258c53" xml:id="src-base-3716602367462c06-label-en" xml:lang="en">Iranian languages</name>
                   <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-3716602367462c06" source="#src-persj-catalog-a258c53" xml:id="src-base-3716602367462c06-label-de" xml:lang="de">Iranische Sprachen</name>
-                  <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-ira #catalog-isj-persj" xml:id="src-full-name-2f2319af19fd5e6f" xml:lang="sr">иранског</name>
-                  <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-2f2319af19fd5e6f" source="#src-persj-catalog-a258c53" xml:id="src-full-name-2f2319af19fd5e6f-label-sr" xml:lang="sr">ирански</name>
-                  <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-2f2319af19fd5e6f" source="#src-persj-catalog-a258c53" xml:id="src-full-name-2f2319af19fd5e6f-label-en" xml:lang="en">Iranian languages</name>
-                  <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-2f2319af19fd5e6f" source="#src-persj-catalog-a258c53" xml:id="src-full-name-2f2319af19fd5e6f-label-de" xml:lang="de">Iranische Sprachen</name>
-                  <note type="sourceRecordNote" corresp="#src-full-name-2f2319af19fd5e6f" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                   <note type="editorialReview" resp="https://github.com/raskovnik-design-2026-08-31" xml:lang="en">Reviewed 2026-08-31. The exact IANA collection and Glottolog family mapping and its direct English, Serbian, and German Wikipedia counterparts were approved; source records preserve the catalog label.</note>
                   <languageGrp ident="ae" type="language">
                     <ident type="BCP47" xml:id="lang-ae">ae</ident>
@@ -2381,11 +2326,6 @@
                     <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-extension-9783d01579509e50" source="#src-persj-catalog-a258c53" xml:id="src-extension-9783d01579509e50-label-en" xml:lang="en">Sarmatian</name>
                     <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-extension-9783d01579509e50" source="#src-persj-catalog-a258c53" xml:id="src-extension-9783d01579509e50-label-de" xml:lang="de">Sarmatisch</name>
                     <note type="sourceRecordNote" corresp="#src-extension-9783d01579509e50" source="#src-persj-catalog-a258c53" xml:lang="en">Sarmatian language label</note>
-                    <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-ira-x-sarmat #catalog-isj-persj" xml:id="src-full-name-6752e59bddfec429" xml:lang="sr">сарматског</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-6752e59bddfec429" source="#src-persj-catalog-a258c53" xml:id="src-full-name-6752e59bddfec429-label-sr" xml:lang="sr">сарматски</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-6752e59bddfec429" source="#src-persj-catalog-a258c53" xml:id="src-full-name-6752e59bddfec429-label-en" xml:lang="en">Sarmatian</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-6752e59bddfec429" source="#src-persj-catalog-a258c53" xml:id="src-full-name-6752e59bddfec429-label-de" xml:lang="de">Sarmatisch</name>
-                    <note type="sourceRecordNote" corresp="#src-full-name-6752e59bddfec429" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                     <note type="editorialReview" resp="https://github.com/ttasovac" xml:lang="en">Reviewed 2026-09-06. PERSJ explicitly labels Sarmatian, but the apparent Q12150674 is a geological-age item and Q749834 is the broader Scythian group. Neither is assigned as the exact language entity.</note>
                   </language>
                   <languageGrp ident="und-x-glot-cent2317" type="family">
@@ -2503,11 +2443,6 @@
                           <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-8cf882b8a7dd57fd" source="#src-persj-catalog-a258c53" xml:id="src-base-8cf882b8a7dd57fd-label-en" xml:lang="en">Ossetian</name>
                           <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-8cf882b8a7dd57fd" source="#src-persj-catalog-a258c53" xml:id="src-base-8cf882b8a7dd57fd-label-de" xml:lang="de">Ossetisch</name>
                           <note type="sourceRecordNote" corresp="#src-base-8cf882b8a7dd57fd" source="#src-persj-catalog-a258c53" xml:lang="en">generic Ossetian evidence; explicit Iron retains os</note>
-                          <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-ira-x-ossetic #catalog-isj-persj" xml:id="src-full-name-5a8ef0127953702b" xml:lang="sr">осетском</name>
-                          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-5a8ef0127953702b" source="#src-persj-catalog-a258c53" xml:id="src-full-name-5a8ef0127953702b-label-sr" xml:lang="sr">осетски</name>
-                          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-5a8ef0127953702b" source="#src-persj-catalog-a258c53" xml:id="src-full-name-5a8ef0127953702b-label-en" xml:lang="en">Ossetian</name>
-                          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-5a8ef0127953702b" source="#src-persj-catalog-a258c53" xml:id="src-full-name-5a8ef0127953702b-label-de" xml:lang="de">Ossetisch</name>
-                          <note type="sourceRecordNote" corresp="#src-full-name-5a8ef0127953702b" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                           <note type="editorialReview" resp="https://github.com/ttasovac" xml:lang="en">Reviewed 2026-09-06. Generated from the pinned registry candidates. Missing labels remain empty; alignments and labels remain proposals unless approved in the durable ledger.</note>
                         </language>
                         <languageGrp ident="und-x-glot-osse1243" type="family">
@@ -2725,11 +2660,6 @@
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-9acf5833a2ee0963" source="#src-persj-catalog-a258c53" xml:id="src-base-9acf5833a2ee0963-label-sr" xml:lang="sr">паштунски</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-9acf5833a2ee0963" source="#src-persj-catalog-a258c53" xml:id="src-base-9acf5833a2ee0963-label-en" xml:lang="en">Nuclear Pashto</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-9acf5833a2ee0963" source="#src-persj-catalog-a258c53" xml:id="src-base-9acf5833a2ee0963-label-de" xml:lang="de">Paschtu</name>
-                      <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-ps #catalog-isj-persj" xml:id="src-full-name-cba6a51814064f29" xml:lang="sr">паштунско</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-cba6a51814064f29" source="#src-persj-catalog-a258c53" xml:id="src-full-name-cba6a51814064f29-label-sr" xml:lang="sr">паштунски</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-cba6a51814064f29" source="#src-persj-catalog-a258c53" xml:id="src-full-name-cba6a51814064f29-label-en" xml:lang="en">Nuclear Pashto</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-cba6a51814064f29" source="#src-persj-catalog-a258c53" xml:id="src-full-name-cba6a51814064f29-label-de" xml:lang="de">Paschtu</name>
-                      <note type="sourceRecordNote" corresp="#src-full-name-cba6a51814064f29" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                     </language>
                   </languageGrp>
                   <languageGrp ident="und-x-glot-saka1303" type="family">
@@ -2916,11 +2846,6 @@
                             <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-40ec64f53254557e" source="#src-persj-catalog-a258c53" xml:id="src-base-40ec64f53254557e-label-sr" xml:lang="sr">новоперсијски</name>
                             <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-40ec64f53254557e" source="#src-persj-catalog-a258c53" xml:id="src-base-40ec64f53254557e-label-en" xml:lang="en">Persian</name>
                             <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-40ec64f53254557e" source="#src-persj-catalog-a258c53" xml:id="src-base-40ec64f53254557e-label-de" xml:lang="de">Persisch</name>
-                            <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-fa #catalog-isj-persj" xml:id="src-full-name-6c5c804bfb101a85" xml:lang="sr">персијског</name>
-                            <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-6c5c804bfb101a85" source="#src-persj-catalog-a258c53" xml:id="src-full-name-6c5c804bfb101a85-label-sr" xml:lang="sr">персијски</name>
-                            <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-6c5c804bfb101a85" source="#src-persj-catalog-a258c53" xml:id="src-full-name-6c5c804bfb101a85-label-en" xml:lang="en">Persian</name>
-                            <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-6c5c804bfb101a85" source="#src-persj-catalog-a258c53" xml:id="src-full-name-6c5c804bfb101a85-label-de" xml:lang="de">Persisch</name>
-                            <note type="sourceRecordNote" corresp="#src-full-name-6c5c804bfb101a85" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                             <note type="editorialReview" resp="#reviewer-codex" xml:lang="en">Reviewed 2026-09-06. Wikidata Q9168 directly carries IETF fa, ISO macrolanguage fas, and P1394 fars1254. In pinned Glottolog fars1254 is the broader Farsic-Caucasian Tat family, not an exact Persian node; Western Farsi pes and Dari prs are narrower related nodes. All are displayed explicitly rather than suppressing Glottolog evidence. Supporting identifiers only; no exact equivalence inferred: glottolog:west2369|iso639-3:pes|label:Western Farsi;glottolog:dari1249|iso639-3:prs|label:Dari</note>
                           </language>
                         </languageGrp>
@@ -2959,21 +2884,6 @@
                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-bf9aae023e226536" source="#src-persj-catalog-a258c53" xml:id="src-base-bf9aae023e226536-label-sr" xml:lang="sr">балтски</name>
                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-bf9aae023e226536" source="#src-persj-catalog-a258c53" xml:id="src-base-bf9aae023e226536-label-en" xml:lang="en">Baltic languages</name>
                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-bf9aae023e226536" source="#src-persj-catalog-a258c53" xml:id="src-base-bf9aae023e226536-label-de" xml:lang="de">baltische Sprachen</name>
-                <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-bat #catalog-isj-persj" xml:id="src-full-name-08df638220acc345" xml:lang="sr">балтском</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-08df638220acc345" source="#src-persj-catalog-a258c53" xml:id="src-full-name-08df638220acc345-label-sr" xml:lang="sr">балтски</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-08df638220acc345" source="#src-persj-catalog-a258c53" xml:id="src-full-name-08df638220acc345-label-en" xml:lang="en">Baltic languages</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-08df638220acc345" source="#src-persj-catalog-a258c53" xml:id="src-full-name-08df638220acc345-label-de" xml:lang="de">baltische Sprachen</name>
-                <note type="sourceRecordNote" corresp="#src-full-name-08df638220acc345" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
-                <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-bat #catalog-isj-persj" xml:id="src-full-name-1ffe5b6bda21065f" xml:lang="sr">балтско</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-1ffe5b6bda21065f" source="#src-persj-catalog-a258c53" xml:id="src-full-name-1ffe5b6bda21065f-label-sr" xml:lang="sr">балтски</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-1ffe5b6bda21065f" source="#src-persj-catalog-a258c53" xml:id="src-full-name-1ffe5b6bda21065f-label-en" xml:lang="en">Baltic languages</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-1ffe5b6bda21065f" source="#src-persj-catalog-a258c53" xml:id="src-full-name-1ffe5b6bda21065f-label-de" xml:lang="de">baltische Sprachen</name>
-                <note type="sourceRecordNote" corresp="#src-full-name-1ffe5b6bda21065f" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
-                <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-bat #catalog-isj-persj" xml:id="src-full-name-7ea790d3b44b7a8d" xml:lang="sr">балтским</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-7ea790d3b44b7a8d" source="#src-persj-catalog-a258c53" xml:id="src-full-name-7ea790d3b44b7a8d-label-sr" xml:lang="sr">балтски</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-7ea790d3b44b7a8d" source="#src-persj-catalog-a258c53" xml:id="src-full-name-7ea790d3b44b7a8d-label-en" xml:lang="en">Baltic languages</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-7ea790d3b44b7a8d" source="#src-persj-catalog-a258c53" xml:id="src-full-name-7ea790d3b44b7a8d-label-de" xml:lang="de">baltische Sprachen</name>
-                <note type="sourceRecordNote" corresp="#src-full-name-7ea790d3b44b7a8d" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                 <note type="editorialReview" resp="https://github.com/raskovnik-design-2026-08-31" xml:lang="en">Reviewed 2026-08-31. The project Baltic family covers Eastern Baltic and Old Prussian and is therefore broader-aligned to, but not equated with, Glottolog's Balto-Slavic node; source records preserve балтски for search.</note>
               </language>
               <language ident="prg" type="language" role="objectLanguage">
@@ -2990,11 +2900,6 @@
                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-be9b95de84391adc" source="#src-persj-catalog-a258c53" xml:id="src-base-be9b95de84391adc-label-sr" xml:lang="sr">старопруски</name>
                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-be9b95de84391adc" source="#src-persj-catalog-a258c53" xml:id="src-base-be9b95de84391adc-label-en" xml:lang="en">Old Prussian</name>
                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-be9b95de84391adc" source="#src-persj-catalog-a258c53" xml:id="src-base-be9b95de84391adc-label-de" xml:lang="de">Altpreußisch</name>
-                <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-prg #catalog-isj-persj" xml:id="src-full-name-5e7075a27aff6e6c" xml:lang="sr">старопруском</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-5e7075a27aff6e6c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-5e7075a27aff6e6c-label-sr" xml:lang="sr">старопруски</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-5e7075a27aff6e6c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-5e7075a27aff6e6c-label-en" xml:lang="en">Old Prussian</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-5e7075a27aff6e6c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-5e7075a27aff6e6c-label-de" xml:lang="de">Altpreußisch</name>
-                <note type="sourceRecordNote" corresp="#src-full-name-5e7075a27aff6e6c" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                 <settingDesc>
                   <place>
                     <location type="representative" source="#src-glottolog-5-3">
@@ -3018,26 +2923,6 @@
                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-bd0c0496005261c3" source="#src-persj-catalog-a258c53" xml:id="src-base-bd0c0496005261c3-label-sr" xml:lang="sr">словенски</name>
                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-bd0c0496005261c3" source="#src-persj-catalog-a258c53" xml:id="src-base-bd0c0496005261c3-label-en" xml:lang="en">Slavic</name>
                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-bd0c0496005261c3" source="#src-persj-catalog-a258c53" xml:id="src-base-bd0c0496005261c3-label-de" xml:lang="de">slawische Sprachen</name>
-                <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-sla #catalog-isj-persj" xml:id="src-full-name-25ce117133f9c0cd" xml:lang="sr">словенској</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-25ce117133f9c0cd" source="#src-persj-catalog-a258c53" xml:id="src-full-name-25ce117133f9c0cd-label-sr" xml:lang="sr">словенски</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-25ce117133f9c0cd" source="#src-persj-catalog-a258c53" xml:id="src-full-name-25ce117133f9c0cd-label-en" xml:lang="en">Slavic</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-25ce117133f9c0cd" source="#src-persj-catalog-a258c53" xml:id="src-full-name-25ce117133f9c0cd-label-de" xml:lang="de">slawische Sprachen</name>
-                <note type="sourceRecordNote" corresp="#src-full-name-25ce117133f9c0cd" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
-                <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-sla #catalog-isj-persj" xml:id="src-full-name-2929c946ce1f70d9" xml:lang="sr">словенско</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-2929c946ce1f70d9" source="#src-persj-catalog-a258c53" xml:id="src-full-name-2929c946ce1f70d9-label-sr" xml:lang="sr">словенски</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-2929c946ce1f70d9" source="#src-persj-catalog-a258c53" xml:id="src-full-name-2929c946ce1f70d9-label-en" xml:lang="en">Slavic</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-2929c946ce1f70d9" source="#src-persj-catalog-a258c53" xml:id="src-full-name-2929c946ce1f70d9-label-de" xml:lang="de">slawische Sprachen</name>
-                <note type="sourceRecordNote" corresp="#src-full-name-2929c946ce1f70d9" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
-                <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-sla #catalog-isj-persj" xml:id="src-full-name-6a3589e25bbffa1f" xml:lang="sr">словенском</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-6a3589e25bbffa1f" source="#src-persj-catalog-a258c53" xml:id="src-full-name-6a3589e25bbffa1f-label-sr" xml:lang="sr">словенски</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-6a3589e25bbffa1f" source="#src-persj-catalog-a258c53" xml:id="src-full-name-6a3589e25bbffa1f-label-en" xml:lang="en">Slavic</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-6a3589e25bbffa1f" source="#src-persj-catalog-a258c53" xml:id="src-full-name-6a3589e25bbffa1f-label-de" xml:lang="de">slawische Sprachen</name>
-                <note type="sourceRecordNote" corresp="#src-full-name-6a3589e25bbffa1f" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
-                <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-sla #catalog-isj-persj" xml:id="src-full-name-8f513752e6b894e5" xml:lang="sr">словенским</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-8f513752e6b894e5" source="#src-persj-catalog-a258c53" xml:id="src-full-name-8f513752e6b894e5-label-sr" xml:lang="sr">словенски</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-8f513752e6b894e5" source="#src-persj-catalog-a258c53" xml:id="src-full-name-8f513752e6b894e5-label-en" xml:lang="en">Slavic</name>
-                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-8f513752e6b894e5" source="#src-persj-catalog-a258c53" xml:id="src-full-name-8f513752e6b894e5-label-de" xml:lang="de">slawische Sprachen</name>
-                <note type="sourceRecordNote" corresp="#src-full-name-8f513752e6b894e5" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                 <note type="editorialReview" resp="https://github.com/raskovnik-design-2026-08-31" xml:lang="en">Reviewed 2026-08-31. One display family carries direct corpus evidence tagged sla and inclusive evidence from its descendants.</note>
                 <language ident="sla-x-proto" type="reconstructed-language" role="objectLanguage">
                   <ident type="BCP47" xml:id="lang-sla-x-proto">sla-x-proto</ident>
@@ -3052,16 +2937,6 @@
                   <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-b2dec15255750cf3" source="#src-persj-catalog-a258c53" xml:id="src-base-b2dec15255750cf3-label-sr" xml:lang="sr">прасловенски</name>
                   <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-b2dec15255750cf3" source="#src-persj-catalog-a258c53" xml:id="src-base-b2dec15255750cf3-label-en" xml:lang="en">Proto-Slavic</name>
                   <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-b2dec15255750cf3" source="#src-persj-catalog-a258c53" xml:id="src-base-b2dec15255750cf3-label-de" xml:lang="de">Urslawisch</name>
-                  <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-sla-x-proto #catalog-isj-persj" xml:id="src-full-name-6ff06b6ec77b11ae" xml:lang="sr">прасловенског</name>
-                  <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-6ff06b6ec77b11ae" source="#src-persj-catalog-a258c53" xml:id="src-full-name-6ff06b6ec77b11ae-label-sr" xml:lang="sr">прасловенски</name>
-                  <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-6ff06b6ec77b11ae" source="#src-persj-catalog-a258c53" xml:id="src-full-name-6ff06b6ec77b11ae-label-en" xml:lang="en">Proto-Slavic</name>
-                  <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-6ff06b6ec77b11ae" source="#src-persj-catalog-a258c53" xml:id="src-full-name-6ff06b6ec77b11ae-label-de" xml:lang="de">Urslawisch</name>
-                  <note type="sourceRecordNote" corresp="#src-full-name-6ff06b6ec77b11ae" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
-                  <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-sla-x-proto #catalog-isj-persj" xml:id="src-full-name-fa35ba851ddc71cc" xml:lang="sr">прасловенском</name>
-                  <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-fa35ba851ddc71cc" source="#src-persj-catalog-a258c53" xml:id="src-full-name-fa35ba851ddc71cc-label-sr" xml:lang="sr">прасловенски</name>
-                  <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-fa35ba851ddc71cc" source="#src-persj-catalog-a258c53" xml:id="src-full-name-fa35ba851ddc71cc-label-en" xml:lang="en">Proto-Slavic</name>
-                  <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-fa35ba851ddc71cc" source="#src-persj-catalog-a258c53" xml:id="src-full-name-fa35ba851ddc71cc-label-de" xml:lang="de">Urslawisch</name>
-                  <note type="sourceRecordNote" corresp="#src-full-name-fa35ba851ddc71cc" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                   <note type="editorialReview" resp="#reviewer-codex" xml:lang="en">Reviewed 2026-09-06. Q747537 directly identifies the Proto-Slavic reconstructed language; pinned Glottolog contains the Slavic family but no coextensive reconstruction node.</note>
                 </language>
                 <languageGrp ident="zle" type="family">
@@ -3097,11 +2972,6 @@
                     <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-a77328e505889ec9" source="#src-persj-catalog-a258c53" xml:id="src-base-a77328e505889ec9-label-sr" xml:lang="sr">белоруски</name>
                     <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-a77328e505889ec9" source="#src-persj-catalog-a258c53" xml:id="src-base-a77328e505889ec9-label-en" xml:lang="en">Belarusian</name>
                     <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-a77328e505889ec9" source="#src-persj-catalog-a258c53" xml:id="src-base-a77328e505889ec9-label-de" xml:lang="de">Belarussisch</name>
-                    <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-be #catalog-isj-persj" xml:id="src-full-name-77ce8963fc706c46" xml:lang="sr">белоруском</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-77ce8963fc706c46" source="#src-persj-catalog-a258c53" xml:id="src-full-name-77ce8963fc706c46-label-sr" xml:lang="sr">белоруски</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-77ce8963fc706c46" source="#src-persj-catalog-a258c53" xml:id="src-full-name-77ce8963fc706c46-label-en" xml:lang="en">Belarusian</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-77ce8963fc706c46" source="#src-persj-catalog-a258c53" xml:id="src-full-name-77ce8963fc706c46-label-de" xml:lang="de">Belarussisch</name>
-                    <note type="sourceRecordNote" corresp="#src-full-name-77ce8963fc706c46" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                     <settingDesc>
                       <place>
                         <location type="representative" source="#src-glottolog-5-3">
@@ -3168,16 +3038,6 @@
                     <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-d6847991b01b2f41" source="#src-persj-catalog-a258c53" xml:id="src-base-d6847991b01b2f41-label-sr" xml:lang="sr">руски</name>
                     <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-d6847991b01b2f41" source="#src-persj-catalog-a258c53" xml:id="src-base-d6847991b01b2f41-label-en" xml:lang="en">Russian</name>
                     <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-d6847991b01b2f41" source="#src-persj-catalog-a258c53" xml:id="src-base-d6847991b01b2f41-label-de" xml:lang="de">Russisch</name>
-                    <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-ru #catalog-isj-persj" xml:id="src-full-name-a768095dffed77b1" xml:lang="sr">руском</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-a768095dffed77b1" source="#src-persj-catalog-a258c53" xml:id="src-full-name-a768095dffed77b1-label-sr" xml:lang="sr">руски</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-a768095dffed77b1" source="#src-persj-catalog-a258c53" xml:id="src-full-name-a768095dffed77b1-label-en" xml:lang="en">Russian</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-a768095dffed77b1" source="#src-persj-catalog-a258c53" xml:id="src-full-name-a768095dffed77b1-label-de" xml:lang="de">Russisch</name>
-                    <note type="sourceRecordNote" corresp="#src-full-name-a768095dffed77b1" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
-                    <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-ru #catalog-isj-persj" xml:id="src-full-name-b8997378cb623620" xml:lang="sr">руског</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-b8997378cb623620" source="#src-persj-catalog-a258c53" xml:id="src-full-name-b8997378cb623620-label-sr" xml:lang="sr">руски</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-b8997378cb623620" source="#src-persj-catalog-a258c53" xml:id="src-full-name-b8997378cb623620-label-en" xml:lang="en">Russian</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-b8997378cb623620" source="#src-persj-catalog-a258c53" xml:id="src-full-name-b8997378cb623620-label-de" xml:lang="de">Russisch</name>
-                    <note type="sourceRecordNote" corresp="#src-full-name-b8997378cb623620" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                     <settingDesc>
                       <place>
                         <location type="representative" source="#src-glottolog-5-3">
@@ -3237,11 +3097,6 @@
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-8142165ccbfce5c1" source="#src-persj-catalog-a258c53" xml:id="src-base-8142165ccbfce5c1-label-sr" xml:lang="sr">украјински</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-8142165ccbfce5c1" source="#src-persj-catalog-a258c53" xml:id="src-base-8142165ccbfce5c1-label-en" xml:lang="en">Ukrainian</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-8142165ccbfce5c1" source="#src-persj-catalog-a258c53" xml:id="src-base-8142165ccbfce5c1-label-de" xml:lang="de">Ukrainisch</name>
-                      <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-uk #catalog-isj-persj" xml:id="src-full-name-c66fea7fae0addaf" xml:lang="sr">украјинском</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-c66fea7fae0addaf" source="#src-persj-catalog-a258c53" xml:id="src-full-name-c66fea7fae0addaf-label-sr" xml:lang="sr">украјински</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-c66fea7fae0addaf" source="#src-persj-catalog-a258c53" xml:id="src-full-name-c66fea7fae0addaf-label-en" xml:lang="en">Ukrainian</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-c66fea7fae0addaf" source="#src-persj-catalog-a258c53" xml:id="src-full-name-c66fea7fae0addaf-label-de" xml:lang="de">Ukrainisch</name>
-                      <note type="sourceRecordNote" corresp="#src-full-name-c66fea7fae0addaf" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                       <settingDesc>
                         <place>
                           <location type="representative" source="#src-glottolog-5-3">
@@ -3326,11 +3181,6 @@
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-d894986130e5b032" source="#src-persj-catalog-a258c53" xml:id="src-base-d894986130e5b032-label-sr" xml:lang="sr">кајкавски</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-d894986130e5b032" source="#src-persj-catalog-a258c53" xml:id="src-base-d894986130e5b032-label-en" xml:lang="en">Kajkavian</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-d894986130e5b032" source="#src-persj-catalog-a258c53" xml:id="src-base-d894986130e5b032-label-de" xml:lang="de">Kajkavisch</name>
-                      <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-hr-x-kajkav #catalog-isj-persj" xml:id="src-full-name-402e658e64ce1008" xml:lang="sr">кајкавском</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-402e658e64ce1008" source="#src-persj-catalog-a258c53" xml:id="src-full-name-402e658e64ce1008-label-sr" xml:lang="sr">кајкавски</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-402e658e64ce1008" source="#src-persj-catalog-a258c53" xml:id="src-full-name-402e658e64ce1008-label-en" xml:lang="en">Kajkavian</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-402e658e64ce1008" source="#src-persj-catalog-a258c53" xml:id="src-full-name-402e658e64ce1008-label-de" xml:lang="de">Kajkavisch</name>
-                      <note type="sourceRecordNote" corresp="#src-full-name-402e658e64ce1008" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                       <note type="editorialReview" resp="https://github.com/ttasovac" xml:lang="en">Reviewed 2026-09-06. The user explicitly chose to retain generic Kajkavian on 2026-09-06. Glottolog kajk1237 describes the spoken language, while the pinned ISO table names kjv Kaikavian Literary Language (historical). The registration authors distinguish the literary norm from the generic dialect group: https://kajkavski-jezik.eu/en/kajkavian-iso-639-3-language-code/ . The Glottolog cross-reference to kjv is narrower supporting evidence, never an exact ISO identity; all generic source forms remain hr-x-kajkav. Supporting identifiers only; no exact equivalence inferred: iso639-3:kjv|relationship:narrower|label:Kaikavian Literary Language;wikidata:Q838165|status:unpinned supporting proposal</note>
                       <settingDesc>
                         <place>
@@ -3380,11 +3230,6 @@
                         <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-81a2066d28104a05" source="#src-persj-catalog-a258c53" xml:id="src-base-81a2066d28104a05-label-sr" xml:lang="sr">чакавски</name>
                         <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-81a2066d28104a05" source="#src-persj-catalog-a258c53" xml:id="src-base-81a2066d28104a05-label-en" xml:lang="en">Chakavski</name>
                         <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-81a2066d28104a05" source="#src-persj-catalog-a258c53" xml:id="src-base-81a2066d28104a05-label-de" xml:lang="de">Čakavisch</name>
-                        <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-ckm #catalog-isj-persj" xml:id="src-full-name-05247975d963ef1d" xml:lang="sr">чакавском</name>
-                        <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-05247975d963ef1d" source="#src-persj-catalog-a258c53" xml:id="src-full-name-05247975d963ef1d-label-sr" xml:lang="sr">чакавски</name>
-                        <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-05247975d963ef1d" source="#src-persj-catalog-a258c53" xml:id="src-full-name-05247975d963ef1d-label-en" xml:lang="en">Chakavski</name>
-                        <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-05247975d963ef1d" source="#src-persj-catalog-a258c53" xml:id="src-full-name-05247975d963ef1d-label-de" xml:lang="de">Čakavisch</name>
-                        <note type="sourceRecordNote" corresp="#src-full-name-05247975d963ef1d" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                         <note type="editorialReview" resp="https://github.com/raskovnik-design-2026-08-31" xml:lang="en">Reviewed 2026-08-31. The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
                       </language>
                       <languageGrp ident="sh-x-shtokav" type="variety">
@@ -3546,11 +3391,6 @@
                               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-ec6794d1ef75eba7" source="#src-persj-catalog-a258c53" xml:id="src-base-ec6794d1ef75eba7-label-sr" xml:lang="sr">хрватски</name>
                               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-ec6794d1ef75eba7" source="#src-persj-catalog-a258c53" xml:id="src-base-ec6794d1ef75eba7-label-en" xml:lang="en">Croatian Standard</name>
                               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-ec6794d1ef75eba7" source="#src-persj-catalog-a258c53" xml:id="src-base-ec6794d1ef75eba7-label-de" xml:lang="de">Kroatisch</name>
-                              <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-hr #catalog-isj-persj" xml:id="src-full-name-9bc2e18cc66b9771" xml:lang="sr">хрватско</name>
-                              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-9bc2e18cc66b9771" source="#src-persj-catalog-a258c53" xml:id="src-full-name-9bc2e18cc66b9771-label-sr" xml:lang="sr">хрватски</name>
-                              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-9bc2e18cc66b9771" source="#src-persj-catalog-a258c53" xml:id="src-full-name-9bc2e18cc66b9771-label-en" xml:lang="en">Croatian Standard</name>
-                              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-9bc2e18cc66b9771" source="#src-persj-catalog-a258c53" xml:id="src-full-name-9bc2e18cc66b9771-label-de" xml:lang="de">Kroatisch</name>
-                              <note type="sourceRecordNote" corresp="#src-full-name-9bc2e18cc66b9771" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                               <settingDesc>
                                 <place>
                                   <location type="representative" source="#src-glottolog-5-3">
@@ -3593,16 +3433,6 @@
                               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-b76b5e647ed2731d" source="#src-persj-catalog-a258c53" xml:id="src-base-b76b5e647ed2731d-label-sr" xml:lang="sr">српски</name>
                               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-b76b5e647ed2731d" source="#src-persj-catalog-a258c53" xml:id="src-base-b76b5e647ed2731d-label-en" xml:lang="en">Serbian</name>
                               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-b76b5e647ed2731d" source="#src-persj-catalog-a258c53" xml:id="src-base-b76b5e647ed2731d-label-de" xml:lang="de">Serbisch</name>
-                              <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-sr #catalog-isj-persj" xml:id="src-full-name-7ee60b399fa59227" xml:lang="sr">српском</name>
-                              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-7ee60b399fa59227" source="#src-persj-catalog-a258c53" xml:id="src-full-name-7ee60b399fa59227-label-sr" xml:lang="sr">српски</name>
-                              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-7ee60b399fa59227" source="#src-persj-catalog-a258c53" xml:id="src-full-name-7ee60b399fa59227-label-en" xml:lang="en">Serbian</name>
-                              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-7ee60b399fa59227" source="#src-persj-catalog-a258c53" xml:id="src-full-name-7ee60b399fa59227-label-de" xml:lang="de">Serbisch</name>
-                              <note type="sourceRecordNote" corresp="#src-full-name-7ee60b399fa59227" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
-                              <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-sr #catalog-isj-persj" xml:id="src-full-name-f5e1027694c4fbde" xml:lang="sr">српско</name>
-                              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-f5e1027694c4fbde" source="#src-persj-catalog-a258c53" xml:id="src-full-name-f5e1027694c4fbde-label-sr" xml:lang="sr">српски</name>
-                              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-f5e1027694c4fbde" source="#src-persj-catalog-a258c53" xml:id="src-full-name-f5e1027694c4fbde-label-en" xml:lang="en">Serbian</name>
-                              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-f5e1027694c4fbde" source="#src-persj-catalog-a258c53" xml:id="src-full-name-f5e1027694c4fbde-label-de" xml:lang="de">Serbisch</name>
-                              <note type="sourceRecordNote" corresp="#src-full-name-f5e1027694c4fbde" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                               <note type="editorialReview" resp="https://github.com/ttasovac" xml:lang="en">Reviewed 2026-09-05. The source mapping split is implemented: sr retains Serbian and sh represents Serbo-Croatian. The existing Serbian review proposal and saved decision are retained. Supporting identifiers only; no exact equivalence inferred: glottolog:sout1528|iso639-3:hbs|label:Serbian-Croatian-Bosnian</note>
                               <settingDesc>
                                 <place>
@@ -3644,11 +3474,6 @@
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-759776ff0120c1c4" source="#src-persj-catalog-a258c53" xml:id="src-base-759776ff0120c1c4-label-sr" xml:lang="sr">јекавски</name>
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-759776ff0120c1c4" source="#src-persj-catalog-a258c53" xml:id="src-base-759776ff0120c1c4-label-en" xml:lang="en">Ijekavian</name>
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-759776ff0120c1c4" source="#src-persj-catalog-a258c53" xml:id="src-base-759776ff0120c1c4-label-de" xml:lang="de">Ijekavisch</name>
-                                <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-sr-ijekavsk #catalog-isj-persj" xml:id="src-full-name-11cc4c0071a4706a" xml:lang="sr">Јекавско</name>
-                                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-11cc4c0071a4706a" source="#src-persj-catalog-a258c53" xml:id="src-full-name-11cc4c0071a4706a-label-sr" xml:lang="sr">јекавски</name>
-                                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-11cc4c0071a4706a" source="#src-persj-catalog-a258c53" xml:id="src-full-name-11cc4c0071a4706a-label-en" xml:lang="en">Ijekavian</name>
-                                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-11cc4c0071a4706a" source="#src-persj-catalog-a258c53" xml:id="src-full-name-11cc4c0071a4706a-label-de" xml:lang="de">Ijekavisch</name>
-                                <note type="sourceRecordNote" corresp="#src-full-name-11cc4c0071a4706a" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                                 <note type="editorialReview" resp="#reviewer-codex" xml:lang="en">Reviewed 2026-09-06. Wikidata Q1289605 directly carries the registered IETF variant tag sr-ijekavsk and supplies trilingual terminology. The catalog spellings ијекавски and јекавски are treated as aliases of this same profile, with ијекавски preferred.</note>
                               </language>
                               <language ident="sr-x-old" type="historical-stage" role="objectLanguage">
@@ -3663,11 +3488,6 @@
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-49b6e00b0d8191fa" source="#src-persj-catalog-a258c53" xml:id="src-base-49b6e00b0d8191fa-label-sr" xml:lang="sr">старосрпски</name>
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-49b6e00b0d8191fa" source="#src-persj-catalog-a258c53" xml:id="src-base-49b6e00b0d8191fa-label-en" xml:lang="en">Old Serbian</name>
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-49b6e00b0d8191fa" source="#src-persj-catalog-a258c53" xml:id="src-base-49b6e00b0d8191fa-label-de" xml:lang="de">Altserbisch</name>
-                                <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-sr-x-old #catalog-isj-persj" xml:id="src-full-name-b3066995aaca8c7c" xml:lang="sr">старосрпском</name>
-                                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-b3066995aaca8c7c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-b3066995aaca8c7c-label-sr" xml:lang="sr">старосрпски</name>
-                                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-b3066995aaca8c7c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-b3066995aaca8c7c-label-en" xml:lang="en">Old Serbian</name>
-                                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-b3066995aaca8c7c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-b3066995aaca8c7c-label-de" xml:lang="de">Altserbisch</name>
-                                <note type="sourceRecordNote" corresp="#src-full-name-b3066995aaca8c7c" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                                 <note type="editorialReview" resp="https://github.com/ttasovac" xml:lang="en">Reviewed 2026-09-05. The English Wikipedia title resolves to disambiguation item Q7084953, which is rejected. The PERSJ compound is explicit but direct semantic and German-label evidence remain insufficient.</note>
                               </language>
                               <language ident="sr-x-slavserb" type="historical-stage" role="objectLanguage">
@@ -3707,16 +3527,6 @@
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-807d384fbd839810" source="#src-persj-catalog-a258c53" xml:id="src-base-807d384fbd839810-label-sr" xml:lang="sr">словеначки</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-807d384fbd839810" source="#src-persj-catalog-a258c53" xml:id="src-base-807d384fbd839810-label-en" xml:lang="en">Slovenian</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-807d384fbd839810" source="#src-persj-catalog-a258c53" xml:id="src-base-807d384fbd839810-label-de" xml:lang="de">Slowenisch</name>
-                      <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-sl #catalog-isj-persj" xml:id="src-full-name-405f238c4a1224d6" xml:lang="sr">словеначко</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-405f238c4a1224d6" source="#src-persj-catalog-a258c53" xml:id="src-full-name-405f238c4a1224d6-label-sr" xml:lang="sr">словеначки</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-405f238c4a1224d6" source="#src-persj-catalog-a258c53" xml:id="src-full-name-405f238c4a1224d6-label-en" xml:lang="en">Slovenian</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-405f238c4a1224d6" source="#src-persj-catalog-a258c53" xml:id="src-full-name-405f238c4a1224d6-label-de" xml:lang="de">Slowenisch</name>
-                      <note type="sourceRecordNote" corresp="#src-full-name-405f238c4a1224d6" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
-                      <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-sl #catalog-isj-persj" xml:id="src-full-name-f2b7ed3357813237" xml:lang="sr">словеначком</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-f2b7ed3357813237" source="#src-persj-catalog-a258c53" xml:id="src-full-name-f2b7ed3357813237-label-sr" xml:lang="sr">словеначки</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-f2b7ed3357813237" source="#src-persj-catalog-a258c53" xml:id="src-full-name-f2b7ed3357813237-label-en" xml:lang="en">Slovenian</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-f2b7ed3357813237" source="#src-persj-catalog-a258c53" xml:id="src-full-name-f2b7ed3357813237-label-de" xml:lang="de">Slowenisch</name>
-                      <note type="sourceRecordNote" corresp="#src-full-name-f2b7ed3357813237" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                       <settingDesc>
                         <place>
                           <location type="representative" source="#src-glottolog-5-3">
@@ -3849,11 +3659,6 @@
                         <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-extension-dade9c613ac29ca2" source="#src-persj-catalog-a258c53" xml:id="src-extension-dade9c613ac29ca2-label-en" xml:lang="en">Serbian Church Slavonic</name>
                         <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-extension-dade9c613ac29ca2" source="#src-persj-catalog-a258c53" xml:id="src-extension-dade9c613ac29ca2-label-de" xml:lang="de">Serbisch-Kirchenslawisch</name>
                         <note type="sourceRecordNote" corresp="#src-extension-dade9c613ac29ca2" source="#src-persj-catalog-a258c53" xml:lang="en">source spelling variant for Serbian Church Slavonic</note>
-                        <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-cu-x-srp #catalog-isj-persj" xml:id="src-full-name-47c0501f69c75eee" xml:lang="sr">српскословенском</name>
-                        <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-47c0501f69c75eee" source="#src-persj-catalog-a258c53" xml:id="src-full-name-47c0501f69c75eee-label-sr" xml:lang="sr">српскословенски (српска редакција цсл. језика)</name>
-                        <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-47c0501f69c75eee" source="#src-persj-catalog-a258c53" xml:id="src-full-name-47c0501f69c75eee-label-en" xml:lang="en">Serbian Church Slavonic</name>
-                        <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-47c0501f69c75eee" source="#src-persj-catalog-a258c53" xml:id="src-full-name-47c0501f69c75eee-label-de" xml:lang="de">Serbisch-Kirchenslawisch</name>
-                        <note type="sourceRecordNote" corresp="#src-full-name-47c0501f69c75eee" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                         <note type="editorialReview" resp="https://github.com/raskovnik-design-2026-09-01" xml:lang="en">Reviewed 2026-09-01. The PERSJ српсл. and српссл. spellings are source synonyms for the Serbian recension of post-eleventh-century Church Slavonic; the code-free semantic Wikidata item is explicitly reviewed.</note>
                       </language>
                     </languageGrp>
@@ -3899,11 +3704,6 @@
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-ab06e53d67922063" source="#src-persj-catalog-a258c53" xml:id="src-base-ab06e53d67922063-label-sr" xml:lang="sr">бугарски</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-ab06e53d67922063" source="#src-persj-catalog-a258c53" xml:id="src-base-ab06e53d67922063-label-en" xml:lang="en">Bulgarian</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-ab06e53d67922063" source="#src-persj-catalog-a258c53" xml:id="src-base-ab06e53d67922063-label-de" xml:lang="de">Bulgarisch</name>
-                      <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-bg #catalog-isj-persj" xml:id="src-full-name-668ca60cb90ae045" xml:lang="sr">бугарском</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-668ca60cb90ae045" source="#src-persj-catalog-a258c53" xml:id="src-full-name-668ca60cb90ae045-label-sr" xml:lang="sr">бугарски</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-668ca60cb90ae045" source="#src-persj-catalog-a258c53" xml:id="src-full-name-668ca60cb90ae045-label-en" xml:lang="en">Bulgarian</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-668ca60cb90ae045" source="#src-persj-catalog-a258c53" xml:id="src-full-name-668ca60cb90ae045-label-de" xml:lang="de">Bulgarisch</name>
-                      <note type="sourceRecordNote" corresp="#src-full-name-668ca60cb90ae045" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                       <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-bg #catalog-isj-persj" xml:id="src-full-name-bd7502dc756bebde" xml:lang="sr">бугарски</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-bd7502dc756bebde" source="#src-persj-catalog-a258c53" xml:id="src-full-name-bd7502dc756bebde-label-sr" xml:lang="sr">бугарски</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-bd7502dc756bebde" source="#src-persj-catalog-a258c53" xml:id="src-full-name-bd7502dc756bebde-label-en" xml:lang="en">Bulgarian</name>
@@ -3949,11 +3749,6 @@
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-7436a2689a1ccc63" source="#src-persj-catalog-a258c53" xml:id="src-base-7436a2689a1ccc63-label-sr" xml:lang="sr">македонски</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-7436a2689a1ccc63" source="#src-persj-catalog-a258c53" xml:id="src-base-7436a2689a1ccc63-label-en" xml:lang="en">Macedonian</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-7436a2689a1ccc63" source="#src-persj-catalog-a258c53" xml:id="src-base-7436a2689a1ccc63-label-de" xml:lang="de">Mazedonisch</name>
-                      <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-mk #catalog-isj-persj" xml:id="src-full-name-86c6cd356bba414d" xml:lang="sr">македонском</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-86c6cd356bba414d" source="#src-persj-catalog-a258c53" xml:id="src-full-name-86c6cd356bba414d-label-sr" xml:lang="sr">македонски</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-86c6cd356bba414d" source="#src-persj-catalog-a258c53" xml:id="src-full-name-86c6cd356bba414d-label-en" xml:lang="en">Macedonian</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-86c6cd356bba414d" source="#src-persj-catalog-a258c53" xml:id="src-full-name-86c6cd356bba414d-label-de" xml:lang="de">Mazedonisch</name>
-                      <note type="sourceRecordNote" corresp="#src-full-name-86c6cd356bba414d" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                       <settingDesc>
                         <place>
                           <location type="representative" source="#src-glottolog-5-3">
@@ -4076,11 +3871,6 @@
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-2c246672cc635abf" source="#src-persj-catalog-a258c53" xml:id="src-base-2c246672cc635abf-label-sr" xml:lang="sr">словачки</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-2c246672cc635abf" source="#src-persj-catalog-a258c53" xml:id="src-base-2c246672cc635abf-label-en" xml:lang="en">Slovak</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-2c246672cc635abf" source="#src-persj-catalog-a258c53" xml:id="src-base-2c246672cc635abf-label-de" xml:lang="de">Slowakisch</name>
-                      <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-sk #catalog-isj-persj" xml:id="src-full-name-db8ec3ff14c560c0" xml:lang="sr">словачког</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-db8ec3ff14c560c0" source="#src-persj-catalog-a258c53" xml:id="src-full-name-db8ec3ff14c560c0-label-sr" xml:lang="sr">словачки</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-db8ec3ff14c560c0" source="#src-persj-catalog-a258c53" xml:id="src-full-name-db8ec3ff14c560c0-label-en" xml:lang="en">Slovak</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-db8ec3ff14c560c0" source="#src-persj-catalog-a258c53" xml:id="src-full-name-db8ec3ff14c560c0-label-de" xml:lang="de">Slowakisch</name>
-                      <note type="sourceRecordNote" corresp="#src-full-name-db8ec3ff14c560c0" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                       <settingDesc>
                         <place>
                           <location type="representative" source="#src-glottolog-5-3">
@@ -4139,11 +3929,6 @@
                         <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-c102b388870b902e" source="#src-persj-catalog-a258c53" xml:id="src-base-c102b388870b902e-label-sr" xml:lang="sr">словињски</name>
                         <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-c102b388870b902e" source="#src-persj-catalog-a258c53" xml:id="src-base-c102b388870b902e-label-en" xml:lang="en">Slovincian</name>
                         <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-c102b388870b902e" source="#src-persj-catalog-a258c53" xml:id="src-base-c102b388870b902e-label-de" xml:lang="de">Slowinzisch</name>
-                        <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-zlw-x-slovinc #catalog-isj-persj" xml:id="src-full-name-725b4f8648d28748" xml:lang="sr">словињском</name>
-                        <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-725b4f8648d28748" source="#src-persj-catalog-a258c53" xml:id="src-full-name-725b4f8648d28748-label-sr" xml:lang="sr">словињски</name>
-                        <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-725b4f8648d28748" source="#src-persj-catalog-a258c53" xml:id="src-full-name-725b4f8648d28748-label-en" xml:lang="en">Slovincian</name>
-                        <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-725b4f8648d28748" source="#src-persj-catalog-a258c53" xml:id="src-full-name-725b4f8648d28748-label-de" xml:lang="de">Slowinzisch</name>
-                        <note type="sourceRecordNote" corresp="#src-full-name-725b4f8648d28748" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                         <note type="editorialReview" resp="#reviewer-codex" xml:lang="en">Reviewed 2026-09-06. Q36822 supplies P1394 slov1270 and matching English, German, and Serbian terminology.</note>
                       </language>
                     </languageGrp>
@@ -4533,21 +4318,11 @@
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-80bf23c7965368e0" source="#src-persj-catalog-a258c53" xml:id="src-base-80bf23c7965368e0-label-sr" xml:lang="sr">латински</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-80bf23c7965368e0" source="#src-persj-catalog-a258c53" xml:id="src-base-80bf23c7965368e0-label-en" xml:lang="en">Latin</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-80bf23c7965368e0" source="#src-persj-catalog-a258c53" xml:id="src-base-80bf23c7965368e0-label-de" xml:lang="de">Latein</name>
-                      <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-la #catalog-isj-persj" xml:id="src-full-name-ade2b25a5ba884ef" xml:lang="sr">латинском</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-ade2b25a5ba884ef" source="#src-persj-catalog-a258c53" xml:id="src-full-name-ade2b25a5ba884ef-label-sr" xml:lang="sr">латински</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-ade2b25a5ba884ef" source="#src-persj-catalog-a258c53" xml:id="src-full-name-ade2b25a5ba884ef-label-en" xml:lang="en">Latin</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-ade2b25a5ba884ef" source="#src-persj-catalog-a258c53" xml:id="src-full-name-ade2b25a5ba884ef-label-de" xml:lang="de">Latein</name>
-                      <note type="sourceRecordNote" corresp="#src-full-name-ade2b25a5ba884ef" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                       <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-la #catalog-isj-persj" xml:id="src-full-name-b03ce081c028674e" xml:lang="sr">латински</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-b03ce081c028674e" source="#src-persj-catalog-a258c53" xml:id="src-full-name-b03ce081c028674e-label-sr" xml:lang="sr">латински</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-b03ce081c028674e" source="#src-persj-catalog-a258c53" xml:id="src-full-name-b03ce081c028674e-label-en" xml:lang="en">Latin</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-b03ce081c028674e" source="#src-persj-catalog-a258c53" xml:id="src-full-name-b03ce081c028674e-label-de" xml:lang="de">Latein</name>
                       <note type="sourceRecordNote" corresp="#src-full-name-b03ce081c028674e" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
-                      <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-la #catalog-isj-persj" xml:id="src-full-name-d0ddb90a70950108" xml:lang="sr">латинског</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-d0ddb90a70950108" source="#src-persj-catalog-a258c53" xml:id="src-full-name-d0ddb90a70950108-label-sr" xml:lang="sr">латински</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-d0ddb90a70950108" source="#src-persj-catalog-a258c53" xml:id="src-full-name-d0ddb90a70950108-label-en" xml:lang="en">Latin</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-d0ddb90a70950108" source="#src-persj-catalog-a258c53" xml:id="src-full-name-d0ddb90a70950108-label-de" xml:lang="de">Latein</name>
-                      <note type="sourceRecordNote" corresp="#src-full-name-d0ddb90a70950108" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                       <settingDesc>
                         <place>
                           <location type="representative" source="#src-glottolog-5-3">
@@ -4753,11 +4528,6 @@
                               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-e99ef19e474947b5" source="#src-persj-catalog-a258c53" xml:id="src-base-e99ef19e474947b5-label-sr" xml:lang="sr">молдавски</name>
                               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-e99ef19e474947b5" source="#src-persj-catalog-a258c53" xml:id="src-base-e99ef19e474947b5-label-en" xml:lang="en">Romanian</name>
                               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-e99ef19e474947b5" source="#src-persj-catalog-a258c53" xml:id="src-base-e99ef19e474947b5-label-de" xml:lang="de">Rumänisch</name>
-                              <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-ro #catalog-isj-persj" xml:id="src-full-name-6acb9eb46a508590" xml:lang="sr">румунском</name>
-                              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-6acb9eb46a508590" source="#src-persj-catalog-a258c53" xml:id="src-full-name-6acb9eb46a508590-label-sr" xml:lang="sr">румунски</name>
-                              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-6acb9eb46a508590" source="#src-persj-catalog-a258c53" xml:id="src-full-name-6acb9eb46a508590-label-en" xml:lang="en">Romanian</name>
-                              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-6acb9eb46a508590" source="#src-persj-catalog-a258c53" xml:id="src-full-name-6acb9eb46a508590-label-de" xml:lang="de">Rumänisch</name>
-                              <note type="sourceRecordNote" corresp="#src-full-name-6acb9eb46a508590" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                               <note type="editorialReview" resp="#reviewer-codex" xml:lang="en">Reviewed 2026-09-06. IANA ro/ISO ron, Q7913, and roma1327 agree. PERSJ's молдавски is preserved as a source alias; retired mol and the Moldavian dialect node are related identifiers, not the canonical profile. Supporting identifiers only; no exact equivalence inferred: glottolog:mold1248|retired-iso639-3:mol|label:Moldavian</note>
                               <settingDesc>
                                 <place>
@@ -5000,11 +4770,6 @@
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-4cb72ffbcf94d807" source="#src-persj-catalog-a258c53" xml:id="src-base-4cb72ffbcf94d807-label-sr" xml:lang="sr">италијански</name>
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-4cb72ffbcf94d807" source="#src-persj-catalog-a258c53" xml:id="src-base-4cb72ffbcf94d807-label-en" xml:lang="en">Italian</name>
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-4cb72ffbcf94d807" source="#src-persj-catalog-a258c53" xml:id="src-base-4cb72ffbcf94d807-label-de" xml:lang="de">Italienisch</name>
-                                <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-it #catalog-isj-persj" xml:id="src-full-name-47c6d8518e8c1f80" xml:lang="sr">италијанском</name>
-                                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-47c6d8518e8c1f80" source="#src-persj-catalog-a258c53" xml:id="src-full-name-47c6d8518e8c1f80-label-sr" xml:lang="sr">италијански</name>
-                                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-47c6d8518e8c1f80" source="#src-persj-catalog-a258c53" xml:id="src-full-name-47c6d8518e8c1f80-label-en" xml:lang="en">Italian</name>
-                                <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-47c6d8518e8c1f80" source="#src-persj-catalog-a258c53" xml:id="src-full-name-47c6d8518e8c1f80-label-de" xml:lang="de">Italienisch</name>
-                                <note type="sourceRecordNote" corresp="#src-full-name-47c6d8518e8c1f80" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                                 <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-it #catalog-isj-persj" xml:id="src-full-name-bf28c563fe60d2bf" xml:lang="sr">италијански</name>
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-bf28c563fe60d2bf" source="#src-persj-catalog-a258c53" xml:id="src-full-name-bf28c563fe60d2bf-label-sr" xml:lang="sr">италијански</name>
                                 <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-bf28c563fe60d2bf" source="#src-persj-catalog-a258c53" xml:id="src-full-name-bf28c563fe60d2bf-label-en" xml:lang="en">Italian</name>
@@ -5213,21 +4978,6 @@
                                           <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-62454153fa6dd82b" source="#src-persj-catalog-a258c53" xml:id="src-base-62454153fa6dd82b-label-sr" xml:lang="sr">француски</name>
                                           <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-62454153fa6dd82b" source="#src-persj-catalog-a258c53" xml:id="src-base-62454153fa6dd82b-label-en" xml:lang="en">French</name>
                                           <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-62454153fa6dd82b" source="#src-persj-catalog-a258c53" xml:id="src-base-62454153fa6dd82b-label-de" xml:lang="de">Französisch</name>
-                                          <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-fr #catalog-isj-persj" xml:id="src-full-name-37dc255a148c97e2" xml:lang="sr">француском</name>
-                                          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-37dc255a148c97e2" source="#src-persj-catalog-a258c53" xml:id="src-full-name-37dc255a148c97e2-label-sr" xml:lang="sr">француски</name>
-                                          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-37dc255a148c97e2" source="#src-persj-catalog-a258c53" xml:id="src-full-name-37dc255a148c97e2-label-en" xml:lang="en">French</name>
-                                          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-37dc255a148c97e2" source="#src-persj-catalog-a258c53" xml:id="src-full-name-37dc255a148c97e2-label-de" xml:lang="de">Französisch</name>
-                                          <note type="sourceRecordNote" corresp="#src-full-name-37dc255a148c97e2" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
-                                          <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-fr #catalog-isj-persj" xml:id="src-full-name-a64b039751864f49" xml:lang="sr">француско</name>
-                                          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-a64b039751864f49" source="#src-persj-catalog-a258c53" xml:id="src-full-name-a64b039751864f49-label-sr" xml:lang="sr">француски</name>
-                                          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-a64b039751864f49" source="#src-persj-catalog-a258c53" xml:id="src-full-name-a64b039751864f49-label-en" xml:lang="en">French</name>
-                                          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-a64b039751864f49" source="#src-persj-catalog-a258c53" xml:id="src-full-name-a64b039751864f49-label-de" xml:lang="de">Französisch</name>
-                                          <note type="sourceRecordNote" corresp="#src-full-name-a64b039751864f49" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
-                                          <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-fr #catalog-isj-persj" xml:id="src-full-name-b48d621014cb2563" xml:lang="sr">француског</name>
-                                          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-b48d621014cb2563" source="#src-persj-catalog-a258c53" xml:id="src-full-name-b48d621014cb2563-label-sr" xml:lang="sr">француски</name>
-                                          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-b48d621014cb2563" source="#src-persj-catalog-a258c53" xml:id="src-full-name-b48d621014cb2563-label-en" xml:lang="en">French</name>
-                                          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-b48d621014cb2563" source="#src-persj-catalog-a258c53" xml:id="src-full-name-b48d621014cb2563-label-de" xml:lang="de">Französisch</name>
-                                          <note type="sourceRecordNote" corresp="#src-full-name-b48d621014cb2563" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                                           <settingDesc>
                                             <place>
                                               <location type="representative" source="#src-glottolog-5-3">
@@ -5504,11 +5254,6 @@
                   <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-1828e0b2b22a4c88" source="#src-persj-catalog-a258c53" xml:id="src-base-1828e0b2b22a4c88-label-sr" xml:lang="sr">умбријски</name>
                   <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-1828e0b2b22a4c88" source="#src-persj-catalog-a258c53" xml:id="src-base-1828e0b2b22a4c88-label-en" xml:lang="en">Umbrian</name>
                   <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-1828e0b2b22a4c88" source="#src-persj-catalog-a258c53" xml:id="src-base-1828e0b2b22a4c88-label-de" xml:lang="de">Umbrisch</name>
-                  <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-xum #catalog-isj-persj" xml:id="src-full-name-0ab7a9dd6125ab23" xml:lang="sr">умбријско</name>
-                  <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-0ab7a9dd6125ab23" source="#src-persj-catalog-a258c53" xml:id="src-full-name-0ab7a9dd6125ab23-label-sr" xml:lang="sr">умбријски</name>
-                  <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-0ab7a9dd6125ab23" source="#src-persj-catalog-a258c53" xml:id="src-full-name-0ab7a9dd6125ab23-label-en" xml:lang="en">Umbrian</name>
-                  <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-0ab7a9dd6125ab23" source="#src-persj-catalog-a258c53" xml:id="src-full-name-0ab7a9dd6125ab23-label-de" xml:lang="de">Umbrisch</name>
-                  <note type="sourceRecordNote" corresp="#src-full-name-0ab7a9dd6125ab23" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                   <note type="editorialReview" resp="https://github.com/raskovnik-design-2026-08-31" xml:lang="en">Reviewed 2026-08-31. The established German label was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
                   <settingDesc>
                     <place>
@@ -5562,11 +5307,6 @@
               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-0701757abf0a14e8" source="#src-persj-catalog-a258c53" xml:id="src-base-0701757abf0a14e8-label-sr" xml:lang="sr">албански</name>
               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-0701757abf0a14e8" source="#src-persj-catalog-a258c53" xml:id="src-base-0701757abf0a14e8-label-en" xml:lang="en">Albanian</name>
               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-0701757abf0a14e8" source="#src-persj-catalog-a258c53" xml:id="src-base-0701757abf0a14e8-label-de" xml:lang="de">Albanisch</name>
-              <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-sq #catalog-isj-persj" xml:id="src-full-name-e25a40d765332615" xml:lang="sr">албанском</name>
-              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-e25a40d765332615" source="#src-persj-catalog-a258c53" xml:id="src-full-name-e25a40d765332615-label-sr" xml:lang="sr">албански</name>
-              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-e25a40d765332615" source="#src-persj-catalog-a258c53" xml:id="src-full-name-e25a40d765332615-label-en" xml:lang="en">Albanian</name>
-              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-e25a40d765332615" source="#src-persj-catalog-a258c53" xml:id="src-full-name-e25a40d765332615-label-de" xml:lang="de">Albanisch</name>
-              <note type="sourceRecordNote" corresp="#src-full-name-e25a40d765332615" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
               <language ident="aln" type="language" role="objectLanguage">
                 <ident type="BCP47" xml:id="lang-aln">aln</ident>
                 <ident type="Glottolog">gheg1238</ident>
@@ -5756,16 +5496,6 @@
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-compound-8d86608dbf6e64e2" source="#src-persj-catalog-a258c53" xml:id="src-compound-8d86608dbf6e64e2-label-en" xml:lang="en">Ancient Greek</name>
                       <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-compound-8d86608dbf6e64e2" source="#src-persj-catalog-a258c53" xml:id="src-compound-8d86608dbf6e64e2-label-de" xml:lang="de">Altgriechisch</name>
                       <note type="sourceRecordNote" corresp="#src-compound-8d86608dbf6e64e2" source="#src-persj-catalog-a258c53" xml:lang="en">productive compound audited in the PERSJ conversion</note>
-                      <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-grc #catalog-isj-persj" xml:id="src-full-name-513a2aa3b8615f0c" xml:lang="sr">грчко</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-513a2aa3b8615f0c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-513a2aa3b8615f0c-label-sr" xml:lang="sr">грчки</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-513a2aa3b8615f0c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-513a2aa3b8615f0c-label-en" xml:lang="en">Ancient Greek</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-513a2aa3b8615f0c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-513a2aa3b8615f0c-label-de" xml:lang="de">Altgriechisch</name>
-                      <note type="sourceRecordNote" corresp="#src-full-name-513a2aa3b8615f0c" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
-                      <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-grc #catalog-isj-persj" xml:id="src-full-name-d6f3e577eefb2e60" xml:lang="sr">грчког</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-d6f3e577eefb2e60" source="#src-persj-catalog-a258c53" xml:id="src-full-name-d6f3e577eefb2e60-label-sr" xml:lang="sr">грчки</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-d6f3e577eefb2e60" source="#src-persj-catalog-a258c53" xml:id="src-full-name-d6f3e577eefb2e60-label-en" xml:lang="en">Ancient Greek</name>
-                      <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-d6f3e577eefb2e60" source="#src-persj-catalog-a258c53" xml:id="src-full-name-d6f3e577eefb2e60-label-de" xml:lang="de">Altgriechisch</name>
-                      <note type="sourceRecordNote" corresp="#src-full-name-d6f3e577eefb2e60" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                       <note type="editorialReview" resp="#reviewer-codex" xml:lang="en">Reviewed 2026-09-06. IANA/ISO grc, Wikidata Q35497, and pinned Glottolog anci1242 agree. The generic source abbreviation гр. is interpreted in the dictionary's etymological context, while старогрчки remains the preferred explicit meaning.</note>
                       <settingDesc>
                         <place>
@@ -6004,11 +5734,6 @@
           <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-extension-07c97188e9c8cade" source="#src-persj-catalog-a258c53" xml:id="src-extension-07c97188e9c8cade-label-en" xml:lang="en">Sumerian</name>
           <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-extension-07c97188e9c8cade" source="#src-persj-catalog-a258c53" xml:id="src-extension-07c97188e9c8cade-label-de" xml:lang="de">Sumerisch</name>
           <note type="sourceRecordNote" corresp="#src-extension-07c97188e9c8cade" source="#src-persj-catalog-a258c53" xml:lang="en">Sumerian language label</note>
-          <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-sux #catalog-isj-persj" xml:id="src-full-name-9eb08d2c0d8e36bf" xml:lang="sr">сумерског</name>
-          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-9eb08d2c0d8e36bf" source="#src-persj-catalog-a258c53" xml:id="src-full-name-9eb08d2c0d8e36bf-label-sr" xml:lang="sr">сумерски</name>
-          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-9eb08d2c0d8e36bf" source="#src-persj-catalog-a258c53" xml:id="src-full-name-9eb08d2c0d8e36bf-label-en" xml:lang="en">Sumerian</name>
-          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-9eb08d2c0d8e36bf" source="#src-persj-catalog-a258c53" xml:id="src-full-name-9eb08d2c0d8e36bf-label-de" xml:lang="de">Sumerisch</name>
-          <note type="sourceRecordNote" corresp="#src-full-name-9eb08d2c0d8e36bf" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
           <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-sux #catalog-isj-persj" xml:id="src-full-name-df1063cb533afd40" xml:lang="sr">сумерски</name>
           <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-df1063cb533afd40" source="#src-persj-catalog-a258c53" xml:id="src-full-name-df1063cb533afd40-label-sr" xml:lang="sr">сумерски</name>
           <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-df1063cb533afd40" source="#src-persj-catalog-a258c53" xml:id="src-full-name-df1063cb533afd40-label-en" xml:lang="en">Sumerian</name>
@@ -6038,16 +5763,6 @@
           <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-415e1c6224c87bd1" source="#src-persj-catalog-a258c53" xml:id="src-base-415e1c6224c87bd1-label-sr" xml:lang="sr">општетурски</name>
           <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-415e1c6224c87bd1" source="#src-persj-catalog-a258c53" xml:id="src-base-415e1c6224c87bd1-label-en" xml:lang="en">Turkic languages</name>
           <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-415e1c6224c87bd1" source="#src-persj-catalog-a258c53" xml:id="src-base-415e1c6224c87bd1-label-de" xml:lang="de">Turksprachen</name>
-          <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-trk #catalog-isj-persj" xml:id="src-full-name-9b208cbaa67ace9c" xml:lang="sr">општетурско</name>
-          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-9b208cbaa67ace9c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-9b208cbaa67ace9c-label-sr" xml:lang="sr">општетурски</name>
-          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-9b208cbaa67ace9c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-9b208cbaa67ace9c-label-en" xml:lang="en">Turkic languages</name>
-          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-9b208cbaa67ace9c" source="#src-persj-catalog-a258c53" xml:id="src-full-name-9b208cbaa67ace9c-label-de" xml:lang="de">Turksprachen</name>
-          <note type="sourceRecordNote" corresp="#src-full-name-9b208cbaa67ace9c" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
-          <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-trk #catalog-isj-persj" xml:id="src-full-name-cbe54cf09c36d39f" xml:lang="sr">општетурског</name>
-          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-cbe54cf09c36d39f" source="#src-persj-catalog-a258c53" xml:id="src-full-name-cbe54cf09c36d39f-label-sr" xml:lang="sr">општетурски</name>
-          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-cbe54cf09c36d39f" source="#src-persj-catalog-a258c53" xml:id="src-full-name-cbe54cf09c36d39f-label-en" xml:lang="en">Turkic languages</name>
-          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-cbe54cf09c36d39f" source="#src-persj-catalog-a258c53" xml:id="src-full-name-cbe54cf09c36d39f-label-de" xml:lang="de">Turksprachen</name>
-          <note type="sourceRecordNote" corresp="#src-full-name-cbe54cf09c36d39f" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
           <note type="editorialReview" resp="https://github.com/raskovnik-design-2026-08-31" xml:lang="en">Reviewed 2026-08-31. The exact IANA collection and Glottolog family mapping and its direct English, Serbian, and German Wikipedia counterparts were approved; source records preserve the catalog label.</note>
           <language ident="otk" type="historical-stage" role="objectLanguage">
             <ident type="BCP47" xml:id="lang-otk">otk</ident>
@@ -6126,11 +5841,6 @@
               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-b8a627e80f1ee893" source="#src-persj-catalog-a258c53" xml:id="src-full-name-b8a627e80f1ee893-label-en" xml:lang="en">Bolgarian</name>
               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-b8a627e80f1ee893" source="#src-persj-catalog-a258c53" xml:id="src-full-name-b8a627e80f1ee893-label-de" xml:lang="de">Bolgarisch</name>
               <note type="sourceRecordNote" corresp="#src-full-name-b8a627e80f1ee893" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
-              <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-xbo #catalog-isj-persj" xml:id="src-full-name-e7a7339df585ce52" xml:lang="sr">протобугарског</name>
-              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-e7a7339df585ce52" source="#src-persj-catalog-a258c53" xml:id="src-full-name-e7a7339df585ce52-label-sr" xml:lang="sr">протобугарски</name>
-              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-e7a7339df585ce52" source="#src-persj-catalog-a258c53" xml:id="src-full-name-e7a7339df585ce52-label-en" xml:lang="en">Bolgarian</name>
-              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-e7a7339df585ce52" source="#src-persj-catalog-a258c53" xml:id="src-full-name-e7a7339df585ce52-label-de" xml:lang="de">Bolgarisch</name>
-              <note type="sourceRecordNote" corresp="#src-full-name-e7a7339df585ce52" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
               <note type="editorialReview" resp="https://github.com/raskovnik-design-2026-08-31" xml:lang="en">Reviewed 2026-08-31. The German Wikipedia counterpart was approved under the exact-alignment label policy; all source labels, kind, and alignment remain unchanged.</note>
               <settingDesc>
                 <place>
@@ -6471,11 +6181,6 @@
                     <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-6e315547483ef271" source="#src-persj-catalog-a258c53" xml:id="src-base-6e315547483ef271-label-sr" xml:lang="sr">турски</name>
                     <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-6e315547483ef271" source="#src-persj-catalog-a258c53" xml:id="src-base-6e315547483ef271-label-en" xml:lang="en">Turkish</name>
                     <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-6e315547483ef271" source="#src-persj-catalog-a258c53" xml:id="src-base-6e315547483ef271-label-de" xml:lang="de">Türkisch</name>
-                    <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-tr #catalog-isj-persj" xml:id="src-full-name-b4b4d980327fbc1d" xml:lang="sr">турског</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-b4b4d980327fbc1d" source="#src-persj-catalog-a258c53" xml:id="src-full-name-b4b4d980327fbc1d-label-sr" xml:lang="sr">турски</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-b4b4d980327fbc1d" source="#src-persj-catalog-a258c53" xml:id="src-full-name-b4b4d980327fbc1d-label-en" xml:lang="en">Turkish</name>
-                    <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-b4b4d980327fbc1d" source="#src-persj-catalog-a258c53" xml:id="src-full-name-b4b4d980327fbc1d-label-de" xml:lang="de">Türkisch</name>
-                    <note type="sourceRecordNote" corresp="#src-full-name-b4b4d980327fbc1d" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                     <settingDesc>
                       <place>
                         <location type="representative" source="#src-glottolog-5-3">
@@ -6619,11 +6324,6 @@
                   <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-621957614704c4b4" source="#src-persj-catalog-a258c53" xml:id="src-base-621957614704c4b4-label-sr" xml:lang="sr">монголски</name>
                   <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-621957614704c4b4" source="#src-persj-catalog-a258c53" xml:id="src-base-621957614704c4b4-label-en" xml:lang="en">Mongolian</name>
                   <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-621957614704c4b4" source="#src-persj-catalog-a258c53" xml:id="src-base-621957614704c4b4-label-de" xml:lang="de">Mongolisch</name>
-                  <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-mn #catalog-isj-persj" xml:id="src-full-name-0d0d1266a76d3b25" xml:lang="sr">монголском</name>
-                  <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-0d0d1266a76d3b25" source="#src-persj-catalog-a258c53" xml:id="src-full-name-0d0d1266a76d3b25-label-sr" xml:lang="sr">монголски</name>
-                  <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-0d0d1266a76d3b25" source="#src-persj-catalog-a258c53" xml:id="src-full-name-0d0d1266a76d3b25-label-en" xml:lang="en">Mongolian</name>
-                  <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-0d0d1266a76d3b25" source="#src-persj-catalog-a258c53" xml:id="src-full-name-0d0d1266a76d3b25-label-de" xml:lang="de">Mongolisch</name>
-                  <note type="sourceRecordNote" corresp="#src-full-name-0d0d1266a76d3b25" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
                   <language ident="xal" type="language" role="objectLanguage">
                     <ident type="BCP47" xml:id="lang-xal">xal</ident>
                     <ident type="Glottolog">kalm1243</ident>
@@ -6793,11 +6493,6 @@
               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-10dbc058a64d76fa" source="#src-persj-catalog-a258c53" xml:id="src-base-10dbc058a64d76fa-label-sr" xml:lang="sr">мађарски</name>
               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-10dbc058a64d76fa" source="#src-persj-catalog-a258c53" xml:id="src-base-10dbc058a64d76fa-label-en" xml:lang="en">Hungarian</name>
               <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-10dbc058a64d76fa" source="#src-persj-catalog-a258c53" xml:id="src-base-10dbc058a64d76fa-label-de" xml:lang="de">Ungarisch</name>
-              <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-hu #catalog-isj-persj" xml:id="src-full-name-566ff0db68deb282" xml:lang="sr">мађарског</name>
-              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-566ff0db68deb282" source="#src-persj-catalog-a258c53" xml:id="src-full-name-566ff0db68deb282-label-sr" xml:lang="sr">мађарски</name>
-              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-566ff0db68deb282" source="#src-persj-catalog-a258c53" xml:id="src-full-name-566ff0db68deb282-label-en" xml:lang="en">Hungarian</name>
-              <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-566ff0db68deb282" source="#src-persj-catalog-a258c53" xml:id="src-full-name-566ff0db68deb282-label-de" xml:lang="de">Ungarisch</name>
-              <note type="sourceRecordNote" corresp="#src-full-name-566ff0db68deb282" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
               <settingDesc>
                 <place>
                   <location type="representative" source="#src-glottolog-5-3">
@@ -6823,17 +6518,14 @@
           <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-024543ded1fc780e" source="#src-persj-catalog-a258c53" xml:id="src-base-024543ded1fc780e-label-sr" xml:lang="sr">скитски</name>
           <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-024543ded1fc780e" source="#src-persj-catalog-a258c53" xml:id="src-base-024543ded1fc780e-label-en" xml:lang="en">Scythian</name>
           <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-base-024543ded1fc780e" source="#src-persj-catalog-a258c53" xml:id="src-base-024543ded1fc780e-label-de" xml:lang="de">Skythisch</name>
-          <name type="sourceLabel" role="language-label" subtype="label-only" source="#src-persj-catalog-a258c53" ana="#profile-xsc #catalog-isj-persj" xml:id="src-full-name-213101bba57877ea" xml:lang="sr">скитског</name>
-          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-213101bba57877ea" source="#src-persj-catalog-a258c53" xml:id="src-full-name-213101bba57877ea-label-sr" xml:lang="sr">скитски</name>
-          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-213101bba57877ea" source="#src-persj-catalog-a258c53" xml:id="src-full-name-213101bba57877ea-label-en" xml:lang="en">Scythian</name>
-          <name type="sourceRecordLabel" role="sourceRecordName" corresp="#src-full-name-213101bba57877ea" source="#src-persj-catalog-a258c53" xml:id="src-full-name-213101bba57877ea-label-de" xml:lang="de">Skythisch</name>
-          <note type="sourceRecordNote" corresp="#src-full-name-213101bba57877ea" source="#src-persj-catalog-a258c53" xml:lang="en">controlled full-name alias in the PERSJ conversion</note>
           <note type="editorialReview" resp="#reviewer-codex" xml:lang="en">Reviewed 2026-09-06. Wikidata Q749834 directly carries both IETF and ISO xsc and supplies the German label Skythisch. The pinned Glottolog snapshot has no coextensive xsc node, so an exact Glottolog identifier is correctly left empty.</note>
         </language>
       </langUsage>
     </profileDesc>
     <revisionDesc status="published">
-      <change type="registryVersion" n="2026.9.18-1" when="2026-09-18T00:00:00Z">First published TEI registry package with validated language profiles and the editorial workflow.</change>
+      <change type="editorialReview" when="2026-09-19">Removed 62 inflected conversion-only source labels and their linked translations and notes. Conversion recognition mappings remain in the PERSJ conversion repository; registry language identities, canonical tags, abbreviations and uninflected source names are unchanged.</change>
+      <change type="registryVersion" n="2026.9.24-1" when="2026-09-24T05:49:43Z">Registry release.</change>
+      <change n="2026.9.18-1" when="2026-09-18T00:00:00Z">First published TEI registry package with validated language profiles and the editorial workflow.</change>
       <change n="2026.9.8-1" when="2026-09-08T00:00:00Z">Reviewed broader linguistic placement replaces Bookkeeping for Old Indo-Aryan and Old Turkic.</change>
       <change type="editorialReview" when="2026-09-06" who="https://github.com/ttasovac">Approved the complete 20-ancestor Serbian/German label batch. Existing decisions and three English-only nonselectable fallbacks remain unchanged.</change>
       <change type="sourceMigration" when="2026-09-06" corresp="https://github.com/BCDH/raskovnik-language-registry/commit/2f63dc0">Promoted the validated complete compiler output to the editable TEI master: 380 nodes, 214 profiles, 311 count-free source records. Bootstrap sources, exact review payloads and reconciliation remain in this Git checkpoint.</change>

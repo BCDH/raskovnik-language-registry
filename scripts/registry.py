@@ -87,7 +87,7 @@ def validate(data):
             source=ids.get(n.get('source').removeprefix('#'))
             if source is None or source.tag!=T+'bibl' or source.get('type')!='registrySource':
                 raise ValueError('source pointer must resolve to a registry source')
-        if n.tag==T+'ref' and n.get('type') in ('classificationSource','catalogSource'):
+        if n.tag==T+'ref' and n.get('type')=='classificationSource':
             source=ids.get(n.get('target','').removeprefix('#'))
             if source is None or source.get('type')!='registrySource':
                 raise ValueError('bibliographic source reference has the wrong target type')
@@ -153,9 +153,13 @@ def validate(data):
                 raise ValueError('ambiguous location identity: '+code)
             points.add(point)
         for source in n.findall(T+'name[@type="sourceLabel"]'):
-            catalog = next((ids.get(t[1:]) for t in source.get('ana','').split() if t.startswith('#catalog-')),None)
-            if catalog is None or catalog.get('type') != 'dictionaryLanguageCatalog':
-                raise ValueError('source record catalog is not a catalog: '+code)
+            refs=source.get('ana','').split()
+            profile=n.find(T+'note[@type="tagProfile"][@subtype="direct"]')
+            if profile is None or refs!=['#'+profile.get(X+'id')]:
+                raise ValueError('source record must reference its own tag profile: '+code)
+            cited=ids.get(source.get('source','').removeprefix('#'))
+            if cited is None or cited.get('type')!='registrySource' or len(cited.findall(T+'idno[@type="dictionaryId"]'))!=1 or not (cited.findtext(T+'idno[@type="dictionaryId"]') or '').strip():
+                raise ValueError('source record requires a dictionary-owned registry source: '+code)
     with tempfile.TemporaryDirectory() as directory:
         path = Path(directory)/'registry.xml';path.write_bytes(data)
         checked(['jing',str(ROOT/'registry/schema/lex-0-f6d51f29.rng'),str(path)])
@@ -168,9 +172,8 @@ def manifest(data, root):
     displays = root.findall('.//'+T+'bibl[@type="classification"][@subtype="display"]')
     if len(displays)!=1:
         raise ValueError('exactly one display classification is required')
-    result = E.Element(M+'registryManifest',dict(formatVersion='2',compatibilityPolicy=POLICY,registryVersion=change.get('n'),builtAt=change.get('when'),contentSha256=digest(data),displayClassificationId=displays[0].get(X+'id')))
+    result = E.Element(M+'registryManifest',dict(formatVersion='4',compatibilityPolicy=POLICY,registryVersion=change.get('n'),builtAt=change.get('when'),contentSha256=digest(data),displayClassificationId=displays[0].get(X+'id')))
     if root.find('.//'+T+'change[@type="geographyPolicy"][@n="reviewed-v1"]') is not None:
-        result.set('formatVersion','3')
         result.set('geographyPolicy','reviewed-v1')
     lex = next(s for s in standards()['sources'] if s['id']=='lex-0')
     E.SubElement(result,M+'schema',dict(id='tei-lex-0',version=lex['version'],revision=lex['revision'],sha256=lex['files'][0]['sha256']))
@@ -180,6 +183,8 @@ def manifest(data, root):
         for key in ('upstreamId','version','revision'):
             value = b.findtext(T+'idno[@type="'+key+'"]')
             if value is not None:attrs[key]=value
+        dictionary_id=b.findtext(T+'idno[@type="dictionaryId"]')
+        if dictionary_id is not None:attrs['dictionaryId']=dictionary_id
         s = E.SubElement(sources,M+'source',attrs)
         lic = b.find(T+'ref[@type="licence"]')
         if lic is not None:E.SubElement(s,M+'licence',name=lic.text,url=lic.get('target'))
@@ -194,10 +199,6 @@ def manifest(data, root):
         for lang in ('sr','en','de'):
             E.SubElement(c,M+'label',{X+'lang':lang}).text=b.findtext(T+'title[@'+X+'lang="'+lang+'"]')
         for ref in b.findall(T+'ref[@type="classificationSource"]'):E.SubElement(c,M+'source',ref=ref.get('target'))
-    catalogs = E.SubElement(result,M+'catalogs')
-    for b in root.findall('.//'+T+'bibl[@type="dictionaryLanguageCatalog"]'):
-        c=E.SubElement(catalogs,M+'catalog',{X+'id':b.get(X+'id'),'dictionaryId':b.findtext(T+'idno[@type="dictionaryId"]')})
-        E.SubElement(c,M+'source',ref=b.find(T+'ref[@type="catalogSource"]').get('target'))
     E.register_namespace('',M[1:-1]);E.indent(result,space='  ')
     output=b'<?xml version="1.0" encoding="UTF-8"?>\n'+E.tostring(result,encoding='utf-8')+b'\n'
     with tempfile.TemporaryDirectory() as directory:

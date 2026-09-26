@@ -105,15 +105,12 @@ def validate_registry(registry_bytes: bytes) -> None:
                 raise RegistryIntegrityError(f"node {identifier!r} has an ambiguous source-label abbreviation state")
             ana_tokens = source_label.get("ana", "").split()
             profile_targets = [token for token in ana_tokens if token.startswith("#profile-")]
-            catalog_targets = [token for token in ana_tokens if token.startswith("#catalog-")]
             if (
-                len(ana_tokens) != 2
+                len(ana_tokens) != 1
                 or len(profile_targets) != 1
-                or len(catalog_targets) != 1
                 or profile_targets[0][1:] not in xml_ids
-                or catalog_targets[0][1:] not in xml_ids
             ):
-                raise RegistryIntegrityError(f"source record on {identifier!r} must link one profile and one catalog")
+                raise RegistryIntegrityError(f"source record on {identifier!r} must link one profile")
             if profile_targets[0] != f"#profile-{identifier}":
                 raise RegistryIntegrityError(f"source record on {identifier!r} links the wrong direct profile")
             record_id = source_label.get(qname(XML_NS, "id"), "")

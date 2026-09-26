@@ -21,13 +21,13 @@ The version and release timestamp come from the single `revisionDesc/change[@typ
 
 Lex-0 is pinned to `0.9.6-dev`, revision `f6d51f29d1d2227c012dafcef20bec0708938505`. The schema and the small IANA/ISO tables are checked against `registry/standards-lock.json`. Refresh these only as an explicit reviewed change with exact bytes, checksum, revision, and attribution updates; update backend schema acceptance at the same time if the Lex-0 pin changes.
 
-Glottolog, CLDR, Wikidata, conversion-catalogue, and review provenance remain in TEI source bibliography records. Historical source-file references point into the preserved bootstrap commit. Those bulk datasets are not routine build inputs. IANA/ISO checks verify current recorded standards claims; external Glottolog/Wikidata equivalences require editorial review.
+Glottolog, CLDR, Wikidata, the cited ISJ.PERSJ language catalog, and review provenance remain in TEI source bibliography records. The six earlier conversion-catalog exports are retained in the preserved bootstrap commit rather than the current public source list. Historical source-file references point into that commit; those bulk datasets are not routine build inputs. IANA/ISO checks verify current recorded standards claims; external Glottolog/Wikidata equivalences require editorial review.
 
 ## Release and installation
 
-The XAR contains `registry.xml`, manifest v2, the installation hook, and four generated EXPath/eXist descriptors. It depends on `raskovnik-data-core` and installs under `/db/apps/raskovnik-data/metadata/languages`.
+The XAR contains `registry.xml`, manifest format 4, the installation hook, and four generated EXPath/eXist descriptors. It depends on `raskovnik-data-core` and installs under `/db/apps/raskovnik-data/metadata/languages`.
 
-For a local installation, run `infra ras-loc registry:install`. It advances the local version when needed, packages the current source, checks it against installed dictionaries, installs only the registry, refreshes prepared language summaries, and verifies the local APIs. It does not publish a GitHub release or deploy staging. The backend command behind the shortcut is `./scripts/exist-local.sh --registry-xar <xar> --registry-manifest dist/release.json install-registry`; `registry-state` reports the installed version and content hash without changing it.
+Before the first format 4 installation, complete the paired app-and-registry cutover described in the [backend instructions](https://github.com/ttasovac/raskovnik-backend/blob/master/docs/language-registry-compatibility.md#local-development-before-publication). Once format 4 is installed, run `infra ras-loc registry:install` for local registry updates. It advances the local version when needed, packages the current source, checks it against installed dictionaries, installs only the registry, refreshes prepared language summaries, and verifies the local APIs. It does not publish a GitHub release or deploy staging. The backend command behind the shortcut is `./scripts/exist-local.sh --registry-xar <xar> --registry-manifest dist/release.json install-registry`; `registry-state` reports the installed version and content hash without changing it.
 
 Publish the XAR and `dist/release.json` together from this repository when a release is authorized. Backend release sets select the exact registry release with `prepare-release.sh --assemble-release-set --registry-release <tag>` and own installation, verification, rollback, and frontend cache clearing. There is no standalone deployment script here.
 
@@ -51,4 +51,4 @@ The 2026.9.8-1 revision places `inc-x-old` beneath `inc` (Indo-Aryan) and `otk` 
 
 A registry-only install invalidates the prepared language summaries for every dictionary. Verify successful summary regeneration and authenticated language-registry/evidence API responses before reporting installation complete; matching package hashes alone does not establish explorer readiness. The standard backend installed-manifest workflow performs this refresh, so registry-only tooling must retain that step.
 
-The shared admin editing contract, reviewed geography vocabulary, and manifest v3 rollout are documented in [Registry editing through the shared admin](docs/admin-editor.md).
+The shared admin editing contract, reviewed geography vocabulary, and manifest format 4 are documented in [Registry editing through the shared admin](docs/admin-editor.md).

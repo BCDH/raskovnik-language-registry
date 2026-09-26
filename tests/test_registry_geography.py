@@ -21,14 +21,14 @@ class GeographyEditorTests(unittest.TestCase):
     def decision(self,mechanism='proxy',nodeId='sr',status='approved',**extra):
         return dict(mechanism=mechanism,nodeId=nodeId,status=status,allLocations=True,source='#src-raskovnik-review',region='Reviewed region',period='Reviewed period',reviewedAt='2026-09-13',rationale='Fixture approval',**extra)
 
-    def test_proxy_is_separate_from_identity_and_requires_v3_manifest(self):
+    def test_proxy_is_separate_from_identity_and_sets_geography_policy(self):
         data=self.apply('cu-x-srp',decisions=[self.decision()])
         doc=editor.Document(data); node=editor.node_record(doc,doc.get('cu-x-srp'))
         self.assertEqual('cu-x-church',node['parentId'])
         self.assertNotIn('ISO639-3',node['identifiers'])
         self.assertEqual('proxy',node['geography']['decisions'][0]['mechanism'])
         manifest=E.fromstring(registry.manifest(data,registry.validate(data)))
-        self.assertEqual('3',manifest.get('formatVersion'))
+        self.assertEqual('4',manifest.get('formatVersion'))
         self.assertEqual('reviewed-v1',manifest.get('geographyPolicy'))
 
     def test_blocks_can_exist_without_coordinates(self):

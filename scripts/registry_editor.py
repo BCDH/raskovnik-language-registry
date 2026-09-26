@@ -171,7 +171,7 @@ def node_record(document, span):
         'classificationNotes': {n.get(X+'lang'): text(n) for n in notes if n.get('type')=='classificationNote'},
         'exclusions': [{'type': n.get('subtype'), 'value': text(n), 'source': n.get('source')} for n in notes if n.get('type')=='excludedExactIdentifier'],
         'alternateClassifications': [{'classification': n.get('ana'), 'status': n.get('subtype'), 'nodes': [r.get('target', '').removeprefix('#lang-') for r in n.findall(T+'ref')]} for n in notes if n.get('type')=='alternateClassification'],
-        'sourceLabels': [{'id': n.get(X+'id'), 'label': text(n), 'source': n.get('source'), 'catalog': n.get('ana'), 'kind': n.get('role'), 'abbreviation': n.get('subtype'),
+        'sourceLabels': [{'id': n.get(X+'id'), 'label': text(n), 'source': n.get('source'), 'catalog': next((b.findtext(T+'idno[@type="dictionaryId"]') for b in document.root.findall('.//'+T+'bibl[@type="registrySource"]') if '#'+b.get(X+'id')==n.get('source')), None), 'kind': n.get('role'), 'abbreviation': n.get('subtype'),
             'labels': {s.get(X+'lang'): text(s) for s in names if s.get('type')=='sourceRecordLabel' and s.get('corresp')=='#'+n.get(X+'id','')}} for n in names if n.get('type')=='sourceLabel'],
         'directProfile': bool(node.findall(T+'note[@type="tagProfile"]')),
         'locations': locations,
@@ -291,7 +291,7 @@ def update_node(data, identifier, values):
             fragments.append('<note type="alternateClassification" source='+quoteattr(SOURCE)+' ana='+quoteattr(path['classification'])+' subtype='+quoteattr(path['status'])+'>'+''.join(tag('ref',n,type='alternatePathNode',target='#lang-'+n) for n in path['nodes'])+'</note>')
         doc=Document(data); data=doc.replace_children(doc.get(identifier),lambda e:e.tag==T+'note' and e.get('type')=='alternateClassification',fragments)
     if 'sourceLabels' in values and values['sourceLabels'] != current['sourceLabels']:
-        # Existing stable source IDs, catalogue binding and source provenance stay fixed.
+        # Existing stable source IDs and source provenance stay fixed.
         old={s['id']:s for s in current['sourceLabels']}
         for record in values['sourceLabels']:
             original=old.get(record['id'])

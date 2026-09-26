@@ -36,6 +36,12 @@ class TeiRegistryTests(unittest.TestCase):
         manifest=E.fromstring(first)
         self.assertEqual(manifest.get('contentSha256'),R.digest(self.data))
         self.assertEqual(manifest.get('compatibilityPolicy'),'language-tag-coverage-v1')
+        self.assertEqual(manifest.get('formatVersion'),'4')
+        self.assertIsNone(manifest.find(R.M+'catalogs'))
+        persj=manifest.find('.//'+R.M+'source[@'+R.X+'id="src-persj-catalog-a258c53"]')
+        self.assertEqual(persj.get('dictionaryId'),'ISJ.PERSJ')
+        self.assertEqual(persj.get('revision'),'a258c532c1037b9550d22154ccd9f34cef1a2073')
+        self.assertEqual(persj.find(R.M+'file').get('sha256'),'34458dc7491ff4daf9da464ed3263e61c264aa6a9581d4b9fdaee0bb7d2b5733')
         self.assertNotIn('planSha256',manifest.attrib)
         self.assertIsNone(manifest.find(R.M+'compatibility'))
 
@@ -51,9 +57,19 @@ class TeiRegistryTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'registry source'):
             R.validate(self.changed(lambda r:self.node(r).find(R.T+'name').set('source','#lang-sr')))
         def alternative(root):
-            note=E.SubElement(self.node(root),R.T+'note',type='alternateClassification',subtype='reviewed',ana='#catalog-isj-persj',source='#src-raskovnik-review')
+            note=E.SubElement(self.node(root),R.T+'note',type='alternateClassification',subtype='reviewed',ana='#src-persj-catalog-a258c53',source='#src-raskovnik-review')
             E.SubElement(note,R.T+'ref',type='alternatePathNode',target='#lang-sr')
         with self.assertRaisesRegex(ValueError,'classification record'):R.validate(self.changed(alternative))
+
+    def test_source_record_owner_and_profile_are_required(self):
+        def persj(root):return next(b for b in root.iter() if b.get(R.X+'id')=='src-persj-catalog-a258c53')
+        def source_label(root):return next(n for n in root.iter() if n.tag==R.T+'name' and n.get('type')=='sourceLabel')
+        def remove_owner(root):
+            b=persj(root);b.remove(b.find(R.T+'idno[@type="dictionaryId"]'))
+        def mismatch_profile(root):source_label(root).set('ana','#profile-sr')
+        def wrong_source(root):source_label(root).set('source','#src-raskovnik-review')
+        for change in (remove_owner,mismatch_profile,wrong_source):
+            with self.subTest(change=change),self.assertRaises(ValueError):R.validate(self.changed(change))
 
     def test_noncanonical_or_unregistered_tags_fail(self):
         for code in ['SR','zz','sr-x','x-private']:

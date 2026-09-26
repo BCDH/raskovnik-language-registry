@@ -71,7 +71,7 @@
       <assert test="not(@type = 'sourceLabel') or @xml:lang = 'sr'">The count-free conversion source label must be Serbian.</assert>
       <assert test="not(@type = 'sourceLabel') or normalize-space(@xml:id) != ''">Every source record requires a stable xml:id.</assert>
       <assert test="not(@type = 'sourceLabel') or count(../tei:note[@type = 'tagProfile'][@subtype = 'direct']) = 1">Every source record must belong to a node with exactly one direct tag profile.</assert>
-      <assert test="not(@type = 'sourceLabel') or contains(concat(' ', normalize-space(@ana), ' '), ' #catalog-')">Every source record must explicitly identify one dictionary catalog.</assert>
+      <assert test="not(@type = 'sourceLabel') or starts-with(@ana, '#profile-')">Every source record must identify its tag profile.</assert>
       <assert test="not(@type = 'sourceLabel') or count(../tei:name[@type = 'sourceRecordLabel']) = 3 * count(../tei:name[@type = 'sourceLabel'])">Each source record requires exactly three localized labels.</assert>
     </rule>
   </pattern>

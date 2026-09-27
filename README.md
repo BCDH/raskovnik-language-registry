@@ -13,7 +13,9 @@ make package
 
 Requirements: Python 3.10+, Jing, xmllint, Java, and Maven. Maven plugin dependencies must be available locally; provision them once with `mvn dependency:go-offline`. Ordinary builds are offline and need no sibling checkout. `make package` writes a validated XAR under `target/` and its companion release JSON at `dist/release.json`. Generated files are ignored. `mvn -o package` independently validates the master before assembly and verifies archive contents afterward.
 
-Edit labels in place and preserve technical IDs, canonical tags, source-record links, and display nesting. Every selectable node requires Serbian, English, and German names; nonselectable ancestors require English and may omit the other two. Explicit private tags have registered bases. Exact identifiers must not absorb broader or narrower supporting evidence; `note[@type='excludedExactIdentifier']` preserves reviewed exclusions. Add ordinary TEI review notes and revision history when decisions change.
+Edit labels in place and preserve node and source-record IDs, canonical tags, source-record links, and display nesting. Every selectable node requires Serbian, English, and German names; nonselectable ancestors require English and may omit the other two. Explicit private tags have registered bases. Exact identifiers must not absorb broader or narrower supporting evidence; `note[@type='excludedExactIdentifier']` preserves reviewed exclusions. Add ordinary TEI review notes and revision history when decisions change.
+
+A direct `tagProfile` note marks a node whose `@ident` is an accepted dictionary tag; the marker has no repeated tag text or ID. A source label belongs to that profile through its containing node. Catalog translations inherit the node's preferred names by language; `sourceRecordLabel` appears only for a different catalog wording. The original source label and its stable ID remain explicit. ISO 639-1, 639-2B, and 639-2T equivalents are derived from the pinned ISO 639-3 table and are not copied into the XML. Selection and classification status remain explicit as note attributes. Repeated editorial explanations are held once in `revisionDesc` and referenced from affected nodes.
 
 The version and release timestamp come from the single `revisionDesc/change[@type='registryVersion']`; package version comes from `pom.xml`. For a new release, run `make prepare-release` before committing the source: it advances both versions, retains the previous TEI revision in the history, then validates and packages. Rerunning it before committing does not bump again. The equivalent dotfiles shortcut is `infra ras-loc registry:prepare`. Ordinary `make check` and `make package` preserve the master bytes. The master is never rebuilt from upstream datasets.
 
@@ -31,9 +33,9 @@ Before the first format 4 installation, complete the paired app-and-registry cut
 
 Publish the XAR and `dist/release.json` together from this repository when a release is authorized. Backend release sets select the exact registry release with `prepare-release.sh --assemble-release-set --registry-release <tag>` and own installation, verification, rollback, and frontend cache clearing. There is no standalone deployment script here.
 
-Manifest v2 declares `language-tag-coverage-v1`. Every nonempty canonical etymon-form language tag in each enabled dictionary must resolve to one direct registry profile. Dictionary content hashes remain artifact/provenance checks in the backend; they do not tie registry releases to dictionary revisions. New unsupported tags require a registry update, while spelling corrections using existing tags do not.
+Manifest format 4 declares `language-tag-coverage-v1`. Every nonempty canonical etymon-form language tag in each enabled dictionary must resolve to one direct registry profile. Dictionary content hashes remain artifact/provenance checks in the backend; they do not tie registry releases to dictionary revisions. New unsupported tags require a registry update, while spelling corrections using existing tags do not.
 
-Deploy the manifest-v2 registry with the matching backend app as one release set. Old backend versions reject v2. Roll back the explicitly pinned app and registry together.
+Deploy this simplified registry with its matching backend app as one coordinated installation or release set. The previous app expects the repeated profile and translation markup. Roll back the explicitly pinned app and registry together.
 
 ## Migration history
 

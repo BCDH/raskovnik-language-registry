@@ -71,6 +71,25 @@ class TeiRegistryTests(unittest.TestCase):
         for change in (remove_owner,mismatch_profile,wrong_source):
             with self.subTest(change=change),self.assertRaises(ValueError):R.validate(self.changed(change))
 
+    def test_simplified_profile_translation_and_review_contract(self):
+        def cop(root):return self.node(root,'cop')
+        def add_duplicate_override(root):
+            node=cop(root);record=node.find(R.T+'name[@type="sourceLabel"]');reference='#'+record.get(R.X+'id')
+            for text in ('Catalog Coptic','Another Coptic'):
+                E.SubElement(node,R.T+'name',{'type':'sourceRecordLabel','role':'sourceRecordName','corresp':reference,'source':record.get('source'),R.X+'lang':'en'}).text=text
+        def add_redundant_override(root):
+            node=cop(root);record=node.find(R.T+'name[@type="sourceLabel"]')
+            E.SubElement(node,R.T+'name',{'type':'sourceRecordLabel','role':'sourceRecordName','corresp':'#'+record.get(R.X+'id'),'source':record.get('source'),R.X+'lang':'en'}).text='Coptic'
+        def bad_review(root):
+            note=next(n for n in root.iter(R.T+'note') if n.get('type')=='editorialReview' and n.get('corresp'))
+            note.set('corresp','#src-raskovnik-review')
+        def old_profile(root):
+            node=cop(root);profile=node.find(R.T+'note[@type="tagProfile"]');profile.text='cop'
+        def derived_iso(root):
+            E.SubElement(cop(root),R.T+'ident',type='ISO639-2B').text='cop'
+        for mutation in (add_duplicate_override,add_redundant_override,bad_review,old_profile,derived_iso):
+            with self.subTest(mutation=mutation),self.assertRaises(ValueError):R.validate(self.changed(mutation))
+
     def test_noncanonical_or_unregistered_tags_fail(self):
         for code in ['SR','zz','sr-x','x-private']:
             with self.subTest(code=code),self.assertRaises((ValueError,RuntimeError)):
@@ -105,7 +124,8 @@ class TeiRegistryTests(unittest.TestCase):
             self.assertEqual(parents[node].get('ident'),parent)
             self.assertEqual(node.get('type'),'historical-stage')
             self.assertIsNone(node.find(R.T+'ident[@type="Glottolog"]'))
-            self.assertEqual(node.findtext(R.T+'note[@type="tagProfile"]'),code)
+            self.assertIsNotNone(node.find(R.T+'note[@type="tagProfile"][@subtype="direct"]'))
+            self.assertEqual(node.findtext(R.T+'note[@type="tagProfile"]'),'')
             self.assertEqual(node.findtext(R.T+'note[@type="excludedExactIdentifier"][@subtype="Glottolog"]'),retired)
             self.assertEqual({n.get(R.X+'lang') for n in node.findall(R.T+'note[@type="classificationNote"]')},{'sr','en','de'})
         self.assertIsNone(self.node(self.root,'otk').find(R.T+'settingDesc'))

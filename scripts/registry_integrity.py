@@ -85,6 +85,10 @@ def validate_registry(registry_bytes: bytes) -> None:
         ]
         if len(status_notes) != 1 or status_notes[0].get("subtype") not in CLASSIFICATION_STATUSES:
             raise RegistryIntegrityError(f"node {identifier!r} lacks one controlled classification status")
+        for status_type in ("selectionStatus", "classificationStatus"):
+            status = node.find(qname(TEI_NS, "note") + f"[@type='{status_type}']")
+            if status is None or normalized(status.text or "") or len(status):
+                raise RegistryIntegrityError(f"node {identifier!r} repeats its {status_type} as prose")
         if len(node.findall(qname(TEI_NS, "settingDesc"))) > 1:
             raise RegistryIntegrityError(f"node {identifier!r} must consolidate locations in one settingDesc")
         profile_notes = [
@@ -93,8 +97,7 @@ def validate_registry(registry_bytes: bytes) -> None:
             if child.get("type") == "tagProfile" and child.get("subtype") == "direct"
         ]
         for profile in profile_notes:
-            profile_code = normalized(profile.text or "")
-            if profile_code != identifier or profile.get(qname(XML_NS, "id")) != f"profile-{profile_code}":
+            if profile.get(qname(XML_NS, "id")) is not None or normalized(profile.text or "") or len(profile):
                 raise RegistryIntegrityError(f"node {identifier!r} has a malformed direct tag-profile marker")
         for source_label in [
             child
@@ -103,24 +106,17 @@ def validate_registry(registry_bytes: bytes) -> None:
         ]:
             if source_label.get("subtype") not in {"abbreviation", "label-only"}:
                 raise RegistryIntegrityError(f"node {identifier!r} has an ambiguous source-label abbreviation state")
-            ana_tokens = source_label.get("ana", "").split()
-            profile_targets = [token for token in ana_tokens if token.startswith("#profile-")]
-            if (
-                len(ana_tokens) != 1
-                or len(profile_targets) != 1
-                or profile_targets[0][1:] not in xml_ids
-            ):
-                raise RegistryIntegrityError(f"source record on {identifier!r} must link one profile")
-            if profile_targets[0] != f"#profile-{identifier}":
-                raise RegistryIntegrityError(f"source record on {identifier!r} links the wrong direct profile")
+            if source_label.get("ana") is not None or len(profile_notes) != 1:
+                raise RegistryIntegrityError(f"source record on {identifier!r} requires its containing node's direct profile")
             record_id = source_label.get(qname(XML_NS, "id"), "")
             localized = [
                 child
                 for child in node.findall(qname(TEI_NS, "name"))
                 if child.get("type") == "sourceRecordLabel" and child.get("corresp") == f"#{record_id}"
             ]
-            if len(localized) != 3 or {child.get(qname(XML_NS, "lang")) for child in localized} != set(LANGUAGES):
-                raise RegistryIntegrityError(f"source record {record_id!r} lacks one trilingual label set")
+            locales = [child.get(qname(XML_NS, "lang")) for child in localized]
+            if len(locales) != len(set(locales)) or any(lang not in LANGUAGES for lang in locales):
+                raise RegistryIntegrityError(f"source record {record_id!r} has duplicate or unsupported translation overrides")
         for pointer_element in node.findall(".//*[@source]"):
             pointer = pointer_element.get("source", "")
             if not pointer.startswith("#") or pointer[1:] not in xml_ids:

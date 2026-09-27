@@ -18,18 +18,34 @@ import re
 import sys
 import subprocess
 import tempfile
-import uuid
+from functools import lru_cache
 from xml.etree import ElementTree as ET
 from xml.parsers import expat
 from xml.sax.saxutils import escape, quoteattr
 
 from registry import validate
+from registry_standards import parse_iso639_3
 
 T = '{http://www.tei-c.org/ns/1.0}'
 X = '{http://www.w3.org/XML/1998/namespace}'
 LOCALES = ('sr', 'en', 'de')
 KINDS = ('family', 'language', 'variety', 'historical-stage', 'reconstructed-language', 'collective')
 SOURCE = '#src-raskovnik-review'
+DERIVED_ISO_TYPES = ('ISO639-1', 'ISO639-2B', 'ISO639-2T')
+
+
+@lru_cache(maxsize=1)
+def iso_records():
+    return parse_iso639_3(Path(__file__).resolve().parents[1]/'upstream/iso-639-3/2026-07-22/iso-639-3.tab')[0]
+
+
+def effective_identifiers(node):
+    identifiers = {n.get('type'): text(n) for n in node.findall(T+'ident')}
+    record = iso_records().get(identifiers.get('ISO639-3'))
+    if record:
+        identifiers.update({key: value for key, value in (
+            ('ISO639-1', record.part1), ('ISO639-2B', record.part2b), ('ISO639-2T', record.part2t)) if value})
+    return identifiers
 
 
 class EditorError(ValueError):
@@ -165,18 +181,18 @@ def node_record(document, span):
         'children': [c.element.get('ident') for c in span.children if c.element.tag in (T+'language', T+'languageGrp')],
         'labels': {n.get(X+'lang'): text(n) for n in names if n.get('type')=='languageName' and n.get('role')=='languageReferenceName'},
         'aliases': {lang: [text(n) for n in names if n.get('role')=='languageAlias' and n.get(X+'lang')==lang] for lang in LOCALES},
-        'identifiers': {n.get('type'): text(n) for n in node.findall(T+'ident')},
+        'identifiers': effective_identifiers(node),
         'selectable': any(n.get('type')=='selectionStatus' and n.get('subtype')=='selectable' for n in notes),
         'classificationStatus': next((n.get('subtype') for n in notes if n.get('type')=='classificationStatus'), 'tentative'),
         'classificationNotes': {n.get(X+'lang'): text(n) for n in notes if n.get('type')=='classificationNote'},
         'exclusions': [{'type': n.get('subtype'), 'value': text(n), 'source': n.get('source')} for n in notes if n.get('type')=='excludedExactIdentifier'],
         'alternateClassifications': [{'classification': n.get('ana'), 'status': n.get('subtype'), 'nodes': [r.get('target', '').removeprefix('#lang-') for r in n.findall(T+'ref')]} for n in notes if n.get('type')=='alternateClassification'],
         'sourceLabels': [{'id': n.get(X+'id'), 'label': text(n), 'source': n.get('source'), 'catalog': next((b.findtext(T+'idno[@type="dictionaryId"]') for b in document.root.findall('.//'+T+'bibl[@type="registrySource"]') if '#'+b.get(X+'id')==n.get('source')), None), 'kind': n.get('role'), 'abbreviation': n.get('subtype'),
-            'labels': {s.get(X+'lang'): text(s) for s in names if s.get('type')=='sourceRecordLabel' and s.get('corresp')=='#'+n.get(X+'id','')}} for n in names if n.get('type')=='sourceLabel'],
+            'labels': {lang: next((text(s) for s in names if s.get('type')=='sourceRecordLabel' and s.get('corresp')=='#'+n.get(X+'id','') and s.get(X+'lang')==lang), next((text(s) for s in names if s.get('type')=='languageName' and s.get('role')=='languageReferenceName' and s.get(X+'lang')==lang), None)) for lang in LOCALES}} for n in names if n.get('type')=='sourceLabel'],
         'directProfile': bool(node.findall(T+'note[@type="tagProfile"]')),
         'locations': locations,
         'geography': geography_record(node,document.root),
-        'history': [text(n) for n in notes if n.get('type')=='editorialReview'] + [n.get('when','')+' · '+n.get('who','')+' · '+text(n) for n in document.root.findall('.//'+T+'change[@type="editorial"]') if n.get('n')==node.get('ident')],
+        'history': [text(next((c for c in document.root.findall('.//'+T+'change[@type="editorialReview"]') if '#'+c.get(X+'id','')==n.get('corresp')), None)) if n.get('corresp') else text(n) for n in notes if n.get('type')=='editorialReview'] + [n.get('when','')+' · '+n.get('who','')+' · '+text(n) for n in document.root.findall('.//'+T+'change[@type="editorial"]') if n.get('n')==node.get('ident')],
         'supportingNotes': [{'type':n.get('type'), 'text':text(n), 'source':n.get('source')} for n in notes if n.get('type') not in ('selectionStatus','classificationStatus','classificationNote','tagProfile','geographyProfile','geographyDecision')],
     }
 
@@ -261,27 +277,27 @@ def update_node(data, identifier, values):
                         fragments.append(doc.raw(match).decode())
                     else:
                         fragments.append(tag('name',value.strip(),type='languageName',role=role,source=SOURCE,
-                            xml_id='name-'+identifier+'-'+lang+('-preferred' if field=='labels' else '-alias-'+uuid.uuid4().hex[:12]),xml_lang=lang))
+                            xml_lang=lang))
         data = doc.replace_children(span,lambda e:e.tag==T+'name' and e.get('type')=='languageName' and e.get('role')==role and e.get(X+'lang') in LOCALES,fragments)
     if 'identifiers' in values and values['identifiers'] != current['identifiers']:
         ids = dict(values['identifiers'])
         if ids.get('BCP47',identifier) != identifier:
             raise EditorError('The canonical BCP47 identifier is immutable.', 'identifiers')
         ids['BCP47'] = identifier
-        allowed = {'BCP47','ISO639-1','ISO639-2B','ISO639-2T','ISO639-3','Glottolog','Wikidata'}
+        allowed = {'BCP47','ISO639-1','ISO639-2B','ISO639-2T','ISO639-3','ISO639-5','Glottolog','Wikidata'}
         if set(ids)-allowed:
             raise EditorError('Unsupported exact identifier type.', 'identifiers')
         for exclusion in current['exclusions']:
             if ids.get(exclusion['type']) == exclusion['value']:
                 raise EditorError('This identifier has a reviewed exclusion.', 'identifiers')
-        fragments = [tag('ident',value,type=key,xml_id='lang-'+identifier if key=='BCP47' else None) for key,value in ids.items() if value]
+        fragments = [tag('ident',value,type=key,xml_id='lang-'+identifier if key=='BCP47' else None) for key,value in ids.items() if value and key not in DERIVED_ISO_TYPES]
         doc=Document(data); data=doc.replace_children(doc.get(identifier),lambda e:e.tag==T+'ident',fragments)
     for field, note_type in (('selectable','selectionStatus'),('classificationStatus','classificationStatus')):
         if field not in values or values[field] == current[field]:
             continue
         value = ('selectable' if values[field] else 'nonselectable') if field=='selectable' else values[field]
         doc=Document(data); data=doc.replace_children(doc.get(identifier),lambda e:e.tag==T+'note' and e.get('type')==note_type,
-            [tag('note',value,type=note_type,subtype=value,source=SOURCE)])
+            [tag('note','',type=note_type,subtype=value,source=SOURCE)])
     if 'classificationNotes' in values and values['classificationNotes'] != current['classificationNotes']:
         doc=Document(data); data=doc.replace_children(doc.get(identifier),lambda e:e.tag==T+'note' and e.get('type')=='classificationNote',
             [tag('note',value,type='classificationNote',source=SOURCE,xml_lang=lang) for lang,value in values['classificationNotes'].items() if lang in LOCALES and value.strip()])
@@ -305,8 +321,19 @@ def update_node(data, identifier, values):
             for lang in LOCALES:
                 if record['labels'].get(lang)==original['labels'].get(lang): continue
                 doc=Document(data); span=doc.get(identifier)
-                target=next(s for s in span.children if s.element.tag==T+'name' and s.element.get('type')=='sourceRecordLabel' and s.element.get('corresp')=='#'+record['id'] and s.element.get(X+'lang')==lang)
-                data=doc.apply([(target.open_end,target.close_start,escape(record['labels'].get(lang,'')).encode())])
+                target=next((s for s in span.children if s.element.tag==T+'name' and s.element.get('type')=='sourceRecordLabel' and s.element.get('corresp')=='#'+record['id'] and s.element.get(X+'lang')==lang),None)
+                preferred=next((text(s.element) for s in span.children if s.element.tag==T+'name' and s.element.get('type')=='languageName' and s.element.get('role')=='languageReferenceName' and s.element.get(X+'lang')==lang),None)
+                desired=record['labels'].get(lang)
+                if not desired:
+                    raise EditorError('A catalog translation must be nonempty.', 'sourceLabels')
+                if desired==preferred:
+                    if target:data=doc.replace_children(span,lambda e:e is target.element,[])
+                elif target:
+                    data=doc.apply([(target.open_end,target.close_start,escape(desired).encode())])
+                else:
+                    owner=next(s for s in span.children if s.element.tag==T+'name' and s.element.get(X+'id')==record['id'])
+                    fragment=tag('name',desired,type='sourceRecordLabel',role='sourceRecordName',corresp='#'+record['id'],source=original['source'],xml_lang=lang)
+                    data=doc.apply([(owner.end,owner.end,('\n'+doc.indent(owner)+fragment).encode())])
     if 'parentId' in values and values['parentId'] != current['parentId']:
         doc=Document(data); span=doc.get(identifier); parent=doc.get(values['parentId']) if values['parentId'] else next(s for s in doc.spans if s.element.tag==T+'langUsage')
         p=parent
@@ -318,6 +345,13 @@ def update_node(data, identifier, values):
         raw=raw.replace('\n'+old_indent,'\n'+new_indent)
         data=doc.apply([(span.start,span.end,b''),(parent.close_start,parent.close_start,('  '+raw+'\n'+doc.indent(parent)).encode())])
         data=wrappers(data)
+    # A preferred-name edit can make an existing catalog override redundant.
+    while True:
+        doc=Document(data); span=doc.get(identifier)
+        preferred={n.get(X+'lang'):text(n) for n in span.element.findall(T+'name[@type="languageName"][@role="languageReferenceName"]')}
+        redundant=next((s for s in span.children if s.element.tag==T+'name' and s.element.get('type')=='sourceRecordLabel' and text(s.element)==preferred.get(s.element.get(X+'lang'))),None)
+        if redundant is None:break
+        data=doc.replace_children(span,lambda e:e is redundant.element,[])
     return data
 
 
@@ -332,10 +366,10 @@ def create_node(data, values):
     if kind not in KINDS: raise EditorError('Unsupported concept kind.', 'kind')
     labels=values.get('labels',{})
     children=[tag('ident',identifier,type='BCP47',xml_id='lang-'+identifier)]
-    children += [tag('name',labels.get(lang,''),type='languageName',role='languageReferenceName',source=SOURCE,xml_id='name-'+identifier+'-'+lang+'-preferred',xml_lang=lang) for lang in LOCALES if labels.get(lang)]
-    children += [tag('note','selectable' if values.get('selectable',True) else 'nonselectable',type='selectionStatus',subtype='selectable' if values.get('selectable',True) else 'nonselectable',source=SOURCE),tag('note','tentative',type='classificationStatus',subtype='tentative',source=SOURCE)]
+    children += [tag('name',labels.get(lang,''),type='languageName',role='languageReferenceName',source=SOURCE,xml_lang=lang) for lang in LOCALES if labels.get(lang)]
+    children += [tag('note','',type='selectionStatus',subtype='selectable' if values.get('selectable',True) else 'nonselectable',source=SOURCE),tag('note','',type='classificationStatus',subtype='tentative',source=SOURCE)]
     if values.get('directProfile',False):
-        children.append(tag('note',identifier,type='tagProfile',subtype='direct',source=SOURCE,xml_id='profile-'+identifier))
+        children.append(tag('note','',type='tagProfile',subtype='direct',source=SOURCE))
     indent=doc.indent(parent)+'  '
     fragment='<language ident='+quoteattr(identifier)+' type='+quoteattr(kind)+' role="objectLanguage">\n'+''.join(indent+'  '+c+'\n' for c in children)+indent+'</language>'
     data=doc.apply([(parent.close_start,parent.close_start,('  '+fragment+'\n'+doc.indent(parent)).encode())])

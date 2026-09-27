@@ -1,6 +1,6 @@
 # Registry editing through the shared admin
 
-`registry/registry.xml` remains the sole language-data authority. The Laravel **Именовани ентитети → Језици** interface edits isolated Git drafts through `scripts/registry_editor.py`; it does not write to the operator checkout or the installed eXist registry. Dictionary language assignment remains in dictionary TEI.
+`registry/registry.xml` remains the sole language-data authority. The Laravel **Именовани ентитети → Језици** interface in the Raskovnik admin edits isolated Git drafts through `scripts/registry_editor.py`; it does not write to the operator checkout or the installed eXist registry. Dictionary language assignment remains in dictionary TEI.
 
 The editor accepts JSON on stdin and returns JSON diagnostics. `inventory`, `validate`, `diff`, `inspect-glottolog`, and `review-glottolog` complement the `edit` command. Every edit supplies `expectedRevision` (SHA-256 of the current XML bytes), an operation, an editorial rationale, and values. Failed validation leaves the draft unchanged. A per-document lock prevents concurrent writers and atomic replacement prevents partial XML files. The worker additionally binds saves and approvals to the Glottolog review table, enrichment catalogue, and image bytes.
 
@@ -12,7 +12,9 @@ python3 scripts/registry_editor.py diff --registry /path/to/draft/registry.xml -
 
 Names, aliases, exact identifiers, selection status, classifications, existing source-label translations, bibliography, exclusions, geographic profiles, and locations have targeted editing operations. Unowned XML remains intact. Location updates retain additional notes and comments; deletion of a location with additional source markup requires explicit XML editing. Creating, moving, or deleting children changes `language`/`languageGrp` wrappers automatically. Canonical IDs cannot be renamed. Referenced nodes, nodes with children, and nodes with dictionary tag profiles or source mappings cannot be deleted through ordinary CRUD; retirement of a covered tag requires the existing backend coverage-verified migration workflow.
 
-Alias replacement is limited to the Serbian, English and German fields exposed by the form. Existing aliases in other languages retain their exact XML, identifiers and provenance when an exposed alias is changed.
+The editor shows effective catalog translations. A missing `sourceRecordLabel` inherits the containing node's preferred name in that language; entering different wording creates an override, and matching the preferred name removes one. ISO 639-1 and ISO 639-2 equivalents are displayed from the pinned ISO 639-3 table and are read-only. Shared editorial review notes resolve through their `revisionDesc` references in the node history. Controlled status notes retain explicit values without repeating them in prose.
+
+Alias replacement is limited to the Serbian, English and German fields exposed by the form. Existing aliases in other languages retain their exact XML markup and provenance when an exposed alias is changed.
 
 Glottolog registration is explicit: inspect the archived record, approve it with reviewer and rationale, then register the concept. The tool checks the archive checksum against the review table and TEI bibliography and rejects retired or Bookkeeping records. It does not refresh standards or promote narrower component identities. The Luwian pilot test approves `cune1239` and `hier1240` in temporary data, creates `xlu` and `hlu`, and verifies that `ine-x-luwian` keeps its identifiers while becoming a group wrapper. It does not add those children to the master.
 

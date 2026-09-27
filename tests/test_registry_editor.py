@@ -20,6 +20,35 @@ class RegistryEditorTests(unittest.TestCase):
         record=editor.node_record(editor.Document(self.data),editor.Document(self.data).get('got'))
         self.assertEqual(self.data,self.change(operation='update',id='got',values=record))
 
+    def test_catalog_names_inherit_and_editor_round_trips_overrides(self):
+        doc=editor.Document(self.data);record=editor.node_record(doc,doc.get('cop'))
+        self.assertEqual(record['sourceLabels'][0]['labels'],{'sr':'коптски','en':'Coptic','de':'Koptisch'})
+        self.assertEqual([],doc.get('cop').element.findall(editor.T+'name[@type="sourceRecordLabel"]'))
+        self.assertEqual(record['identifiers']['ISO639-2B'],'cop')
+        changed=record['sourceLabels'][0].copy();changed['labels']={**changed['labels'],'en':'Catalog Coptic'}
+        result=self.change(operation='update',id='cop',values={'sourceLabels':[changed]})
+        after=editor.Document(result);override=after.get('cop').element.find(editor.T+'name[@type="sourceRecordLabel"]')
+        self.assertEqual(override.text,'Catalog Coptic')
+        self.assertIsNone(override.get(editor.X+'id'))
+        self.assertEqual(editor.node_record(after,after.get('cop'))['sourceLabels'][0]['labels']['en'],'Catalog Coptic')
+        changed['labels']['en']='Coptic'
+        restored=self.change(result,operation='update',id='cop',values={'sourceLabels':[changed]})
+        self.assertEqual([],editor.Document(restored).get('cop').element.findall(editor.T+'name[@type="sourceRecordLabel"]'))
+
+    def test_inherited_catalog_translation_follows_preferred_name(self):
+        doc=editor.Document(self.data);record=editor.node_record(doc,doc.get('cop'))
+        record['labels']['en']='Coptic language'
+        result=self.change(operation='update',id='cop',values={'labels':record['labels']})
+        updated=editor.Document(result)
+        self.assertEqual(editor.node_record(updated,updated.get('cop'))['sourceLabels'][0]['labels']['en'],'Coptic language')
+        self.assertEqual([],updated.get('cop').element.findall(editor.T+'name[@type="sourceRecordLabel"]'))
+
+    def test_shared_review_history_is_resolved(self):
+        doc=editor.Document(self.data);span=doc.get('afa')
+        note=span.element.find(editor.T+'note[@type="editorialReview"]')
+        self.assertIsNotNone(note.get('corresp'))
+        self.assertTrue(any('Complete ancestor-label proposal batch' in entry for entry in editor.node_record(doc,span)['history']))
+
     def test_label_edit_preserves_other_nodes_and_unknown_markup(self):
         original=editor.Document(self.data)
         s=original.get('got')
@@ -43,7 +72,7 @@ class RegistryEditorTests(unittest.TestCase):
 
     def test_alias_edit_preserves_unexposed_languages_and_their_markup(self):
         doc=editor.Document(self.data);span=doc.get('got')
-        alias=b'<name type="languageName" role="languageAlias" source="#src-raskovnik-review" xml:id="name-got-fr-fixture" xml:lang="fr">gotique<!-- retain editorial markup --></name>'
+        alias=b'<name type="languageName" role="languageAlias" source="#src-raskovnik-review" xml:lang="fr">gotique<!-- retain editorial markup --></name>'
         data=doc.apply([(span.open_end,span.open_end,alias)])
         editor.validate(data)
         before=editor.Document(data);record=editor.node_record(before,before.get('got'))

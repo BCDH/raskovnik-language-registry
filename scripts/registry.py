@@ -99,6 +99,11 @@ def validate(data):
             target=ids.get(n.get('target','').removeprefix('#'))
             if target is None or target.tag!=T+'ident' or target.get('type')!='BCP47':
                 raise ValueError('alternate path must reference a canonical node identifier')
+        if n.tag==T+'note' and n.get('type')=='editorialReview' and n.get('corresp'):
+            target=ids.get(n.get('corresp').removeprefix('#'))
+            if (target is None or target.tag!=T+'change' or target.get('type')!='editorialReview' or not (target.text or '').strip()
+                    or (n.text or '').strip() or len(n)):
+                raise ValueError('shared editorial review must reference one nonempty review change')
     _, iana = parse_iana_registry(ROOT/'upstream/iana/2026-08-08/language-subtag-registry')
     iso, _, _ = parse_iso639_3(ROOT/'upstream/iso-639-3/2026-07-22/iso-639-3.tab')
     exact = {}
@@ -125,20 +130,19 @@ def validate(data):
             record = iso.get(iso_claim)
             if record is None:
                 raise ValueError('unknown ISO 639-3: '+iso_claim)
-            expected = {'ISO639-1':record.part1,'ISO639-2B':record.part2b,'ISO639-2T':record.part2t,'ISO639-3':record.identifier}
-            actual = {c.get('type'):c.text for c in claims if c.get('type') in expected}
-            if actual != {k:v for k,v in expected.items() if v}:
-                raise ValueError('incomplete or inconsistent ISO inventory: '+code)
+            if any(c.get('type') in ('ISO639-1','ISO639-2B','ISO639-2T') for c in claims):
+                raise ValueError('ISO 639-1/2 equivalents are derived from the pinned ISO 639-3 table: '+code)
             if '-x-' not in code and code != (record.part1 or record.identifier):
                 raise ValueError('canonical code disagrees with exact ISO identity: '+code)
         elif any(c.get('type') in ('ISO639-1','ISO639-2B','ISO639-2T') for c in claims):
             raise ValueError('ISO identifiers require their ISO 639-3 identity: '+code)
         profiles = n.findall(T+'note[@type="tagProfile"]')
-        if len(profiles)>1 or any(c.get('subtype')!='direct' for c in profiles):
+        if len(profiles)>1 or any(c.get('subtype')!='direct' or c.get(X+'id') is not None or (c.text or '').strip() or len(c) for c in profiles):
             raise ValueError('invalid direct profile inventory: '+code)
         for name in n.findall(T+'name'):
             if name.get('type') in ('languageName','sourceLabel','sourceRecordLabel'):
-                if not name.get(X+'id') or ids.get(name.get('source','').removeprefix('#')) is None:
+                if ((name.get('type')=='sourceLabel') != bool(name.get(X+'id'))
+                        or ids.get(name.get('source','').removeprefix('#')) is None):
                     raise ValueError('name identity/provenance missing: '+code)
         own_records={c.get(X+'id') for c in n.findall(T+'name[@type="sourceLabel"]')}
         for c in n:
@@ -153,13 +157,20 @@ def validate(data):
                 raise ValueError('ambiguous location identity: '+code)
             points.add(point)
         for source in n.findall(T+'name[@type="sourceLabel"]'):
-            refs=source.get('ana','').split()
+            if source.get('ana') is not None:
+                raise ValueError('source record profile is determined by its containing node: '+code)
             profile=n.find(T+'note[@type="tagProfile"][@subtype="direct"]')
-            if profile is None or refs!=['#'+profile.get(X+'id')]:
-                raise ValueError('source record must reference its own tag profile: '+code)
+            if profile is None:
+                raise ValueError('source record requires a direct tag profile: '+code)
             cited=ids.get(source.get('source','').removeprefix('#'))
             if cited is None or cited.get('type')!='registrySource' or len(cited.findall(T+'idno[@type="dictionaryId"]'))!=1 or not (cited.findtext(T+'idno[@type="dictionaryId"]') or '').strip():
                 raise ValueError('source record requires a dictionary-owned registry source: '+code)
+            overrides=[c for c in n.findall(T+'name[@type="sourceRecordLabel"]') if c.get('corresp')=='#'+source.get(X+'id')]
+            preferred={c.get(X+'lang'):''.join(c.itertext()) for c in n.findall(T+'name[@type="languageName"][@role="languageReferenceName"]')}
+            if (len({c.get(X+'lang') for c in overrides})!=len(overrides)
+                    or any(c.get('role')!='sourceRecordName' or c.get(X+'lang') not in ('sr','en','de') or c.get('source')!=source.get('source') or not (c.text or '').strip()
+                           or c.text==preferred.get(c.get(X+'lang')) or c.get(X+'id') is not None for c in overrides)):
+                raise ValueError('catalog translation overrides must be unique, nonempty and differ from node names: '+code)
     with tempfile.TemporaryDirectory() as directory:
         path = Path(directory)/'registry.xml';path.write_bytes(data)
         checked(['jing',str(ROOT/'registry/schema/lex-0-f6d51f29.rng'),str(path)])

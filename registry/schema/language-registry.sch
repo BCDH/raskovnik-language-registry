@@ -62,8 +62,7 @@
 
   <pattern id="profile-and-source-record-contract">
     <rule context="tei:note">
-      <assert test="not(@type = 'tagProfile' and @subtype = 'direct') or normalize-space(.) = ancestor::*[self::tei:language or self::tei:languageGrp][1]/@ident">A direct tag profile code must equal its containing node code.</assert>
-      <assert test="not(@type = 'tagProfile' and @subtype = 'direct') or @xml:id = concat('profile-', normalize-space(.))">A tag-profile technical xml:id must preserve the canonical code.</assert>
+      <assert test="not(@type = 'tagProfile' and @subtype = 'direct') or (not(@xml:id) and normalize-space(.) = '')">A direct tag profile is a presence marker; its tag comes from the containing node.</assert>
     </rule>
     <rule context="tei:name">
       <assert test="not(@type = 'sourceLabel') or @role = 'language-label' or @role = 'compound-language-label'">Source-record kind is outside the controlled vocabulary.</assert>
@@ -71,8 +70,8 @@
       <assert test="not(@type = 'sourceLabel') or @xml:lang = 'sr'">The count-free conversion source label must be Serbian.</assert>
       <assert test="not(@type = 'sourceLabel') or normalize-space(@xml:id) != ''">Every source record requires a stable xml:id.</assert>
       <assert test="not(@type = 'sourceLabel') or count(../tei:note[@type = 'tagProfile'][@subtype = 'direct']) = 1">Every source record must belong to a node with exactly one direct tag profile.</assert>
-      <assert test="not(@type = 'sourceLabel') or starts-with(@ana, '#profile-')">Every source record must identify its tag profile.</assert>
-      <assert test="not(@type = 'sourceLabel') or count(../tei:name[@type = 'sourceRecordLabel']) = 3 * count(../tei:name[@type = 'sourceLabel'])">Each source record requires exactly three localized labels.</assert>
+      <assert test="not(@type = 'sourceLabel') or not(@ana)">A source record inherits its tag profile from its containing node.</assert>
+      <assert test="not(@type = 'sourceRecordLabel') or @xml:lang = 'sr' or @xml:lang = 'en' or @xml:lang = 'de'">Catalog translation overrides use supported languages.</assert>
     </rule>
   </pattern>
 

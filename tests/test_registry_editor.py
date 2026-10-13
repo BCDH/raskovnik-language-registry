@@ -44,10 +44,16 @@ class RegistryEditorTests(unittest.TestCase):
         self.assertEqual([],updated.get('cop').element.findall(editor.T+'name[@type="sourceRecordLabel"]'))
 
     def test_shared_review_history_is_resolved(self):
-        doc=editor.Document(self.data);span=doc.get('afa')
-        note=span.element.find(editor.T+'note[@type="editorialReview"]')
-        self.assertIsNotNone(note.get('corresp'))
-        self.assertTrue(any('Complete ancestor-label proposal batch' in entry for entry in editor.node_record(doc,span)['history']))
+        doc=editor.Document(self.data)
+        node=doc.get('afa')
+        revision=next(s for s in doc.spans if s.element.tag==editor.T+'revisionDesc')
+        data=doc.apply([
+            (node.open_end,node.open_end,b'<note type="editorialReview" corresp="#review-fixture"/>'),
+            (revision.open_end,revision.open_end,b'<change type="editorialReview" xml:id="review-fixture" when="2026-09-06">Fixture batch rationale.</change>'),
+        ])
+        editor.validate(data)
+        doc=editor.Document(data)
+        self.assertIn('Fixture batch rationale.',editor.node_record(doc,doc.get('afa'))['history'])
 
     def test_label_edit_preserves_other_nodes_and_unknown_markup(self):
         original=editor.Document(self.data)

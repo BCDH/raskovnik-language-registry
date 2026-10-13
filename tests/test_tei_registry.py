@@ -81,14 +81,26 @@ class TeiRegistryTests(unittest.TestCase):
             node=cop(root);record=node.find(R.T+'name[@type="sourceLabel"]')
             E.SubElement(node,R.T+'name',{'type':'sourceRecordLabel','role':'sourceRecordName','corresp':'#'+record.get(R.X+'id'),'source':record.get('source'),R.X+'lang':'en'}).text='Coptic'
         def bad_review(root):
-            note=next(n for n in root.iter(R.T+'note') if n.get('type')=='editorialReview' and n.get('corresp'))
-            note.set('corresp','#src-raskovnik-review')
+            E.SubElement(cop(root),R.T+'note',type='editorialReview',corresp='#src-raskovnik-review')
         def old_profile(root):
             node=cop(root);profile=node.find(R.T+'note[@type="tagProfile"]');profile.text='cop'
         def derived_iso(root):
             E.SubElement(cop(root),R.T+'ident',type='ISO639-2B').text='cop'
         for mutation in (add_duplicate_override,add_redundant_override,bad_review,old_profile,derived_iso):
             with self.subTest(mutation=mutation),self.assertRaises(ValueError):R.validate(self.changed(mutation))
+
+    def test_shared_review_requires_nonempty_history_and_a_reference_only_note(self):
+        def mutation(root,case):
+            revision=root.find(R.T+'teiHeader/'+R.T+'revisionDesc')
+            change=E.SubElement(revision,R.T+'change',{'type':'editorialReview',R.X+'id':'review-fixture'})
+            change.text='' if case=='empty history' else 'Fixture batch rationale.'
+            note=E.SubElement(self.node(root,'cop'),R.T+'note',type='editorialReview',corresp='#review-fixture')
+            if case=='inline text':note.text='Duplicated rationale.'
+            if case=='child markup':E.SubElement(note,R.T+'seg').text='Duplicated rationale.'
+            if case=='missing target':note.set('corresp','#missing-review')
+        for case in ('empty history','inline text','child markup','missing target'):
+            with self.subTest(case=case),self.assertRaisesRegex(ValueError,'shared editorial review|unresolved corresp'):
+                R.validate(self.changed(lambda r:mutation(r,case)))
 
     def test_noncanonical_or_unregistered_tags_fail(self):
         for code in ['SR','zz','sr-x','x-private']:
